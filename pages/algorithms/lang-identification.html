@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Language identification - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/pages/algorithms/lang-identification.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Language identification</h1>
+  
+
+  <p>A language identification algorithm is used the determine the language of a given text.  Some languages can be determined reliably from their character use alone. In these cases it is sufficient to analyse the characters and encoding of the web content. For languages sharing the same script (such as languages using the latin alphabet), the distinction is more difficult.</p>
+
+<h1 id="use-statistical-methods">Use statistical methods.</h1>
+
+<p>A widely used approach are supervised machine learning algorithms  based on character n-grams. These algorithms are trained on example texts in a known language. The generated model can be used to label unknown text.</p>
+
+<p>This class of algorithms has the following properties:</p>
+
+<ul>
+  <li>The algorithm needs training data in all languages that are to be classified.</li>
+  <li>It has poor performance on single words. The recommended input size is 200-300 characters.</li>
+  <li>Only one language is assigned to each chunk of text. Languages changes can not be detected with the basic approach.</li>
+  <li>Problems to distinguish languages that are closely related (such as Danish and Norwegian).</li>
+</ul>
+
+<h2 id="auto-wcag-recommendation">Auto-WCAG recommendation</h2>
+
+<p>The Auto-WCAG group does not recommend the use of any particular algorithm. Instead each tool that uses automatic language identification should disclose which algorithm, implementation, or third party libraries are used.</p>
+
+<h2 id="background">Background</h2>
+
+<p><a href="http://en.wikipedia.org/wiki/Language_identification">List of implementations (both libraries and web services)</a> from Wikipedia.</p>
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

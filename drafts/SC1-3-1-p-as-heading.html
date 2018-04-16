@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Rule: SC1-3-1-p-as-heading - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Description">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC1-3-1-p-as-heading.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Rule: SC1-3-1-p-as-heading</h1>
+  
+
+  
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-04-17T00:25:32+05:30" itemprop="datePublished">Apr 17, 2018</time></p>
+
+
+
+  <p>Created by: <a href="https://github.com/wilcofiers">Wilco Fiers</a></p>
+
+
+
+
+
+
+<h2 id="description">Description</h2>
+
+<p>This rule tests p elements, to ensure they should not have been marked up as a heading.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li>https://www.w3.org/TR/UNDERSTANDING-WCAG20/content-structure-separation-programmatic.html</li>
+  <li>https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H42</li>
+  <li>https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G141</li>
+  <li>http://accessibility.psu.edu/headingshtml/</li>
+</ul>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>Headers can be identified by bolder text, the text being italic, or larger font-size</li>
+  <li>Whole sentences are unlikely to be headings, and so text that appears to be one or more sentences is assumed not to be a a heading.</li>
+</ul>
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="selector">Selector</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Select each <code class="highlighter-rouge">p</code> element that meets the following:</p>
+
+<ul>
+  <li>It contains non-empty text</li>
+  <li>It has one or more sibling <code class="highlighter-rouge">p</code> elements after it</li>
+  <li>It does not contain a text paragraph (see definition)</li>
+  <li>It does not have a role attribute</li>
+</ul>
+
+<p>For each selected item, go through the following steps:</p>
+
+<h3 id="step-1-differing-style">Step 1: Differing style</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Get the <em>defining text style</em> of the selected <code class="highlighter-rouge">p</code> element as style A, and of the defining text style of the next sibling <code class="highlighter-rouge">p</code> element as style B.</p>
+
+<p>Check that one of the following is true:</p>
+
+<ul>
+  <li>The font-size of Style A is bigger than that of Style B, or</li>
+  <li>the font-weight of Style A is greater than that of Style B, or</li>
+  <li>the font-style of Style A is italic and that of Style B is not.</li>
+</ul>
+
+<p>If true, continue with [Step 2][#step-2-blockquote]:</p>
+
+<p>Else, return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC1-3-1-p-as-heading</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC1-3-1-p-as-heading-pass1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-2-blockquote">Step 2: Blockquote</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>If the selected <code class="highlighter-rouge">p</code> element is inside a blockquote, continue with [step 5][#step-5]</p>
+
+<p>Else, continue with [Step 3][#step-3-first-paragraph]</p>
+
+<h3 id="step-3-first-paragraph">Step 3: First paragraph</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Check that the selected <code class="highlighter-rouge">p</code> element has a sibling <code class="highlighter-rouge">p</code> element that precedes it.</p>
+
+<p>If yes, continue with [step 4][#step-4]</p>
+
+<p>Else, return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC1-3-1-p-as-heading</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC1-3-1-p-as-heading-fail1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-4-preceding-paragraph">Step 4: Preceding paragraph</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Use the <em>defining text style</em> of this preceding <code class="highlighter-rouge">p</code> element as <em>style C</em></p>
+
+<p>Check that any of the following is true:</p>
+
+<ul>
+  <li>The font-size of Style A is bigger than that of Style C, or</li>
+  <li>the font-weight of Style A is greater than that of Style C, or</li>
+  <li>the font-style of Style A is italic and that of Style C is not.</li>
+</ul>
+
+<p>If true, return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC1-3-1-p-as-heading</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC1-3-1-p-as-heading-fail2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If false, continue with [step 5][#step-5-user-question]</p>
+
+<h3 id="step-5-user-question">Step 5: User question</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#manual">manual</a></p>
+
+<p>Ask the user to make a final judgment of the possible header.</p>
+
+<p><strong>User Input Question:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Presented item</td>
+      <td>selected element</td>
+    </tr>
+    <tr>
+      <td>Requires context</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>Question</td>
+      <td>Is this element a heading for the section following it?</td>
+    </tr>
+    <tr>
+      <td>Help</td>
+      <td>Headings are a name or brief description for of an area on a (web) page. They give structure to a page, and are often used to skim the page.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If yes, return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC1-3-1-p-as-heading</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC1-3-1-p-as-heading-pass2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If no, return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC1-3-1-p-as-heading</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC1-3-1-p-as-heading-fail3</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="definitions">Definitions</h2>
+
+<dl>
+  <dt>Text paragraph:</dt>
+  <dd>
+    <p>Any textNode containing punctuation marks: <code class="highlighter-rouge">.</code>, <code class="highlighter-rouge">:</code>, <code class="highlighter-rouge">!</code>, <code class="highlighter-rouge">?</code>.</p>
+  </dd>
+  <dt>Defining text style:</dt>
+  <dd>
+    <p>Locate the highest element that could be used to style all the text in
+the element. The computed style of this element is the Defining text style</p>
+
+    <p>Example: Here the <code class="highlighter-rouge">i</code> element can style all text</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;  &lt;i&gt;Text &lt;b&gt;here&lt;/b&gt;&lt;/i&gt; &lt;/p&gt;
+</code></pre></div>    </div>
+  </dd>
+</dl>
+
+<h2 id="implementation-tests">Implementation tests</h2>
+
+<h3 id="inapplicable">Inapplicable</h3>
+
+<p>Inapplicable 1:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;article&gt;
+  &lt;p&gt;&lt;b&gt;Some text&lt;/b&gt;&lt;/p&gt;
+&lt;/article
+</code></pre></div></div>
+
+<p>Inapplicable 2:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;article&gt;
+  &lt;p&gt;&lt;b&gt;A paragraph!&lt;/b&gt;&lt;/p&gt;
+  &lt;p&gt;A paragraph!&lt;/p&gt;
+&lt;/article&gt;
+</code></pre></div></div>
+
+<p>Inapplicable 3:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;Some text&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Some text&lt;/p&gt;
+&lt;/blockquote&gt;
+</code></pre></div></div>
+
+<p>Inapplicable 4:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;article&gt;
+  &lt;p&gt;&lt;b&gt;Some text&lt;/b&gt;&lt;/p&gt;
+&lt;/article&gt;
+&lt;p&gt;Some text&lt;/p&gt;
+</code></pre></div></div>
+
+<h3 id="automated-passes">Automated Passes</h3>
+
+<p>Pass 1:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;Some text&lt;/p&gt;
+&lt;p&gt;A paragraph!&lt;/p&gt;
+</code></pre></div></div>
+
+<p>Pass 2:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;&lt;b&gt;Some text&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;A paragraph!&lt;/b&gt;&lt;/p&gt;
+</code></pre></div></div>
+
+<p>Pass 3:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p style="font-style:bold"&gt;Some text&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;A paragraph!&lt;/b&gt;&lt;/p&gt;
+</code></pre></div></div>
+
+<p>Pass 4:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;Some text&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;A paragraph!&lt;/b&gt;&lt;/p&gt;
+</code></pre></div></div>
+
+<h3 id="automated-failures">Automated Failures</h3>
+
+<p>Failure 1:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p style="font-style:bold"&gt;Some text&lt;/p&gt;
+&lt;p&gt;A paragraph!&lt;/p&gt;
+</code></pre></div></div>
+
+<p>Failure 2:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p style="font-size:120%"&gt;Some text&lt;/p&gt;
+&lt;p&gt;A paragraph!&lt;/p&gt;
+</code></pre></div></div>
+
+<p>Failure 3:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;&lt;b&gt;Some text&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;A paragraph!&lt;/p&gt;
+</code></pre></div></div>
+
+<h2 id="cant-tell--user-question">Cant Tell / User Question</h2>
+
+<p>Cant tell 1:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;&lt;b&gt;Some text&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;Some text&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;A paragraph!&lt;/p&gt;
+</code></pre></div></div>
+
+<p>Cant tell 2:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;p&gt;&lt;b&gt;Some text&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;A paragraph!&lt;/b&gt;&lt;/p&gt;
+&lt;p&gt;A paragraph!&lt;/p&gt;
+</code></pre></div></div>
+
+<p>Cant tell 3:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;blockquote&gt;
+  &lt;p&gt;&lt;i&gt;Some text&lt;/i&gt;&lt;/p&gt;
+  &lt;p&gt;A pragraph!&lt;/p&gt;
+&lt;/blockquote&gt;
+</code></pre></div></div>
+
+
+
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="../draft-tests/SC1-3-1-p-as-heading.test.html">Test cases</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC1-3-1-p-as-heading">Known issues</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_drafts/SC1-3-1-p-as-heading.md">Previous versions</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC1-3-1-p-as-heading.md">Propose an update</a></li>
+</ul>
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Rule: SC1-4-2-audio-control-audio - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Description">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/rules/SC1-4-2-audio-control-audio.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Rule: SC1-4-2-audio-control-audio</h1>
+  
+
+  
+
+  
+
+
+
+  <p>Late updated: <time datetime="2018-04-17T00:25:47+05:30" itemprop="datePublished">Apr 17, 2018</time></p>
+
+
+
+  <p>Created by: <a href="https://github.com/yetanothereye">Frank Berker</a></p>
+
+
+
+
+
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:visual-audio-contrast-dis-audio">
+        Success Criterion 1.4.2 (Audio Control)
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:visual-audio-contrast-dis-audio">
+          How to Meet 1.4.2 (Audio Control)
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:visual-audio-contrast-dis-audio.html">
+          Understanding Success Criterion 1.4.2 (Audio Control)
+        </a></li>
+      </ul>
+    </li>
+  
+  </ul>
+
+
+<h2 id="description">Description</h2>
+
+<p>This test checks that there isn’t an automatically started sound after the web page is loaded. If the sound plays automatically this test checks that the sound is no longer than 3 seconds or that there is at the top of the web page a mechanism to control the sound.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G60">G60: Playing a sound that turns off automatically within three seconds</a></li>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G170">G170: Providing a control near the beginning of the Web page that turns off sounds that play automatically</a></li>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G171">G171: Playing sounds only on user request</a></li>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/F23">F23: Failure of 1.4.2 due to playing a sound longer than 3 seconds where there is no mechanism to turn it off</a></li>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/F93">F93: Failure of Success Criterion 1.4.2 for absence of a way to pause or stop an HTML5 media element that autoplays</a></li>
+</ul>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>The test assumes that audio is rendered in the <code class="highlighter-rouge">audio</code> element. Therefore this test checks exclusive audio content in the <code class="highlighter-rouge">audio</code> element.</li>
+  <li>The test assumes that video is rendered in the <code class="highlighter-rouge">video</code> element. Therefore this test checks exclusive video content in the <code class="highlighter-rouge">video</code> element.</li>
+  <li>This test states that the links or buttons for the mechanism to control the sound is one of the first five links or buttons on the web page. This is more specific then the WCAG documentation.</li>
+</ul>
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="selector">Selector</h3>
+
+<p>Select all elements that match the following XPATH selector(s):</p>
+
+<ul>
+  <li><code class="highlighter-rouge">//*[self::audio</code> or</li>
+  <li><code class="highlighter-rouge">self::video]</code></li>
+</ul>
+
+<p>For each selected item, go through the following steps:</p>
+
+<h3 id="step-1">Step 1</h3>
+
+<p>Check if the <code class="highlighter-rouge">audio</code> or <code class="highlighter-rouge">video</code> is paused. Check <code class="highlighter-rouge">paused</code> property.</p>
+
+<p>If true, return <a href="#step1-pass">step1-pass</a></p>
+
+<p>Else continue with [step 2][#step-2]</p>
+
+<h3 id="step-2">Step 2</h3>
+
+<p>Check if the sound is muted. Check <code class="highlighter-rouge">muted</code> property.</p>
+
+<p>If true, return <a href="#step2-pass">step2-pass</a></p>
+
+<p>Else continue with [step 3][#step-3]</p>
+
+<h3 id="step-3">Step 3</h3>
+
+<p>Check that the sound is no longer than 3 seconds.</p>
+
+<p>Check <code class="highlighter-rouge">duration</code> property is no longer than 3 seconds.</p>
+
+<p>If true, continue with [step 4][#step-4]</p>
+
+<p>Else continue with <a href="#step-5">Step 5</a></p>
+
+<h3 id="step-4">Step 4</h3>
+
+<p>Check if the sound has a loop. Check <code class="highlighter-rouge">loop</code> property.</p>
+
+<p>If true, continue with <a href="#step-5">Step 5</a></p>
+
+<p>Else, return <a href="#step4-pass">step4-pass</a></p>
+
+<h3 id="step-5">Step 5</h3>
+
+<p>Check if the video plays audio.</p>
+
+<p>If the user is not available, return <a href="#step5-cannottell">step5-cannottell</a></p>
+
+<p><strong>User Input Question:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>highlight</td>
+      <td>Web page with an automatically started sound.</td>
+    </tr>
+    <tr>
+      <td>question</td>
+      <td>Is there audio playing on the web page?</td>
+    </tr>
+    <tr>
+      <td>help</td>
+      <td>There should not be audio playing automatically on the web page loads.</td>
+    </tr>
+    <tr>
+      <td>user_profile</td>
+      <td>Requires hearing</td>
+    </tr>
+    <tr>
+      <td>context</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>interaction</td>
+      <td>no</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If yes, continue with <a href="#step-6">Step 6</a>.</p>
+
+<p>Else, return <a href="#step5-pass">step5-pass</a></p>
+
+<h3 id="step-6">Step 6</h3>
+
+<p>Check if a mechanism to control the sound is provided as one of the first five links or buttons on the web page.</p>
+
+<p>If the user is not available, return <a href="#step6-cannottell">step6-cannottell</a></p>
+
+<p><strong>User Input Question:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>highlight</td>
+      <td>Web page with an automatically started sound.</td>
+    </tr>
+    <tr>
+      <td>question</td>
+      <td>Does the web page provide a mechanism to control the sound as one of the first five links or buttons?</td>
+    </tr>
+    <tr>
+      <td>help</td>
+      <td>A mechanism to pause or stop the video or audio, or control the volume or mute the audio must be available on the web page. The mechanism must be located as one of the first five links or buttons of the web page. This way people (with screen readers) can turn off the sound before reading the web page. To inspect this, use the tab key to navigate through the web page.</td>
+    </tr>
+    <tr>
+      <td>user_profile</td>
+      <td>Requires hearing</td>
+    </tr>
+    <tr>
+      <td>context</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>interaction</td>
+      <td>yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If yes, return <a href="#step6-pass">step6-pass</a></p>
+
+<p>Else, return <a href="#step6-fail">step6-fail</a></p>
+
+<h2 id="outcome">Outcome</h2>
+
+<p>The resulting assertion is as follows,</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>Assertion</td>
+    </tr>
+    <tr>
+      <td>test</td>
+      <td>auto-wcag:SC1-4-2-audio-control-audio</td>
+    </tr>
+    <tr>
+      <td>subject</td>
+      <td><em>the selected element</em></td>
+    </tr>
+    <tr>
+      <td>mode</td>
+      <td>auto-wcag:semi-automatic</td>
+    </tr>
+    <tr>
+      <td>result</td>
+      <td><One TestResult="" from="" below=""></One></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step1-pass">step1-pass</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Passed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step2-pass">step2-pass</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Passed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step4-pass">step4-pass</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Passed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step5-cannottell">step5-cannottell</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>CannotTell</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>It is not possible to determine if there is audio playing on the web page.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step5-pass">step5-pass</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Passed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step6-cannottell">step6-cannottell</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>CannotTell</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>It is not possible to determine if the web page provides a mechanism to control the sound as one of the first five links or buttons.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step6-pass">step6-pass</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Passed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step6-fail">step6-fail</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Failed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>No mechanism to control the automaticaly started sound available at the top of the web page.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="../rule-tests/SC1-4-2-audio-control-audio.test.html">Test cases</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC1-4-2-audio-control-audio">Known issues</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_rules/SC1-4-2-audio-control-audio.md">Previous versions</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC1-4-2-audio-control-audio.md">Propose an update</a></li>
+</ul>
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

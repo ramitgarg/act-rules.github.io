@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Rule: SC1-2-2-video-element - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Description">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC1-2-2-video-element.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Rule: SC1-2-2-video-element</h1>
+  
+
+  
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-04-17T00:25:32+05:30" itemprop="datePublished">Apr 17, 2018</time></p>
+
+
+
+
+
+
+
+
+<h2 id="description">Description</h2>
+
+<p>This test checks captions in video elements with a track element. So, this one test the quality of the given captions. Note that instead of a pass or fail, we could also return a graded rating scheme. This can be the case if for example emotions are captured, and only one emotion is forgotten. We could return a 90% pass?</p>
+
+<p>“BITV-Test, a German web-based accessibility evaluation tool which in its latest revision is a WCAG 2.0 test in all but name, takes a different approach. Its checkpoints that have graded rating scheme that offers five grades: from a clear “pass” (100%) via intermediate steps to a clear “fail” (0%). “
+http://www.bitvtest.de/infothek/artikel/lesen/talking-head-captions.html</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html">Understanding 1.2.2 Captions (prerecorded)</a></li>
+  <li><a href="https://github.com/quailjs/quail/blob/dev/src/js/components/video.js">QuailJS test for video captions</a></li>
+</ul>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>Test device renders html5 video (phantomJS doesn’t render)</li>
+</ul>
+
+<h2 id="test-properties">Test properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Success Criterion</td>
+      <td>1.2.2</td>
+    </tr>
+    <tr>
+      <td>Test mode</td>
+      <td>SemiAuto</td>
+    </tr>
+    <tr>
+      <td>Test environment</td>
+      <td>DOM and CSS + media API</td>
+    </tr>
+    <tr>
+      <td>Test subject</td>
+      <td>DOM document fragment</td>
+    </tr>
+    <tr>
+      <td>User expertise and skills</td>
+      <td>No prior knowledge</td>
+    </tr>
+    <tr>
+      <td>User profile</td>
+      <td>For manual tests only: any additional requirements, such as language skills, use of AT etc.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="selector">Selector</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p><code class="highlighter-rouge">video</code> element containing a <code class="highlighter-rouge">track</code> attribute</p>
+
+<p>For each selected item, go through the following steps:</p>
+
+<h3 id="step-1">Step 1</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Track element contains <code class="highlighter-rouge">kind</code> attribute with value <code class="highlighter-rouge">captions</code></p>
+
+<p>If the step returns true, go to step 3 with the value of <code class="highlighter-rouge">src</code></p>
+
+<h3 id="step-2">Step 2</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Track element contains <code class="highlighter-rouge">kind</code> attribute with value <code class="highlighter-rouge">subtitles</code></p>
+
+<p><strong>Note</strong>: success criterion doesn’t take into account language changes. So it is valid to have spoken text in language 1, subtitles in language 2 and page content in language 3. We prefer captions as they include non-spoken text as well</p>
+
+<h3 id="step-3">Step 3</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p><code class="highlighter-rouge">src</code> contains file</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC 1.2.2 video</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>no caption file provided with the video</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-4">Step 4</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>File content contains time codes and text</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC 1.2.2 video</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>empty caption file provided with the video</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-5">Step 5</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>file contains valid time and text combinations</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC 1.2.2 video</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>no valid caption data provided with the video</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-6">Step 6</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>For each spoken audio fragment a timecode and text exists</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC 1.2.2 video</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>Not all dialogs are covered in the captions</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-7">Step 7</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>For each spoken audio fragment the content of the spoken text has the same meaning as the caption text</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC 1.2.2 video</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>The text of the captions doesn’t correspond to the spoken text</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-8">Step 8</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Check to see is a speaker is presented in a fixed frame with unchanging background (‘talking head’ video).</p>
+
+<p>For each frame check if the image is similar to the other frames.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC 1.2.2 video</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>NOTE: not sure if we should add this step, but if this step can be done fully automatic with frame scanning, we can skip additional manual steps.</p>
+
+<h3 id="step-9">Step 9</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#manual">manual</a></p>
+
+<p>Check for each sound if it is important and has a timecode and descriptive text</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC 1.2.2 video</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>Important sound not explained in the caption</td>
+    </tr>
+    <tr>
+      <td>Pointer</td>
+      <td>video-id and timecode</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-10">Step 10</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#manual">manual</a></p>
+
+<p>Check for each background fragment if it is important and has a captioned text</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC 1.2.2 video</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>Location not explained in the caption</td>
+    </tr>
+    <tr>
+      <td>Pointer</td>
+      <td>videoid and timecode</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-11">Step 11</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#manual">manual</a></p>
+
+<p>Check for each speaker fragment if it has a captioned identification</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC 1.2.2 video</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>Speaker not identified in the captions</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-12">Step 12</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#manual">manual</a></p>
+
+<p>Check for each emotion if it is important and has a captioned text</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC 1.2.2 video</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>Emotion not explained in the caption</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC 1.2.2 video</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="../draft-tests/SC1-2-2-video-element.test.html">Test cases</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC1-2-2-video-element">Known issues</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_drafts/SC1-2-2-video-element.md">Previous versions</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC1-2-2-video-element.md">Propose an update</a></li>
+</ul>
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

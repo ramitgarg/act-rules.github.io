@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Rule: SC2-4-4-Link Purpose - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Background">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC2-4-4-Link%20Purpose.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Rule: SC2-4-4-Link Purpose</h1>
+  
+
+  
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-04-17T00:25:32+05:30" itemprop="datePublished">Apr 17, 2018</time></p>
+
+
+
+
+
+
+
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html#pdlinkcontextdef">programmatically determined link context</a></li>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/">H30: Providing link text that describes the purpose of a link for anchor elements</a></li>
+  <li><a href="http://www.w3.org/TR/wai-aria/roles#textalternativecomputation">Accessible Name Calculation algorithm</a></li>
+  <li><a href="http://www.w3.org/TR/html-aapi/#a-element">HTML to Platform Accessibility APIs Implementation Guide</a> (section 6.10)</li>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/ARIA7">ARIA7: Using aria-labelledby for link purpose</a></li>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/ARIA8">ARIA8: Using aria-label for link purpose</a></li>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/H77">H77: Identifying the purpose of a link using link text combined with its enclosing list item</a></li>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/H78">H78: Identifying the purpose of a link using link text combined with its enclosing paragraph</a></li>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/H79">H79: Identifying the purpose of a link in a data table using the link text combined with its enclosing table cell and associated table header cells </a></li>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/H81">H81: Identifying the purpose of a link in a nested list using link text combined with its parent list item </a></li>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/F63">F63: Failure of Success Criterion 2.4.4 due to providing link context only in content that is not related to the link</a></li>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/F89">F89 - providing null alt text on an image that is the only content of a link</a></li>
+</ul>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>This test checks for actual links, not links whose role has been mapped to other UI elements using ARIA (example role=”button”).</li>
+  <li>This test does not check for missing alt attribute for <code class="highlighter-rouge">&lt;area&gt;</code> tags in image maps, that is covered under <a href="SC2-4-4-image-map.html">SC2-4-4-image-map</a></li>
+</ul>
+
+<h2 id="test-properties">Test properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Test name</td>
+      <td>Link Purpose</td>
+    </tr>
+    <tr>
+      <td>Success Criterion</td>
+      <td>2.4.4 Link Purpose (In Context)</td>
+    </tr>
+    <tr>
+      <td>Test mode</td>
+      <td>SemiAuto</td>
+    </tr>
+    <tr>
+      <td>Test environment</td>
+      <td>HTML source or DOM</td>
+    </tr>
+    <tr>
+      <td>Test subject</td>
+      <td>Single web page</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="selector">Selector</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<ul>
+  <li>All anchor tags with an <code class="highlighter-rouge">href</code> attribute on a webpage, excluding anchor tags that have been mapped to other elements using ARIA roles.</li>
+  <li>All elements with a <code class="highlighter-rouge">role="link"</code> attribute.</li>
+</ul>
+
+<p>For each selected item, go through the following steps:</p>
+
+<h3 id="step-1---check-for-accessible-name">Step 1 - Check for Accessible Name</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>For each link, use the accessible name algorithm to derive the link’s accessible name: see <a href="http://www.w3.org/TR/html-aapi/#a-element">HTML to Platform Accessibility APIs Implementation Guide</a> - section 6.10</p>
+
+<p>If link has an <code class="highlighter-rouge">aria-labelledby</code> attribute, the link’s accessible name is the value of its associated element.</p>
+
+<p>Otherwise check for aria-label. If an <code class="highlighter-rouge">aria-label</code> attribute is present, the link’s accessible name is the text string value of that attribute.</p>
+
+<p>Otherwise use the <code class="highlighter-rouge">a</code> element subtree (value of the link content, if any). This include alt texts for images.</p>
+
+<p>Otherwise use the link’s title attribute.</p>
+
+<p>If none of the above yield a usable text string for the link: return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC2-4-4-link-text</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC2-4-4-link-text-fail1</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>No accessible name for link.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>else go to [Step 2]</p>
+
+<h3 id="step-2---check-for-uniqueness">Step 2 - Check for Uniqueness.</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Compare the calculated accessible names (see step 1) of all links on the page.</p>
+
+<p>If all accessible names are unique, return:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC2-4-4-link-text</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC2-4-4-link-text-pass1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>else go to <a href="#step-3-check-link-targets">Step 3</a></p>
+
+<h3 id="step-3---check-link-targets">Step 3 - Check Link Targets</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>The following data structure is necessary for the remaining steps in this test:</p>
+
+<ul>
+  <li>Create a group of all links whose accessible name is identical. (from here on referred to as a “group item”)</li>
+  <li>Add the group to a data structure such as a list or an array.</li>
+  <li>Repeat procedure until you have explored all the links on the page.</li>
+</ul>
+
+<p>Now you have a collection of links grouped by their accessible names. In other wordsWithin each group item, all links have the same accessible name. We know we have at least one group item, since we got past Step 2. In the remaining steps we need to check for other factors that may explain why link texts are the same, and determine whether other factors exist that distinguish link texts.</p>
+
+<ul>
+  <li>If all links in a group item point to same resource, they can have the same link text (this step).</li>
+  <li>All links within a group item have same accessible name, but their accessible description (created by use of aria-describedby attribute or the title attribute) makes the link text unique (next step).</li>
+  <li>All links within a group item have identical accessible names and descriptions, but their programmatic context is sufficient to distinguish them (step 5).</li>
+  <li>Links are ambiguous to all users (step 6).</li>
+</ul>
+
+<p>If a group item of links fails all checks, the test fails.</p>
+
+<p>Check if links with identical accessible name go to the same destination.</p>
+
+<p>If all links in a group item go to same destination, return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC2-4-4-link-text</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC2-4-4-link-text-pass2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>else go to <a href="#step-4-add-accessible-description">Step 4</a></p>
+
+<h3 id="step-4---add-accessible-description">Step 4 - Add Accessible Description</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>For each link in a group of links with identical accessible name:</p>
+
+<p>Compute the link´s accessible description (see html to platform guide, section 6.10 as referenced above).</p>
+
+<ul>
+  <li>Look for an aria-describedby attribute on a link. If present add the text of the target note to the link’s accessible description node.</li>
+  <li>If link has a non-empty title attribute that was not used as its accessible name, add value of the title attribute to the link’s accessible description.</li>
+</ul>
+
+<p>Compare links with their accessible names combined with their accessible descriptions.</p>
+
+<p>If the combination of accessible name and accessible description uniquely identifies all links in a group item, return:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC2-4-4-link-text</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC2-4-4-link-text-pass3</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>else go to <a href="#step-5-calculate-context">Step 5</a></p>
+
+<h3 id="step-5---calculate-context">Step 5 - Calculate Context</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Explore links together with their <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html#pdlinkcontextdef">programmatically determined link context</a></p>
+
+<p>This includes textual content of:</p>
+
+<ul>
+  <li>Same paragraph as link</li>
+  <li>Same list item as link</li>
+  <li>Same table cell as link (if table role is not marked with presentation)</li>
+  <li>Header cell for link’s current table cell (if table is not marked with role =”presentation”)</li>
+</ul>
+
+<p>For each link, construct a variable which contains the link’s accessible name, description and context. Repeat the uniqueness check.</p>
+
+<p>If all links in a group item, considered together with their computed accessible description and programatically determinable context are unique: Return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC2-4-4-link-text</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC2-4-4-link-text-pass4</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>else go to <a href="#step-6-links-are-ambiguous-to-all-users">Step 6</a></p>
+
+<h3 id="step-6---links-are-ambiguous-to-all-users">Step 6 - Links are ambiguous to All Users</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#manual">manual</a></p>
+
+<p>(links may be ambiguous to users in general, need interactive testing).
+For all remaining links in a given group item, present them to human testers.
+Ask the testers if they can uniquely identify the purpose of each link within a group from its on-screen location or visible context.</p>
+
+<p><strong>User Input Question:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Presented item</td>
+      <td>A set of links with identical name/accessible description and context as well as their location on the webpage highlighted visually.</td>
+    </tr>
+    <tr>
+      <td>Requires context</td>
+      <td>Yes links on screen (links in visual context)</td>
+    </tr>
+    <tr>
+      <td>Requires Interaction</td>
+      <td>No (unless we recommend user activates and follows each link, which we might want to do)</td>
+    </tr>
+    <tr>
+      <td>Question</td>
+      <td>“The text description of these x links is the same. By looking at the screen, can you visually identify the purpose of these links better than the text can?</td>
+    </tr>
+    <tr>
+      <td>Help</td>
+      <td>The link text presented to you should uniquely identify the purpose of each link on the page. For these links that is not the case. Can you, by looking at the links on your screen, identify the different destinations or context of these links better than by just looking at the accessible link text?</td>
+    </tr>
+    <tr>
+      <td>repair</td>
+      <td>What would you propose as a good text description of the link, e.g. for those who can’t see  it on the screen?</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If yes return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC2-4-4-link-text</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC2-4-4-link-text-fail2</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>Link text, together with description and context, is not sufficient to identify the link purpose.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>else (link text meant to be ambiguous to all users), return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC2-4-4-link-text</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC2-4-4-link-text-pass5</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="../draft-tests/SC2-4-4-Link%20Purpose.test.html">Test cases</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC2-4-4-Link%20Purpose">Known issues</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_drafts/SC2-4-4-Link%20Purpose.md">Previous versions</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC2-4-4-Link%20Purpose.md">Propose an update</a></li>
+</ul>
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

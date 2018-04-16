@@ -1,0 +1,578 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Rule: SC1-1-1-css-image - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Description">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/rules/SC1-1-1-css-image.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Rule: SC1-1-1-css-image</h1>
+  
+
+  
+
+  
+
+
+
+  <p>Late updated: <time datetime="2018-04-17T00:25:47+05:30" itemprop="datePublished">Apr 17, 2018</time></p>
+
+
+
+  <p>Created by: <a href="https://github.com/yetanothereye">Frank Berker</a></p>
+
+
+
+
+
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:text-equiv-all">
+        Success Criterion 1.1.1 (Non-text Content)
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:text-equiv-all">
+          How to Meet 1.1.1 (Non-text Content)
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:text-equiv-all.html">
+          Understanding Success Criterion 1.1.1 (Non-text Content)
+        </a></li>
+      </ul>
+    </li>
+  
+  </ul>
+
+
+<h2 id="description">Description</h2>
+
+<p>This test checks that images do not convey information when added to the page using CSS. If the image conveys information, it is checked for a description provided in text nearby.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li><a href="http://www.w3.org/WAI/GL/WCAG20-TECHS/C9">C9: Using CSS to include decorative images</a></li>
+  <li><a href="http://www.w3.org/TR/WCAG20-TECHS/F3">F3: Failure of Success Criterion 1.1.1 due to using CSS to include images that convey important information</a></li>
+  <li><a href="http://research.microsoft.com/pubs/149305/1509.pdf">Detecting Text in Natural Scenes with Stroke Width Transform</a></li>
+</ul>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>Readable characters can be formed on a space of minimum 5 x 3 pixels. This test assumes that no images are used for applying vertical text.</li>
+  <li>Additionally to the tests defined here, the image can be processed to detect shapes, symmetry or characters.</li>
+</ul>
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="selector">Selector</h3>
+
+<p>Select all elements that has one or more of the following properties, containing one or more URIs:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">object.style.background.match(url)</code></li>
+  <li><code class="highlighter-rouge">object.style.backgroundImage.match(url)</code></li>
+  <li><code class="highlighter-rouge">object.style.listStyle.match(url)</code></li>
+  <li><code class="highlighter-rouge">object.style.listStyleImage.match(url)</code></li>
+</ul>
+
+<p><em>Note that the computed style has to be analyzed. Depending on the rendering technology these can be retrieved by using <code class="highlighter-rouge">runtimeStyle</code>, <code class="highlighter-rouge">currentStyle</code> or <code class="highlighter-rouge">getComputedStyle</code>.</em></p>
+
+<p>For each selected item, go through the following steps:</p>
+
+<h3 id="step-1">Step 1</h3>
+
+<p>Check if the computed <code class="highlighter-rouge">backgroundRepeat</code> property is set and its value is other than no-repeat.</p>
+
+<p>if yes, return <a href="#step1-pass">step1-pass</a></p>
+
+<p>else, continue with <a href="#step-2">step 2</a></p>
+
+<h3 id="step-2">Step 2</h3>
+
+<p>Check if the height of all images added by the background-property is less or equals 5 pixels or its width is less or equals 3 pixels.</p>
+
+<p>if yes, return <a href="#step2-pass">step2-pass</a></p>
+
+<p>else, continue with <a href="#step-3">step 3</a></p>
+
+<h3 id="step-3">Step 3</h3>
+
+<p>Check if the element is really used for solely decorative purposes.</p>
+
+<p>To prepare the element for presentation to the user, all calculated CSS properties of the element must be stored and its child elements must be removed.</p>
+
+<p>If the user is not available, return <a href="#step3-cannottell">step3-cannottell</a></p>
+
+<p><strong>User Input Question:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>highlight</td>
+      <td>Element containing background images without child elements but with previously calculated CSS properites applied.</td>
+    </tr>
+    <tr>
+      <td>question</td>
+      <td>Is this image solely for decorative purposes?</td>
+    </tr>
+    <tr>
+      <td>help</td>
+      <td>Answer with ‘Yes’, if it is a decorative image such as a separator, line or menu-background solely used for layout purposes or an image that doesn’t convey information useful for understanding the content of the page.</td>
+    </tr>
+    <tr>
+      <td>context</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>user_profile</td>
+      <td>Requires sight</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if yes, return <a href="#step3-pass">step3-pass</a></p>
+
+<p>else continue with <a href="#step-4">step 4</a></p>
+
+<h3 id="step-4">Step 4</h3>
+
+<p>Get the current elements nearest ancestor with its display style set to block.
+Get any text from this ancestor, including shadow dom text and assign it to variable T1.</p>
+
+<p>To prepare the element for presentation to the user, all calculated CSS properties of the element must be stored and its child elements must be removed.</p>
+
+<p>If the user in not available, return <a href="#step4-cannottell">step4-cannottell</a></p>
+
+<p><strong>User Input Question:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>highlight</td>
+      <td>Element containing background images without child elements but with previously calculated CSS properites applied.</td>
+    </tr>
+    <tr>
+      <td>question</td>
+      <td>Does T1 sufficiently describe the element?</td>
+    </tr>
+    <tr>
+      <td>help</td>
+      <td>If the element shows content, which is redundant T1, answer ‘Yes’. Otherwise, or if the element provides any functionality, answer ‘No’.</td>
+    </tr>
+    <tr>
+      <td>repair</td>
+      <td>If no, could you suggest a sufficient textual alternative?</td>
+    </tr>
+    <tr>
+      <td>user_profile</td>
+      <td>Requires sight</td>
+    </tr>
+    <tr>
+      <td>context</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>interaction</td>
+      <td>yes</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>if yes, return <a href="#step4-pass">step4-pass</a></p>
+
+<p>else return <a href="#step4-fail">step4-fail</a></p>
+
+<h2 id="outcome">Outcome</h2>
+
+<p>The resulting assertion is as follows,</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>Assertion</td>
+    </tr>
+    <tr>
+      <td>test</td>
+      <td>auto-wcag:SC1-1-1-css-image</td>
+    </tr>
+    <tr>
+      <td>subject</td>
+      <td><em>the selected element</em></td>
+    </tr>
+    <tr>
+      <td>mode</td>
+      <td>auto-wcag:semi-automatic</td>
+    </tr>
+    <tr>
+      <td>result</td>
+      <td><One TestResult="" from="" below=""></One></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step1-pass">step1-pass</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Passed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step2-pass">step2-pass</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Passed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step3-cannottell">step3-cannottell</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>CannotTell</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>It is not possible to determine if the image is solely for decorative purposes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step3-pass">step3-pass</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Passed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step4-cannottell">step4-cannottell</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>CannotTell</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>It is not possible to determine if a suitable description is provided in text nearby</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step4-pass">step4-pass</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Passed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step4-fail">step4-fail</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Failed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>The image added by CSS is not decorative and not described in adjacent text.</td>
+    </tr>
+    <tr>
+      <td>info</td>
+      <td>Suggestions for textual alternative: {collection of repair-answers}</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="../rule-tests/SC1-1-1-css-image.test.html">Test cases</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC1-1-1-css-image">Known issues</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_rules/SC1-1-1-css-image.md">Previous versions</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC1-1-1-css-image.md">Propose an update</a></li>
+</ul>
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

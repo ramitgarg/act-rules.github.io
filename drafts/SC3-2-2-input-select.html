@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Rule: SC3-2-2-input-select - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Description">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC3-2-2-input-select.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Rule: SC3-2-2-input-select</h1>
+  
+
+  
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-04-17T00:25:32+05:30" itemprop="datePublished">Apr 17, 2018</time></p>
+
+
+
+
+
+
+
+
+<h2 id="description">Description</h2>
+
+<p>This test checks form controls outside form elements.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G13">G13: Describing what will happen before a change to a form control that causes a change of context to occur is made</a></li>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/H84">H84: Using a button with a select element to perform an action</a></li>
+  <li><a href="http://wiki.egovmon.no/wiki/SC3.2.2#Element_input.5B.40type.3D.27radio.27.5D.2C_input.5B.40type.3D.27checkbox.27.5D.2C_or_select_not_contained_in_a_form_element">eGovMon test for G13</a></li>
+</ul>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>This test case assumes that forms controls outside <code class="highlighter-rouge">&lt;form&gt;</code> elements use another way to submit the form data.</li>
+</ul>
+
+<h2 id="test-properties">Test properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Success Criterion</td>
+      <td>3.2.2 On Input</td>
+    </tr>
+    <tr>
+      <td>Test mode</td>
+      <td>SemiAuto</td>
+    </tr>
+    <tr>
+      <td>Test environment</td>
+      <td>DOM (+ server connection ???)</td>
+    </tr>
+    <tr>
+      <td>Test subject</td>
+      <td>Single web page</td>
+    </tr>
+    <tr>
+      <td>User expertise and skills</td>
+      <td>Basic understanding of HTML and WCAG</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="selector">Selector</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Select <code class="highlighter-rouge">input[@type='radio']</code>, <code class="highlighter-rouge">input[@type='checkbox']</code>, or select not contained in a form element.</p>
+
+<p>For each selected item, go through the following steps:</p>
+
+<h3 id="step-1">Step 1</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Does the form control have a non-empty event-handler attribute?</p>
+
+<p>If no, return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC3-2-2-input-select</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC3-2-2-input-select-pass1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If yes, continue with <a href="#step-2">Step 2</a>.</p>
+
+<h3 id="step-2">Step 2</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#manual">manual</a></p>
+
+<p><strong>User Input Question:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Presented item</td>
+      <td>selected form controls</td>
+    </tr>
+    <tr>
+      <td>Requires context</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>Requires Interaction</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>Question</td>
+      <td>Is there an explanation of what will happen when the control is changed available prior to the controls activation?</td>
+    </tr>
+    <tr>
+      <td>Help</td>
+      <td>Changing a control means checking a checkbox or changing the selected option in a list control. If the web page contains an explanation what will happen when a control is changed <em>before the form</em>, please answer “yes”. Else, answer “no”.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>If no, return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC3-2-2-input-select</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC3-2-2-form-input-select-fail1</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>Explanation about context change missing.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Else, return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC3-2-2-input-select</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC3-2-2-input-select-pass2</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="../draft-tests/SC3-2-2-input-select.test.html">Test cases</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC3-2-2-input-select">Known issues</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_drafts/SC3-2-2-input-select.md">Previous versions</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC3-2-2-input-select.md">Propose an update</a></li>
+</ul>
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

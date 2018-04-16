@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Rule Design - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/pages/design/rule-design.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Rule Design</h1>
+  
+
+  <p>The Auto-WCAG rule design builds on WCAG 2.x and its supporting documents. To achieve the Auto-WCAG goals the following approach is suggested:</p>
+
+<ol>
+  <li>
+    <p><strong><a href="#rule-properties">Rule properties</a></strong>: Define the test subject and its environment, as well as other meta data.</p>
+  </li>
+  <li>
+    <p><strong>Description</strong>: Brief description of what the rule does</p>
+  </li>
+  <li>
+    <p><strong>Background</strong>: A list of resources that support the workings of the rule.</p>
+  </li>
+  <li>
+    <p><strong><a href="#assumptions">Assumptions</a></strong>: Explicitly state all assumptions made by the rule to ensure accountability of the results.</p>
+  </li>
+  <li>
+    <p><strong><a href="#applicability">Applicability</a></strong>: Identify which elements on a page (if any) are to be tested using the rule.</p>
+  </li>
+  <li>
+    <p><strong><a href="#expectations">Expectations</a></strong>: Assert what must be true about the target elements, in order for them to pass the rule.</p>
+  </li>
+</ol>
+
+<h2 id="rule-properties">Rule Properties</h2>
+
+<h3 id="rule-name-and-identifier">Rule name and identifier</h3>
+
+<p>The rule must have a unique name, preferably a two or three word topic, as well as an identifier. This uses the following format: <strong>SC#-#-#-identifier</strong></p>
+
+<ul>
+  <li>
+    <p><strong>SC#-#-#</strong>: This is an identifier for the criterion to which the test case applies. #-#-# stands for the number of that criterion, such as SC4-1-2.</p>
+  </li>
+  <li>
+    <p><strong>+SC#-#-#</strong>: This can be used if the test case applies to multiple success criteria, such as SC1-1-1+SC4-1-2-identifier. The numbers are in the same order as they are used in WCAG.</p>
+  </li>
+  <li>
+    <p><strong>identifier</strong>: This must be a lower case identifier of the test, preferably no more then 3 words. It can only contain alphanumeric values or a dash (-).</p>
+  </li>
+</ul>
+
+<h3 id="test-aspects">Test aspects</h3>
+
+<p>A test aspect is a part of a test subject that must be available in order to properly run the test. The ACT Rules Format defines the following:</p>
+
+<ul>
+  <li>HTTP Messages: All messages sent through HTTP(S)</li>
+  <li>DOM Tree: The tree that HTML is parsed into</li>
+  <li>CSS Styling: CSS applied to lay out and style the DOM Tree</li>
+  <li>Accessibility Tree: The tree that user agents expose to the accessibility API</li>
+</ul>
+
+<p>Other aspects may be necessary for testing. These can be added as long as they are sufficiently defined.</p>
+
+<h3 id="authors">Authors</h3>
+
+<p>Names of the Authors. These must be an exact match of names in <code class="highlighter-rouge">_data/contributors.yml</code>.</p>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<p>Many accessibility evaluations (especially automated tools) make assumptions about the structure of the web content and the way in which (web) technologies are used. Such assumptions influence the outcome of a test. If the assumptions are made implicitly, it will be difficult to interpret the test result. Comparability and reproduction of results by other tools are limited. Therefore the Auto-WCAG test include a list of all assumptions made by the design of the rule.</p>
+
+<blockquote>
+  <p><em>For example:</em> A rule for 1.4.1 Use of Color has to make an assumption with CSS-properties are used to make a link visually evident. Typically something like <code class="highlighter-rouge">background</code>, <code class="highlighter-rouge">border</code>, <code class="highlighter-rouge">color</code>, <code class="highlighter-rouge">font</code>, or <code class="highlighter-rouge">text-decoration</code>.</p>
+</blockquote>
+
+<p>While most assumptions relate to the rule itself, there are some assumptions that apply at other stages of the evaluation:</p>
+
+<ul>
+  <li>
+    <p>It is assumed that the tested web page is the one that has to conform to WCAG 2.0 and that there is no <a href="http://www.w3.org/TR/WCAG20/#conforming-alternate-versiondef">conforming alternative version</a>.</p>
+  </li>
+  <li>
+    <p>It is assumed that the following technologies are accessibility supported: HTML, CSS, WAI-ARIA, … (See also Auto-WCAG’s <a href="accessibility-support.html">explanation on Accessibility Support</a>).</p>
+  </li>
+</ul>
+
+<h2 id="applicability">Applicability</h2>
+
+<p>Applicability describes which (elements of) web pages should be tested using the rule. These elements are known as test targets. Applicability must be written in plain language, so that it can be used by QA testers. Applicability must rely on well defined properties of the technologies that are tested. For example, a rule may be applicable to all <code class="highlighter-rouge">video</code> elements, but it can not be applicable to all <code class="highlighter-rouge">object</code> elements used to show video, unless the term “video” is further defined.</p>
+
+<p>Finding objective definitions to use in rules can be difficult, if not outright impossible in some cases. The intent here is to ensure repeatability of the rule. Not everything in WCAG testing is entirely repeatable, but when it comes to rule applicability, this is a hard requirement.</p>
+
+<p>For more details, see <a href="https://w3c.github.io/wcag-act/act-rules-format.html#applicability">ACT Rules Format: Applicability</a></p>
+
+<h2 id="expectations">Expectations</h2>
+
+<p>The applicability help the testers (or test tools) identify what has to be checked. Following that, the expectations are statements that must be true for the applicable elements to pass the rule. If any of the expectations is false, than the target element failed the rule.</p>
+
+<p>Each expectation exposes a reason why an element may not meet a particular conformance requirement. The expectations can be “linked”, in that one has to be met before a second can be tested. For example, a rule testing link names may have as its first expectation “Target element has an accessible name”, and as a second expectation “Expectation 1 is true for the target element, and the accessible name describes the function of the target element”.</p>
+
+<p>For more details, see <a href="https://w3c.github.io/wcag-act/act-rules-format.html#expectations">ACT Rules Format: Expectations</a></p>
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

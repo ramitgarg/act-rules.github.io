@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Rule: SC3-2-3-navigational-links-across-pages - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Description">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC3-2-3-navigational-links-across-pages.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Rule: SC3-2-3-navigational-links-across-pages</h1>
+  
+
+  
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-04-17T00:25:32+05:30" itemprop="datePublished">Apr 17, 2018</time></p>
+
+
+
+
+
+
+
+
+<h2 id="description">Description</h2>
+
+<p>This test checks if the order of navigational components and repeated links within a set of Web pages remains consistent.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/G61">G61: Presenting repeated components in the same relative order each time they appear</a></li>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/F66">F66: Failure of Success Criterion 3.2.3 due to presenting navigation links in a different relative order on different pages</a></li>
+  <li>WCAG2 defines <a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/F66">same relative order</a> as follows: “Same relative order means that secondary navigation items may be in between the link items on some pages. They can be present without affecting the outcome of this test.”</li>
+</ul>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>This test assumes that the order of navigational elements on the page was not changed by the user.</li>
+  <li>This test assumes that comparing a page to the pages that are linked from it is sufficient to judge the applicability of the success criterion.</li>
+  <li>If one page has a different menu structure, all pages that are linked from it would get a failed result which might exaggerate the overall results and this is intentional.</li>
+  <li>This test checks only navigational components that are matched by the selector. Other navigational components like search boxes are not checked.</li>
+</ul>
+
+<h2 id="test-properties">Test properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Success Criterion</td>
+      <td>3.2.3 Consistent Navigation</td>
+    </tr>
+    <tr>
+      <td>Test name</td>
+      <td>Presentation of navigational components</td>
+    </tr>
+    <tr>
+      <td>Test mode</td>
+      <td>Automatic</td>
+    </tr>
+    <tr>
+      <td>Test environment</td>
+      <td>HTML source or DOM</td>
+    </tr>
+    <tr>
+      <td>Test subject</td>
+      <td>Multiple web pages</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="selector">Selector</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Select the following elements:</p>
+
+<ul>
+  <li>elements with <code class="highlighter-rouge">role="navigation"</code></li>
+  <li><code class="highlighter-rouge">&amp;lt;nav&amp;gt;</code> elements</li>
+  <li><code class="highlighter-rouge">&amp;lt;ul&amp;gt;</code> and <code class="highlighter-rouge">&amp;lt;ol&amp;gt;</code> elements that contain <code class="highlighter-rouge">&amp;lt;li&amp;gt;</code> elements with <a href="../pages/algoritms/internal-links.html">internal links</a> and the list does not contain any other text, images or user input elements outside of links. Sometimes the active menu item (current page) is a text and not a link. If the list contains one item that is not a link, this list should still be selected.</li>
+  <li>Lists nested within other lists are considered a single list. From them the outermost list element or nav element is selected.</li>
+</ul>
+
+<p>N1 = list of all selected elements.</p>
+
+<p>For each selected item, go through the following steps:</p>
+
+<h3 id="step-1">Step 1</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>If there are <a href="../pages/algoritms/internal-links.html">internal links</a> on the current page (P1)</p>
+
+<p>Make list of all <a href="../pages/algoritms/internal-links.html">internal links</a> and continue with <a href="#step-2">Step 2</a></p>
+
+<p>else return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Inapplicable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC3-2-3-Navigational-links-across-pages</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC3-2-3-Navigational-links-across-pages-inapplicable1</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-2">Step 2</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Download all the pages determined by the list constructed in Step 1 (P2 .. Pn).</p>
+
+<p>Apply the <a href="#selector">Selector</a> of this test case to the pages, selecting lists N2 … Nn for P2 … Pn.</p>
+
+<p>If all lists N2 … Nn are empty, return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Inapplicable</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC3-2-3-Navigational-links-across-pages</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC3-2-3-Navigational-links-across-pages-inapplicable2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Else continue with <a href="#step-3">Step 3</a>.</p>
+
+<h3 id="step-3">Step 3</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>The elements on list Nj are identified by the element type and the id of the element or the id of the first ancestor with an id. If there is no ancestor with id, the id is left empty.</p>
+
+<p>Compare N1 to N2 … Nn. (Both the element type and the id are compared.)</p>
+
+<p>If N1 does not have the same relative order as N2 … Nn, return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC3-2-3-Navigational-links-across-pages</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC3-2-3-Navigational-links-across-pages-fail1</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>Navigational components of pages are not in the same relative order.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>else continue with <a href="#step-4">Step 4</a></p>
+
+<h3 id="step-4">Step 4</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Lj = list of link texts of all the navigational links in Nj.</p>
+
+<p>Note that Lj is a flat list that contains all navigational links from page Pj in DOM order.</p>
+
+<p>Only the link text, i.e. <code class="highlighter-rouge">link.textContent</code> is extracted.
+Compare L1 to L2 … Ln.</p>
+
+<p>If L1 does not have the same relative order as L2 … Ln, return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC3-2-3-Navigational-links-across-pages</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC3-2-3-Navigational-links-across-pages-fail2</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>Navigational links of pages are not in the same relative order.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>else, return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC3-2-3-Navigational-links-across-pages</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC3-2-3-Navigational-links-across-pages-pass1</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="../draft-tests/SC3-2-3-navigational-links-across-pages.test.html">Test cases</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC3-2-3-navigational-links-across-pages">Known issues</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_drafts/SC3-2-3-navigational-links-across-pages.md">Previous versions</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC3-2-3-navigational-links-across-pages.md">Propose an update</a></li>
+</ul>
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Rule: SC1-4-1-a - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Description">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC1-4-1-a.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Rule: SC1-4-1-a</h1>
+  
+
+  
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-04-17T00:25:32+05:30" itemprop="datePublished">Apr 17, 2018</time></p>
+
+
+
+  <p>Created by: <a href="https://github.com/wilcofiers">Wilco Fiers</a></p>
+
+
+
+
+
+
+<h2 id="description">Description</h2>
+
+<p>SC1-4-1-a checks if <code class="highlighter-rouge">a</code> elements meet 1.4.1 Use of Color.</p>
+
+<p>This test checks if links within text are visually evident before they receive focus, in which case the test passes. If not, the test checks if the links have a significant contrast difference with the surrounding text. If this is the case, and if the link becomes visually evident when it receives focus and when it is hovered by a cursor, it also passes.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140311/F73.html">F73: Failure of Success Criterion 1.4.1 due to creating links that are not visually evident without color vision</a></li>
+  <li><a href="http://www.w3.org/TR/2013/NOTE-WCAG20-TECHS-20130905/G183">G183: Using a contrast ratio of 3:1 with surrounding text and providing additional visual cues on focus for links or controls where color alone is used to identify them</a></li>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140916/C15:">C15: Using CSS to change the presentation of a user interface component when it receives focus</a></li>
+  <li><a href="http://www.w3.org/TR/WCAG20/#contrast-ratiodef">Color contrast (WCAG 2.0 definition)</a></li>
+</ul>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>This test assumes that the 3:1 contrast difference between text is minimal to what would be sufficient to meet WCAG 2.0. This value is part of G183 technique, but is not specified in the 1.4.1 success criterion.</li>
+  <li>This tests assumes that one of the following shorthand CSS-properties (or the related expanded properties) is used to make the link visually evident: <code class="highlighter-rouge">background</code>, <code class="highlighter-rouge">border</code>, <code class="highlighter-rouge">color</code>, <code class="highlighter-rouge">font</code>, or <code class="highlighter-rouge">text-decoration</code>.</li>
+  <li>This test assumes that any use of border will make links sufficiently distinguishable</li>
+  <li>This test assumes that the different font is presented to the user.</li>
+</ul>
+
+<h2 id="test-properties">Test properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Test name</td>
+      <td>Inline links are distinguishable</td>
+    </tr>
+    <tr>
+      <td>Success Criterion</td>
+      <td>1.4.1 Use of Color</td>
+    </tr>
+    <tr>
+      <td>Test mode</td>
+      <td>Automatic</td>
+    </tr>
+    <tr>
+      <td>Test environment</td>
+      <td>Remote Controlled User Agent</td>
+    </tr>
+    <tr>
+      <td>Test subject</td>
+      <td>Single web page or DOM document fragment</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Note</em>: Tools only able to process HTML + CSS can implement the first two step and ignore step 3 through 4, returning ‘cantTell’ instead. A tool could ask the user to perform step 3 and 4 manually, in which case the test would be semi-automatic instead.</p>
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="selector">Selector</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Select each element that matches <code class="highlighter-rouge">a[href]</code> that meets the following requirements:</p>
+
+<ul>
+  <li><code class="highlighter-rouge">link.textContent</code> is <a href="../pages/algorihms/none-empty.html">non-empty</a> text</li>
+  <li>Its nearest ancestor with its display style set to block has:
+    <ul>
+      <li>A different text color then the text color of the link</li>
+      <li>One or more child nodes of type text or containing text before or after the selected link</li>
+    </ul>
+  </li>
+</ul>
+
+<p>For each selected item, go through the following steps:</p>
+
+<h3 id="step-1">Step 1</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Determine computed style for the link and of the surrounding text. The background must be determined by finding the closest ancestor element with the css background property set, either containing an image or a color with a transparency great than 0.</p>
+
+<ul>
+  <li><strong>Step 1a:</strong> If the <code class="highlighter-rouge">border</code> is visible (<code class="highlighter-rouge">border-with</code> is greater than 0, and <code class="highlighter-rouge">border-style</code> is not none, and <code class="highlighter-rouge">border-color</code> is not transparent) or the <code class="highlighter-rouge">background-image</code> is set, return <em>true</em></li>
+  <li><strong>Step 1b:</strong> Compare the style properties <code class="highlighter-rouge">font-family</code>, <code class="highlighter-rouge">font-weight</code>, <code class="highlighter-rouge">font-style</code>, <code class="highlighter-rouge">text-decoration</code> of the link, to that of the surrounding text. If any of the properties have a different value for the link as for the surrounding text, return <em>true</em></li>
+</ul>
+
+<p>If Step 1a or Step 1b was true, return:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC1-4-1-a</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC1-4-1-a-pass1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Else continue with <a href="#step-2">Step 2</a></p>
+
+<h3 id="step-2">Step 2</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Determine <code class="highlighter-rouge">color</code> and <code class="highlighter-rouge">background-color</code> of the link and the surrounding text and compute&lt;</p>
+
+<ol>
+  <li>C1 = contrast difference of surrounding text <code class="highlighter-rouge">color</code> and link <code class="highlighter-rouge">color</code></li>
+  <li>C2 = contrast difference surrounding text <code class="highlighter-rouge">background-colo</code> and link <code class="highlighter-rouge">background-color</code></li>
+</ol>
+
+<p>If C1 or C2 is more than 3:1, continue to <a href="#step-3">Step 3</a></p>
+
+<p>Else return</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC1-4-1-a</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC1-4-1-a-fail1</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>The link is not sufficiently distinguishable from the surrounding text</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-3">Step 3</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Give focus to the link.</p>
+
+<p>(As in step 1:) Determine computed style for the link and the surrounding text. The background must be determined by finding the closest ancestor element with its background set.</p>
+
+<ul>
+  <li><strong>Step 3a:</strong> If the <code class="highlighter-rouge">border</code> is visible (<code class="highlighter-rouge">border-with</code> is greater than 0, and <code class="highlighter-rouge">border-style</code> is not none, and <code class="highlighter-rouge">border-color</code> is not transparent) or the <code class="highlighter-rouge">background-image</code> is set, return <em>true</em></li>
+  <li><strong>Step 3b:</strong> Compare the style properties <code class="highlighter-rouge">font-family</code>, <code class="highlighter-rouge">font-weight</code>, <code class="highlighter-rouge">font-style</code>, <code class="highlighter-rouge">text-decoration</code> of the link, to that of the surrounding text. If any of the properties have a different value for the link as for the surrounding text, return <em>true</em></li>
+</ul>
+
+<p>If Step 3a or Step 3b was true: Continue to <a href="#step-4">Step 4</a></p>
+
+<p>Else return:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC1-4-1-a</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC1-4-1-a-fail2</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>The link is not sufficiently distinguishable from the surrounding text when it receives focus.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-4">Step 4</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Remove the focus from the link.</p>
+
+<p>Move the mouse pointer to the center of the link.
+(As in step 1:) Determine computed style for the link and the surrounding text. The background must be determined by finding the closest ancestor element with its background set.</p>
+
+<ul>
+  <li><strong>Step 4a:</strong> If the <code class="highlighter-rouge">border</code> is visible (<code class="highlighter-rouge">border-with</code> is greater than 0, and <code class="highlighter-rouge">border-style</code> is not none, and <code class="highlighter-rouge">border-color</code> is not transparent) or the <code class="highlighter-rouge">background-image</code> is set, return <em>true</em></li>
+  <li><strong>Step 4b:</strong> Compare the style properties <code class="highlighter-rouge">font-family</code>, <code class="highlighter-rouge">font-weight</code>, <code class="highlighter-rouge">font-style</code>, <code class="highlighter-rouge">text-decoration</code> of the link, to that of the surrounding text. If any of the properties have a different value for the link as for the surrounding text, return <em>true</em></li>
+</ul>
+
+<p>If Step 4a or Step 4b was true, return:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC1-4-1-a</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC1-4-1-a-pass2</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Else return:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC1-4-1-a</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC1-4-1-a-fail3</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>The link is not sufficiently distinguishable from the surrounding text when it is hovered over with the mouse pointer.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="../draft-tests/SC1-4-1-a.test.html">Test cases</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC1-4-1-a">Known issues</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_drafts/SC1-4-1-a.md">Previous versions</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC1-4-1-a.md">Propose an update</a></li>
+</ul>
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

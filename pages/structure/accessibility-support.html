@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Accessibility Support - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/pages/structure/accessibility-support.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Accessibility Support</h1>
+  
+
+  <p><strong>Draft</strong></p>
+
+<h2 id="accessibility-support-documentsection">Accessibility Support (document/section)</h2>
+
+<p>This research effort (test suite, document, application) is focused on fostering and promoting the concept of developers ‘'’Building to Spec’’’ both semantically and syntactically, rather than building to a current browser or assistive technologies (user-agent/AT) limited implementation support of specifications - or some version of jury-rigging or optimizing code to favor one UA/AT over another. Specifically AUTO-WCAGs testing rules are defined by the current specifications for WCAG2, HTML4, HTML5, (CSS3 ?) and ARIA1.</p>
+
+<p>As this effort matures and new technologies reach CR, they will included/added to data that governs the AUTO-WCAG test rules.</p>
+
+<p>Note that as these new CR specs (HTML5, ARIA1) gain wider support on the web, the WCAG Working Group at the same time, regularly releases (approx. every 6 months) both the WCAG 2 Techniques/Failures and Understanding WCAG 2 documents, with new content that is relevant to those newer specs. Additionally the new content and techniques address previous poorly supported disability groups (Cognitive) as well as changing technology delivery methods (Mobile).</p>
+
+<p>“Accessibility supported” relates to support by user agents (including assistive technologies) of particular ways of using Web technologies. Uses of Web technologies that are accessibility supported will work with assistive technologies and access features in mainstream user agents (browsers and players etc.).</p>
+
+<h2 id="failurewarning-blurb">Failure/Warning Blurb</h2>
+
+<p>For the very poorly supported HTML 5 and ARIA elements/attributes/etc - thus far, components of the test suite that contain them as validating items should have a Note (in the failure or warning) that says something like “This &lt;element, attributes, etc&gt; does not currently have much user agent support, specifically in the <browser name="" or="" AT="">. It is recommended that you should either;</browser></p>
+
+<ol>
+  <li>switch to an element that has broader support today - or -</li>
+  <li>accept this failure/warning (as a known issue) hoping/knowing that when deployed this &lt;element, attributes, etc&gt; is expected to have broader support and more-so, over the lifespan of the content.”</li>
+</ol>
+
+<p>In this fashion you are building, as we are, to spec - not to bugs (or as yet supported components) in UA/AT.</p>
+
+<h2 id="web-content-and-at-interoperability">Web Content and AT Interoperability</h2>
+
+<h3 id="two-key-wcag-2-concepts">Two Key WCAG 2 Concepts</h3>
+
+<h3 id="working-together-accessibility-support--programmatically-determinable">Working Together: Accessibility Support &amp; Programmatically Determinable</h3>
+
+<p>For content created with digital web technologies (e.g., HTML, CSS, JavaScript, PDF, Media, GIF, MPEG, Scripts, SVG, Flash, etc.) to be accessible to people with different types of disabilities, it is essential that the content created and the technologies chosen MUST work with the accessibility features of browsers, players, other UA/AT.</p>
+
+<p>The two concepts work together to ensure that information can be presented to the user by user agents including assistive technologies. Developers must rely only on uses of technologies that are known to be accessibility-supported — and must use them properly in order for the information to be programmatically determinable — and hence presentable, by assistive technologies and user agents to users with disabilities.</p>
+
+<h3 id="plain-language-version-of-this-requirement">Plain Language version of this Requirement</h3>
+
+<p>There are two concepts that must work together to ensure that information can be presented to the user of AT in an Accessible manner.</p>
+
+<ol>
+  <li>Authors must rely only on using technologies that are accessibility-supported - and -</li>
+  <li>Authors must use those technologies properly in order for the information to be programmatically determinable - and hence presentable, by AT (and user agents) to users with disabilities</li>
+</ol>
+
+<h4 id="1-programmatically-determinable">1. Programmatically Determinable</h4>
+
+<p>Content: MUST Work with AT:</p>
+
+<p>Five SC require that content must be “programmatically determinable.” This means that the content is authored in such a way that user agents, including assistive technologies, can access the information.</p>
+
+<ul>
+  <li>1.3.1: Info and Relationships</li>
+  <li>1.3.2: Meaningful Sequence</li>
+  <li>3.1.1: Language of Page</li>
+  <li>3.1.2: Language of Parts (AA)</li>
+  <li>4.1.2: Name, Role, Value</li>
+</ul>
+
+<p>“Programmatically determined” relates to the information in Web Content. If technologies that are accessibility supported are used properly, then assistive technologies and user agents can access the information in the content (i.e., programmatically determine the information in the content) and present it to the user.</p>
+
+<h4 id="2-accessibility-support">2. Accessibility Support</h4>
+
+<p>Technology Used: MUST Work with AT &amp; Accessibility Features of OS and UA:</p>
+
+<p>Using a technology in a way that is “accessibility supported” means choosing technologies that render and deliver content in such a way that is known to work with AT and the accessibility features of operating systems, browsers, content players, for an intended environment (internet, intranet, application, native app).</p>
+
+<p>“Accessibility supported” relates to support by user agents (including assistive technologies) of particular ways of using Web technologies. Uses of Web technologies that are accessibility supported will work with assistive technologies and access features in mainstream user agents (browsers and players etc.).</p>
+
+<p><strong>Note</strong>: Both Section 508 and WCAG require electronic stuff to ‘Work with AT’.</p>
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

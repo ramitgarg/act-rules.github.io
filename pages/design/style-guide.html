@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Auto-WCAG Rules Style Guide - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/pages/design/style-guide.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Auto-WCAG Rules Style Guide</h1>
+  
+
+  <p>This style guide provides instructions on how to formulate and format your rules. <strong><a href="rule-design.html">Learn how to design a rule</a></strong>, before starting with this guide.</p>
+
+<h2 id="markdown">Markdown</h2>
+
+<p>Rules are written in markdown, specifically GitHub Flavored Markdown (GFM). Markdown is a markup language designed for easy readability. It is a way to formalize the way many people would add structure to their page if they were using a plain text format. For example, an empty line to indicate the start of a new paragraph, or use of <code class="highlighter-rouge">-</code> or <code class="highlighter-rouge">*</code> or <code class="highlighter-rouge">1.</code>, <code class="highlighter-rouge">2.</code>, etc. at the beginning of a line to indicate an unordered or ordered list.</p>
+
+<p>The markdown files will be presented in two different places. On the Auto-WCAG Rules website, which uses the Kramdown library to convert the markdown to HTML. On the GitHub project the documents can also be used. This means that the rules are processed by two similar <em>but slightly different</em> markdown libraries.</p>
+
+<h2 id="formatting-and-language">Formatting And Language</h2>
+
+<ul>
+  <li>
+    <p>All block level components (lists, paragraphs, headings, tables, etc.) should be separated by a <strong>single</strong> empty line. Kramdown (unlike GitHub) occasionally concatenates tables and lists to other items if this isn’t done.</p>
+  </li>
+  <li>
+    <p>References to HTML elements and attributes should always use the back ticks character, followed by either the word element(s) or attribute(s). Example: <strong>`div` element</strong> and <strong>`alt` attribute</strong></p>
+  </li>
+</ul>
+
+<h2 id="referencing-other-documents">Referencing Other Documents</h2>
+
+<p>In order to maximize readability, don’t use direct links in paragraphs. Use <code class="highlighter-rouge">[link text][ref]</code> instead of <code class="highlighter-rouge">[link text](url)</code>. <em>(Note the brackets are different.)</em> When a link stands on it’s own, or is the only text in a list item, this is not a problem. Links used multiple times on the same page should also use references.</p>
+
+<p>The reference should be a abbreviation of no more than 6 characters, written in all capitals. The expanded reference is placed together with the URL at the bottom of the document, like so:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[TXTALT]: ../pages/algorithms/text-alt.html
+</code></pre></div></div>
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

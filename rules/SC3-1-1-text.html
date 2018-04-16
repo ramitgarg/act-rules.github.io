@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Rule: SC3-1-1-text - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Description">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/rules/SC3-1-1-text.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Rule: SC3-1-1-text</h1>
+  
+
+  
+
+  
+
+
+
+  <p>Late updated: <time datetime="2018-04-17T00:25:47+05:30" itemprop="datePublished">Apr 17, 2018</time></p>
+
+
+
+  <p>Created by: Annika Nietzio</p>
+
+
+
+
+
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:meaning-doc-lang-id">
+        Success Criterion 3.1.1 (Language of Page)
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:meaning-doc-lang-id">
+          How to Meet 3.1.1 (Language of Page)
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:meaning-doc-lang-id.html">
+          Understanding Success Criterion 3.1.1 (Language of Page)
+        </a></li>
+      </ul>
+    </li>
+  
+  </ul>
+
+
+<h2 id="description">Description</h2>
+
+<p>This test checks that the primary language of the content is specified correctly by the language attribute of the <code class="highlighter-rouge">html</code> element.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/H57"> H57: Using language attributes on the html element</a></li>
+  <li><a href="http://wiki.egovmon.no/wiki/SC3.1.1">eGovMon test for H57</a></li>
+  <li><a href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the Identification of Languages</a></li>
+  <li><a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">IANA language subtag registry</a></li>
+</ul>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>The comparison of language-code does not look for exact matches. Technique H57 states: “Use of the primary code is important for this technique.” which means that region subtags can be ignored in the comparison, i.e. “en-GB” is the same as “en”.</li>
+  <li>This test assumes that the language of the web page has been specified in the <code class="highlighter-rouge">lang</code> attribute of the <code class="highlighter-rouge">html</code> element (see also <a href="SC3-1-1-html.html">SC3-1-1-html</a>). The <code class="highlighter-rouge">xml:lang</code> attribute is not taken into account because tests have shown, that <code class="highlighter-rouge">xml:lang</code> is ignored by screenreaders.</li>
+  <li>There are different possible definitions of “primary language” of a web page:
+    <ol>
+      <li>language of the majority of content</li>
+      <li>language of interface</li>
+      <li>language of the intended audience</li>
+    </ol>
+  </li>
+</ul>
+
+<p>This test does not prescribe which of these definitions to use as long as one of them is used.</p>
+
+<p><em>Note that all language changes must be marked correctly independent of the chosen definition. This is covered by 3.1.2 Language of Parts.</em></p>
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="selector">Selector</h3>
+
+<p>Select all elements that matches the following CSS selector:</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>*[lang]
+</code></pre></div></div>
+
+<p>For each selected item, go through the following steps:</p>
+
+<p>Use the value of the lang attribute as L1</p>
+
+<h3 id="step-1">Step 1</h3>
+
+<p>Select a continuous run of text from one or more consecutive <code class="highlighter-rouge">p</code> elements. If no <code class="highlighter-rouge">p</code> elements exist, select any text from the body of the web page. The text should be at least 300 characters in length and not contain any language changes, i.e. <code class="highlighter-rouge">lang</code> attributes on the element or its parent. If no such text is found, continue with <a href="#-step 2">Step 2</a>.</p>
+
+<p>Use a <a href="../pages/algorithms/lang-identification.html">language identification algorithm</a> to check if L1 is the language of the selected text.</p>
+
+<p>If yes, return <a href="#step1-pass">step1-pass</a></p>
+
+<p>Else continue with <a href="#step-2">Step 2</a>.</p>
+
+<h3 id="step-2">Step 2</h3>
+
+<p>Present the page to the user.</p>
+
+<p>If the user is not available, return <a href="#step2-cannottell">step2-cannottell</a></p>
+
+<p><strong>User Input Question:</strong></p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>highlight</td>
+      <td> </td>
+    </tr>
+    <tr>
+      <td>question</td>
+      <td>Is L1 the primary language of this page?</td>
+    </tr>
+    <tr>
+      <td>help</td>
+      <td>“Primary language” means the language of the majority of the text on the page or the language of the interface (navigation menu etc.) of the page.</td>
+    </tr>
+    <tr>
+      <td>user_profile</td>
+      <td>Understand the primary language</td>
+    </tr>
+    <tr>
+      <td>context</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>interaction</td>
+      <td>no</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><em>Note that language code L1 should be presented in human readable form, e.g. using the description from the <a href="http://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">language subtag registry</a>.</em></p>
+
+<p>If yes, return <a href="#step2-pass">step2-pass</a></p>
+
+<p>Else return <a href="#step2-fail">step2-fail</a></p>
+
+<h2 id="outcome">Outcome</h2>
+
+<p>The resulting assertion is as follows,</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>Assertion</td>
+    </tr>
+    <tr>
+      <td>test</td>
+      <td>auto-wcag:SC3-1-1-text</td>
+    </tr>
+    <tr>
+      <td>subject</td>
+      <td><em>the selected element</em></td>
+    </tr>
+    <tr>
+      <td>mode</td>
+      <td>auto-wcag:semi-automatic</td>
+    </tr>
+    <tr>
+      <td>result</td>
+      <td><One TestResult="" from="" below=""></One></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step1-pass">step1-pass</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Passed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step2-cannottell">step2-cannottell</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>CannotTell</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>It is not possible to determine if the primary language of the page is specified correctly.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step2-pass">step2-pass</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Passed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step2-fail">step2-fail</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Failed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>The primary language of the page is not specified correctly.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="../rule-tests/SC3-1-1-text.test.html">Test cases</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC3-1-1-text">Known issues</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_rules/SC3-1-1-text.md">Previous versions</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC3-1-1-text.md">Propose an update</a></li>
+</ul>
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

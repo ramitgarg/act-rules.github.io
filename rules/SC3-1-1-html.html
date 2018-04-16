@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Rule: SC3-1-1-html - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Description">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/rules/SC3-1-1-html.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Rule: SC3-1-1-html</h1>
+  
+
+  
+
+  
+
+
+
+  <p>Late updated: <time datetime="2018-04-17T00:25:47+05:30" itemprop="datePublished">Apr 17, 2018</time></p>
+
+
+
+  <p>Created by: Annika Nietzio</p>
+
+
+
+
+
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:meaning-doc-lang-id">
+        Success Criterion 3.1.1 (Language of Page)
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:meaning-doc-lang-id">
+          How to Meet 3.1.1 (Language of Page)
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:meaning-doc-lang-id.html">
+          Understanding Success Criterion 3.1.1 (Language of Page)
+        </a></li>
+      </ul>
+    </li>
+  
+  </ul>
+
+
+<h2 id="description">Description</h2>
+
+<p>This test checks that the primary language of the web content can be programmatically determined.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/H57">H57: Using language attributes on the html element</a></li>
+  <li><a href="http://wiki.egovmon.no/wiki/SC3.1.1#Element_html">eGovMon test for H57</a></li>
+  <li><a href="http://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP 47: Tags for the Identification of Languages</a></li>
+</ul>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>The comparison of language codes does not look for exact matches. Technique H57 states: “Use of the primary code is important for this technique.” which means that region subtags can be ignored in the comparison, i.e. “en-GB” is the same as “en”.</li>
+  <li>This test checks the <code class="highlighter-rouge">lang</code> attribute of the <code class="highlighter-rouge">html</code> element. The xml:lang attribute is not taken into account because tests have shown, that xml:lang is ignored by screenreaders. (Both Jaws 15 with FF and IE and NVDA with FF go by lang attribute, xml:lang is ignored.) The <code class="highlighter-rouge">xml:lang</code> attribute is checked by a separate test: <a href="SC3-1-1-xml-lang.html">SC3-1-1-xml-lang</a>.</li>
+</ul>
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="selector">Selector</h3>
+
+<p>Select the <code class="highlighter-rouge">html</code> element.</p>
+
+<h3 id="step-1">Step 1</h3>
+
+<p>If <code class="highlighter-rouge">lang</code> attribute exists:</p>
+
+<p>L1 = value of <code class="highlighter-rouge">lang</code> attribute.</p>
+
+<p>Continue with <a href="#step-2">Step2</a>.</p>
+
+<p>else if neither <code class="highlighter-rouge">lang</code> nor <code class="highlighter-rouge">xml:lang</code> are specified, return <a href="#step1-fail">step1-fail</a></p>
+
+<p>else (only <code class="highlighter-rouge">xml:lang</code> exists)</p>
+
+<p><em>Do nothing. (This case is covered by <a href="SC3-1-1-xml-lang.html">SC3-1-1-xml-lang</a>.)</em></p>
+
+<h3 id="step-2">Step 2</h3>
+
+<p>Compare L1 to BCP 47.</p>
+
+<p>If L1 is not on the list, return <a href="#step2-fail">step2-fail</a></p>
+
+<p><em>Note that this step also fails if L1 contains only whitespace or is empty.</em></p>
+
+<p>Else, return <a href="#step2-pass">step2-pass</a></p>
+
+<h2 id="outcome">Outcome</h2>
+
+<p>The resulting assertion is as follows,</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>Assertion</td>
+    </tr>
+    <tr>
+      <td>test</td>
+      <td>auto-wcag:SC3-1-1-html</td>
+    </tr>
+    <tr>
+      <td>subject</td>
+      <td><em>the selected element</em></td>
+    </tr>
+    <tr>
+      <td>mode</td>
+      <td>auto-wcag:automatic</td>
+    </tr>
+    <tr>
+      <td>result</td>
+      <td><One TestResult="" from="" below=""></One></td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step1-fail">step1-fail</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Failed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>No language attribute found.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step2-fail">step2-fail</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Failed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td>Unknown language code.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step2-pass">step2-pass</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>type</td>
+      <td>TestResult</td>
+    </tr>
+    <tr>
+      <td>outcome</td>
+      <td>Passed</td>
+    </tr>
+    <tr>
+      <td>description</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="../rule-tests/SC3-1-1-html.test.html">Test cases</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC3-1-1-html">Known issues</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_rules/SC3-1-1-html.md">Previous versions</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC3-1-1-html.md">Propose an update</a></li>
+</ul>
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "auto-wcag",
+  "license": "https://www.w3.org/community/about/agreements/cla/",
+  "a11y-selectors": {
+    "passedSelector": "*[data-outcome=\"passed\"]",
+    "failedSelector": "*[data-outcome=\"failed\"]",
+    "inapplicableSelector": "*[data-outcome=\"inapplicable\"]"
+  },
+  "a11y-testcases": []
+}

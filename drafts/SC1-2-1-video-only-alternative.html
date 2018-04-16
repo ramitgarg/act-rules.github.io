@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Rule: SC1-2-1-video-only-alternative - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Description">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC1-2-1-video-only-alternative.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Rule: SC1-2-1-video-only-alternative</h1>
+  
+
+  
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-04-17T00:25:32+05:30" itemprop="datePublished">Apr 17, 2018</time></p>
+
+
+
+
+
+
+
+
+<h2 id="description">Description</h2>
+
+<p>This test checks captions in video elements without a track element.
+There are three different situations when a track element is not required</p>
+
+<ul>
+  <li>Video is a media alternative for text and labelled as such</li>
+  <li>Audio describing video-only content</li>
+  <li>Video contains open captions</li>
+</ul>
+
+<p>This procedure describes those situations</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-captions.html">Understanding 1.2.1 Audio-only and Video-only (Prerecorded)</a></li>
+</ul>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>Test device renders HTML5 video (phantomJS doesn’t render)</li>
+</ul>
+
+<h2 id="test-properties">Test properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Success Criterion</td>
+      <td>1.2.2</td>
+    </tr>
+    <tr>
+      <td>Test mode</td>
+      <td>SemiAuto</td>
+    </tr>
+    <tr>
+      <td>Test environment</td>
+      <td>DOM and CSS + media API to render frames as images</td>
+    </tr>
+    <tr>
+      <td>Test subject</td>
+      <td>DOM document fragment</td>
+    </tr>
+    <tr>
+      <td>User expertise and skills</td>
+      <td>no prior knowledge</td>
+    </tr>
+    <tr>
+      <td>User profile</td>
+      <td>*For manual tests only:<br />any additional requirements, such as language skills, use of AT etc.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="selector">Selector</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p><code class="highlighter-rouge">video</code> element not containing a <code class="highlighter-rouge">track</code> attribute</p>
+
+<p>For each selected item, go through the following steps:</p>
+
+<h3 id="step-1">Step 1</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#manual">manual</a></p>
+
+<ul>
+  <li>Check if the main content contains text (hl: this could be an extra, automatic, step)</li>
+  <li>IF the main content doesn’t have text.
+    <ul>
+      <li>GO TO step 2</li>
+    </ul>
+  </li>
+  <li>IF the Video is labelled a media alternative for the text.
+    <ul>
+      <li>IF the Video contains more information than the text
+        <ul>
+          <li>RETURN SC122media-not-alternative-for-text</li>
+        </ul>
+      </li>
+      <li>ELSE
+        <ul>
+          <li>RETURN SC122media-alternative-for-text</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>There is currently no technology to make the label programmatically determinable.</p>
+
+<p>hl: is this - in theory - not possible using aria-labelledby or zria-describedby?</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC122media-alternative-for-text</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC122media-not-alternative-for-text</td>
+    </tr>
+    <tr>
+      <td>Info</td>
+      <td>F75: media presents more information than is presented on the page</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-2">Step 2</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#manual">manual</a></p>
+
+<ul>
+  <li>Listen to the audio</li>
+  <li>IF the audio is describing video-only content
+    <ul>
+      <li>RETURN SC122-video-only-added-audio</li>
+    </ul>
+  </li>
+</ul>
+
+<p>QUESTION: how can we automatic determine video-only content if audio is added?</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC122-video-only-added-audio</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-3">Step 3</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>First check if the video doesn’t contain text at all.</p>
+
+<ul>
+  <li>Check if any of the video frames (may use samples nth seconds) includes text</li>
+  <li>IF none
+    <ul>
+      <li>RETURN SC122-video-no-open-captions</li>
+    </ul>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC122-video-no-open-captions</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>no caption provided with the video</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-4">Step 4</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<ul>
+  <li>FOR EACH spoken audio fragment
+    <ul>
+      <li>FOR EACH of the corresponding video frames
+        <ul>
+          <li>IF the corresponding video frame contains text
+            <ul>
+              <li>NEXT audio fragment</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li>(NO text found in all frames for this audio fragment)
+  = RETURN SC122video-all-dialogs</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Probably more forgiving: 80% of spoken audio fragments should include text?</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC122video-all-dialogs</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>Not all dialogs are covered in the captions</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-5">Step 5</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#manual">manual</a></p>
+
+<ul>
+  <li>FOR EACH spoken audio fragment
+    <ul>
+      <li>IF the content of the spoken text has NOT the same meaning as the caption text
+        <ul>
+          <li>RETURN SC122-video-caption-meaning</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC122-video-caption-meaning</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>The text of the captions doesn’t correspond to the spoken text</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-6">Step 6</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>From this step we will check if non spoken visual information captured, captions are more than subtitles.</p>
+
+<p>Check to see is a speaker is presented in a fixed frame with unchanging background (‘talking head’ video).</p>
+
+<ul>
+  <li>FOR EACH frame (between intro frame and end screen)
+    <ul>
+      <li>IF the frame contains a head similar to the previous frame.
+        <ul>
+          <li>RETURN SC122-video-captions-provided</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC122-video-captions-provided</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>NOTE: not sure if we should add this step, but if this step can be done fully automatic with frame scanning, we can skip additional manual steps.</p>
+
+<h3 id="step-7">Step 7</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#manual">manual</a></p>
+
+<p>Check for each sound if it is important and has descriptive text</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC 1.2.2 video</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>Important sound not explained in the caption</td>
+    </tr>
+    <tr>
+      <td>Pointer</td>
+      <td>video-id and timecode</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-8">Step 8</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#manual">manual</a></p>
+
+<p>Check for each background fragment if it is important and the corresponding frame has a captioned text</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC 1.2.2 video</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>Location not explained in the caption</td>
+    </tr>
+    <tr>
+      <td>Pointer</td>
+      <td>videoid and timecode</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-9">Step 9</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#manual">manual</a></p>
+
+<p>Check for each speaker fragment if its frame has a captioned identification</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC 1.2.2 video</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>Speaker not identified in the captions</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="step-10">Step 10</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#manual">manual</a></p>
+
+<p>Check for each emotion if it is important and the corresponding frame has a descriptive text</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC 1.2.2 video</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>Emotion not explained in the caption</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC 1.2.2 video</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="../draft-tests/SC1-2-1-video-only-alternative.test.html">Test cases</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC1-2-1-video-only-alternative">Known issues</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_drafts/SC1-2-1-video-only-alternative.md">Previous versions</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC1-2-1-video-only-alternative.md">Propose an update</a></li>
+</ul>
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

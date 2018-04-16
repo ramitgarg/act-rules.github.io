@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Rule: SC1-3-1-radio-check - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Description">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC1-3-1-radio-check.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Rule: SC1-3-1-radio-check</h1>
+  
+
+  
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-04-17T00:25:32+05:30" itemprop="datePublished">Apr 17, 2018</time></p>
+
+
+
+
+
+
+
+
+<h2 id="description">Description</h2>
+
+<p>This test checks to see if all radio buttons and check boxes with the same name are grouped in a fieldset element.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140311/H71">H71: Providing a description for groups of form controls using fieldset and legend elements</a></li>
+  <li><a href="http://wiki.egovmon.no/wiki/SC3.3.2#ID:_H71-2">eGovMon test H71-2</a></li>
+</ul>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<p><em>no known assumptions</em></p>
+
+<h2 id="test-properties">Test properties</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Property</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Success Criterion</td>
+      <td>1.3.1 Info and Relationships</td>
+    </tr>
+    <tr>
+      <td>Test mode</td>
+      <td>Automatic</td>
+    </tr>
+    <tr>
+      <td>Test environment</td>
+      <td>DOM</td>
+    </tr>
+    <tr>
+      <td>Test subject</td>
+      <td>Single web page</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="selector">Selector</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<p>Select any radio buttons and check boxes. The following CSS selector could be used:</p>
+
+<pre><code class="language-CSS">input[type=radio], input[type=checkbox]
+</code></pre>
+
+<p>For each selected item, go through the following steps:</p>
+
+<h3 id="step-1">Step 1</h3>
+
+<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
+
+<ul>
+  <li>IF there is no list ‘checkednames’:
+    <ul>
+      <li>Create an empty list ‘checkednames’;</li>
+    </ul>
+  </li>
+  <li>IF the value of the <code class="highlighter-rouge">name</code> attribute of the selected <code class="highlighter-rouge">input</code> element exists in ‘checkednames’:
+    <ul>
+      <li>Return SC131-radiocheck-pass;</li>
+    </ul>
+  </li>
+  <li>IF the selected element is a child of a <code class="highlighter-rouge">fieldset</code> element:
+    <ul>
+      <li>Create an empty variable ‘current fieldset’;</li>
+      <li>Put the fieldset the selected element is a child from into ‘current fieldset’;</li>
+      <li>FOR every selected element:
+        <ul>
+          <li>IF the selected element has the same value in the <code class="highlighter-rouge">name</code> attribute as the current selected element:
+            <ul>
+              <li>IF the selected element is a child of the ‘current fieldset’ element:
+                <ul>
+                  <li>Continue;</li>
+                </ul>
+              </li>
+              <li>ELSE:
+                <ul>
+                  <li>Return SC131-radiocheck-fail1;</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li>ELSE:
+            <ul>
+              <li>IF the selected element is a child of the ‘current fieldset’ element:
+                <ul>
+                  <li>Return SC131-radiocheck-fail2;</li>
+                </ul>
+              </li>
+              <li>ELSE:
+                <ul>
+                  <li>Continue;</li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>Put the value of the <code class="highlighter-rouge">name</code> attribute of the selected <code class="highlighter-rouge">input</code> element into ‘checkednames’;</li>
+  <li>Return SC131-radiocheck-pass;</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Passed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC131-radiocheck</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC131-radiocheck-pass</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC131-radiocheck</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>failed to group elements in fieldset correctly</td>
+    </tr>
+    <tr>
+      <td>Info</td>
+      <td>two radio button or check box input elements with the same name are not in the same fieldset</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC131-radiocheck-fail1</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Outcome</th>
+      <th>Failed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Testcase</td>
+      <td>SC131-radiocheck</td>
+    </tr>
+    <tr>
+      <td>Error</td>
+      <td>failed to group elements in fieldsets correctly</td>
+    </tr>
+    <tr>
+      <td>Info</td>
+      <td>two radiobutton or checkbox input elements within the same fieldset don’t share the same name.</td>
+    </tr>
+    <tr>
+      <td>ID</td>
+      <td>SC131-radiocheck-fail2</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="../draft-tests/SC1-3-1-radio-check.test.html">Test cases</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC1-3-1-radio-check">Known issues</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_drafts/SC1-3-1-radio-check.md">Previous versions</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC1-3-1-radio-check.md">Propose an update</a></li>
+</ul>
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>

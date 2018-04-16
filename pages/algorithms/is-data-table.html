@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>
+     Identifying Data Tables - Auto-WCAG Rules
+  </title>
+  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+">
+
+  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/pages/algorithms/is-data-table.html">
+  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/auto-wcag/">
+        Auto-WCAG
+      </a>
+    </div>
+    <div id="navbar" class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+
+        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
+        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Creation
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/design/rule-design.html">
+              Rule design
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/review.html">
+              Review process
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/rule-template.html">
+              Rule template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/test-template.html">
+              Test case template
+            </a></li>
+            <li><a href="/auto-wcag/pages/design/style-guide.html">
+              Style guide
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            Rule Structure
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/structure/terminology.html">
+              Terminology
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/test-modes.html">
+              Test modes
+            </a></li>
+            <li><a href="/auto-wcag/pages/algorithms/">
+              Algorithms
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/aggregation.html">
+              Result aggregation
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/user-questions.html">
+              User questions
+            </a></li>
+            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+              Accessibility support
+            </a></li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
+          role="button" aria-haspopup="true" aria-expanded="false">
+            About Auto-WCAG
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/auto-wcag/pages/about.html">
+              About Us
+            </a></li>
+            <li><a href="/auto-wcag/pages/contribute.html">
+              How to contribute
+            </a></li>
+            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</nav>
+
+<main class="container">
+  
+    <h1>Identifying Data Tables</h1>
+  
+
+  <h2 id="identifying-tables-in-quailjs">Identifying Tables in QuailJS</h2>
+
+<p><em>Note</em>: This script is written by Kevin Miller and code is under MIT license.
+Most of this is informed by an academic paper (http://www2002.org/CDROM/refereed/199/). Note that these tests are ordered by ease of computation to speed things up, if a test says something is a layout table, we stop there. This is all encompassed in the quail.isDataTable method.</p>
+
+<h3 id="number-of-rows">Number of rows</h3>
+
+<p>If there is only one row, this is being used as layout.</p>
+
+<h3 id="nested-tables">Nested tables</h3>
+
+<p>If a table has another table element within it, this is probably a layout table. We do check that there is not a consistent use of child tables throughout the parent table. For example, if every third cell in the table has a table element within it, then this is probably a data table. Essentially, data tables are almost always leaf elements.</p>
+
+<h3 id="appropriate-headers">Appropriate headers</h3>
+
+<p>Next, check if there is an appropriate usage of <code class="highlighter-rouge">th</code> elements. If there is a group of <code class="highlighter-rouge">th</code> elements in a <code class="highlighter-rouge">thead</code> element, and especially if there are <code class="highlighter-rouge">th</code> elements with a scope attribute, then we are assuming the document author was thinking about a data table, and flag this as a data table.</p>
+
+<h3 id="cell-spanning">Cell spanning</h3>
+
+<p>Layout tables almost always have cells spanning different widths, so we convert the table into a matrix representing cell spanning. Column spans are counted up in a given column, and if there are colspans that are not used consistently from row to row, this is a layout table.</p>
+
+<h3 id="cell-consistency">Cell consistency</h3>
+
+<p>Data tables tend to have consistent types of information across columns. We again make a matrix representing the table, and compute the length of content compared to others in the column, and the type of data (HTML, text, number) across the column. Number types are inferred by removing repeated words across columns first, so if a unit is used throughout the column (i.e. “4 feet”), it will be ignored. Types are assigned numeric values of 1 for HTML, 2 for plain text, and 3 for numbers so we can use them with standard deviation.</p>
+
+<p>We take a standard deviation for both content length and content type, then make sure that no cells fall out of that deviation. If more than 10% of all cells lie outside the standard deviation of type and/or content length for a given column, this is flagged as a layout table.</p>
+
+<h2 id="code">Code</h2>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">isDataTable</span> <span class="p">(</span><span class="nx">table</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">//If there are less than three rows, why do a table?</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">table</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">'tr'</span><span class="p">).</span><span class="nx">length</span> <span class="o">&lt;</span> <span class="mi">3</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kc">false</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="c1">//If you are scoping a table, it's probably not being used for layout</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">table</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">'th[scope]'</span><span class="p">).</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="kc">true</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="kd">var</span> <span class="nx">numberRows</span> <span class="o">=</span> <span class="nx">table</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">'tr:has(td)'</span><span class="p">).</span><span class="nx">length</span><span class="p">;</span>
+  <span class="c1">//Check for odd cell spanning</span>
+  <span class="kd">var</span> <span class="nx">spanCells</span> <span class="o">=</span> <span class="nx">table</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">'td[rowspan], td[colspan]'</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">isDataTable</span> <span class="o">=</span> <span class="kc">true</span><span class="p">;</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">spanCells</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">spanIndex</span> <span class="o">=</span> <span class="p">{};</span>
+    <span class="nx">spanCells</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="k">if</span><span class="p">(</span><span class="k">typeof</span> <span class="nx">spanIndex</span><span class="p">[</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">index</span><span class="p">()]</span> <span class="o">===</span> <span class="s1">'undefined'</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">spanIndex</span><span class="p">[</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">index</span><span class="p">()]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nx">spanIndex</span><span class="p">[</span><span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">index</span><span class="p">()]</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">});</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="nx">spanIndex</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="nx">count</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">count</span> <span class="o">&lt;</span> <span class="nx">numberRows</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">isDataTable</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+  <span class="c1">//If there are sub tables, but not in the same column row after row, this is a layout table</span>
+  <span class="kd">var</span> <span class="nx">subTables</span> <span class="o">=</span> <span class="nx">table</span><span class="p">.</span><span class="nx">find</span><span class="p">(</span><span class="s1">'table'</span><span class="p">);</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">subTables</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">subTablesIndexes</span> <span class="o">=</span> <span class="p">{};</span>
+    <span class="nx">subTables</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">parentIndex</span> <span class="o">=</span> <span class="nx">$</span><span class="p">(</span><span class="k">this</span><span class="p">).</span><span class="nx">parent</span><span class="p">(</span><span class="s1">'td'</span><span class="p">).</span><span class="nx">index</span><span class="p">();</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">parentIndex</span> <span class="o">!==</span> <span class="kc">false</span> <span class="o">&amp;&amp;</span> <span class="k">typeof</span> <span class="nx">subTablesIndexes</span><span class="p">[</span><span class="nx">parentIndex</span><span class="p">]</span> <span class="o">===</span> <span class="s1">'undefined'</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">subTablesIndexes</span><span class="p">[</span><span class="nx">parentIndex</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+      <span class="p">}</span>
+      <span class="nx">subTablesIndexes</span><span class="p">[</span><span class="nx">parentIndex</span><span class="p">]</span><span class="o">++</span><span class="p">;</span>
+    <span class="p">});</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">each</span><span class="p">(</span><span class="nx">subTablesIndexes</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">index</span><span class="p">,</span> <span class="nx">count</span><span class="p">)</span> <span class="p">{</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">count</span> <span class="o">&lt;</span> <span class="nx">numberRows</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">isDataTable</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+  <span class="p">}</span>
+  <span class="k">return</span> <span class="nx">isDataTable</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+
+</main>
+
+<footer id="footer"><nav class="container"><div class="row">
+  <div class="col-sm-4">
+    <h2>Rule Creation</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/design/rule-design.html">
+        Rule design
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/review.html">
+        Review process
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/rule-template.html">
+        Rule template
+      </a></li>
+      <li><a href="/auto-wcag/pages/design/style-guide.html">
+        Style guide
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>Rule Structure</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/structure/terminology.html">
+        Terminology
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/test-modes.html">
+        Test modes
+      </a></li>
+      <li><a href="/auto-wcag/pages/algorithms/">
+        Algorithms
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/aggregation.html">
+        Result aggregation
+      </a></li>
+      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
+        Accessibility support
+      </a></li>
+    </ul>
+
+  </div> <div class="col-sm-4">
+    <h2>About Auto-WCAG</h2>
+    <ul>
+      <li><a href="/auto-wcag/pages/about.html">
+        About Us
+      </a></li>
+      <li><a href="/auto-wcag/pages/contribute.html">
+        How to contribute
+      </a></li>
+      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
+    </ul>
+  </div>
+
+</div></nav></footer>
+
+<script src="/auto-wcag/assets/js/jquery.min.js"></script>
+<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+</body>
+</html>
