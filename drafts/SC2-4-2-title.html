@@ -4,9 +4,9 @@
   <meta charset="utf-8">
 
   <title>
-     Rule: SC2-4-2-title - Auto-WCAG Rules
+     Rule: undefined - Auto-WCAG Rules
   </title>
-  <meta name="description" content="Description">
+  <meta name="description" content="Test procedure">
 
   <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
   <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC2-4-2-title.html">
@@ -100,7 +100,7 @@
 
 <main class="container">
   
-    <h1>Rule: SC2-4-2-title</h1>
+    <h1>Rule: undefined</h1>
   
 
   
@@ -110,237 +110,88 @@
 
 
 
-  <p>Late updated: <time datetime="2018-04-17T13:38:22+00:00" itemprop="datePublished">Apr 17, 2018</time></p>
+  <p>Late updated: <time datetime="2018-04-20T08:24:32+00:00" itemprop="datePublished">Apr 20, 2018</time></p>
 
 
 
+  <p>Created by: <a href="https://github.com/wilcofiers">Wilco Fiers</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, Jey Nandakumar</p>
 
 
 
+  <h2 id="description">Description</h2>
+  <p><p>This rule checks that the HTML page has a title</p>
+</p>
 
 
-<h2 id="description">Description</h2>
 
-<p>This test checks that the page title (<code class="highlighter-rouge">&lt;title</code> element in the head section of a webpage) a. exists, and b. identifies the role or content of the web page.</p>
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:navigation-mechanisms-title">
+        Success Criterion 2.4.2 (Page Titled)
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:navigation-mechanisms-title">
+          How to Meet 2.4.2 (Page Titled)
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:navigation-mechanisms-title.html">
+          Understanding Success Criterion 2.4.2 (Page Titled)
+        </a></li>
+      </ul>
+    </li>
+  
+  </ul>
+
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="applicability">Applicability</h3>
+
+<p>The rule applies to any page where the root element is an <code class="highlighter-rouge">html</code> element, and which is not embedded in another page.</p>
+
+<p><strong>Note</strong>: Pages may be embedded inside other pages through elements such as iframes and object elements.</p>
+
+<h3 id="expectation-1">Expectation 1</h3>
+
+<p>The page contains at least one <code class="highlighter-rouge">title</code> element.</p>
+
+<p><strong>Note</strong>: The <code class="highlighter-rouge">title</code> element exists in other namespaces such as SVG. These are not <code class="highlighter-rouge">title</code> elements for HTML document and should be ignored.</p>
+
+<h3 id="expectation-2">Expectation 2</h3>
+
+<p>The first <code class="highlighter-rouge">title</code> element contains [non-empty text][].</p>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<p><em>There are currently no assumptions</em></p>
+
+<h2 id="accessibility-support">Accessibility Support</h2>
+
+<p><em>There are no major accessibility support issues known for this rule.</em></p>
 
 <h2 id="background">Background</h2>
 
 <ul>
-  <li><a href="http://www.w3.org/TR/WCAG20-TECHS/G88.html">G88: Providing descriptive titles for Web pages</a></li>
-  <li><a href="http://www.w3.org/TR/WCAG20-TECHS/H25.html">H25: Providing a title using the title element</a></li>
-  <li><a href="http://www.w3.org/TR/WCAG20-TECHS/F25.html">F25: Failure of Success Criterion 2.4.2 due to the title of a Web page not identifying the contents</a>
-    <h2 id="assumptions">Assumptions</h2>
-  </li>
-  <li>Technique ARIA 1 is not considered for this test, although it was added in a recent <a href="http://www.w3.org/TR/2014/NOTE-UNDERSTANDING-WCAG20-20140408/complete-diff.html">update of the Understanding WCAG 2.0 document</a>.</li>
-  <li>If there are more than one <code class="highlighter-rouge">&lt;title&gt;</code> elements this test will throw an error.</li>
+  <li>https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html</li>
+  <li>https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=242#qr-navigation-mechanisms-title</li>
+  <li>https://www.w3.org/TR/WCAG20-TECHS/G88.html</li>
+  <li>https://www.w3.org/TR/WCAG20-TECHS/H25.html</li>
+  <li>The WCAG 2.0 Techniques already contain examples and code snippets to illustrate which content passes or fails the test. Whenever possible auto-wcag refers to those. Another source for test cases is the W3C Before and After Demonstration.</li>
 </ul>
 
-<h2 id="test-properties">Test properties</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Property</th>
-      <th>Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Test name</td>
-      <td>Page Title</td>
-    </tr>
-    <tr>
-      <td>Test requirement</td>
-      <td>2.4.2 Page Titled</td>
-    </tr>
-    <tr>
-      <td>Test mode</td>
-      <td>semiAuto</td>
-    </tr>
-    <tr>
-      <td>Test environment</td>
-      <td>HTML source or DOM</td>
-    </tr>
-    <tr>
-      <td>Test subject</td>
-      <td>single web page</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="test-procedure">Test procedure</h2>
-
-<h3 id="selector">Selector</h3>
-
-<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
-
-<p>Select the <code class="highlighter-rouge">head</code> element</p>
-
-<h3 id="step-1">Step 1</h3>
-
-<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
-
-<p>Check that there is a <code class="highlighter-rouge">title</code> element in the html document.</p>
-
-<p>If no, return</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Outcome</th>
-      <th>Failed</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Testcase</td>
-      <td>SC2-4-2-title</td>
-    </tr>
-    <tr>
-      <td>ID</td>
-      <td>SC2-4-2-title-fail1</td>
-    </tr>
-    <tr>
-      <td>Error</td>
-      <td>Missing title element</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Else, continue with <a href="#step-2">Step 2</a></p>
-
-<h3 id="step-2">Step 2</h3>
-
-<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
-
-<p>Check for multiple title elements in head section of page.</p>
-
-<p>if yes, return</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Outcome</th>
-      <th>Failed</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Testcase</td>
-      <td>SC2-4-2-title</td>
-    </tr>
-    <tr>
-      <td>ID</td>
-      <td>SC2-4-2-title-fail2</td>
-    </tr>
-    <tr>
-      <td>Error</td>
-      <td>multiple title elements in head section.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Else, continue with <a href="#step-3">step 3</a></p>
-
-<h3 id="step-3">Step 3</h3>
-
-<p>Test mode: <a href="../pages/test-modes.html#automatic">automatic</a></p>
-
-<p>Check if the title is a filename or a URL (for file name, check for patterns ending with a . and a known file extension).</p>
-
-<p>if yes, return</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Outcome</th>
-      <th>Failed</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Testcase</td>
-      <td>SC2-4-2-title</td>
-    </tr>
-    <tr>
-      <td>ID</td>
-      <td>SC2-4-2-title-fail3</td>
-    </tr>
-    <tr>
-      <td>Error</td>
-      <td>filename or URL used as title</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>if no, continue with <a href="#step-4">step 4</a></p>
-
-<h3 id="step-4">Step 4</h3>
-
-<p>Test mode: <a href="../pages/test-modes.html#manual">manual</a></p>
-
-<p>Prompt user to look at the title and content of the page.</p>
-
-<p><strong>User Input Question:</strong></p>
-
-<p>| Property             | Value
-|———————-|———
-| Presented item       | Web page (with title either highlighted or in a seperate textbox).
-| Requires context     | yes
-| Requires Interaction | no
-| Question             | Does the webpage title identify the context or purpose of this web page?
-| Help                 | A page title should describe  the content or purpose of the webpage, and uniquely identify it within the website.
-A good web page title consists of two or 3 parts, usually separated by a &lt;pre&gt;-&lt;/pre&gt; or a <code class="highlighter-rouge">|</code>: - A descriptive page title for the page itself. - (optional) If the web page is a part of a section of the website, include the section name. - The website name or domain name.
-The web page title usually comes first, but any order of these is acceptable.</p>
-
-<p>if no, return</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Outcome</th>
-      <th>Failed</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Testcase</td>
-      <td>SC2-4-2-title</td>
-    </tr>
-    <tr>
-      <td>ID</td>
-      <td>SC2-4-2-title-fail4</td>
-    </tr>
-    <tr>
-      <td>Error</td>
-      <td>page title does not identify the webpage.</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>if yes, return</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Outcome</th>
-      <th>Passed</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Testcase</td>
-      <td>SC2-4-2-title</td>
-    </tr>
-    <tr>
-      <td>ID</td>
-      <td>SC2-4-2-title-pass1</td>
-    </tr>
-  </tbody>
-</table>
 
 
-
+  <h2 id="test-aspects">Test Aspects</h2>
+  Test aspects are defined as part of the <a href="https://w3c.github.io/wcag-act/act-rules-format.html#input-aspects-common">ACT Rules format 1.0</a>.
+  <ul>
+  
+    <li><p>DOM Tree</p>
+</li>
+  
+  </ul>
 
 
 <h2 id="related-resources">Related Resources</h2>
