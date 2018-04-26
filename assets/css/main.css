@@ -1,35 +1,81 @@
-table {
-  margin-bottom: 1em; }
+/*!
+ * IE10 viewport hack for Surface/desktop Windows 8 bug
+ * Copyright 2014-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+/*
+ * See the Getting Started docs for more information:
+ * http://getbootstrap.com/getting-started/#support-ie10-width
+ */
+@-ms-viewport {
+  width: device-width; }
+@-o-viewport {
+  width: device-width; }
+@viewport {
+  width: device-width; }
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%; }
 
-tr {
-  border-bottom: solid 1px #DDD; }
-
-main a {
-  text-decoration: underline; }
-main td, main th {
-  padding: .2em 1em;
-  min-width: 10em; }
-main h2, main h3 {
-  border-bottom: solid 1px #DDD; }
-main .draft-note {
-  border: solid orange 2px;
-  border-radius: 3px;
-  background: #FFC;
-  color: #C00;
-  padding: .2em 1em; }
-
-#footer {
-  background: #333;
-  color: #DDD;
-  margin: 2em 0 0;
-  padding: .5em 0 2em; }
-  #footer h2 {
-    font-size: 1.2em; }
-  #footer a {
-    color: #AAA;
-    text-decoration: none; }
-  #footer a[href] {
-    color: #FFF;
-    text-decoration: underline; }
-  #footer ul {
-    padding-left: 1em; }
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  color: #003349;
+  font-family: 'Open Sans', sans-serif; }
+  body > p {
+    color: #003349; }
+  body > .navbar {
+    background-color: #003349;
+    color: #fff; }
+    body > .navbar.navbar-default {
+      border-color: #fff; }
+    body > .navbar .navbar-header .navbar-brand {
+      color: #fff; }
+    body > .navbar .navbar-collapse > ul.nav > li > a {
+      color: #fff; }
+      body > .navbar .navbar-collapse > ul.nav > li > a:hover {
+        opacity: 0.9;
+        color: #fff; }
+    body > .navbar .navbar-collapse > ul.nav > li.dropdown.open > a {
+      color: #fff;
+      background-color: #004563; }
+    body > .navbar .navbar-collapse > ul.nav > li.dropdown > ul.dropdown-menu {
+      border-radius: 0;
+      background-color: #003349; }
+      body > .navbar .navbar-collapse > ul.nav > li.dropdown > ul.dropdown-menu > li > a {
+        color: #fff; }
+        body > .navbar .navbar-collapse > ul.nav > li.dropdown > ul.dropdown-menu > li > a:hover {
+          opacity: 0.9;
+          color: #fff;
+          background-color: #004563; }
+  body > .container {
+    padding: 60px 15px 0; }
+    body > .container .text-muted {
+      margin: 20px 0; }
+    body > .container .embed-wrapper {
+      display: flex;
+      width: 100%;
+      margin-bottom: 5rem; }
+      body > .container .embed-wrapper > .code-wrapper {
+        margin-right: 0.5rem;
+        margin-bottom: 0;
+        order: 1;
+        flex: 1; }
+        body > .container .embed-wrapper > .code-wrapper figure div.language-html {
+          margin-bottom: 5rem; }
+      body > .container .embed-wrapper > .frame-container {
+        margin-left: 0.5rem;
+        order: 1;
+        flex: 1; }
+        body > .container .embed-wrapper > .frame-container > header {
+          width: 100%;
+          display: flex;
+          justify-content: space-between; }
+          body > .container .embed-wrapper > .frame-container > header > a {
+            margin-right: 0; }
+        body > .container .embed-wrapper > .frame-container > iframe {
+          width: 100%; }
+  body code {
+    font-size: 80%; }

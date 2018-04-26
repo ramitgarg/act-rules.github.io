@@ -1,110 +1,158 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-
-  <title>
-     Contribute to Auto-WCAG - Auto-WCAG Rules
-  </title>
-  <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+  <head>
+    <meta charset="utf-8">
+    
+    <title>
+      Contribute to Auto-WCAG - Auto-WCAG Rules
+    </title>
+    <meta name="description" content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
 ">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="canonical" href="http://auto-wcag/github.io//pages/contribute.html">
+  </head>
+  <body>
 
-  <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
-  <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/pages/contribute.html">
-  <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
-</head>
-<body>
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" 
+            class="navbar-toggle collapsed" 
+            data-toggle="collapse" 
+            data-target="#navbar" 
+            aria-expanded="false" 
+            aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" 
+            href="/">
+              Auto-WCAG
+          </a>
+        </div>
+        <div id="navbar" 
+          class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/pages/rules.html">Rules</a>
+            </li>
+            <li>
+              <a href="/pages/drafts.html">Drafts</a>
+            </li>
+            
+            <!-- Rule Creation -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Creation <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/pages/design/rule-design.html">
+                    Rule design
+                  </a>
+                </li>
+                <li>
+                  <a href="/pages/design/review.html">
+                    Review process
+                  </a>
+                </li>
+                <li>
+                  <a href="/pages/design/rule-template.html">
+                    Rule template
+                  </a>
+                </li>
+                <li>
+                  <a href="/pages/design/test-template.html">
+                    Test case template
+                  </a>
+                </li>
+                <li>
+                  <a href="/pages/design/style-guide.html">
+                    Style guide
+                  </a>
+                </li>
+              </ul>
+            </li>
 
-<nav class="navbar navbar-inverse">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/auto-wcag/">
-        Auto-WCAG
-      </a>
-    </div>
-    <div id="navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
+            <!-- Rule Structure -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Structure <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/pages/structure/terminology.html">Terminology</a>
+                </li>
+                <li>
+                  <a href="/pages/structure/test-modes.html">Test modes</a>
+                </li>
+                <li>
+                  <a href="/pages/algorithms/">Algorithms</a>
+                </li>
+                <li>
+                  <a href="/pages/structure/aggregation.html">Result aggregation</a>
+                </li>
+                <li>
+                  <a href="/pages/structure/user-questions.html">User questions</a>
+                </li>
+                <li>
+                  <a href="/pages/structure/accessibility-support.html">Accessibility support</a>
+                </li>
+              </ul>
+            </li>
 
-        <li><a href="/auto-wcag/pages/rules.html">Rules</a></li>
-        <li><a href="/auto-wcag/pages/drafts.html">Drafts</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-          role="button" aria-haspopup="true" aria-expanded="false">
-            Rule Creation
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/auto-wcag/pages/design/rule-design.html">
-              Rule design
-            </a></li>
-            <li><a href="/auto-wcag/pages/design/review.html">
-              Review process
-            </a></li>
-            <li><a href="/auto-wcag/pages/design/rule-template.html">
-              Rule template
-            </a></li>
-            <li><a href="/auto-wcag/pages/design/test-template.html">
-              Test case template
-            </a></li>
-            <li><a href="/auto-wcag/pages/design/style-guide.html">
-              Style guide
-            </a></li>
+            <!-- About -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                About <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/pages/about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="/pages/contribute.html">How to contribute</a>
+                </li>
+                <li>
+                  <a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a>
+                </li>
+              </ul>
+            </li>
+
           </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-          role="button" aria-haspopup="true" aria-expanded="false">
-            Rule Structure
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/auto-wcag/pages/structure/terminology.html">
-              Terminology
-            </a></li>
-            <li><a href="/auto-wcag/pages/structure/test-modes.html">
-              Test modes
-            </a></li>
-            <li><a href="/auto-wcag/pages/algorithms/">
-              Algorithms
-            </a></li>
-            <li><a href="/auto-wcag/pages/structure/aggregation.html">
-              Result aggregation
-            </a></li>
-            <li><a href="/auto-wcag/pages/structure/user-questions.html">
-              User questions
-            </a></li>
-            <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
-              Accessibility support
-            </a></li>
-          </ul>
-        </li>
-
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown"
-          role="button" aria-haspopup="true" aria-expanded="false">
-            About Auto-WCAG
-          <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/auto-wcag/pages/about.html">
-              About Us
-            </a></li>
-            <li><a href="/auto-wcag/pages/contribute.html">
-              How to contribute
-            </a></li>
-            <li><a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a></li>
-          </ul>
-        </li>
-
-      </ul>
-    </div><!--/.nav-collapse -->
-  </div>
-</nav>
-
-<main class="container">
-  
-    <h1>Contribute to Auto-WCAG</h1>
-  
-
-  <p>Auto-WCAG is a group open to anyone interested in accessibility, accessibility testing or automated testing. We welcome contributions from anyone, either though Github issues and pull requests, or by contribution to our monthly teleconferences.</p>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Begin page content -->
+    <main class="container">
+      
+        <div class="page-header">
+          <h1>Contribute to Auto-WCAG</h1>
+        </div>
+      
+      <p>
+        <p>Auto-WCAG is a group open to anyone interested in accessibility, accessibility testing or automated testing. We welcome contributions from anyone, either though Github issues and pull requests, or by contribution to our monthly teleconferences.</p>
 
 <h2 id="leave-your-feedback-on-github">Leave your feedback on GitHub</h2>
 
@@ -129,62 +177,11 @@ Advisory Committee.</li>
 <p>Auto-WCAG has conference calls every month (usually) on the second Thursdays at 16:00 Central European Time. Participating in these calls is the easiest way to become an active contributor. The invitation and agenda for these meetings is sent out through the mailing list a few days in advance.</p>
 
 
-</main>
-
-<footer id="footer"><nav class="container"><div class="row">
-  <div class="col-sm-4">
-    <h2>Rule Creation</h2>
-    <ul>
-      <li><a href="/auto-wcag/pages/design/rule-design.html">
-        Rule design
-      </a></li>
-      <li><a href="/auto-wcag/pages/design/review.html">
-        Review process
-      </a></li>
-      <li><a href="/auto-wcag/pages/design/rule-template.html">
-        Rule template
-      </a></li>
-      <li><a href="/auto-wcag/pages/design/style-guide.html">
-        Style guide
-      </a></li>
-    </ul>
-
-  </div> <div class="col-sm-4">
-    <h2>Rule Structure</h2>
-    <ul>
-      <li><a href="/auto-wcag/pages/structure/terminology.html">
-        Terminology
-      </a></li>
-      <li><a href="/auto-wcag/pages/structure/test-modes.html">
-        Test modes
-      </a></li>
-      <li><a href="/auto-wcag/pages/algorithms/">
-        Algorithms
-      </a></li>
-      <li><a href="/auto-wcag/pages/structure/aggregation.html">
-        Result aggregation
-      </a></li>
-      <li><a href="/auto-wcag/pages/structure/accessibility-support.html">
-        Accessibility support
-      </a></li>
-    </ul>
-
-  </div> <div class="col-sm-4">
-    <h2>About Auto-WCAG</h2>
-    <ul>
-      <li><a href="/auto-wcag/pages/about.html">
-        About Us
-      </a></li>
-      <li><a href="/auto-wcag/pages/contribute.html">
-        How to contribute
-      </a></li>
-      <li><a href="https://www.w3.org/community/auto-wcag/about-us/">GitHub repository</a></li>
-    </ul>
-  </div>
-
-</div></nav></footer>
-
-<script src="/auto-wcag/assets/js/jquery.min.js"></script>
-<script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
-</body>
+      </p>
+    </main>
+    
+    <script src="/assets/js/jquery.min.js"></script>
+    <script src="/assets/js/bootstrap.min.js"></script>
+   
+  </body>
 </html>
