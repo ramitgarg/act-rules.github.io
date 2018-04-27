@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     
     <title>
-      Rule: SC4-1-2-button - Auto-WCAG Rules
+      Test Cases for SC3-1-1-html-has-lang - Auto-WCAG Rules
     </title>
-    <meta name="description" content="Description">
+    <meta name="description" content="Passed">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
-    <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/rules/SC4-1-2-button.html">
+    <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/draft-tests/SC3-1-1-html-has-lang.html">
   </head>
   <body>
 
@@ -147,198 +147,42 @@
     <main class="container">
       
         <div class="page-header">
-          <h1>Rule: SC4-1-2-button</h1>
+          <h1>Test Cases for SC3-1-1-html-has-lang</h1>
         </div>
       
       <p>
-        
+        <p>Back to rule:
+  <a href="../drafts/SC3-1-1-html-has-lang.html">SC3-1-1-html-has-lang</a>
+</p>
 
-  
+<p>Elements that match <code>[data-outcome="inapplicable"]</code> should be ignored by the rule. Elements that match <code>[data-outcome="failed"]</code> should be returned as failed, and those matching <code>[data-outcome="passed"]</code> should be passed. Other elements may match other rules, these results should be ignored for the purpose of this test file.</p>
 
+<h3 id="passed">Passed</h3>
 
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-has-lang-5d2ac4b2-958c-44de-bb2e-396dec541720.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-has-lang-5d2ac4b2-958c-44de-bb2e-396dec541720.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-has-lang-a4b03799-bead-4a52-b23e-8c3ab81080fe.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-has-lang-a4b03799-bead-4a52-b23e-8c3ab81080fe.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">xml:lang=</span><span class="s">"en"</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-has-lang-deec35af-6174-43fd-8d01-5ae843c5e6d1.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-has-lang-deec35af-6174-43fd-8d01-5ae843c5e6d1.html"></iframe> </div></div>
+<h3 id="failed">Failed</h3>
 
-  <p>Late updated: <time datetime="2018-04-27T14:29:32+00:00" itemprop="datePublished">Apr 27, 2018</time></p>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-has-lang-623a3637-94cd-4c84-9025-50da50f4bff7.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-has-lang-623a3637-94cd-4c84-9025-50da50f4bff7.html"></iframe> </div></div>
+<h3 id="inapplicable">Inapplicable</h3>
 
-
-
-
-
-
-
-  <h2 id="requirements">Accessibility Requirements</h2>
-  <p>This conformance rule relates to:</p>
-  <ul>
-  
-    
-    <li>
-      <a href="https://www.w3.org/TR/WCAG20/#wcag20:ensure-compat-rsv">
-        Success Criterion 4.1.2 (Name, Role, Value)
-      </a>
-      <ul>
-        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:ensure-compat-rsv">
-          How to Meet 4.1.2 (Name, Role, Value)
-        </a></li>
-        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:ensure-compat-rsv.html">
-          Understanding Success Criterion 4.1.2 (Name, Role, Value)
-        </a></li>
-      </ul>
-    </li>
-  
-  </ul>
-
-
-<h2 id="description">Description</h2>
-
-<p>This test checks if every button element has a name.</p>
-
-<p>For each selected item, go through the following steps:</p>
-
-<h2 id="background">Background</h2>
-
-<ul>
-  <li><a href="http://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140311/H91.html">H91: Using HTML form controls and links</a></li>
-  <li><a href="http://wiki.egovmon.no/wiki/SC4.1.2#ID:_H91-2">eGovMon test H91-2</a></li>
-</ul>
-
-<h2 id="assumptions">Assumptions</h2>
-
-<ul>
-  <li>The test case does not look at buttons with img content</li>
-</ul>
-
-<h2 id="test-procedure">Test procedure</h2>
-
-<h3 id="selector">Selector</h3>
-
-<p>Select all elements that match the following XPATH selector:</p>
-
-<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>button
-</code></pre></div></div>
-
-<h3 id="step-1">Step 1</h3>
-
-<p>Check if there is [non-empty][NEMPTY] text within the button element</p>
-
-<p>Or if the button element has a <code class="highlighter-rouge">title</code> attribute with a [non-empty][NEMPTY]</p>
-
-<p>Return [step1-pass][#step1-pass]</p>
-
-<p>Else, return [step1-fail][#step1-fail]</p>
-
-<h2 id="outcome">Outcome</h2>
-
-<p>The resulting assertion is as follows,</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Property</th>
-      <th>Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>type</td>
-      <td>Assertion</td>
-    </tr>
-    <tr>
-      <td>test</td>
-      <td>auto-wcag:SC4-1-2-button</td>
-    </tr>
-    <tr>
-      <td>subject</td>
-      <td><em>the selected element</em></td>
-    </tr>
-    <tr>
-      <td>mode</td>
-      <td>automatic</td>
-    </tr>
-    <tr>
-      <td>result</td>
-      <td><One TestResult="" from="" below=""></One></td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="step1-fail">step1-fail</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Property</th>
-      <th>Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>type</td>
-      <td>TestResult</td>
-    </tr>
-    <tr>
-      <td>outcome</td>
-      <td>Failed</td>
-    </tr>
-    <tr>
-      <td>description</td>
-      <td>failed to give an anchor element a name</td>
-    </tr>
-    <tr>
-      <td>info</td>
-      <td>This button element has no filled title attribute nor text content.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="step1-pass">step1-pass</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Property</th>
-      <th>Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>type</td>
-      <td>TestResult</td>
-    </tr>
-    <tr>
-      <td>outcome</td>
-      <td>Passed</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="implementation-tests">Implementation Tests</h2>
-
-<p>There are currently no tests</p>
-
-<h2 id="change-log">Change log</h2>
-
-<h3 id="version-11">Version 1.1</h3>
-
-<ul>
-  <li>Edit to fit revised format for rules</li>
-</ul>
-
-<h3 id="version-12">Version 1.2</h3>
-
-<ul>
-  <li>Removed Punctuation Connectors from the Non-empty definition.</li>
-</ul>
-
-
-
-
-
-<h2 id="related-resources">Related Resources</h2>
-<ul>
-  <li><a href="../rule-tests/SC4-1-2-button.test.html">Test cases</a></li>
-  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC4-1-2-button">Known issues</a></li>
-  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_rules/SC4-1-2-button.md">Previous versions</a></li>
-  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC4-1-2-button.md">Propose an update</a></li>
-</ul>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;svg</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-has-lang-0ef1905d-b1be-47bb-bed2-0ab58f1b3acb.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-has-lang-0ef1905d-b1be-47bb-bed2-0ab58f1b3acb.html"></iframe> </div></div>
 
       </p>
     </main>
