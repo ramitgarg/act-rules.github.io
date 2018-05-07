@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>
+      Rule: undefined - Auto-WCAG Rules
+    </title>
+    <meta name="description" content="Test procedure">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+    <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC2-4-4-link-has-name.html">
+  </head>
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" 
+            class="navbar-toggle collapsed" 
+            data-toggle="collapse" 
+            data-target="#navbar" 
+            aria-expanded="false" 
+            aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" 
+            href="/auto-wcag/">
+              Auto-WCAG
+          </a>
+        </div>
+        <div id="navbar" 
+          class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/auto-wcag/pages/rules.html">Rules</a>
+            </li>
+            <li>
+              <a href="/auto-wcag/pages/drafts.html">Drafts</a>
+            </li>
+            
+            <!-- Rule Creation -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Creation <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-design.html">
+                    Rule design
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/review.html">
+                    Review process
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-template.html">
+                    Rule template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/test-template.html">
+                    Test case template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/style-guide.html">
+                    Style guide
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Rule Structure -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Structure <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/structure/terminology.html">Terminology</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/test-modes.html">Test modes</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/algorithms/">Algorithms</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/aggregation.html">Result aggregation</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/user-questions.html">User questions</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/accessibility-support.html">Accessibility support</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- About -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                About <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/contribute.html">How to contribute</a>
+                </li>
+                <li>
+                  <a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Begin page content -->
+    <main class="container">
+      
+        <div class="page-header">
+          <h1>Rule: undefined</h1>
+        </div>
+      
+      <p>
+        
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-05-07T09:43:57+00:00" itemprop="datePublished">May 7, 2018</time></p>
+
+
+
+  <p>Created by: <a href="https://github.com/wilcofiers">Wilco Fiers</a>, <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a></p>
+
+
+
+  <h2 id="description">Description</h2>
+  <p><p>Each link has an accessible name</p>
+</p>
+
+
+
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:ensure-compat-rsv">
+        Success Criterion 4.1.2 (Name, Role, Value)
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:ensure-compat-rsv">
+          How to Meet 4.1.2 (Name, Role, Value)
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:ensure-compat-rsv.html">
+          Understanding Success Criterion 4.1.2 (Name, Role, Value)
+        </a></li>
+      </ul>
+    </li>
+  
+  </ul>
+
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="applicability">Applicability</h3>
+
+<p>The rule applies to any HTML or SVG element with the semantic role of <code class="highlighter-rouge">link</code> that are <a href="../pages/algorithms/visible-on-the-page.html">visible on the page</a> or <a href="../pages/algorithms/exposed-to-assistive-technologies.html">exposed to assistive technologies</a>.</p>
+
+<p><strong>Note</strong>: Roles can be <a href="https://www.w3.org/TR/html-aria/#dfn-implicit-aria-semantics">implicit</a> through the element name or explicit through the <a href="https://www.w3.org/TR/html52/dom.html#aria-role-attribute">role attribute</a>.</p>
+
+<h3 id="expectation">Expectation</h3>
+
+<p>Each target element has an <a href="../pages/algorithms/accessible-name.html">accessible name</a> that is <a href="../pages/algorithms/non-empty.html">non-empty</a></p>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>The rule assumes that all links are user interface components as defined by WCAG 2. When the link role is used incorrectly, this assumption may not be true.</li>
+</ul>
+
+<h2 id="accessibility-support">Accessibility Support</h2>
+
+<p>There are no major accessibility support issues known for this rule.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=244#navigation-mechanisms-refs">https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=244#navigation-mechanisms-refs</a></li>
+  <li><a href="https://www.w3.org/TR/WCAG20-TECHS/ARIA7.html">ARIA7: Using aria-labelledby for link purpose</a></li>
+  <li><a href="https://www.w3.org/TR/WCAG20-TECHS/ARIA8.html">ARIA8: Using aria-label for link purpose</a></li>
+  <li><a href="http://www.w3.org/TR/WCAG20-TECHS/F89.html">F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to using null alt on an image where the image is the only content in a link</a></li>
+  <li>The WCAG 2.0 Techniques already contain examples and code snippets to illustrate which content passes or fails the test. Whenever possible auto-wcag refers to those. Another source for test cases is the W3C Before and After Demonstration.</li>
+</ul>
+
+<h2 id="test-cases">Test Cases</h2>
+
+<h3 id="passed">Passed</h3>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.w3.org/WAI"</span><span class="nt">&gt;</span> Web Accessibility Initiative (WAI) <span class="nt">&lt;/a&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-4-4-link-has-name-3754ad40-810e-46f6-b8b0-3cead22b5ff7.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-4-4-link-has-name-3754ad40-810e-46f6-b8b0-3cead22b5ff7.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;button</span> <span class="na">role=</span><span class="s">"link"</span><span class="nt">&gt;</span>Click me!<span class="nt">&lt;/button&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-4-4-link-has-name-a39d6258-68d1-48ad-b29f-5f1d6f8fc696.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-4-4-link-has-name-a39d6258-68d1-48ad-b29f-5f1d6f8fc696.html"></iframe> </div></div>
+<h3 id="failed">Failed</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div&gt;</span>
+  <span class="nt">&lt;p&gt;</span>
+    Some detailed article, but the link to read more is placed with no relevance to the text, thereby the link has lost context.
+  <span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"readmore.html"</span><span class="nt">&gt;</span>Read More...<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-4-4-link-has-name-e93bd540-0ad6-4f55-93f9-c1d5eba26bcf.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-4-4-link-has-name-e93bd540-0ad6-4f55-93f9-c1d5eba26bcf.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;table&gt;</span>
+   <span class="nt">&lt;tr&gt;</span> 
+       <span class="nt">&lt;td&gt;</span>Song: Ed Sheeran - Galway Girl.<span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+   <span class="nt">&lt;tr&gt;</span>
+       <span class="nt">&lt;td&gt;</span>
+        <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"assets/download.html"</span><span class="nt">&gt;</span>
+          Download Now
+        <span class="nt">&lt;/a&gt;</span>
+       <span class="nt">&lt;/td&gt;</span>
+   <span class="nt">&lt;/tr&gt;</span>
+ <span class="nt">&lt;/table&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-4-4-link-has-name-1e7e7e86-46c3-44dd-a57d-4c07087b0414.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-4-4-link-has-name-1e7e7e86-46c3-44dd-a57d-4c07087b0414.html"></iframe> </div></div>
+<h3 id="inapplicable">Inapplicable</h3>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.w3.org/WAI"</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;</span>Web Accessibility Initiative (WAI)<span class="nt">&lt;/a&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-4-4-link-has-name-908dd29f-a59c-42e0-a7f3-de5cd59b7a7f.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-4-4-link-has-name-908dd29f-a59c-42e0-a7f3-de5cd59b7a7f.html"></iframe> </div></div>
+<hr />
+
+
+
+
+  <h2 id="test-aspects">Test Aspects</h2>
+  Test aspects are defined as part of the <a href="https://w3c.github.io/wcag-act/act-rules-format.html#input-aspects-common">ACT Rules format 1.0</a>.
+  <ul>
+  
+    <li><p>DOM Tree</p>
+</li>
+  
+    <li><p>CSS Styling</p>
+</li>
+  
+  </ul>
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="../draft-tests/SC2-4-4-link-has-name.test.html">Test cases</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC2-4-4-link-has-name">Known issues</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_drafts/SC2-4-4-link-has-name.md">Previous versions</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC2-4-4-link-has-name.md">Propose an update</a></li>
+</ul>
+
+      </p>
+    </main>
+    
+    <script src="/auto-wcag/assets/js/jquery.min.js"></script>
+    <script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+   
+  </body>
+</html>
