@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>
+      Rule: undefined - Auto-WCAG Rules
+    </title>
+    <meta name="description" content="Test procedure">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+    <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC1-1-1-non-decorative-image-accessible-name.html">
+  </head>
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" 
+            class="navbar-toggle collapsed" 
+            data-toggle="collapse" 
+            data-target="#navbar" 
+            aria-expanded="false" 
+            aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" 
+            href="/auto-wcag/">
+              Auto-WCAG
+          </a>
+        </div>
+        <div id="navbar" 
+          class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/auto-wcag/pages/rules.html">Rules</a>
+            </li>
+            <li>
+              <a href="/auto-wcag/pages/drafts.html">Drafts</a>
+            </li>
+            
+            <!-- Rule Creation -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Creation <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-design.html">
+                    Rule design
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/review.html">
+                    Review process
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-template.html">
+                    Rule template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/test-template.html">
+                    Test case template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/style-guide.html">
+                    Style guide
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Rule Structure -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Structure <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/structure/terminology.html">Terminology</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/test-modes.html">Test modes</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/algorithms/">Algorithms</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/aggregation.html">Result aggregation</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/user-questions.html">User questions</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/accessibility-support.html">Accessibility support</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- About -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                About <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/contribute.html">How to contribute</a>
+                </li>
+                <li>
+                  <a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Begin page content -->
+    <main class="container">
+      
+        <div class="page-header">
+          <h1>Rule: undefined</h1>
+        </div>
+      
+      <p>
+        
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-05-07T07:44:13+00:00" itemprop="datePublished">May 7, 2018</time></p>
+
+
+
+  <p>Created by: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a></p>
+
+
+
+  <h2 id="description">Description</h2>
+  <p><p>Each image that is not marked as decorative, has an accessible name</p>
+</p>
+
+
+
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:text-equiv-all">
+        Success Criterion 1.1.1 (Non-text Content)
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:text-equiv-all">
+          How to Meet 1.1.1 (Non-text Content)
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:text-equiv-all.html">
+          Understanding Success Criterion 1.1.1 (Non-text Content)
+        </a></li>
+      </ul>
+    </li>
+  
+  </ul>
+
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="applicability">Applicability</h3>
+
+<p>The rule applies to any HTML element with the [semantic role][] of <code class="highlighter-rouge">image</code> that is [exposed to assistive technologies][].</p>
+
+<p><strong>NOTE</strong>: Any image marked as decorative, by using either <code class="highlighter-rouge">role="presentation"</code>, <code class="highlighter-rouge">role="none"</code> or an empty <code class="highlighter-rouge">alt</code> attribute in combination with either no <code class="highlighter-rouge">title</code> attribute or an empty <code class="highlighter-rouge">title</code> attribute, does not have the role of <code class="highlighter-rouge">image</code> according to <a href="https://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></p>
+
+<h3 id="expectation">Expectation</h3>
+
+<p>Each target element has an [accessible name][] that is [non-empty][].</p>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<p><em>There are currently no assumptions</em></p>
+
+<h2 id="accessibility-support">Accessibility Support</h2>
+
+<p>Certain assistive technologies can be set up to ignore the <code class="highlighter-rouge">title</code> attribute, which means that to some users the <code class="highlighter-rouge">title</code> attribute will not act as an accessible name.</p>
+
+<h2 id="background">Background</h2>
+<ul>
+  <li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G94">G94: Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content</a></li>
+  <li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G95">G95: Providing short text alternatives that provide a brief description of the non-text content</a></li>
+  <li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H37">H37: Using alt attributes on img elements</a></li>
+  <li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/ARIA6">ARIA6: Using aria-label to provide labels for objects</a></li>
+  <li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/ARIA10">ARIA10: Using aria-labelledby to provide a text alternative for non-text content</a></li>
+  <li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/H67">H67: Using null alt text and no title attribute on img elements for images that AT should ignore</a></li>
+  <li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F38">F38: Failure of Success Criterion 1.1.1 due to not marking up decorative images in HTML in a way that allows assistive technology to ignore them</a></li>
+  <li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F65">F65: Failure of Success Criterion 1.1.1 due to omitting the alt attribute or text alternative on img elements, area elements, and input elements of type “image”</a></li>
+</ul>
+
+<h2 id="test-cases">Test cases</h2>
+
+<h3 id="passed">Passed</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"W3C logo"</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-b88f3392-2200-40ed-9e1e-da58e02310f7.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-b88f3392-2200-40ed-9e1e-da58e02310f7.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"image"</span> <span class="na">aria-label=</span><span class="s">"W3C logo"</span><span class="nt">&gt;&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-28099e63-e703-4ccd-969d-a7f20586c3f2.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-28099e63-e703-4ccd-969d-a7f20586c3f2.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;img</span> <span class="na">title=</span><span class="s">"W3C logo"</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-15299e58-ca78-4ac7-a891-1fd6a7585979.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-15299e58-ca78-4ac7-a891-1fd6a7585979.html"></iframe> </div></div>
+<h3 id="failed">Failed</h3>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;img</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-271a0c94-307c-40d4-97df-89e024e5362e.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-271a0c94-307c-40d4-97df-89e024e5362e.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"image"</span><span class="nt">&gt;&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-4d84e13a-08bf-4372-bc27-d3176f0dbb75.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-4d84e13a-08bf-4372-bc27-d3176f0dbb75.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"margin-left:-9999px;"</span><span class="nt">&gt;&lt;img</span> <span class="nt">/&gt;&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-03ee3f78-b9da-4c55-9178-71d51ac68c41.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-03ee3f78-b9da-4c55-9178-71d51ac68c41.html"></iframe> </div></div>
+<h3 id="inapplicable">Inapplicable</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-4ac834b4-f767-4f11-a68c-d2260e5198e3.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-4ac834b4-f767-4f11-a68c-d2260e5198e3.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">""</span> <span class="na">title=</span><span class="s">"W3C logo"</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-6a62ec8c-e67c-416a-bc8a-572e9b31ee8a.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-6a62ec8c-e67c-416a-bc8a-572e9b31ee8a.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;img</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-0423858c-47a9-4881-aca3-963fc8c11841.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-0423858c-47a9-4881-aca3-963fc8c11841.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;svg</span> <span class="na">width=</span><span class="s">"100"</span> <span class="na">height=</span><span class="s">"100"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;circle</span> <span class="na">cx=</span><span class="s">"50"</span> <span class="na">cy=</span><span class="s">"50"</span> <span class="na">r=</span><span class="s">"40"</span> <span class="na">stroke=</span><span class="s">"green"</span> <span class="na">stroke-width=</span><span class="s">"4"</span> <span class="na">fill=</span><span class="s">"yellow"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/svg&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-0f36a238-1ff9-42b4-87b0-c7f565763250.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-1-1-non-decorative-image-accessible-name-0f36a238-1ff9-42b4-87b0-c7f565763250.html"></iframe> </div></div>
+<hr />
+<p><a href="">semantic role</a>
+<a href="">exposed to assistive technologies</a>
+<a href="">accessible name</a>
+<a href="">non-empty</a></p>
+
+
+
+  <h2 id="test-aspects">Test Aspects</h2>
+  Test aspects are defined as part of the <a href="https://w3c.github.io/wcag-act/act-rules-format.html#input-aspects-common">ACT Rules format 1.0</a>.
+  <ul>
+  
+    <li><p>DOM Tree</p>
+</li>
+  
+    <li><p>CSS Styling</p>
+</li>
+  
+  </ul>
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="../draft-tests/SC1-1-1-non-decorative-image-accessible-name.test.html">Test cases</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC1-1-1-non-decorative-image-accessible-name">Known issues</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_drafts/SC1-1-1-non-decorative-image-accessible-name.md">Previous versions</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC1-1-1-non-decorative-image-accessible-name.md">Propose an update</a></li>
+</ul>
+
+      </p>
+    </main>
+    
+    <script src="/auto-wcag/assets/js/jquery.min.js"></script>
+    <script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+   
+  </body>
+</html>
