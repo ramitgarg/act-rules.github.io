@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>
+      Rule: undefined - Auto-WCAG Rules
+    </title>
+    <meta name="description" content="Test procedure">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+    <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC2-2-1+SC3-2-5-meta-refresh.html">
+  </head>
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" 
+            class="navbar-toggle collapsed" 
+            data-toggle="collapse" 
+            data-target="#navbar" 
+            aria-expanded="false" 
+            aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" 
+            href="/auto-wcag/">
+              Auto-WCAG
+          </a>
+        </div>
+        <div id="navbar" 
+          class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/auto-wcag/pages/rules.html">Rules</a>
+            </li>
+            <li>
+              <a href="/auto-wcag/pages/drafts.html">Drafts</a>
+            </li>
+            
+            <!-- Rule Creation -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Creation <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-design.html">
+                    Rule design
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/review.html">
+                    Review process
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-template.html">
+                    Rule template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/test-template.html">
+                    Test case template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/style-guide.html">
+                    Style guide
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Rule Structure -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Structure <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/structure/terminology.html">Terminology</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/test-modes.html">Test modes</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/algorithms/">Algorithms</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/aggregation.html">Result aggregation</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/user-questions.html">User questions</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/accessibility-support.html">Accessibility support</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- About -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                About <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/contribute.html">How to contribute</a>
+                </li>
+                <li>
+                  <a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Begin page content -->
+    <main class="container">
+      
+        <div class="page-header">
+          <h1>Rule: undefined</h1>
+        </div>
+      
+      <p>
+        
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-05-14T08:21:58+00:00" itemprop="datePublished">May 14, 2018</time></p>
+
+
+
+  <p>Created by: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a></p>
+
+
+
+  <h2 id="description">Description</h2>
+  <p><p>This rule checks that the meta element is not used for delayed redirecting or refreshing.</p>
+</p>
+
+
+
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:time-limits-required-behaviors">
+        Success Criterion 2.2.1 (Timing Adjustable)
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:time-limits-required-behaviors">
+          How to Meet 2.2.1 (Timing Adjustable)
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:time-limits-required-behaviors.html">
+          Understanding Success Criterion 2.2.1 (Timing Adjustable)
+        </a></li>
+      </ul>
+    </li>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:consistent-behavior-no-extreme-changes-context">
+        Success Criterion 3.2.5 (Change on Request)
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:consistent-behavior-no-extreme-changes-context">
+          How to Meet 3.2.5 (Change on Request)
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:consistent-behavior-no-extreme-changes-context.html">
+          Understanding Success Criterion 3.2.5 (Change on Request)
+        </a></li>
+      </ul>
+    </li>
+  
+  </ul>
+
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="applicability">Applicability</h3>
+
+<p>The rule applies to any <code class="highlighter-rouge">content</code> attribute in a <code class="highlighter-rouge">meta</code> element that contains the <code class="highlighter-rouge">http-equiv</code> attribute with value <code class="highlighter-rouge">"refresh"</code> (case-insensitive).</p>
+
+<h3 id="expectation">Expectation</h3>
+
+<p>The value before the first semicolon or comma (representing seconds) of the value of the <code class="highlighter-rouge">content</code> attribute is not a number greater than 0.</p>
+
+<p><strong>Note</strong>: Semi-colon or comma is optional in the <code class="highlighter-rouge">content</code> attribute. When none is present, the value of the attribute should be considered as a whole. See <a href="https://www.w3.org/TR/html51/document-metadata.html#statedef-http-equiv-refresh">meta-refresh</a> for parsing instructions.</p>
+
+<p>## Assumptions</p>
+
+<ul>
+  <li>This test assumes no functionality was provided by the website for the user to adjust the timer.</li>
+</ul>
+
+<h2 id="accessibility-support">Accessibility Support</h2>
+
+<p>There are no major accessibility support issues known for this rule.</p>
+
+<p>## Background</p>
+
+<ul>
+  <li>H76: Using meta refresh to create an instant client-side redirect</li>
+  <li>F40: Failure of Success Criterion 2.2.1 and 2.2.4 due to using meta redirect with a time limit</li>
+  <li>F41: Failure of Success Criterion 2.2.1, 2.2.4, and 3.2.5 due to using meta refresh with a time-out</li>
+</ul>
+
+<h2 id="test-cases">Test Cases</h2>
+
+<h3 id="passed">Passed</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html">   <span class="nt">&lt;head&gt;</span>           
+    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"0; URL='https://auto-wcag.github.io/auto-wcag/'"</span> <span class="nt">/&gt;</span>    
+  <span class="nt">&lt;/head&gt;</span>  
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-e58d3eca-80fb-48f1-995f-619cbdcdebc7.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-e58d3eca-80fb-48f1-995f-619cbdcdebc7.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html">   <span class="nt">&lt;head&gt;</span>           
+    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"foo; URL='https://auto-wcag.github.io/auto-wcag/'"</span> <span class="nt">/&gt;</span>    
+  <span class="nt">&lt;/head&gt;</span>  
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-14f0dc93-abad-488a-9492-e622075ce923.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-14f0dc93-abad-488a-9492-e622075ce923.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">refresh</span> <span class="na">content=</span><span class="s">" -00.12 foo"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-8c7238cf-bbc3-4e3a-8e7c-8297905f35be.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-8c7238cf-bbc3-4e3a-8e7c-8297905f35be.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"; 30"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-f5cff374-80f5-4d58-a6d2-ff42f9ddb38b.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-f5cff374-80f5-4d58-a6d2-ff42f9ddb38b.html"></iframe> </div></div>
+<h3 id="failed">Failed</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"30"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-281366ea-1dcd-4dad-bf26-fa81f2a4d3dc.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-281366ea-1dcd-4dad-bf26-fa81f2a4d3dc.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"30; URL='https://auto-wcag.github.io/auto-wcag/'"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-ef214bb6-2633-487e-817f-1012c624fdc3.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-ef214bb6-2633-487e-817f-1012c624fdc3.html"></iframe> </div></div>
+<h3 id="inapplicable">Inapplicable</h3>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-42e02083-ba3f-4e9a-9537-f50c452a97b3.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-42e02083-ba3f-4e9a-9537-f50c452a97b3.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">""</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-af2bf1f0-4c0b-4064-94e8-0b6f7640d75b.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-af2bf1f0-4c0b-4064-94e8-0b6f7640d75b.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">"30"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-e94cbc17-e7ef-4732-a571-a9666d2a9c1d.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-e94cbc17-e7ef-4732-a571-a9666d2a9c1d.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+<span class="nt">&lt;meta&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-fe7aed10-ea41-4c1f-8650-d64f12046bd1.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-2-1+SC3-2-5-meta-refresh-fe7aed10-ea41-4c1f-8650-d64f12046bd1.html"></iframe> </div></div>
+
+
+
+  <h2 id="test-aspects">Test Aspects</h2>
+  Test aspects are defined as part of the <a href="https://w3c.github.io/wcag-act/act-rules-format.html#input-aspects-common">ACT Rules format 1.0</a>.
+  <ul>
+  
+    <li><p>DOM Tree</p>
+</li>
+  
+  </ul>
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="../draft-tests/SC2-2-1+SC3-2-5-meta-refresh.test.html">Test cases</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC2-2-1+SC3-2-5-meta-refresh">Known issues</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_drafts/SC2-2-1+SC3-2-5-meta-refresh.md">Previous versions</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC2-2-1+SC3-2-5-meta-refresh.md">Propose an update</a></li>
+</ul>
+
+      </p>
+    </main>
+    
+    <script src="/auto-wcag/assets/js/jquery.min.js"></script>
+    <script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+   
+  </body>
+</html>
