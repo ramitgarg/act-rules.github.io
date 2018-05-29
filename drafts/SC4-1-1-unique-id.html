@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     
     <title>
-      Rule: undefined - Auto-WCAG Rules
+      Rule: unique element id attributes - Auto-WCAG Rules
     </title>
     <meta name="description" content="Test procedure">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
@@ -147,22 +147,73 @@
     <main class="container">
       
         <div class="page-header">
-          <h1>Rule: undefined</h1>
+          <h1>Rule: unique element id attributes</h1>
         </div>
       
       <p>
         
+
 
   
   <p class="draft-note"><strong>Please note, this is a draft</strong></p>
 
 
 
-  <p>Late updated: <time datetime="2018-05-14T08:28:07+00:00" itemprop="datePublished">May 14, 2018</time></p>
+  <p>Late updated: <time datetime="2018-05-29T08:50:58+00:00" itemprop="datePublished">May 29, 2018</time></p>
 
 
 
-  <p>Created by: <a href="https://github.com/brynanders">Bryn Anderson</a>, Jey Nandakumar, Kamyar Rasta, <a href="https://github.com/wilcofiers">Wilco Fiers</a></p>
+  <p>
+    Created by: 
+    <ul>
+      
+        
+        <li>  
+          <a href="https://github.com/brynanders">
+            Bryn Anderson
+          </a>
+        </li>
+        
+      
+        
+        <li>
+          Jey Nandakumar
+        </li>
+        
+      
+        
+        <li>
+          Kamyar Rasta
+        </li>
+        
+      
+        
+        <li>  
+          <a href="https://github.com/wilcofiers">
+            Wilco Fiers
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
+
+
+
+  <p>
+    Success_criterion: 
+    <ul>
+      
+        
+        <li>
+          <a href="https://www.w3.org/TR/WCAG20/#">
+            4.1.1 (Parsing)
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
 
 
 
@@ -226,13 +277,13 @@
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-div"</span><span class="nt">&gt;</span> This is my first element<span class="nt">&lt;/div&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-c4719343-919b-455b-a8f5-f1bc26d5486a.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-c4719343-919b-455b-a8f5-f1bc26d5486a.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-e2e173a5-72c7-4c05-a564-ba3694dd9644.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-e2e173a5-72c7-4c05-a564-ba3694dd9644.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-div1"</span><span class="nt">&gt;</span> This is my first element<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-div2"</span><span class="nt">&gt;</span> This is my second element<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;svg</span> <span class="na">id=</span><span class="s">"my-div3"</span><span class="nt">&gt;</span> This is my third element<span class="nt">&lt;/svg&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-abe81275-0a70-4eb6-99ce-c6fd6658dbbc.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-abe81275-0a70-4eb6-99ce-c6fd6658dbbc.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-d1b238d6-f30d-40f0-89e0-36f173bec7ac.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-d1b238d6-f30d-40f0-89e0-36f173bec7ac.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-elm"</span><span class="nt">&gt;&lt;/div&gt;</span>
 <span class="nt">&lt;script&gt;</span>
@@ -241,34 +292,34 @@
   <span class="nx">shadow</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s1">'&lt;b id="my-elm"&gt;&lt;slot&gt;&lt;/slot&gt;&lt;/b&gt;'</span><span class="p">;</span>
 <span class="nt">&lt;/script&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-9a26b6ee-fe4f-4f37-9bca-fead4ef36771.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-9a26b6ee-fe4f-4f37-9bca-fead4ef36771.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-d00b6902-8c9a-4db1-b5c9-c909bf547142.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-d00b6902-8c9a-4db1-b5c9-c909bf547142.html"></iframe> </div></div>
 <h3 id="failed">Failed</h3>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-div"</span><span class="nt">&gt;</span> This is my first element<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-div"</span><span class="nt">&gt;</span> This is my second element<span class="nt">&lt;/svg&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-09620df6-abab-4808-b5ca-272a5c8e6afd.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-09620df6-abab-4808-b5ca-272a5c8e6afd.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-b2787422-873a-44b8-b3d5-8432e44d7e90.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-b2787422-873a-44b8-b3d5-8432e44d7e90.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-div"</span><span class="nt">&gt;</span> This is my first element<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;svg</span> <span class="na">id=</span><span class="s">"my-div"</span><span class="nt">&gt;</span> This is my second element<span class="nt">&lt;/svg&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-a75654b2-caf4-4c68-b01e-feb9a4166f2c.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-a75654b2-caf4-4c68-b01e-feb9a4166f2c.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-69838041-6de3-43d5-b4dc-1144d8621c5a.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-69838041-6de3-43d5-b4dc-1144d8621c5a.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-div"</span> <span class="na">style=</span><span class="s">"display:none"</span><span class="nt">&gt;</span> This is my first element<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;svg</span> <span class="na">id=</span><span class="s">"my-div"</span><span class="nt">&gt;</span> This is my second element<span class="nt">&lt;/svg&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-2363483a-157c-4f04-a9f3-ce29a3c23ea9.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-2363483a-157c-4f04-a9f3-ce29a3c23ea9.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-0d1ffa67-35be-4ac8-9910-072551afb79b.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-0d1ffa67-35be-4ac8-9910-072551afb79b.html"></iframe> </div></div>
 <h3 id="inapplicable">Inapplicable</h3>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div&gt;</span>This is my first element<span class="nt">&lt;/div&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-fc0a2ab6-a8ae-48b9-a9b8-a1c3806b0680.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-fc0a2ab6-a8ae-48b9-a9b8-a1c3806b0680.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-f55d26d6-4bc5-4cf5-ac23-780c1facb67f.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-f55d26d6-4bc5-4cf5-ac23-780c1facb67f.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">xml:id=</span><span class="s">"my-div"</span><span class="nt">&gt;</span>This is my first element<span class="nt">&lt;/div&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-129bd996-ba3d-476a-84ad-9316f258f6ff.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-129bd996-ba3d-476a-84ad-9316f258f6ff.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-c1db54f0-de90-4f8f-8cb1-39c344ae440d.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-c1db54f0-de90-4f8f-8cb1-39c344ae440d.html"></iframe> </div></div>
 
 
 
@@ -284,10 +335,7 @@
 
 <h2 id="related-resources">Related Resources</h2>
 <ul>
-  <li><a href="../draft-tests/SC4-1-1-unique-id.test.html">Test cases</a></li>
   <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC4-1-1-unique-id">Known issues</a></li>
-  <li><a href="https://github.com/auto-wcag/auto-wcag/commits/master/_drafts/SC4-1-1-unique-id.md">Previous versions</a></li>
-  <li><a href="https://github.com/auto-wcag/auto-wcag/edit/master/_drafts/SC4-1-1-unique-id.md">Propose an update</a></li>
 </ul>
 
       </p>
