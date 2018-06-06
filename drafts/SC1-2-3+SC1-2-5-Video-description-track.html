@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>
+      Rule: undefined - Auto-WCAG Rules
+    </title>
+    <meta name="description" content="name: Video element description trackgroup: SC1-2-video-elementdescription: |  This rule checks that non-streaming video elements with a description track ha...">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+    <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC1-2-3+SC1-2-5-Video-description-track.html">
+  </head>
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" 
+            class="navbar-toggle collapsed" 
+            data-toggle="collapse" 
+            data-target="#navbar" 
+            aria-expanded="false" 
+            aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" 
+            href="/auto-wcag/">
+              Auto-WCAG
+          </a>
+        </div>
+        <div id="navbar" 
+          class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/auto-wcag/pages/rules.html">Rules</a>
+            </li>
+            <li>
+              <a href="/auto-wcag/pages/drafts.html">Drafts</a>
+            </li>
+            
+            <!-- Rule Creation -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Creation <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-design.html">
+                    Rule design
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/review.html">
+                    Review process
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-template.html">
+                    Rule template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/test-template.html">
+                    Test case template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/style-guide.html">
+                    Style guide
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Rule Structure -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Structure <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/structure/terminology.html">Terminology</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/test-modes.html">Test modes</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/algorithms/">Algorithms</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/aggregation.html">Result aggregation</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/user-questions.html">User questions</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/accessibility-support.html">Accessibility support</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- About -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                About <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/contribute.html">How to contribute</a>
+                </li>
+                <li>
+                  <a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Begin page content -->
+    <main class="container">
+      
+        <div class="page-header">
+          <h1>Rule: undefined</h1>
+        </div>
+      
+      <p>
+        
+
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-06-06T08:34:35+00:00" itemprop="datePublished">Jun 6, 2018</time></p>
+
+
+
+
+
+
+
+
+
+
+<hr />
+<p>name: Video element description track
+group: SC1-2-video-element
+description: |
+  This rule checks that non-streaming video elements with a description track have that track be descriptive.</p>
+
+<p>success_criterion:</p>
+<ul>
+  <li>1.2.3 # Audio Description or Media Alternative (Prerecorded)</li>
+  <li>1.2.5 # Audio Description (Prerecorded)</li>
+</ul>
+
+<p>test_aspects:</p>
+<ul>
+  <li>DOM Tree</li>
+  <li>CSS Styling</li>
+  <li>Audio output</li>
+  <li>Visual output</li>
+</ul>
+
+<p>authors:</p>
+<ul>
+  <li>Wilco Fiers</li>
+  <li>Brian Bors</li>
+</ul>
+
+<h2 id="test-procedure">Test Procedure</h2>
+
+<h3 id="applicability">Applicability</h3>
+
+<p>The rule applies to any <a href="../pages/algorithms/non-streaming-media-element.html">non-streaming</a> video element <a href="../pages/algorithms/visible-in-the-page.html">visible in the page</a> where the video contains <a href="https://www.w3.org/TR/WCAG20/#audiodef">audio</a> and a <code class="highlighter-rouge">track</code> element with a <code class="highlighter-rouge">kind="description"</code> attribute.</p>
+
+<h3 id="expectation">Expectation</h3>
+
+<p>The visual information of each test target not available through its audio is describes with a description track element.</p>
+
+<p><em>Note</em>: Multiple description track elements may be useful for different languages, but at least one must match the language of the video.</p>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<p><em>There are currently no assumptions</em></p>
+
+<h2 id="accessibility-support">Accessibility support</h2>
+
+<p>Currently the description track is not supported by most assistive technology. Accessibility support for the description track attribute is relativly low to non-existent. Video players may be able to work around the lack of support for the discription track by using aria-live but few do this today.</p>
+
+<p>This means that the rule can only provide a pass for these succescriteria if accessistive technology support the description track or if the video player that is used has implemented such a work around.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li>http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html</li>
+  <li>http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html</li>
+  <li>https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G78</li>
+  <li>https://www.w3.org/WAI/GL/2016/WD-WCAG20-TECHS-20160105/H96</li>
+</ul>
+
+<h2 id="test-cases">Test Cases</h2>
+
+<h2 id="passed">Passed</h2>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"descriptions"</span> <span class="na">src=</span><span class="s">"rabbit-video-descriptions.vtt"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-Video-description-track-f9043796-6d70-41bc-81f7-e004c2841cd3.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-Video-description-track-f9043796-6d70-41bc-81f7-e004c2841cd3.html"></iframe> </div></div>
+<h2 id="failed">Failed</h2>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"descriptions"</span> <span class="na">src=</span><span class="s">"rabbit-video-incorrect-descriptions.vtt"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-Video-description-track-68ee37d4-c0d1-4768-a32d-f368def1caea.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-Video-description-track-68ee37d4-c0d1-4768-a32d-f368def1caea.html"></iframe> </div></div>
+<h2 id="inapplicable">Inapplicable</h2>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-Video-description-track-13eeff17-356c-4092-bd9d-b9536e11228f.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-Video-description-track-13eeff17-356c-4092-bd9d-b9536e11228f.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> TODO: a source to a live video
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-Video-description-track-58552035-ef46-437e-91ce-a11020d68734.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-Video-description-track-58552035-ef46-437e-91ce-a11020d68734.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"descriptions"</span> <span class="na">src=</span><span class="s">"rabbit-video-descriptions.vtt"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-Video-description-track-20421259-1ad9-4998-81cb-3ec05edce7ee.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-Video-description-track-20421259-1ad9-4998-81cb-3ec05edce7ee.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/silent.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/silent.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"descriptions"</span> <span class="na">src=</span><span class="s">"rabbit-video-descriptions.vtt"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-Video-description-track-2acdd320-8eee-4736-8c34-e4f2d3bf4f34.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-Video-description-track-2acdd320-8eee-4736-8c34-e4f2d3bf4f34.html"></iframe> </div></div>
+
+
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC1-2-3+SC1-2-5-Video-description-track">Known issues</a></li>
+</ul>
+
+      </p>
+    </main>
+    
+    <script src="/auto-wcag/assets/js/jquery.min.js"></script>
+    <script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+   
+  </body>
+</html>

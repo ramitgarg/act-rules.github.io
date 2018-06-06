@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>
+      Rule: audio described video element - Auto-WCAG Rules
+    </title>
+    <meta name="description" content="Test Procedure">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+    <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC1-2-3+SC1-2-5-video-audio-description.html">
+  </head>
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" 
+            class="navbar-toggle collapsed" 
+            data-toggle="collapse" 
+            data-target="#navbar" 
+            aria-expanded="false" 
+            aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" 
+            href="/auto-wcag/">
+              Auto-WCAG
+          </a>
+        </div>
+        <div id="navbar" 
+          class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/auto-wcag/pages/rules.html">Rules</a>
+            </li>
+            <li>
+              <a href="/auto-wcag/pages/drafts.html">Drafts</a>
+            </li>
+            
+            <!-- Rule Creation -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Creation <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-design.html">
+                    Rule design
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/review.html">
+                    Review process
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-template.html">
+                    Rule template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/test-template.html">
+                    Test case template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/style-guide.html">
+                    Style guide
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Rule Structure -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Structure <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/structure/terminology.html">Terminology</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/test-modes.html">Test modes</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/algorithms/">Algorithms</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/aggregation.html">Result aggregation</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/user-questions.html">User questions</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/accessibility-support.html">Accessibility support</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- About -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                About <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/contribute.html">How to contribute</a>
+                </li>
+                <li>
+                  <a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Begin page content -->
+    <main class="container">
+      
+        <div class="page-header">
+          <h1>Rule: audio described video element</h1>
+        </div>
+      
+      <p>
+        
+
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-06-06T08:34:35+00:00" itemprop="datePublished">Jun 6, 2018</time></p>
+
+
+
+  <p>
+    Created by: 
+    <ul>
+      
+        
+        <li>  
+          <a href="https://github.com/wilcofiers">
+            Wilco Fiers
+          </a>
+        </li>
+        
+      
+        
+        <li>  
+          <a href="https://www.linkedin.com/in/brianbors/">
+            Brian Bors
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
+
+
+
+  <p>
+    Success_criterion: 
+    <ul>
+      
+        
+        <li>
+          <a href="https://www.w3.org/TR/WCAG20/#">
+            1.2.3 (Audio Description or Media Alternative (Prerecorded))
+          </a>
+        </li>
+        , 
+      
+        
+        <li>
+          <a href="https://www.w3.org/TR/WCAG20/#">
+            1.2.5 (Audio Description (Prerecorded))
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
+
+
+
+  <h2 id="description">Description</h2>
+  <p><p>Non-streaming video elements must not contain any visual information that is not expressed in the audio</p>
+</p>
+
+
+
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:media-equiv-audio-desc">
+        Success Criterion 1.2.3 (Audio Description or Media Alternative (Prerecorded))
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:media-equiv-audio-desc">
+          How to Meet 1.2.3 (Audio Description or Media Alternative (Prerecorded))
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:media-equiv-audio-desc.html">
+          Understanding Success Criterion 1.2.3 (Audio Description or Media Alternative (Prerecorded))
+        </a></li>
+      </ul>
+    </li>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:media-equiv-audio-desc-only">
+        Success Criterion 1.2.5 (Audio Description (Prerecorded))
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:media-equiv-audio-desc-only">
+          How to Meet 1.2.5 (Audio Description (Prerecorded))
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:media-equiv-audio-desc-only.html">
+          Understanding Success Criterion 1.2.5 (Audio Description (Prerecorded))
+        </a></li>
+      </ul>
+    </li>
+  
+  </ul>
+
+
+<h2 id="test-procedure">Test Procedure</h2>
+
+<h3 id="applicability">Applicability</h3>
+
+<p>The rule applies to any <a href="../pages/algorithms/non-streaming-media-element.html">non-streaming</a> video element <a href="../pages/algorithms/visible-in-the-page.html">visible in the page</a> where the video contains <a href="https://www.w3.org/TR/WCAG20/#audiodef">audio</a>.</p>
+
+<h3 id="expectation">Expectation</h3>
+
+<p>The visual information of each test target is available through its audio, or through an audio description track.</p>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<p><em>There are currently no assumptions</em></p>
+
+<h2 id="accessibility-support">Accessibility support</h2>
+
+<p>There are no major accessibility support issues known for this rule.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li>http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html</li>
+  <li>http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html</li>
+  <li>https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G78</li>
+  <li>https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G173</li>
+  <li>https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G8</li>
+</ul>
+
+<h2 id="test-cases">Test Cases</h2>
+
+<h2 id="passed">Passed</h2>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video-with-voiceover.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video-with-voiceover.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-video-audio-description-e989828c-1d77-4539-b5a3-00d04df3ee56.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-video-audio-description-e989828c-1d77-4539-b5a3-00d04df3ee56.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.min.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-skin/highlights-blue.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://ozplayer.global.ssl.fastly.net/3.3/transcript.css"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;figure</span> <span class="na">id=</span><span class="s">"ozplayer-1-container"</span> <span class="na">class=</span><span class="s">"ozplayer-container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">data-controls=</span><span class="s">"stack"</span> <span class="na">class=</span><span class="s">"ozplayer"</span> <span class="na">id=</span><span class="s">"ozplayer-1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;video</span> <span class="na">controls=</span><span class="s">"controls"</span> <span class="na">preload=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+    <span class="nt">&lt;/video&gt;</span>
+    <span class="nt">&lt;audio</span> <span class="na">data-default=</span><span class="s">"default"</span> <span class="na">preload=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video-audio-description.mp3"</span> <span class="na">type=</span><span class="s">"audio/mp3"</span> <span class="nt">&gt;&lt;/source&gt;</span>
+    <span class="nt">&lt;/audio&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/mediaelement.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.free.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-lang/en.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ozplayer.global.ssl.fastly.net/3.3/config.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-video-audio-description-810fc10f-dfc6-4450-b91f-75bde8478de9.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-video-audio-description-810fc10f-dfc6-4450-b91f-75bde8478de9.html"></iframe> </div></div>
+<h2 id="failed">Failed</h2>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-video-audio-description-29b3b0fa-2de4-47d0-84a0-023edbcf432d.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-video-audio-description-29b3b0fa-2de4-47d0-84a0-023edbcf432d.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video-with-incorrect-voiceover.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video-with-incorrect-voiceover.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-video-audio-description-4321f8c3-8776-4cbf-98a0-0b8aef4e2b52.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-video-audio-description-4321f8c3-8776-4cbf-98a0-0b8aef4e2b52.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.min.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-skin/highlights-blue.css"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://ozplayer.global.ssl.fastly.net/3.3/transcript.css"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;figure</span> <span class="na">id=</span><span class="s">"ozplayer-1-container"</span> <span class="na">class=</span><span class="s">"ozplayer-container"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">data-controls=</span><span class="s">"stack"</span> <span class="na">class=</span><span class="s">"ozplayer"</span> <span class="na">id=</span><span class="s">"ozplayer-1"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;video</span> <span class="na">controls=</span><span class="s">"controls"</span> <span class="na">preload=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+    <span class="nt">&lt;/video&gt;</span>
+    <span class="nt">&lt;audio</span> <span class="na">data-default=</span><span class="s">"default"</span> <span class="na">preload=</span><span class="s">"none"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/incorrect-audio-description.mp3"</span> <span class="na">type=</span><span class="s">"audio/mp3"</span> <span class="nt">&gt;&lt;/source&gt;</span>
+    <span class="nt">&lt;/audio&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/figure&gt;</span>
+
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/mediaelement.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-core/ozplayer.free.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ozplayer.global.ssl.fastly.net/3.3/ozplayer-lang/en.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+<span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ozplayer.global.ssl.fastly.net/3.3/config.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-video-audio-description-920c0a8f-ae71-4786-aa65-cfdef6f5aee4.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-video-audio-description-920c0a8f-ae71-4786-aa65-cfdef6f5aee4.html"></iframe> </div></div>
+<h2 id="inapplicable">Inapplicable</h2>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> TODO: a source to a live video
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-video-audio-description-9b76ec8d-c230-460b-ab99-33ffe3575d23.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-video-audio-description-9b76ec8d-c230-460b-ab99-33ffe3575d23.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/silent.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/silent.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-video-audio-description-e6ecdd9a-7260-4ce3-91de-d81e4e90a550.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-video-audio-description-e6ecdd9a-7260-4ce3-91de-d81e4e90a550.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-video-audio-description-79f9c92e-26ae-4254-a0db-fc3c957c2970.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-3+SC1-2-5-video-audio-description-79f9c92e-26ae-4254-a0db-fc3c957c2970.html"></iframe> </div></div>
+
+
+
+  <h2 id="test-aspects">Test Aspects</h2>
+  Test aspects are defined as part of the <a href="https://w3c.github.io/wcag-act/act-rules-format.html#input-aspects-common">ACT Rules format 1.0</a>.
+  <ul>
+  
+    <li><p>DOM Tree</p>
+</li>
+  
+    <li><p>CSS Styling</p>
+</li>
+  
+    <li><p>Audio output</p>
+</li>
+  
+    <li><p>Visual output</p>
+</li>
+  
+  </ul>
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC1-2-3+SC1-2-5-video-audio-description">Known issues</a></li>
+</ul>
+
+      </p>
+    </main>
+    
+    <script src="/auto-wcag/assets/js/jquery.min.js"></script>
+    <script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+   
+  </body>
+</html>

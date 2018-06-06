@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>
+      Rule: video element transcript - Auto-WCAG Rules
+    </title>
+    <meta name="description" content="Test Procedure">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+    <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC1-2-1+SC1-2-3-video-transcript.html">
+  </head>
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" 
+            class="navbar-toggle collapsed" 
+            data-toggle="collapse" 
+            data-target="#navbar" 
+            aria-expanded="false" 
+            aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" 
+            href="/auto-wcag/">
+              Auto-WCAG
+          </a>
+        </div>
+        <div id="navbar" 
+          class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/auto-wcag/pages/rules.html">Rules</a>
+            </li>
+            <li>
+              <a href="/auto-wcag/pages/drafts.html">Drafts</a>
+            </li>
+            
+            <!-- Rule Creation -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Creation <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-design.html">
+                    Rule design
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/review.html">
+                    Review process
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-template.html">
+                    Rule template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/test-template.html">
+                    Test case template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/style-guide.html">
+                    Style guide
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Rule Structure -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Structure <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/structure/terminology.html">Terminology</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/test-modes.html">Test modes</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/algorithms/">Algorithms</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/aggregation.html">Result aggregation</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/user-questions.html">User questions</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/accessibility-support.html">Accessibility support</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- About -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                About <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/contribute.html">How to contribute</a>
+                </li>
+                <li>
+                  <a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Begin page content -->
+    <main class="container">
+      
+        <div class="page-header">
+          <h1>Rule: video element transcript</h1>
+        </div>
+      
+      <p>
+        
+
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-06-06T08:34:35+00:00" itemprop="datePublished">Jun 6, 2018</time></p>
+
+
+
+  <p>
+    Created by: 
+    <ul>
+      
+        
+        <li>  
+          <a href="https://github.com/wilcofiers">
+            Wilco Fiers
+          </a>
+        </li>
+        
+      
+        
+        <li>  
+          <a href="https://www.linkedin.com/in/brianbors/">
+            Brian Bors
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
+
+
+
+  <p>
+    Success_criterion: 
+    <ul>
+      
+        
+        <li>
+          <a href="https://www.w3.org/TR/WCAG20/#">
+            1.2.1 (Audio-only and Video-only (Prerecorded))
+          </a>
+        </li>
+        , 
+      
+        
+        <li>
+          <a href="https://www.w3.org/TR/WCAG20/#">
+            1.2.3 (Audio Description or Media Alternative (Prerecorded))
+          </a>
+        </li>
+        , 
+      
+        
+        <li>
+          <a href="https://www.w3.org/TR/WCAG20/#">
+            1.2.8 (Media Alternative (Prerecorded))
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
+
+
+
+  <h2 id="description">Description</h2>
+  <p><p>Non-streaming video elements must have all audio and visual information available in a transcript.</p>
+</p>
+
+
+
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:media-equiv-av-only-alt">
+        Success Criterion 1.2.1 (Audio-only and Video-only (Prerecorded))
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:media-equiv-av-only-alt">
+          How to Meet 1.2.1 (Audio-only and Video-only (Prerecorded))
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:media-equiv-av-only-alt.html">
+          Understanding Success Criterion 1.2.1 (Audio-only and Video-only (Prerecorded))
+        </a></li>
+      </ul>
+    </li>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:media-equiv-audio-desc">
+        Success Criterion 1.2.3 (Audio Description or Media Alternative (Prerecorded))
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:media-equiv-audio-desc">
+          How to Meet 1.2.3 (Audio Description or Media Alternative (Prerecorded))
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:media-equiv-audio-desc.html">
+          Understanding Success Criterion 1.2.3 (Audio Description or Media Alternative (Prerecorded))
+        </a></li>
+      </ul>
+    </li>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:media-equiv-text-doc">
+        Success Criterion 1.2.8 (Media Alternative (Prerecorded))
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:media-equiv-text-doc">
+          How to Meet 1.2.8 (Media Alternative (Prerecorded))
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:media-equiv-text-doc.html">
+          Understanding Success Criterion 1.2.8 (Media Alternative (Prerecorded))
+        </a></li>
+      </ul>
+    </li>
+  
+  </ul>
+
+
+<h2 id="test-procedure">Test Procedure</h2>
+
+<h3 id="applicability">Applicability</h3>
+
+<p>The rule applies to any <a href="../pages/algorithms/non-streaming-media-element.html">non-streaming</a> video element <a href="../pages/algorithms/visible-in-the-page.html">visible in the page</a></p>
+
+<h3 id="expectation-1">Expectation 1</h3>
+
+<p>A <a href="https://www.w3.org/TR/WCAG20/#alt-time-based-mediadef">text transcript</a> is available for the test target, either on the page or available through a link (or some other mechanism).</p>
+
+<h3 id="expectation-2">Expectation 2</h3>
+
+<p>The <a href="https://www.w3.org/TR/WCAG20/#alt-time-based-mediadef">text transcript</a> (from expectation 1) contains all the visual and auditory information of the test target.</p>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<p><em>There are currently no assumptions</em></p>
+
+<h2 id="accessibility-support">Accessibility support</h2>
+
+<p>There are no major accessibility support issues known for this rule.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li>https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html</li>
+  <li>https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html</li>
+  <li>https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-text-doc.html</li>
+  <li>https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G78</li>
+  <li>https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G173</li>
+  <li>https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G203</li>
+</ul>
+
+<h2 id="test-cases">Test Cases</h2>
+
+<h2 id="passed">Passed</h2>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+<span class="nt">&lt;p&gt;</span>The above video shows a giant fat rabbit climbing out of a hole in the ground. 
+He stretches, yaws, and then starts walking. 
+Then he stops to scratch his bottom.<span class="nt">&lt;/p&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-1+SC1-2-3-video-transcript-9e979552-0d41-4079-9bca-81fd1a38a5bd.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-1+SC1-2-3-video-transcript-9e979552-0d41-4079-9bca-81fd1a38a5bd.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/rabbit-video-transcript.html"</span><span class="nt">&gt;</span>Transcript<span class="nt">&lt;/p&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-1+SC1-2-3-video-transcript-b8a2e48e-b815-47f3-9f77-56d375c5bfcb.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-1+SC1-2-3-video-transcript-b8a2e48e-b815-47f3-9f77-56d375c5bfcb.html"></iframe> </div></div>
+<h2 id="failed">Failed</h2>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+<span class="nt">&lt;p&gt;</span>The above video shows a giant fat dog climbing out of a hole in the ground. 
+He stretches, yaws, and then starts walking. 
+Then he stops to scratch his bottom.<span class="nt">&lt;/p&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-1+SC1-2-3-video-transcript-62073d95-b650-4e65-adb5-6e292e2d0f10.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-1+SC1-2-3-video-transcript-62073d95-b650-4e65-adb5-6e292e2d0f10.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/rabbit-video-incorrect-transcript.html"</span><span class="nt">&gt;</span>Transcript<span class="nt">&lt;/p&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-1+SC1-2-3-video-transcript-298fe604-7a36-49d5-af8a-516bf75a1eed.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-1+SC1-2-3-video-transcript-298fe604-7a36-49d5-af8a-516bf75a1eed.html"></iframe> </div></div>
+<h2 id="inapplicable">Inapplicable</h2>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> TODO: a source to a live video
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-1+SC1-2-3-video-transcript-fbf985ca-2661-461d-9ffe-d985a82f54b1.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-1+SC1-2-3-video-transcript-fbf985ca-2661-461d-9ffe-d985a82f54b1.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
+<span class="nt">&lt;/video&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC1-2-1+SC1-2-3-video-transcript-a9ef3dda-5341-4a85-aca6-5dcf633bcba0.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC1-2-1+SC1-2-3-video-transcript-a9ef3dda-5341-4a85-aca6-5dcf633bcba0.html"></iframe> </div></div>
+
+
+
+  <h2 id="test-aspects">Test Aspects</h2>
+  Test aspects are defined as part of the <a href="https://w3c.github.io/wcag-act/act-rules-format.html#input-aspects-common">ACT Rules format 1.0</a>.
+  <ul>
+  
+    <li><p>DOM Tree</p>
+</li>
+  
+    <li><p>CSS Styling</p>
+</li>
+  
+    <li><p>Audio output</p>
+</li>
+  
+    <li><p>Visual output</p>
+</li>
+  
+  </ul>
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC1-2-1+SC1-2-3-video-transcript">Known issues</a></li>
+</ul>
+
+      </p>
+    </main>
+    
+    <script src="/auto-wcag/assets/js/jquery.min.js"></script>
+    <script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+   
+  </body>
+</html>
