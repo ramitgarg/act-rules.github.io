@@ -17,7 +17,9 @@
 -------------------------------------------------- */
 html {
   position: relative;
-  min-height: 100%; }
+  min-height: 100%;
+  overflow-x: hidden;
+  /* Prevent scroll on narrow devices */ }
 
 body {
   /* Margin bottom by footer height */
@@ -54,6 +56,8 @@ body {
     padding: 60px 15px 0; }
     body > .container .text-muted {
       margin: 20px 0; }
+    body > .container .glossary-usage-link {
+      display: block; }
     body > .container .embed-wrapper {
       display: flex;
       width: 100%;
