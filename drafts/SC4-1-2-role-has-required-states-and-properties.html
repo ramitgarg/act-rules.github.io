@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>
+      Rule: undefined - Auto-WCAG Rules
+    </title>
+    <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+    <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC4-1-2-role-has-required-states-and-properties.html">
+  </head>
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" 
+            class="navbar-toggle collapsed" 
+            data-toggle="collapse" 
+            data-target="#navbar" 
+            aria-expanded="false" 
+            aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" 
+            href="/auto-wcag/">
+              Auto-WCAG
+          </a>
+        </div>
+        <div id="navbar" 
+          class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/auto-wcag/pages/rules.html">Rules</a>
+            </li>
+            <li>
+              <a href="/auto-wcag/pages/drafts.html">Drafts</a>
+            </li>
+            
+            <!-- Rule Creation -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Creation <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-design.html">
+                    Rule design
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/review.html">
+                    Review process
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-template.html">
+                    Rule template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/test-template.html">
+                    Test case template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/style-guide.html">
+                    Style guide
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Rule Structure -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Structure <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/structure/terminology.html">Terminology</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/test-modes.html">Test modes</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/algorithms/">Algorithms</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/aggregation.html">Result aggregation</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/user-questions.html">User questions</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/accessibility-support.html">Accessibility support</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- About -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                About <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/contribute.html">How to contribute</a>
+                </li>
+                <li>
+                  <a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Begin page content -->
+    <main class="container">
+      
+        <div class="page-header">
+          <h1>Rule: undefined</h1>
+        </div>
+      
+      <p>
+        
+
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-06-24T20:49:02+00:00" itemprop="datePublished">Jun 24, 2018</time></p>
+
+
+
+
+
+
+
+
+
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="applicability">Applicability</h3>
+
+<p>Any HTML or SVG element that is <a href="#exposed-to-assistive-technologies">exposed to assistive technologies</a> and has a <a href="#semantic-role">semantic role</a>.</p>
+
+<h3 id="expectation-1">Expectation 1</h3>
+
+<p>For each test target all <a href="https://www.w3.org/TR/wai-aria/#requiredState">required states and properties</a> for that role as specified by <a href="https://www.w3.org/TR/wai-aria">WAI-ARIA</a> are present.</p>
+
+<h3 id="expectation-2">Expectation 2</h3>
+
+<p>Each of the <a href="https://www.w3.org/TR/wai-aria/#requiredState">required states and properties</a> have a valid value according to the <a href="https://www.w3.org/TR/wai-aria-1.1/#propcharacteristic_value">value type</a> for the given state or property as specified by <a href="https://www.w3.org/TR/wai-aria">WAI-ARIA</a>.</p>
+
+<p><strong>Note:</strong></p>
+<ul>
+  <li>If the value of the required states and properties is of value type <code class="highlighter-rouge">ID Reference</code> or <code class="highlighter-rouge">ID Reference List</code> ensure that an element with the given id exists in the document.</li>
+  <li>If the value of the required states and properties is of value type <code class="highlighter-rouge">URI</code> ensure that it matches the <a href="https://www.ietf.org/rfc/rfc3986.txt">generic URI syntax</a>.</li>
+</ul>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>Even though browsers and/or assistive technologies seem to support leaving out at least some <a href="https://www.w3.org/TR/wai-aria-1.1/#requiredState">required states and properties</a> if an <a href="https://www.w3.org/TR/wai-aria-1.1/#implictValueForRole">implicit value for role</a> is specified in <a href="https://www.w3.org/TR/wai-aria-1.1/#implictValueForRole">WAI-ARIA</a>, we do not consider it enough to pass this rule, that WAI-ARIA specifies an implicit value for the required states or properties for a role.</li>
+  <li>Checking that linked resources in required states or properties with value type <code class="highlighter-rouge">URI</code> are available is considered out of scope for this rule. For this rule it is considered sufficient that the value matches the <a href="https://www.ietf.org/rfc/rfc3986.txt">generic URI syntax</a>.</li>
+</ul>
+
+<h2 id="accessibility-support">Accessibility Support</h2>
+
+<p>If browsers and/or assistive technologies supports leaving out <a href="https://www.w3.org/TR/wai-aria-1.1/#requiredState">required states and properties</a> if an <a href="https://www.w3.org/TR/wai-aria-1.1/#implictValueForRole">implicit value for role</a> is specified in <a href="https://www.w3.org/TR/wai-aria-1.1/#implictValueForRole">WAI-ARIA</a>, failing this rule may not cause actual accessibility issues for users of assistive technologies.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/ARIA5">ARIA5: Using WAI-ARIA state and property attributes to expose the state of a user interface component</a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#requiredState">WAI-ARIA required states and properties</a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria/#propcharacteristic_value">Overview of possible WAI-ARIA states and properties value types</a></li>
+  <li><a href="https://www.ietf.org/rfc/rfc3986.txt">RFC 3986</a></li>
+</ul>
+
+<h2 id="test-cases">Test Cases</h2>
+
+<h3 id="passed">Passed</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Element has correct required states and properties --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"someElementId"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;select</span> <span class="na">role=</span><span class="s">"combobox"</span> <span class="na">aria-controls=</span><span class="s">''</span><span class="na">someElementId</span><span class="err">"</span><span class="nt">&gt;&lt;/select&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-fec3f6da-3e9f-4527-a69f-a956edb91a43.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-fec3f6da-3e9f-4527-a69f-a956edb91a43.html"></iframe> </div></div>
+<h3 id="failed">Failed</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Element does not list required states and properties --&gt;</span>
+<span class="nt">&lt;select</span> <span class="na">role=</span><span class="s">"combobox"</span><span class="nt">&gt;&lt;/select&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-0d4ba6e8-2f4a-4512-815f-5014ff8e11f8.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-0d4ba6e8-2f4a-4512-815f-5014ff8e11f8.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Element has wrong value type for required states and properties --&gt;</span>
+<span class="nt">&lt;select</span> <span class="na">role=</span><span class="s">"combobox"</span> <span class="na">aria-controls=</span><span class="s">''</span><span class="err">"</span><span class="nt">&gt;&lt;/select&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-09297e72-3e4c-4473-a801-a3675a3ee197.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-09297e72-3e4c-4473-a801-a3675a3ee197.html"></iframe> </div></div>
+<h3 id="inapplicable">Inapplicable</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Element does not have a semantic role--&gt;</span>
+<span class="nt">&lt;div&gt;</span>Some Content<span class="nt">&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-70864e64-eddd-4d5f-b3e4-828002f90648.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-70864e64-eddd-4d5f-b3e4-828002f90648.html"></iframe> </div></div>
+
+
+<h2>Definitions</h2><div class='glossary-list'><div class='glossary-item'><a id='exposed-to-assistive-technologies' href='/auto-wcag/pages/algorithms/exposed-to-assistive-technologies.html'><h3>Exposed to assistive technologies</h3></a><p>Elements should be contained in the accessibility tree as described in <a href="https://www.w3.org/TR/core-aam-1.1/#mapping_general">Core Accessibility API Mappings 1.1</a></p>
+</div></div></div>
+
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC4-1-2-role-has-required-states-and-properties">Known issues</a></li>
+</ul>
+
+      </p>
+    </main>
+
+
+    
+    <script src="/auto-wcag/assets/js/jquery.min.js"></script>
+    <script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+   
+  </body>
+</html>
