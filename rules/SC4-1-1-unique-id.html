@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>
+      Rule: unique element id attributes - Auto-WCAG Rules
+    </title>
+    <meta name="description" content="Test procedure">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+    <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/rules/SC4-1-1-unique-id.html">
+  </head>
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" 
+            class="navbar-toggle collapsed" 
+            data-toggle="collapse" 
+            data-target="#navbar" 
+            aria-expanded="false" 
+            aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" 
+            href="/auto-wcag/">
+              Auto-WCAG
+          </a>
+        </div>
+        <div id="navbar" 
+          class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/auto-wcag/pages/rules.html">Rules</a>
+            </li>
+            <li>
+              <a href="/auto-wcag/pages/drafts.html">Drafts</a>
+            </li>
+            
+            <!-- Rule Creation -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Creation <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-design.html">
+                    Rule design
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/review.html">
+                    Review process
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-template.html">
+                    Rule template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/test-template.html">
+                    Test case template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/style-guide.html">
+                    Style guide
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Rule Structure -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Structure <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/structure/terminology.html">Terminology</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/test-modes.html">Test modes</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/algorithms/">Algorithms</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/aggregation.html">Result aggregation</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/user-questions.html">User questions</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/accessibility-support.html">Accessibility support</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- About -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                About <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/contribute.html">How to contribute</a>
+                </li>
+                <li>
+                  <a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Begin page content -->
+    <main class="container">
+      
+        <div class="page-header">
+          <h1>Rule: unique element id attributes</h1>
+        </div>
+      
+      <p>
+        
+
+
+  
+
+
+
+  <p>Late updated: <time datetime="2018-06-24T20:46:57+00:00" itemprop="datePublished">Jun 24, 2018</time></p>
+
+
+
+  <p>
+    Created by: 
+    <ul>
+      
+        
+        <li>  
+          <a href="https://github.com/brynanders">
+            Bryn Anderson
+          </a>
+        </li>
+        
+      
+        
+        <li>
+          Anne Thyme
+        </li>
+        
+      
+    </ul>
+  </p>
+
+
+
+  <p>
+    Success_criterion: 
+    <ul>
+      
+        
+        <li>
+          <a href="https://www.w3.org/TR/WCAG20/#">
+            4.1.1 (Parsing)
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
+
+
+
+  <h2 id="description">Description</h2>
+  <p><p>This rule checks that all <code class="highlighter-rouge">id</code> attribute values on a single page are unique.</p>
+</p>
+
+
+
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:ensure-compat-parses">
+        Success Criterion 4.1.1 (Parsing)
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:ensure-compat-parses">
+          How to Meet 4.1.1 (Parsing)
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:ensure-compat-parses.html">
+          Understanding Success Criterion 4.1.1 (Parsing)
+        </a></li>
+      </ul>
+    </li>
+  
+  </ul>
+
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="applicability">Applicability</h3>
+
+<p>Any element that has an <code class="highlighter-rouge">id</code> attribute.</p>
+
+<h3 id="expectation">Expectation</h3>
+
+<p>Each test target has an <code class="highlighter-rouge">id</code> attribute value that is unique within the <a href="#document-context">document context</a> of the element.</p>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<p>There are currently no assumptions.</p>
+
+<h2 id="accessibility-support">Accessibility Support</h2>
+
+<p>There are no major accessibility support issues known for this rule.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li>https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=411#qr-ensure-compat-parses</li>
+  <li>https://www.w3.org/TR/WCAG20-TECHS/H93.html</li>
+  <li>https://www.w3.org/TR/WCAG20-TECHS/H94.html</li>
+</ul>
+
+<h2 id="test-cases">Test Cases</h2>
+
+<h3 id="passed">Passed</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-div"</span><span class="nt">&gt;</span> This is my first element<span class="nt">&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-52f99f3e-649b-4d6a-955a-1ed6c5ddd3cb.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-52f99f3e-649b-4d6a-955a-1ed6c5ddd3cb.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-div1"</span><span class="nt">&gt;</span> This is my first element<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-div2"</span><span class="nt">&gt;</span> This is my second element<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">id=</span><span class="s">"my-div3"</span><span class="nt">&gt;</span> This is my third element<span class="nt">&lt;/svg&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-478dc059-be67-45d6-8740-11df5037b2f1.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-478dc059-be67-45d6-8740-11df5037b2f1.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-elm"</span><span class="nt">&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+  <span class="kd">var</span> <span class="nx">myElm</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="s1">'my-elm'</span><span class="p">);</span>
+  <span class="kd">var</span> <span class="nx">shadow</span> <span class="o">=</span> <span class="nx">myElm</span><span class="p">.</span><span class="nx">attachShadow</span><span class="p">({</span> <span class="na">mode</span><span class="p">:</span> <span class="s1">'open'</span> <span class="p">});</span>
+  <span class="nx">shadow</span><span class="p">.</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="s1">'&lt;b id="my-elm"&gt;&lt;slot&gt;&lt;/slot&gt;&lt;/b&gt;'</span><span class="p">;</span>
+<span class="nt">&lt;/script&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-0ad6cdbe-b066-481c-ad85-673350d5cd17.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-0ad6cdbe-b066-481c-ad85-673350d5cd17.html"></iframe> </div></div>
+<h3 id="failed">Failed</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-div"</span><span class="nt">&gt;</span> This is my first element<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-div"</span><span class="nt">&gt;</span> This is my second element<span class="nt">&lt;/svg&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-f928866c-47cc-406d-b1f6-4bcaf5c25baf.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-f928866c-47cc-406d-b1f6-4bcaf5c25baf.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-div"</span><span class="nt">&gt;</span> This is my first element<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">id=</span><span class="s">"my-div"</span><span class="nt">&gt;</span> This is my second element<span class="nt">&lt;/svg&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-1c84c1b3-2ca8-444e-b49a-3009d3d55008.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-1c84c1b3-2ca8-444e-b49a-3009d3d55008.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"my-div"</span> <span class="na">style=</span><span class="s">"display:none"</span><span class="nt">&gt;</span> This is my first element<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;svg</span> <span class="na">id=</span><span class="s">"my-div"</span><span class="nt">&gt;</span> This is my second element<span class="nt">&lt;/svg&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-14d614ac-1cbf-4c31-a975-1e6e75326094.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-14d614ac-1cbf-4c31-a975-1e6e75326094.html"></iframe> </div></div>
+<h3 id="inapplicable">Inapplicable</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div&gt;</span>This is my first element<span class="nt">&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-4f90192b-0b5a-4790-acdf-48907335776f.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-4f90192b-0b5a-4790-acdf-48907335776f.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">xml:id=</span><span class="s">"my-div"</span><span class="nt">&gt;</span>This is my first element<span class="nt">&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-1-unique-id-01009493-791f-460b-99e6-6d68cb0bb1a3.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-1-unique-id-01009493-791f-460b-99e6-6d68cb0bb1a3.html"></iframe> </div></div>
+
+
+
+
+
+  <h2 id="test-aspects">Test Aspects</h2>
+  Test aspects are defined as part of the <a href="https://w3c.github.io/wcag-act/act-rules-format.html#input-aspects-common">ACT Rules format 1.0</a>.
+  <ul>
+  
+    <li><p>DOM Tree</p>
+</li>
+  
+  </ul>
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC4-1-1-unique-id">Known issues</a></li>
+</ul>
+
+      </p>
+    </main>
+
+
+    
+    <script src="/auto-wcag/assets/js/jquery.min.js"></script>
+    <script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+   
+  </body>
+</html>
