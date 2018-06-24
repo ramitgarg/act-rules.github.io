@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>
+      Rule: label and name from content mismatch - Auto-WCAG Rules
+    </title>
+    <meta name="description" content="Test procedure">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+    <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC2-5-3-label-content-name-mismatch.html">
+  </head>
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" 
+            class="navbar-toggle collapsed" 
+            data-toggle="collapse" 
+            data-target="#navbar" 
+            aria-expanded="false" 
+            aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" 
+            href="/auto-wcag/">
+              Auto-WCAG
+          </a>
+        </div>
+        <div id="navbar" 
+          class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/auto-wcag/pages/rules.html">Rules</a>
+            </li>
+            <li>
+              <a href="/auto-wcag/pages/drafts.html">Drafts</a>
+            </li>
+            
+            <!-- Rule Creation -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Creation <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-design.html">
+                    Rule design
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/review.html">
+                    Review process
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-template.html">
+                    Rule template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/test-template.html">
+                    Test case template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/style-guide.html">
+                    Style guide
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Rule Structure -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Structure <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/structure/terminology.html">Terminology</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/test-modes.html">Test modes</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/algorithms/">Algorithms</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/aggregation.html">Result aggregation</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/user-questions.html">User questions</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/accessibility-support.html">Accessibility support</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- About -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                About <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/contribute.html">How to contribute</a>
+                </li>
+                <li>
+                  <a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Begin page content -->
+    <main class="container">
+      
+        <div class="page-header">
+          <h1>Rule: label and name from content mismatch</h1>
+        </div>
+      
+      <p>
+        
+
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-06-24T21:15:02+00:00" itemprop="datePublished">Jun 24, 2018</time></p>
+
+
+
+  <p>
+    Created by: 
+    <ul>
+      
+        
+        <li>  
+          <a href="https://github.com/annethyme">
+            Anne Thyme Nørregaard
+          </a>
+        </li>
+        
+      
+        
+        <li>  
+          <a href="https://github.com/brynanders">
+            Bryn Anderson
+          </a>
+        </li>
+        
+      
+        
+        <li>  
+          <a href="https://github.com/jkodu">
+            Jey Nandakumar
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
+
+
+
+  <p>
+    Success_criterion: 
+    <ul>
+      
+        
+        <li>
+          <a href="https://www.w3.org/TR/WCAG20/#">
+             ()
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
+
+
+
+  <h2 id="description">Description</h2>
+  <p><p>Interactive elements labelled through their content must have their visible label as part of their <a href="#accessible-name">accessible name</a></p>
+</p>
+
+
+
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#">
+        Success Criterion  ()
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#">
+          How to Meet  ()
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/.html">
+          Understanding Success Criterion  ()
+        </a></li>
+      </ul>
+    </li>
+  
+  </ul>
+
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="applicability">Applicability</h3>
+
+<p>This rule applies to any element that has:</p>
+<ul>
+  <li>a <a href="https://www.w3.org/TR/wai-aria-1.1/#widget_roles">widget role</a> that <a href="https://www.w3.org/TR/wai-aria-1.1/#namefromcontent">supports name from content</a>, and</li>
+  <li><a href="#visible-text-content">visible text content</a>, and</li>
+  <li>an <code class="highlighter-rouge">aria-label</code> or <code class="highlighter-rouge">aria-labelledby</code> attribute.</li>
+</ul>
+
+<p><strong>Note</strong>: <a href="https://www.w3.org/TR/wai-aria-1.1/#widget_roles">widget roles</a> that <a href="https://www.w3.org/TR/wai-aria-1.1/#namefromcontent">supports name from content</a> are: <code class="highlighter-rouge">button</code>, <code class="highlighter-rouge">checkbox</code>, <code class="highlighter-rouge">gridcell</code>, <code class="highlighter-rouge">link</code>, <code class="highlighter-rouge">menuitem</code>, <code class="highlighter-rouge">menuitemcheckbox</code>, <code class="highlighter-rouge">menuitemradio</code>, <code class="highlighter-rouge">option</code>, <code class="highlighter-rouge">radio</code>, <code class="highlighter-rouge">searchbox</code>, <code class="highlighter-rouge">switch</code>, <code class="highlighter-rouge">tab</code>, <code class="highlighter-rouge">treeitem</code>.</p>
+
+<h3 id="expectation-1">Expectation 1</h3>
+
+<p>The complete <a href="#visible-text-content">visible text content</a> of the target element either matches or is contained within it’s <a href="#accessible-name">accessible name</a>. Leading and trailing whitespace and difference in case sensitivity should be ignored.</p>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<p><em>There are currently no assumptions</em></p>
+
+<h2 id="accessibility-support">Accessibility Support</h2>
+
+<p>There are no major accessibility support issues known for this rule.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li>https://www.w3.org/TR/WCAG21/#label-in-name</li>
+</ul>
+
+<h2 id="test-cases">Test cases</h2>
+
+<h3 id="passed">Passed</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Visible label and accessible name matches when trailing white spaces are removed --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"link"</span> <span class="na">aria-label=</span><span class="s">"next page "</span><span class="nt">&gt;</span>next page<span class="nt">&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-8eb7711c-4962-431c-a260-d843ec5dfcd8.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-8eb7711c-4962-431c-a260-d843ec5dfcd8.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Character insensitivity between visible label and accessible name --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"link"</span> <span class="na">aria-label=</span><span class="s">"Next Page"</span><span class="nt">&gt;</span>next page<span class="nt">&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-7d7208dd-c6af-48c2-84eb-58670b86c485.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-7d7208dd-c6af-48c2-84eb-58670b86c485.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Full visible label is contained in the accessible name --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">name=</span><span class="s">"link"</span> <span class="na">aria-label=</span><span class="s">"Next Page in the list"</span><span class="nt">&gt;</span>Next Page<span class="nt">&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-91555c3a-40dd-443a-8bb3-375c628e07be.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-91555c3a-40dd-443a-8bb3-375c628e07be.html"></iframe> </div></div>
+<h3 id="failed">Failed</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Visible label doesn't match accessible name --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"link"</span> <span class="na">aria-label=</span><span class="s">"OK"</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/a&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-2b4b3220-9dab-436c-b43b-a5f4b61eb93d.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-2b4b3220-9dab-436c-b43b-a5f4b61eb93d.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Not all of visible label is included in accessible name --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">name=</span><span class="s">"link"</span> <span class="na">aria-label=</span><span class="s">"the full"</span><span class="nt">&gt;</span>The full label<span class="nt">&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-0ad7091b-91d9-4999-a243-837de2df2865.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-0ad7091b-91d9-4999-a243-837de2df2865.html"></iframe> </div></div>
+<h3 id="inapplicable">Inapplicable</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Not a widget role --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">aria-label=</span><span class="s">"OK"</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/a&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-b0c7e00b-5c13-4d2f-a5a7-7ae6fd115079.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-b0c7e00b-5c13-4d2f-a5a7-7ae6fd115079.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Widget role that does not support name from content --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"email"</span> <span class="na">aria-label=</span><span class="s">"E-mail"</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/input&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-81327ece-bc25-475e-93d1-0a5ca8793f8b.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-81327ece-bc25-475e-93d1-0a5ca8793f8b.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Non-widget role that supports name from content --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tooltip"</span> <span class="na">aria-label=</span><span class="s">"OK"</span><span class="nt">&gt;</span>Next<span class="nt">&lt;/a&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-87a6f0f6-389c-426c-9720-3790cfc17b49.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-87a6f0f6-389c-426c-9720-3790cfc17b49.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- No rendered text in name from content --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"tooltip"</span> <span class="na">aria-label=</span><span class="s">"OK"</span><span class="nt">&gt;&lt;/a&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-c3453965-6d37-493c-8f1d-d55eee9597a1.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-c3453965-6d37-493c-8f1d-d55eee9597a1.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Non-text content --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">aria-label=</span><span class="s">"close"</span><span class="nt">&gt;</span>X<span class="nt">&lt;/button&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-67f11010-f7b1-413d-9551-ee291ade1bdf.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-5-3-label-content-name-mismatch-67f11010-f7b1-413d-9551-ee291ade1bdf.html"></iframe> </div></div>
+
+
+<h2>Definitions</h2><div class='glossary-list'><div class='glossary-item'><a id='accessible-name' href='/auto-wcag/pages/algorithms/accessible-name.html'><h3>Accessible Name</h3></a><p>The programatically determined name of a user interface element that is exposed to assistive technologies.</p>
+
+<p>The accessible name is calculated using the <a href="https://www.w3.org/TR/accname">accessible name computation</a>.</p>
+
+<p>For native markup languages, such as HTML and SVG, additional information on how to calculate the accessible name can be found in https://www.w3.org/TR/html-aam/#accessible-name-and-description-computation and https://www.w3.org/TR/svg-aam/#mapping_additional.</p>
+</div></div></div>
+
+
+  <h2 id="test-aspects">Test Aspects</h2>
+  Test aspects are defined as part of the <a href="https://w3c.github.io/wcag-act/act-rules-format.html#input-aspects-common">ACT Rules format 1.0</a>.
+  <ul>
+  
+    <li><p>DOM Tree</p>
+</li>
+  
+    <li><p>CSS Styling</p>
+</li>
+  
+  </ul>
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC2-5-3-label-content-name-mismatch">Known issues</a></li>
+</ul>
+
+      </p>
+    </main>
+
+
+    
+    <script src="/auto-wcag/assets/js/jquery.min.js"></script>
+    <script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+   
+  </body>
+</html>
