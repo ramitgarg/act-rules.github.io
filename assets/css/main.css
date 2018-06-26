@@ -54,6 +54,10 @@ body {
           background-color: #004563; }
   body > .container {
     padding: 60px 15px 0; }
+    body > .container .draft-note {
+      background-color: #FF530D;
+      color: #fff;
+      padding: 2rem; }
     body > .container .text-muted {
       margin: 20px 0; }
     body > .container .glossary-usage-link {

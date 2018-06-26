@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>
+      Rule: SC3-1-1-html-xml-lang-match - Auto-WCAG Rules
+    </title>
+    <meta name="description" content="Test Procedure">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+    <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/rules/SC3-1-1-html-xml-lang-match.html">
+  </head>
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" 
+            class="navbar-toggle collapsed" 
+            data-toggle="collapse" 
+            data-target="#navbar" 
+            aria-expanded="false" 
+            aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" 
+            href="/auto-wcag/">
+              Auto-WCAG
+          </a>
+        </div>
+        <div id="navbar" 
+          class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/auto-wcag/pages/rules.html">Rules</a>
+            </li>
+            <li>
+              <a href="/auto-wcag/pages/drafts.html">Drafts</a>
+            </li>
+            
+            <!-- Rule Creation -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Creation <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-design.html">
+                    Rule design
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/review.html">
+                    Review process
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-template.html">
+                    Rule template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/test-template.html">
+                    Test case template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/style-guide.html">
+                    Style guide
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Rule Structure -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Structure <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/structure/terminology.html">Terminology</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/test-modes.html">Test modes</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/algorithms/">Algorithms</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/aggregation.html">Result aggregation</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/user-questions.html">User questions</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/accessibility-support.html">Accessibility support</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- About -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                About <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/contribute.html">How to contribute</a>
+                </li>
+                <li>
+                  <a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Begin page content -->
+    <main class="container">
+      
+        <div class="page-header">
+          <h1>Rule: SC3-1-1-html-xml-lang-match</h1>
+        </div>
+      
+      <p>
+        
+
+
+  
+
+
+
+  <p>Late updated: <time datetime="2018-06-26T08:46:08+00:00" itemprop="datePublished">Jun 26, 2018</time></p>
+
+
+
+  <p>
+    Created by: 
+    <ul>
+      
+        
+        <li>
+          Annika Nietzio
+        </li>
+        
+      
+        
+        <li>  
+          <a href="https://github.com/jkodu">
+            Jey Nandakumar
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
+
+
+
+  <p>
+    Success_criterion: 
+    <ul>
+      
+        
+        <li>
+          <a href="https://www.w3.org/TR/WCAG20/#">
+            3.1.1 (Language of Page)
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
+
+
+
+  <h2 id="description">Description</h2>
+  <p><p>The rule checks that for the <code class="highlighter-rouge">html</code> element, there is no mismatch between the primary language in non-empty <code class="highlighter-rouge">lang</code> and <code class="highlighter-rouge">xml:lang</code> attributes, if both are used.</p>
+</p>
+
+
+
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:meaning-doc-lang-id">
+        Success Criterion 3.1.1 (Language of Page)
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:meaning-doc-lang-id">
+          How to Meet 3.1.1 (Language of Page)
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:meaning-doc-lang-id.html">
+          Understanding Success Criterion 3.1.1 (Language of Page)
+        </a></li>
+      </ul>
+    </li>
+  
+  </ul>
+
+
+<h2 id="test-procedure">Test Procedure</h2>
+
+<h3 id="applicability">Applicability</h3>
+
+<p>The root element of the page, if it is an <code class="highlighter-rouge">html</code> element with both <a href="#non-empty">non-empty</a> <code class="highlighter-rouge">lang</code> and <code class="highlighter-rouge">xml:lang</code> attributes that has a <a href="#valid-language-subtag">valid language subtag</a>.</p>
+
+<h3 id="expectation">Expectation</h3>
+
+<p>The value of the primary language subtag (characters before the first dash) for the <code class="highlighter-rouge">lang</code> and <code class="highlighter-rouge">xml:lang</code> attributes are the same.</p>
+
+<p><strong>Note</strong>: HTML 5 specification requires the <code class="highlighter-rouge">lang</code> and <code class="highlighter-rouge">xml:lang</code> attributes to match exactly. This is not known to impact accessibility, which is why it is permitted in this rule.</p>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>Although there is no known way that an inappropriate secondary subtag in the <code class="highlighter-rouge">lang</code> or <code class="highlighter-rouge">xml:lang</code> attribute (such as “en-XYZ”) can lead to accessibility issues, it is conceivable that with specific assistive technologies on some languages, there can be exceptions. In that case <code class="highlighter-rouge">lang</code> and <code class="highlighter-rouge">xml:lang</code> should have matching secondary subtags.</li>
+</ul>
+
+<h2 id="accessibility-support">Accessibility Support</h2>
+
+<p>Since most assistive technologies will consistently use <code class="highlighter-rouge">lang</code> over <code class="highlighter-rouge">xml:lang</code> when both are used, violation of this rule may not necessarily be a violation of WCAG 2. Only when there are inconsistencies between assistive technologies, as to which attribute is used to determine the language, does this lead to a violation of SC 3.1.1.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li>https://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/H57</li>
+  <li>https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang</li>
+  <li>https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xml:lang</li>
+  <li>https://www.w3.org/TR/WCAG20-TECHS/H57.html</li>
+</ul>
+
+<h2 id="test-cases">Test Cases</h2>
+
+<h3 id="passed">Passed</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-0937a7ca-d84f-4c06-a0f9-d83877a4e3f8.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-0937a7ca-d84f-4c06-a0f9-d83877a4e3f8.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span> <span class="na">xml:lang=</span><span class="s">"En"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-a33431d7-b0be-4d9c-bab9-4e05b1b22cf3.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-a33431d7-b0be-4d9c-bab9-4e05b1b22cf3.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span> <span class="na">xml:lang=</span><span class="s">"en-GB"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-4b30bed9-5205-4cd6-8b52-ec779ebddd8e.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-4b30bed9-5205-4cd6-8b52-ec779ebddd8e.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en-GB"</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-48c5337c-0a3c-420b-bf2e-84663758113f.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-48c5337c-0a3c-420b-bf2e-84663758113f.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- lang/xml:lang value does not confirm to BCP 47 --&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en-XYZ"</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-4a465db9-c025-4c79-90f3-6e4d5da7cea3.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-4a465db9-c025-4c79-90f3-6e4d5da7cea3.html"></iframe> </div></div>
+<h3 id="failed">Failed</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-6c033ffc-e177-4f69-894f-968ef643743c.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-6c033ffc-e177-4f69-894f-968ef643743c.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- lang/xml:lang value does not confirm to BCP 47 --&gt;</span>
+<span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en-XYZ"</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-fa6338e8-79d2-405e-aa7f-496e6cf3cc8c.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-fa6338e8-79d2-405e-aa7f-496e6cf3cc8c.html"></iframe> </div></div>
+<h3 id="inapplicable">Inapplicable</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;svg</span> <span class="na">lang=</span><span class="s">"en"</span> <span class="na">xml:lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-74a7e5e9-b590-40e9-b61e-ae789fac1e79.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-74a7e5e9-b590-40e9-b61e-ae789fac1e79.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span> <span class="na">xml:lang=</span><span class="s">""</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-3b6cc5f8-5487-489e-855c-c97ea5d44b35.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-3b6cc5f8-5487-489e-855c-c97ea5d44b35.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">""</span> <span class="na">xml:lang=</span><span class="s">""</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-763dd57f-39aa-43f4-a6c2-dbca76ed0b3f.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-xml-lang-match-763dd57f-39aa-43f4-a6c2-dbca76ed0b3f.html"></iframe> </div></div>
+
+
+<h2>Definitions</h2><div class='glossary-list'><div class='glossary-item'><a id='non-empty' href='/auto-wcag/pages/algorithms/non-empty.html'><h3>Non-empty text string</h3></a><p>A string of characters (text) is considered <em>“non-empty”</em> if it contains 1 or more characters that are contained within any of the following unicode categories:</p>
+
+<ul>
+  <li><strong>Ll</strong>: Letter, Lowercase</li>
+  <li><strong>Lu</strong>: Letter, Uppercase</li>
+  <li><strong>Lt</strong>: Letter, Titlecase</li>
+  <li><strong>Lo</strong>: Letter, Other</li>
+  <li><strong>Lm</strong>: Letter, Modifier</li>
+  <li><strong>Nd</strong>: Number, Decimal Digit</li>
+</ul>
+
+<p>For more details on unicode categories, check out <a href="http://www.fileformat.info/info/unicode/category/index.htm">www.fileformat.info/info/unicode/category/</a></p>
+
+</div></div></div>
+
+
+  <h2 id="test-aspects">Test Aspects</h2>
+  Test aspects are defined as part of the <a href="https://w3c.github.io/wcag-act/act-rules-format.html#input-aspects-common">ACT Rules format 1.0</a>.
+  <ul>
+  
+    <li><p>DOM Tree</p>
+</li>
+  
+  </ul>
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC3-1-1-html-xml-lang-match">Known issues</a></li>
+</ul>
+
+      </p>
+    </main>
+
+
+    
+    <script src="/auto-wcag/assets/js/jquery.min.js"></script>
+    <script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+   
+  </body>
+</html>
