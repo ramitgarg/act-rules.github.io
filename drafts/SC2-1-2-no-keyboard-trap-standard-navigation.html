@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <title>
+      Rule: No keyboard trap standard navigation - Auto-WCAG Rules
+    </title>
+    <meta name="description" content="Test procedure">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+    <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/drafts/SC2-1-2-no-keyboard-trap-standard-navigation.html">
+  </head>
+  <body>
+
+    <!-- Fixed navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" 
+            class="navbar-toggle collapsed" 
+            data-toggle="collapse" 
+            data-target="#navbar" 
+            aria-expanded="false" 
+            aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" 
+            href="/auto-wcag/">
+              Auto-WCAG
+          </a>
+        </div>
+        <div id="navbar" 
+          class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/auto-wcag/pages/rules.html">Rules</a>
+            </li>
+            <li>
+              <a href="/auto-wcag/pages/drafts.html">Drafts</a>
+            </li>
+            
+            <!-- Rule Creation -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Creation <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-design.html">
+                    Rule design
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/review.html">
+                    Review process
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/rule-template.html">
+                    Rule template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/test-template.html">
+                    Test case template
+                  </a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/design/style-guide.html">
+                    Style guide
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- Rule Structure -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                Rule Structure <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/structure/terminology.html">Terminology</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/test-modes.html">Test modes</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/algorithms/">Algorithms</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/aggregation.html">Result aggregation</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/user-questions.html">User questions</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/structure/accessibility-support.html">Accessibility support</a>
+                </li>
+              </ul>
+            </li>
+
+            <!-- About -->
+            <li class="dropdown">
+              <a href="#" 
+                class="dropdown-toggle" 
+                data-toggle="dropdown" 
+                role="button" 
+                aria-haspopup="true" 
+                aria-expanded="false">
+                About <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="/auto-wcag/pages/about.html">About Us</a>
+                </li>
+                <li>
+                  <a href="/auto-wcag/pages/contribute.html">How to contribute</a>
+                </li>
+                <li>
+                  <a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a>
+                </li>
+              </ul>
+            </li>
+
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <!-- Begin page content -->
+    <main class="container">
+      
+        <div class="page-header">
+          <h1>Rule: No keyboard trap standard navigation</h1>
+        </div>
+      
+      <p>
+        
+
+
+  
+  <p class="draft-note"><strong>Please note, this is a draft</strong></p>
+
+
+
+  <p>Late updated: <time datetime="2018-06-27T10:43:22+00:00" itemprop="datePublished">Jun 27, 2018</time></p>
+
+
+
+  <p>
+    Created by: 
+    <ul>
+      
+        
+        <li>  
+          <a href="https://github.com/DagfinnRomen">
+            Dagfinn Rømen
+          </a>
+        </li>
+        
+      
+        
+        <li>  
+          <a href="https://github.com/geirsf">
+            Geir Sindre Fossøy
+          </a>
+        </li>
+        
+      
+        
+        <li>  
+          <a href="https://github.com/MaliinO">
+            Malin Øvrebø
+          </a>
+        </li>
+        
+      
+        
+        <li>  
+          <a href="https://github.com/nitedog">
+            Shadi Abou-Zahra
+          </a>
+        </li>
+        
+      
+        
+        <li>  
+          <a href="https://github.com/carlosapaduarte">
+            Carlos Duarte
+          </a>
+        </li>
+        
+      
+        
+        <li>  
+          <a href="https://github.com/annethyme">
+            Anne Thyme Nørregaard
+          </a>
+        </li>
+        
+      
+        
+        <li>  
+          <a href="https://github.com/skotkjerra">
+            Stein Erik Skotkjerra
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
+
+
+
+  <p>
+    Success_criterion: 
+    <ul>
+      
+        
+        <li>
+          <a href="https://www.w3.org/TR/WCAG20/#">
+            2.1.2 (No Keyboard Trap)
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
+
+
+
+  <h2 id="description">Description</h2>
+  <p><p>This rule checks if it is possible to use standard keyboard navigation to navigate through all content on a web page without becoming trapped in any element.</p>
+</p>
+
+
+
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:keyboard-operation-trapping">
+        Success Criterion 2.1.2 (No Keyboard Trap)
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:keyboard-operation-trapping">
+          How to Meet 2.1.2 (No Keyboard Trap)
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:keyboard-operation-trapping.html">
+          Understanding Success Criterion 2.1.2 (No Keyboard Trap)
+        </a></li>
+      </ul>
+    </li>
+  
+  </ul>
+
+
+<h2 id="test-procedure">Test procedure</h2>
+
+<h3 id="applicability">Applicability</h3>
+
+<p>The rule applies to any HTML or SVG element on a web page that is <a href="../pages/algorithms/focusable.html">focusable</a>.</p>
+
+<h3 id="expectation">Expectation</h3>
+
+<p>For each target element focus can cycle to the browser UI by using <a href="../pages/algorithms/standard-keyboard-navigation.html">standard keyboard navigation</a>.</p>
+
+<p><strong>Note</strong>: Cycling back to the browser UI can be done both by moving forward through the tab order and by moving backwards. It is not possible to fulfil this expectation by using browser specific shortcuts to return to the browser UI.</p>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<ul>
+  <li>The focus order in keyboard navigation is cyclical, not linear, meaning that the focus order will cycle to the first/last element when it moves away from the last/first element.</li>
+  <li>The Browser UI is part of the focus navigation cycle of the page.</li>
+</ul>
+
+<h2 id="accessibility-support">Accessibility support</h2>
+
+<p>There are no major accessibility support issues known for this rule.</p>
+
+<h2 id="background">Background</h2>
+
+<ul>
+  <li>https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html</li>
+  <li>https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G21</li>
+  <li>https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F10</li>
+</ul>
+
+<h2 id="test-cases">Test Cases</h2>
+
+<h3 id="passed">Passed</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;a</span> <span class="na">href =</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 1<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"target"</span><span class="nt">&gt;</span>Button1<span class="nt">&lt;/button&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-7d1ef94d-cfd7-4de2-a906-0d869b1c6415.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-7d1ef94d-cfd7-4de2-a906-0d869b1c6415.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Tab index 1 --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">tabindex=</span><span class="s">“1”</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-1789b5bf-4d49-45e7-88d4-461d2a6bdec3.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-1789b5bf-4d49-45e7-88d4-461d2a6bdec3.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Tab index -1 --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">tabindex=</span><span class="s">“-1”</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-772331ab-7c8f-4d58-8f8c-6f49421c9089.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-772331ab-7c8f-4d58-8f8c-6f49421c9089.html"></iframe> </div></div>
+<h3 id="failed">Failed</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Keyboard trap one element --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 1<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"target"</span> <span class="na">onblur=</span><span class="s">"setTimeout(() =&gt; this.focus(), 10)"</span><span class="nt">&gt;</span>Button1<span class="nt">&lt;/button&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-233beeab-71f5-49b1-a197-769e5e9d4217.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-233beeab-71f5-49b1-a197-769e5e9d4217.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Keyboard trap group --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"target"</span> <span class="na">onblur=</span><span class="s">"setTimeout(() =&gt; this.nextSibling.focus(), 10)"</span><span class="nt">&gt;</span>Button1<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"target"</span> <span class="na">onblur=</span><span class="s">"setTimeout(() =&gt; this.previousSibling.focus(), 10)"</span><span class="nt">&gt;</span>Button2<span class="nt">&lt;/button&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-285d7714-962e-41c7-85bf-b95933441ce8.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-285d7714-962e-41c7-85bf-b95933441ce8.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- A focusable element inbetween to keyboard traps --&gt;</span>
+<span class="nt">&lt;button</span><span class="err"> </span><span class="na">onblur=</span><span class="s">"setTimeout(() =&gt; this.focus(), 10)"</span><span class="nt">&gt;</span>Button 1<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span><span class="err"> </span><span class="na">class=</span><span class="s">"target"</span><span class="err"> </span><span class="nt">&gt;</span>Button 2<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span><span class="err"> </span><span class="na">onblur=</span><span class="s">"setTimeout(() =&gt; this.focus(), 10)"</span><span class="nt">&gt;</span>Button 3<span class="nt">&lt;/button&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-fca0862c-1d20-4eaa-818f-3f0ee004071e.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-fca0862c-1d20-4eaa-818f-3f0ee004071e.html"></iframe> </div></div>
+<h3 id="inapplicable">Inapplicable</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- No focusable element --&gt;</span>
+<span class="nt">&lt;h1&gt;</span>Page 1<span class="nt">&lt;/h1&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-c05f6c02-5fba-44b5-b3f0-3c123a06f678.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-c05f6c02-5fba-44b5-b3f0-3c123a06f678.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Disabled element --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">disabled</span><span class="nt">&gt;</span>Click Me!<span class="nt">&lt;/button&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-5822f16c-1c75-4c9e-9621-a8719ecbe1cb.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-5822f16c-1c75-4c9e-9621-a8719ecbe1cb.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Hidden element using display:none --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">style=</span><span class="s">“display:none;”</span><span class="nt">&gt;</span>Click Me!<span class="nt">&lt;/button&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-2764eaab-f607-4a60-b024-5dae0ccd0c6c.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-2764eaab-f607-4a60-b024-5dae0ccd0c6c.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Hidden element using visibility:hidden --&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href =</span><span class="s">"#"</span> <span class="na">style=</span><span class="s">"visibility:hidden;"</span><span class="nt">&gt;</span>Link 1<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"target"</span> <span class="na">style=</span><span class="s">"visibility:hidden;"</span><span class="nt">&gt;</span>Button1<span class="nt">&lt;/button&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-b1329532-34a8-48f1-99d8-149d3773e9af.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-1-2-no-keyboard-trap-standard-navigation-b1329532-34a8-48f1-99d8-149d3773e9af.html"></iframe> </div></div>
+
+
+
+
+
+
+<h2 id="related-resources">Related Resources</h2>
+<ul>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC2-1-2-no-keyboard-trap-standard-navigation">Known issues</a></li>
+</ul>
+
+      </p>
+    </main>
+
+
+    
+    <script src="/auto-wcag/assets/js/jquery.min.js"></script>
+    <script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
+   
+  </body>
+</html>
