@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     
     <title>
-      Rule: HTML Page has a title - Auto-WCAG Rules
+      Rule: Valid body lang attribute - Auto-WCAG Rules
     </title>
-    <meta name="description" content="Test procedure">
+    <meta name="description" content="Test Procedure">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
-    <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/rules/SC2-4-2-page-has-title.html">
+    <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/rules/SC3-1-2-lang-valid.html">
   </head>
   <body>
 
@@ -147,7 +147,7 @@
     <main class="container">
       
         <div class="page-header">
-          <h1>Rule: HTML Page has a title</h1>
+          <h1>Rule: Valid body lang attribute</h1>
         </div>
       
       <p>
@@ -168,32 +168,8 @@
       
         
         <li>  
-          <a href="https://github.com/wilcofiers">
-            Wilco Fiers
-          </a>
-        </li>
-        
-      
-        
-        <li>  
-          <a href="https://github.com/skotkjerra">
-            Stein Erik Skotkjerra
-          </a>
-        </li>
-        
-      
-        
-        <li>  
           <a href="https://github.com/brynanders">
             Bryn Anderson
-          </a>
-        </li>
-        
-      
-        
-        <li>  
-          <a href="https://github.com/annethyme">
-            Anne Thyme Nørregaard
           </a>
         </li>
         
@@ -218,7 +194,7 @@
         
         <li>
           <a href="https://www.w3.org/TR/WCAG20/#">
-            2.4.2 (Page Titled)
+            3.1.2 (Language of Parts)
           </a>
         </li>
         
@@ -229,7 +205,7 @@
 
 
   <h2 id="description">Description</h2>
-  <p><p>This rule checks that the HTML page has a title</p>
+  <p><p>[“This rule checks that <code class="highlighter-rouge">lang</code> or <code class="highlighter-rouge">xml:lang</code> attributes on elements within the <code class="highlighter-rouge">body</code> of a web page conforms to <a href="https://www.ietf.org/rfc/bcp/bcp47.txt">BCP 47</a>.”]</p>
 </p>
 
 
@@ -240,15 +216,15 @@
   
     
     <li>
-      <a href="https://www.w3.org/TR/WCAG20/#wcag20:navigation-mechanisms-title">
-        Success Criterion 2.4.2 (Page Titled)
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:meaning-other-lang-id">
+        Success Criterion 3.1.2 (Language of Parts)
       </a>
       <ul>
-        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:navigation-mechanisms-title">
-          How to Meet 2.4.2 (Page Titled)
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:meaning-other-lang-id">
+          How to Meet 3.1.2 (Language of Parts)
         </a></li>
-        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:navigation-mechanisms-title.html">
-          Understanding Success Criterion 2.4.2 (Page Titled)
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:meaning-other-lang-id.html">
+          Understanding Success Criterion 3.1.2 (Language of Parts)
         </a></li>
       </ul>
     </li>
@@ -256,40 +232,27 @@
   </ul>
 
 
-<h2 id="test-procedure">Test procedure</h2>
+<h2 id="test-procedure">Test Procedure</h2>
 
 <h3 id="applicability">Applicability</h3>
 
-<p>The rule applies to any page where the root element is an <code class="highlighter-rouge">html</code> element, and which is not embedded in another page.</p>
+<p>Any DOM element, within the <code class="highlighter-rouge">body</code> of a webpage with a <a href="#non-empty">non-empty</a> <code class="highlighter-rouge">lang</code> or <code class="highlighter-rouge">xml:lang</code> attribute.</p>
 
-<p><strong>Note</strong>: Pages may be embedded inside other pages through elements such as iframes and object elements.</p>
+<h3 id="expectation">Expectation</h3>
 
-<h3 id="expectation-1">Expectation 1</h3>
-
-<p>The page contains at least one <code class="highlighter-rouge">title</code> element.</p>
-
-<p><strong>Note</strong>: The <code class="highlighter-rouge">title</code> element exists in other namespaces such as SVG. These are not <code class="highlighter-rouge">title</code> elements for HTML document and should be ignored.</p>
-
-<h3 id="expectation-2">Expectation 2</h3>
-
-<p>The first <code class="highlighter-rouge">title</code> element contains <a href="#non-empty">non-empty text</a>.</p>
+<p>The value of the <code class="highlighter-rouge">lang</code> or <code class="highlighter-rouge">xml:lang</code> conforms to <a href="https://www.ietf.org/rfc/bcp/bcp47.txt">BCP 47</a>.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
 <p><em>There are currently no assumptions</em></p>
 
-<h2 id="accessibility-support">Accessibility Support</h2>
-
-<p><em>There are no major accessibility support issues known for this rule.</em></p>
-
 <h2 id="background">Background</h2>
 
 <ul>
-  <li>https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html</li>
-  <li>https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=242#qr-navigation-mechanisms-title</li>
-  <li>https://www.w3.org/TR/WCAG20-TECHS/G88.html</li>
-  <li>https://www.w3.org/TR/WCAG20-TECHS/H25.html</li>
-  <li>The WCAG 2.0 Techniques already contain examples and code snippets to illustrate which content passes or fails the test. Whenever possible auto-wcag refers to those. Another source for test cases is the W3C Before and After Demonstration.</li>
+  <li>https://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/H58</li>
+  <li>https://www.ietf.org/rfc/bcp/bcp47.txt</li>
+  <li>http://wiki.egovmon.no/wiki/SC3.1.2#Element_descendent-or-self::body.5B.40lang.5D_or_descendent-or-self::body.5B.40xml:lang.5D</li>
+  <li>https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=312#qr-meaning-other-lang-id</li>
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
@@ -298,87 +261,79 @@
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;title&gt;</span>This page has a title<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;body&gt;</span> 
+  <span class="nt">&lt;article</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;&lt;/article&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-4-2-page-has-title-18c0852e-f326-4a00-9847-3dc062ad1229.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-4-2-page-has-title-18c0852e-f326-4a00-9847-3dc062ad1229.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-00d3470e-f935-4d24-aacc-1a07e72f65f6.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-00d3470e-f935-4d24-aacc-1a07e72f65f6.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;title&gt;</span>This page gives a title to an iframe<span class="nt">&lt;/title&gt;</span>
-  <span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">"../test-assets/sc2-4-2-title-page-without-title.html"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">xml:lang=</span><span class="s">"DE"</span><span class="nt">&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-4-2-page-has-title-f458bef8-3e52-4bfa-bd48-3f1d49b95a38.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-4-2-page-has-title-f458bef8-3e52-4bfa-bd48-3f1d49b95a38.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-eab7696c-0a4e-496f-8913-0063b42e52a7.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-eab7696c-0a4e-496f-8913-0063b42e52a7.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;title&gt;</span>Title of the page.<span class="nt">&lt;/title&gt;</span>
-  <span class="nt">&lt;/head&gt;</span>
-  <span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;title&gt;</span>Title of the page.<span class="nt">&lt;/title&gt;</span>
-  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;blockquote</span> <span class="na">lang=</span><span class="s">"fr-CH"</span><span class="nt">&gt;&lt;/blockquote&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-4-2-page-has-title-3fb23d7c-e6f7-4b33-8678-f3965c28b6c0.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-4-2-page-has-title-3fb23d7c-e6f7-4b33-8678-f3965c28b6c0.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-a482e8d4-f7fc-4321-963d-207757e85f2e.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-a482e8d4-f7fc-4321-963d-207757e85f2e.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;title&gt;</span>Title of the page.<span class="nt">&lt;/title&gt;</span>
-  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">lang=</span><span class="s">"en"</span> <span class="na">xml:lang=</span><span class="s">"en-GB"</span><span class="nt">&gt;</span>Good Morning.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-4-2-page-has-title-483af527-487d-4271-b1a7-3a5b0da33b9b.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-4-2-page-has-title-483af527-487d-4271-b1a7-3a5b0da33b9b.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;title&gt;</span>Title of the page.<span class="nt">&lt;/title&gt;</span>
-  <span class="nt">&lt;/head&gt;</span>
-  <span class="nt">&lt;body&gt;</span>
-     <span class="nt">&lt;title&gt;</span> <span class="c">&lt;!-- empty title --&gt;</span> <span class="nt">&lt;/title&gt;</span> 
-  <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-4-2-page-has-title-8d617416-0576-4b00-9061-462638cddea6.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-4-2-page-has-title-8d617416-0576-4b00-9061-462638cddea6.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-10d1b439-1ad4-42c9-bd56-71aa16cc19de.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-10d1b439-1ad4-42c9-bd56-71aa16cc19de.html"></iframe> </div></div>
 <h3 id="failed">Failed</h3>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;h1&gt;</span>this page has no title<span class="nt">&lt;/h1&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;article</span> <span class="na">lang=</span><span class="s">"dutch"</span><span class="nt">&gt;&lt;/article&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-4-2-page-has-title-1c912e7b-cfda-4496-ae13-914416ac9b27.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-4-2-page-has-title-1c912e7b-cfda-4496-ae13-914416ac9b27.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-e9beddca-b1f0-4ac9-8805-fe8eb323621d.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-e9beddca-b1f0-4ac9-8805-fe8eb323621d.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;title&gt;</span> <span class="c">&lt;!-- this page has an empty title --&gt;</span> <span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">xml:lang=</span><span class="s">"english"</span><span class="nt">&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-4-2-page-has-title-250b3124-810e-4e68-8f60-0c7b8eb62298.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-4-2-page-has-title-250b3124-810e-4e68-8f60-0c7b8eb62298.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;iframe</span> <span class="na">src=</span><span class="s">"../test-assets/sc2-4-2-title-page-with-title.html"</span><span class="nt">&gt;&lt;/iframe&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-4-2-page-has-title-045fc118-379b-454e-aa87-2772d30d8234.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-4-2-page-has-title-045fc118-379b-454e-aa87-2772d30d8234.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;title&gt;</span> <span class="c">&lt;!-- this page has an empty first title --&gt;</span> <span class="nt">&lt;/title&gt;</span>
-  <span class="nt">&lt;/head&gt;</span>
-  <span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;title&gt;</span>Title of the page.<span class="nt">&lt;/title&gt;</span>
-  <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-4-2-page-has-title-d2c9be4e-71bb-4c54-ace7-b7a4c94d125c.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-4-2-page-has-title-d2c9be4e-71bb-4c54-ace7-b7a4c94d125c.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-6a42480e-f0b6-4d58-83d4-6862eaed9643.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-6a42480e-f0b6-4d58-83d4-6862eaed9643.html"></iframe> </div></div>
 <h3 id="inapplicable">Inapplicable</h3>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;svg&gt;</span>
-  <span class="nt">&lt;title&gt;</span>This is an SVG<span class="nt">&lt;/title&gt;</span>
-<span class="nt">&lt;/svg&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC2-4-2-page-has-title-77c6a6ba-4a83-4bd3-b402-b876ad5ae452.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC2-4-2-page-has-title-77c6a6ba-4a83-4bd3-b402-b876ad5ae452.html"></iframe> </div></div>
-
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-e3b413c9-03ff-4b3a-b146-d2eced67eccb.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-e3b413c9-03ff-4b3a-b146-d2eced67eccb.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;article</span> <span class="na">lang=</span><span class="s">""</span><span class="nt">&gt;&lt;/article&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-85addd01-935f-47c1-9258-e2dfd56ebb4c.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-85addd01-935f-47c1-9258-e2dfd56ebb4c.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
+<span class="nt">&lt;body&gt;</span>
+<span class="nt">&lt;article</span> <span class="na">xml:lang=</span><span class="s">""</span><span class="nt">&gt;&lt;/article&gt;</span>
+<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-e8637a78-40ec-411a-ad78-0f200fb72a11.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-e8637a78-40ec-411a-ad78-0f200fb72a11.html"></iframe> </div></div>
 
 
 <h2>Definitions</h2><div class='glossary-list'><div class='glossary-item'><a id='non-empty' href='/auto-wcag/pages/algorithms/non-empty.html'><h3>Non-empty text string</h3></a><p>A string of characters (text) is considered <em>“non-empty”</em> if it contains 1 or more characters that are contained within any of the following unicode categories:</p>
@@ -409,7 +364,7 @@
 
 <h2 id="related-resources">Related Resources</h2>
 <ul>
-  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC2-4-2-page-has-title">Known issues</a></li>
+  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC3-1-2-lang-valid">Known issues</a></li>
 </ul>
 
       </p>
