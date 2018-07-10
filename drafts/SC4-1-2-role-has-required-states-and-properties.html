@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     
     <title>
-      Rule: undefined - Auto-WCAG Rules
+      Rule: Role has required states and properties - Auto-WCAG Rules
     </title>
-    <meta name="description" content="">
+    <meta name="description" content="Test procedure">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
     <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
@@ -147,7 +147,7 @@
     <main class="container">
       
         <div class="page-header">
-          <h1>Rule: undefined</h1>
+          <h1>Rule: Role has required states and properties</h1>
         </div>
       
       <p>
@@ -159,15 +159,70 @@
 
 
 
-  <p>Late updated: <time datetime="2018-07-10T21:53:43+00:00" itemprop="datePublished">Jul 10, 2018</time></p>
+  <p>Late updated: <time datetime="2018-07-10T21:59:17+00:00" itemprop="datePublished">Jul 10, 2018</time></p>
 
 
 
+  <p>
+    Created by: 
+    <ul>
+      
+        
+        <li>  
+          <a href="https://github.com/annethyme">
+            Anne Thyme Nørregaard
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
 
 
 
+  <p>
+    Success_criterion: 
+    <ul>
+      
+        
+        <li>
+          <a href="https://www.w3.org/TR/WCAG20/#">
+            4.1.2 (Name, Role, Value)
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
 
 
+
+  <h2 id="description">Description</h2>
+  <p><p>Elements that has a semantic role must also specify all required states and properties</p>
+</p>
+
+
+
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#wcag20:ensure-compat-rsv">
+        Success Criterion 4.1.2 (Name, Role, Value)
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#wcag20:ensure-compat-rsv">
+          How to Meet 4.1.2 (Name, Role, Value)
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/wcag20:ensure-compat-rsv.html">
+          Understanding Success Criterion 4.1.2 (Name, Role, Value)
+        </a></li>
+      </ul>
+    </li>
+  
+  </ul>
 
 
 <h2 id="test-procedure">Test procedure</h2>
@@ -219,31 +274,43 @@
 <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"someElementId"</span><span class="nt">&gt;</span>...<span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;select</span> <span class="na">role=</span><span class="s">"combobox"</span> <span class="na">aria-controls=</span><span class="s">''</span><span class="na">someElementId</span><span class="err">"</span><span class="nt">&gt;&lt;/select&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-5b862d4b-128e-4d9b-a642-614061c50778.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-5b862d4b-128e-4d9b-a642-614061c50778.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-f79c13ad-dfad-4558-a6ca-7e3cef9b637d.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-f79c13ad-dfad-4558-a6ca-7e3cef9b637d.html"></iframe> </div></div>
 <h3 id="failed">Failed</h3>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Element does not list required states and properties --&gt;</span>
 <span class="nt">&lt;select</span> <span class="na">role=</span><span class="s">"combobox"</span><span class="nt">&gt;&lt;/select&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-dd7a1238-b54c-4a7a-b682-b35fb28bde4f.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-dd7a1238-b54c-4a7a-b682-b35fb28bde4f.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-730c3bd9-2cb6-43e1-828a-8cdbce396f88.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-730c3bd9-2cb6-43e1-828a-8cdbce396f88.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Element has wrong value type for required states and properties --&gt;</span>
 <span class="nt">&lt;select</span> <span class="na">role=</span><span class="s">"combobox"</span> <span class="na">aria-controls=</span><span class="s">''</span><span class="err">"</span><span class="nt">&gt;&lt;/select&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-f39175e1-fbf6-4976-9eee-b9113e18abb5.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-f39175e1-fbf6-4976-9eee-b9113e18abb5.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-ff5dc61a-fd79-4417-a73e-7738a3804223.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-ff5dc61a-fd79-4417-a73e-7738a3804223.html"></iframe> </div></div>
 <h3 id="inapplicable">Inapplicable</h3>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Element does not have a semantic role--&gt;</span>
 <span class="nt">&lt;div&gt;</span>Some Content<span class="nt">&lt;/div&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-602438d2-3f8e-448a-bba9-86b51cea4221.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-602438d2-3f8e-448a-bba9-86b51cea4221.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-c49ac6fe-d2b4-4deb-b8b6-acd753d8fffb.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC4-1-2-role-has-required-states-and-properties-c49ac6fe-d2b4-4deb-b8b6-acd753d8fffb.html"></iframe> </div></div>
 
 
 <h2>Definitions</h2><div class='glossary-list'><div class='glossary-item'><a id='exposed-to-assistive-technologies' href='/auto-wcag/pages/algorithms/exposed-to-assistive-technologies.html'><h3>Exposed to assistive technologies</h3></a><p>Elements should be contained in the accessibility tree as described in <a href="https://www.w3.org/TR/core-aam-1.1/#mapping_general">Core Accessibility API Mappings 1.1</a></p>
 </div></div></div>
 
+
+  <h2 id="test-aspects">Test Aspects</h2>
+  Test aspects are defined as part of the <a href="https://w3c.github.io/wcag-act/act-rules-format.html#input-aspects-common">ACT Rules format 1.0</a>.
+  <ul>
+  
+    <li><p>DOM Tree</p>
+</li>
+  
+    <li><p>CSS Styling</p>
+</li>
+  
+  </ul>
 
 
 <h2 id="related-resources">Related Resources</h2>

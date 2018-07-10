@@ -158,7 +158,7 @@
 
 
 
-  <p>Late updated: <time datetime="2018-07-10T21:54:02+00:00" itemprop="datePublished">Jul 10, 2018</time></p>
+  <p>Late updated: <time datetime="2018-07-10T21:59:26+00:00" itemprop="datePublished">Jul 10, 2018</time></p>
 
 
 
@@ -205,7 +205,7 @@
 
 
   <h2 id="description">Description</h2>
-  <p><p>[“This rule checks that <code class="highlighter-rouge">lang</code> or <code class="highlighter-rouge">xml:lang</code> attributes on elements within the <code class="highlighter-rouge">body</code> of a web page conforms to <a href="https://www.ietf.org/rfc/bcp/bcp47.txt">BCP 47</a>.”]</p>
+  <p><p>This rule checks that <code class="highlighter-rouge">lang</code> or <code class="highlighter-rouge">xml:lang</code> attributes on elements within the <code class="highlighter-rouge">body</code> of a web page has a valid language subtag.</p>
 </p>
 
 
@@ -240,7 +240,7 @@
 
 <h3 id="expectation">Expectation</h3>
 
-<p>The value of the <code class="highlighter-rouge">lang</code> or <code class="highlighter-rouge">xml:lang</code> conforms to <a href="https://www.ietf.org/rfc/bcp/bcp47.txt">BCP 47</a>.</p>
+<p>The <code class="highlighter-rouge">lang</code> and <code class="highlighter-rouge">xml:lang</code> attributes have a <a href="#valid-language-subtag">valid language subtag</a> if the attribute is <a href="#non-empty">non-empty</a>.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
@@ -266,7 +266,7 @@
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-fd726987-4409-4075-9806-8bd47033c5f9.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-fd726987-4409-4075-9806-8bd47033c5f9.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-a91a3235-c8b9-4907-9f48-634e12d3cf54.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-a91a3235-c8b9-4907-9f48-634e12d3cf54.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;body&gt;</span>
@@ -274,7 +274,7 @@
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-c908bc03-ef03-41bb-a77e-abc7e26d3e97.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-c908bc03-ef03-41bb-a77e-abc7e26d3e97.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-586e9807-d1f4-4918-a1bf-0838fa64b321.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-586e9807-d1f4-4918-a1bf-0838fa64b321.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;body&gt;</span>
@@ -282,7 +282,7 @@
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-f4553104-9ec5-43b2-b1ec-fc72e3062f2e.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-f4553104-9ec5-43b2-b1ec-fc72e3062f2e.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-59d912ac-cf1e-472c-a7c9-eb1b3bc0823e.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-59d912ac-cf1e-472c-a7c9-eb1b3bc0823e.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;body&gt;</span>
@@ -290,7 +290,7 @@
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-961f0c12-7c38-461d-8f20-c3a923542cda.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-961f0c12-7c38-461d-8f20-c3a923542cda.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-51788fcb-dcc2-42f5-a399-64f1aed32de4.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-51788fcb-dcc2-42f5-a399-64f1aed32de4.html"></iframe> </div></div>
 <h3 id="failed">Failed</h3>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
@@ -300,7 +300,7 @@
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-b679af04-d711-4d7b-bcdf-5e2392e4eeac.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-b679af04-d711-4d7b-bcdf-5e2392e4eeac.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-bc245d7b-1ad8-4a22-bba5-d22b3b75eaac.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-bc245d7b-1ad8-4a22-bba5-d22b3b75eaac.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;body&gt;</span>
@@ -308,7 +308,7 @@
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-e3254364-28f2-46e6-82bc-22e7d3193812.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-e3254364-28f2-46e6-82bc-22e7d3193812.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-381f7722-c58f-4b4c-9db7-ce1b5d85c69f.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-381f7722-c58f-4b4c-9db7-ce1b5d85c69f.html"></iframe> </div></div>
 <h3 id="inapplicable">Inapplicable</h3>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
@@ -317,7 +317,7 @@
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-3e5e24e6-025c-4367-934e-9f8df7991e44.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-3e5e24e6-025c-4367-934e-9f8df7991e44.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-0e75b14e-9aad-4a43-b8cc-cc4fa039d2d2.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-0e75b14e-9aad-4a43-b8cc-cc4fa039d2d2.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;body&gt;</span>
@@ -325,7 +325,7 @@
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-ad4e938d-794c-4020-ae59-cc0b008f79c3.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-ad4e938d-794c-4020-ae59-cc0b008f79c3.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-09846594-28cc-49da-88e8-242e420fae91.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-09846594-28cc-49da-88e8-242e420fae91.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
 <span class="nt">&lt;body&gt;</span>
@@ -333,10 +333,23 @@
 <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-36dc5263-7db8-4b71-acdc-e6b806f00c1f.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-36dc5263-7db8-4b71-acdc-e6b806f00c1f.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-2-lang-valid-5afae0fd-ec8f-43e1-b79b-7ebd013e3bb2.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-2-lang-valid-5afae0fd-ec8f-43e1-b79b-7ebd013e3bb2.html"></iframe> </div></div>
 
 
 <h2>Definitions</h2><div class='glossary-list'><div class='glossary-item'><a id='non-empty' href='/auto-wcag/pages/algorithms/non-empty.html'><h3>Non-empty text string</h3></a><p>A string of characters (text) is considered <em>“non-empty”</em> if it contains 1 or more characters that are contained within any of the following unicode categories:</p>
+
+<ul>
+  <li><strong>Ll</strong>: Letter, Lowercase</li>
+  <li><strong>Lu</strong>: Letter, Uppercase</li>
+  <li><strong>Lt</strong>: Letter, Titlecase</li>
+  <li><strong>Lo</strong>: Letter, Other</li>
+  <li><strong>Lm</strong>: Letter, Modifier</li>
+  <li><strong>Nd</strong>: Number, Decimal Digit</li>
+</ul>
+
+<p>For more details on unicode categories, check out <a href="http://www.fileformat.info/info/unicode/category/index.htm">www.fileformat.info/info/unicode/category/</a></p>
+
+</div></div><div class='glossary-item'><a id='non-empty' href='/auto-wcag/pages/algorithms/non-empty.html'><h3>Non-empty text string</h3></a><p>A string of characters (text) is considered <em>“non-empty”</em> if it contains 1 or more characters that are contained within any of the following unicode categories:</p>
 
 <ul>
   <li><strong>Ll</strong>: Letter, Lowercase</li>
