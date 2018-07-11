@@ -87,3 +87,5 @@ body {
           width: 100%; }
   body code {
     font-size: 80%; }
+  body .definition-usages > .definition-usage-link {
+    display: block; }
