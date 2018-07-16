@@ -14,7 +14,9 @@ html, body {
   min-height: 100%; }
 
 .footer {
-  height: 50px; }
+  height: 50px;
+  padding: 15px;
+  text-align: center; }
 
 p {
   line-height: 1.5; }
