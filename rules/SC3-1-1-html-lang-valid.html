@@ -1,164 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    
-    <title>
-      Rule: Validity of HTML Lang attribute - Auto-WCAG Rules
-    </title>
-    <meta name="description" content="Test Procedure">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="/auto-wcag/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
-    <link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/rules/SC3-1-1-html-lang-valid.html">
-  </head>
-  <body>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> 
+<html lang="en"> 
+<!--<![endif]-->  
+<head>
+	<!-- Resolve Page Title -->
+	
+	<title>
+		Rule: Validity of HTML Lang attribute - Auto-WCAG Rules
+	</title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Test Procedure">
+	<meta name="author" content="">    
+	<!-- TODO:FAVICON after branding -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs.min.css">
 
-    <!-- Fixed navbar -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" 
-            class="navbar-toggle collapsed" 
-            data-toggle="collapse" 
-            data-target="#navbar" 
-            aria-expanded="false" 
-            aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" 
-            href="/auto-wcag/">
-              Auto-WCAG
-          </a>
-        </div>
-        <div id="navbar" 
-          class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="/auto-wcag/pages/rules.html">Rules</a>
-            </li>
-            <li>
-              <a href="/auto-wcag/pages/drafts.html">Drafts</a>
-            </li>
-            
-            <!-- Rule Creation -->
-            <li class="dropdown">
-              <a href="#" 
-                class="dropdown-toggle" 
-                data-toggle="dropdown" 
-                role="button" 
-                aria-haspopup="true" 
-                aria-expanded="false">
-                Rule Creation <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="/auto-wcag/pages/design/rule-design.html">
-                    Rule design
-                  </a>
-                </li>
-                <li>
-                  <a href="/auto-wcag/pages/design/review.html">
-                    Review process
-                  </a>
-                </li>
-                <li>
-                  <a href="/auto-wcag/pages/design/rule-template.html">
-                    Rule template
-                  </a>
-                </li>
-                <li>
-                  <a href="/auto-wcag/pages/design/test-template.html">
-                    Test case template
-                  </a>
-                </li>
-                <li>
-                  <a href="/auto-wcag/pages/design/style-guide.html">
-                    Style guide
-                  </a>
-                </li>
-              </ul>
-            </li>
+	<link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
 
-            <!-- Rule Structure -->
-            <li class="dropdown">
-              <a href="#" 
-                class="dropdown-toggle" 
-                data-toggle="dropdown" 
-                role="button" 
-                aria-haspopup="true" 
-                aria-expanded="false">
-                Rule Structure <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="/auto-wcag/pages/structure/terminology.html">Terminology</a>
-                </li>
-                <li>
-                  <a href="/auto-wcag/pages/structure/test-modes.html">Test modes</a>
-                </li>
-                <li>
-                  <a href="/auto-wcag/pages/algorithms/">Algorithms</a>
-                </li>
-                <li>
-                  <a href="/auto-wcag/pages/structure/aggregation.html">Result aggregation</a>
-                </li>
-                <li>
-                  <a href="/auto-wcag/pages/structure/user-questions.html">User questions</a>
-                </li>
-                <li>
-                  <a href="/auto-wcag/pages/structure/accessibility-support.html">Accessibility support</a>
-                </li>
-              </ul>
-            </li>
+	<link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/rules/SC3-1-1-html-lang-valid.html">
 
-            <!-- About -->
-            <li class="dropdown">
-              <a href="#" 
-                class="dropdown-toggle" 
-                data-toggle="dropdown" 
-                role="button" 
-                aria-haspopup="true" 
-                aria-expanded="false">
-                About <span class="caret"></span>
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a href="/auto-wcag/pages/about.html">About Us</a>
-                </li>
-                <li>
-                  <a href="/auto-wcag/pages/contribute.html">How to contribute</a>
-                </li>
-                <li>
-                  <a href="https://github.com/auto-wcag/auto-wcag/">GitHub repository</a>
-                </li>
-              </ul>
-            </li>
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->	
+</head>
+<body>
+	<div class='page-wrapper'>
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" 
+						class="navbar-toggle collapsed" 
+						data-toggle="collapse" 
+						data-target="#navbar" 
+						aria-expanded="false" 
+						aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" 
+						href="/auto-wcag/">
+							Auto-WCAG
+					</a>
+				</div>
+				<div id="navbar" 
+					class="collapse navbar-collapse">
+					<ul class="nav navbar-nav mr-auto">
+						<!-- Rules -->
+						<li>
+							<a href="/auto-wcag/pages/rules.html">Rules</a>
+						</li>
 
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
-    
-    <!-- Begin page content -->
-    <main class="container">
-      
-        <div class="page-header">
-          <h1>Rule: Validity of HTML Lang attribute</h1>
-        </div>
-      
-      <p>
-        
+						<!-- Rule Creation -->
+						<li class="dropdown">
+							<a href="#" 
+								class="dropdown-toggle" 
+								data-toggle="dropdown" 
+								role="button" 
+								aria-haspopup="true" 
+								aria-expanded="false">
+								Rule Creation <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="/auto-wcag/pages/design/rule-design.html">
+										Rule design
+									</a>
+								</li>
+								<li>
+									<a href="/auto-wcag/pages/design/review.html">
+										Review process
+									</a>
+								</li>
+								<li>
+									<a href="/auto-wcag/pages/design/rule-template.html">
+										Rule template
+									</a>
+								</li>
+								<li>
+									<a href="/auto-wcag/pages/design/style-guide.html">
+										Style guide
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- Rule Structure -->
+						<li class="dropdown">
+							<a href="#" 
+								class="dropdown-toggle" 
+								data-toggle="dropdown" 
+								role="button" 
+								aria-haspopup="true" 
+								aria-expanded="false">
+								Rule Structure <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="/auto-wcag/pages/structure/terminology.html">Terminology</a>
+								</li>
+								<li>
+									<a href="/auto-wcag/pages/structure/test-modes.html">Test modes</a>
+								</li>
+								<li>
+									<a href="/auto-wcag/pages/algorithms/">Definitions</a>
+								</li>
+								<li>
+									<a href="/auto-wcag/pages/structure/aggregation.html">Result aggregation</a>
+								</li>
+								<li>
+									<a href="/auto-wcag/pages/structure/accessibility-support.html">Accessibility support</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- About Us -->
+						<li>
+							<a href="/auto-wcag/pages/about.html">About Us</a>
+						</li>
+					</ul>
+
+					<ul class="nav navbar-nav right">
+						<!-- Github -->
+						<li class="dropdown">
+							<a href="https://github.com/auto-wcag/auto-wcag/" 
+								role="link">
+								<i class="fab fa-github scale-2x"></i>
+							</a>
+						</li>
+					</ul>
+
+					
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+		
+		<!-- Begin page content -->
+		<main class="container">
+			
+				<div class="page-header">
+					<h1>Rule: Validity of HTML Lang attribute</h1>
+				</div>
+			
+			<p>
+				
 
 
   
 
 
 
-  <p>Late updated: <time datetime="2018-07-11T11:30:40+00:00" itemprop="datePublished">Jul 11, 2018</time></p>
+  <p>Late updated: <time datetime="2018-07-16T08:20:16+00:00" itemprop="datePublished">Jul 16, 2018</time></p>
 
 
 
@@ -253,11 +257,11 @@
 <h2 id="background">Background</h2>
 
 <ul>
-  <li>https://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/H57</li>
-  <li>https://www.ietf.org/rfc/bcp/bcp47.txt</li>
-  <li>https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang</li>
-  <li>https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xml:lang</li>
-  <li>https://www.w3.org/TR/WCAG20-TECHS/H57.html</li>
+  <li><a href="https://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/H57">https://www.w3.org/TR/2014/NOTE-WCAG20-TECHS-20140408/H57</a></li>
+  <li><a href="https://www.ietf.org/rfc/bcp/bcp47.txt">https://www.ietf.org/rfc/bcp/bcp47.txt</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang">https://developer.mozilla.org/en-US/docs/Web/HTML/Global_attributes/lang</a></li>
+  <li><a href="https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xml:lang">https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/xml:lang</a></li>
+  <li><a href="https://www.w3.org/TR/WCAG20-TECHS/H57.html">https://www.w3.org/TR/WCAG20-TECHS/H57.html</a></li>
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
@@ -267,55 +271,55 @@
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-5e955d34-73cb-4172-a224-a4e9e88d5777.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-5e955d34-73cb-4172-a224-a4e9e88d5777.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC3-1-1-html-lang-valid-a1a6ea25-98e2-454e-904a-c5704511ce49.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC3-1-1-html-lang-valid-a1a6ea25-98e2-454e-904a-c5704511ce49.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">xml:lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-9f64ae5e-9a03-45bb-b4ad-ea8ff3d4a5c9.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-9f64ae5e-9a03-45bb-b4ad-ea8ff3d4a5c9.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC3-1-1-html-lang-valid-fb7fb5d1-5a05-404a-8f3b-d430a742289e.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC3-1-1-html-lang-valid-fb7fb5d1-5a05-404a-8f3b-d430a742289e.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">xml:lang=</span><span class="s">"fr"</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-528c2cd2-a152-48e9-9f5b-30efb8dd0973.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-528c2cd2-a152-48e9-9f5b-30efb8dd0973.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC3-1-1-html-lang-valid-93aa1b73-4156-4257-bb83-390b9aaeb059.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC3-1-1-html-lang-valid-93aa1b73-4156-4257-bb83-390b9aaeb059.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"fr"</span> <span class="na">xml:lang=</span><span class="s">""</span><span class="nt">&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-cb5fa735-e5f8-4ec8-8e7e-7aebba625929.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-cb5fa735-e5f8-4ec8-8e7e-7aebba625929.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC3-1-1-html-lang-valid-ee9ad4df-0160-4b11-bf39-1b9a889b0981.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC3-1-1-html-lang-valid-ee9ad4df-0160-4b11-bf39-1b9a889b0981.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">""</span> <span class="na">xml:lang=</span><span class="s">"nl"</span><span class="nt">&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-d96229a7-8137-4005-bdb4-a758f52267be.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-d96229a7-8137-4005-bdb4-a758f52267be.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC3-1-1-html-lang-valid-db9271d1-189c-4a98-b813-8b0e9098e444.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC3-1-1-html-lang-valid-db9271d1-189c-4a98-b813-8b0e9098e444.html"></iframe> </div></div>
 <h2 id="failed">Failed</h2>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"xyz"</span><span class="nt">&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-a4bfe500-6e54-462f-9219-374052515d59.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-a4bfe500-6e54-462f-9219-374052515d59.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC3-1-1-html-lang-valid-e3c9a750-174e-4951-96ed-2a52bc7bb0d6.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC3-1-1-html-lang-valid-e3c9a750-174e-4951-96ed-2a52bc7bb0d6.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">xml:lang=</span><span class="s">"xyz"</span><span class="nt">&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-e7c10259-0126-44cf-8322-f8b842f68724.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-e7c10259-0126-44cf-8322-f8b842f68724.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC3-1-1-html-lang-valid-f6bd95ad-c623-42f9-a246-7f57ba192dc5.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC3-1-1-html-lang-valid-f6bd95ad-c623-42f9-a246-7f57ba192dc5.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">xml:lang=</span><span class="s">"xyz"</span> <span class="na">lang=</span><span class="s">"xyz"</span><span class="nt">&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-13516d3d-69e0-4a58-9973-359825668c6c.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-13516d3d-69e0-4a58-9973-359825668c6c.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC3-1-1-html-lang-valid-61c67b46-2c88-4414-84a0-f865b0c043f7.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC3-1-1-html-lang-valid-61c67b46-2c88-4414-84a0-f865b0c043f7.html"></iframe> </div></div>
 <h2 id="inapplicable">Inapplicable</h2>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;svg</span> <span class="na">lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-c09eb36f-7c60-4791-8f2e-2e8c629c3b24.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-c09eb36f-7c60-4791-8f2e-2e8c629c3b24.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC3-1-1-html-lang-valid-6f6a23ae-e69b-41c4-9f90-b439d6c40597.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC3-1-1-html-lang-valid-6f6a23ae-e69b-41c4-9f90-b439d6c40597.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;svg</span> <span class="na">xml:lang=</span><span class="s">"fr"</span><span class="nt">&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-64c3d37a-5e74-4c06-8be6-9227ef8bec02.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-64c3d37a-5e74-4c06-8be6-9227ef8bec02.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC3-1-1-html-lang-valid-4c055252-d1f6-46c9-84c4-0fdb23a3b499.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC3-1-1-html-lang-valid-4c055252-d1f6-46c9-84c4-0fdb23a3b499.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">""</span><span class="nt">&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-8d26e23a-e96a-43ac-b2ec-b2b9d0df11ca.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-8d26e23a-e96a-43ac-b2ec-b2b9d0df11ca.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC3-1-1-html-lang-valid-5eab8192-f69c-4d4a-b39d-0152d1445aaa.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC3-1-1-html-lang-valid-5eab8192-f69c-4d4a-b39d-0152d1445aaa.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html</span> <span class="na">xml:lang=</span><span class="s">""</span><span class="nt">&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-efdbb71b-6292-40ec-b3cb-c86f878947fc.html">Open in a new tab/ window</a> </header> <iframe src="../_draft-testcase-embeds/SC3-1-1-html-lang-valid-efdbb71b-6292-40ec-b3cb-c86f878947fc.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC3-1-1-html-lang-valid-358902bb-b5fa-45e8-9488-9f34caf8144e.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC3-1-1-html-lang-valid-358902bb-b5fa-45e8-9488-9f34caf8144e.html"></iframe> </div></div>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->
@@ -335,29 +339,68 @@
 </div></div></div>
 <!-- DO NOT DELETE ABOVE - This is used by a plugin to insert content -->
 
-
-  <h2 id="test-aspects">Test Aspects</h2>
-  Test aspects are defined as part of the <a href="https://w3c.github.io/wcag-act/act-rules-format.html#input-aspects-common">ACT Rules format 1.0</a>.
-  <ul>
-  
-    <li><p>DOM Tree</p>
+<div class="container">
+	
+		<h2 id="test-aspects">Test Aspects</h2>
+		Test aspects are defined as part of the <a href="https://w3c.github.io/wcag-act/act-rules-format.html#input-aspects-common">ACT Rules format 1.0</a>.
+		<ul>
+		
+			<li><p>DOM Tree</p>
 </li>
-  
-  </ul>
+		
+		</ul>
+	
+
+	<h2 id="related-resources">Related Resources</h2>
+	<ul>
+		<li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC3-1-1-html-lang-valid">Known issues</a></li>
+	</ul>
+</div>
+			</p>
+		</main>
+		
+		<!-- contribute section -->
+		<div class="promo-block">
+			<div class="container">
+				<div class="promo-block-inner">
+					<div class="row">
+						<div class="figure-holder col-md-4 col-sm-6 col-xs-12">
+								<div class="content-holder-inner text-center">
+									<h3 class="promo-title"> 
+										Contribute
+									</h3>
+									<br>								
+									<a href="https://github.com/auto-wcag/auto-wcag/" 
+										role="link" class="desc">
+										<i class="fab fa-github-square scale-5x"></i>
+									</a>
+									<br><br><br><br>
+									<a class="btn btn-cta" href="https://github.com/auto-wcag/auto-wcag/" >
+										GitHub
+									</a>
+								</div>
+						</div><!--//figure-holder-->
+						<div class="content-holder col-md-8 col-sm-6 col-xs-12">
+								<div class="content-holder-inner">
+										<div class="desc">
+												<p>Contributing is open to anyone. We welcome any new issues or pull requests for changes. Auto-WCAG has conference calls every 4 weeks. If you are interested in becoming an active contributor or reviewer, we ask that you join the Auto-WCAG community group through the W3C Website. This requires setting up a W3C account, may require approval by the organization you work for if they are a W3C member.</p>
+												<a class="btn btn-cta" href="/auto-wcag/pages/contribute.html">Learn more about contributing to Auto-WCAG</a>
+												<a class="btn btn-cta" href="https://www.w3.org/community/wp-login.php?redirect_to=%2Fcommunity%2Fauto-wcag%2Fjoin">Join the Auto-WcAG community group now!</a>
+										</div><!--//desc-->
+								</div><!--//content-holder-inner-->
+						</div><!--//content-holder-->
+					</div>
+				</div>
+			</div>
+		</div>
 
 
-<h2 id="related-resources">Related Resources</h2>
-<ul>
-  <li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC3-1-1-html-lang-valid">Known issues</a></li>
-</ul>
+	</div>
+	<!-- Javascript -->    
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
 
-      </p>
-    </main>
-
-
-    
-    <script src="/auto-wcag/assets/js/jquery.min.js"></script>
-    <script src="/auto-wcag/assets/js/bootstrap.min.js"></script>
-   
-  </body>
+</body>
 </html>
