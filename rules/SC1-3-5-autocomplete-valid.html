@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->  
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->  
+<!--[if !IE]><!--> 
+<html lang="en"> 
+<!--<![endif]-->  
+<head>
+	<!-- Resolve Page Title -->
+	
+	<title>
+		Rule: Autocomplete valid Auto-WCAG Rules
+	</title>
+	<!-- Meta -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Test Procedure">
+	<meta name="author" content="">    
+	<!-- TODO:FAVICON after branding -->
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs.min.css">
+
+	<link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
+
+	<link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/rules/SC1-3-5-autocomplete-valid.html">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->	
+</head>
+<body>
+	<div class='page-wrapper'>
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-default">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" 
+						class="navbar-toggle collapsed" 
+						data-toggle="collapse" 
+						data-target="#navbar" 
+						aria-expanded="false" 
+						aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" 
+						href="/auto-wcag/">
+							Auto-WCAG
+					</a>
+				</div>
+				<div id="navbar" 
+					class="collapse navbar-collapse">
+					<ul class="nav navbar-nav mr-auto">
+						<!-- Rules -->
+						<li>
+							<a href="/auto-wcag/pages/rules.html">Rules</a>
+						</li>
+
+						<!-- Rule Creation -->
+						<li class="dropdown">
+							<a href="#" 
+								class="dropdown-toggle" 
+								data-toggle="dropdown" 
+								role="button" 
+								aria-haspopup="true" 
+								aria-expanded="false">
+								Rule Creation <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="/auto-wcag/pages/design/rule-design.html">
+										Rule design
+									</a>
+								</li>
+								<li>
+									<a href="/auto-wcag/pages/design/review.html">
+										Review process
+									</a>
+								</li>
+								<li>
+									<a href="/auto-wcag/pages/design/rule-template.html">
+										Rule template
+									</a>
+								</li>
+								<li>
+									<a href="/auto-wcag/pages/design/style-guide.html">
+										Style guide
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- Rule Structure -->
+						<li class="dropdown">
+							<a href="#" 
+								class="dropdown-toggle" 
+								data-toggle="dropdown" 
+								role="button" 
+								aria-haspopup="true" 
+								aria-expanded="false">
+								Rule Structure <span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="/auto-wcag/pages/structure/terminology.html">Terminology</a>
+								</li>
+								<li>
+									<a href="/auto-wcag/pages/structure/test-modes.html">Test modes</a>
+								</li>
+								<li>
+									<a href="/auto-wcag/pages/algorithms/">Definitions</a>
+								</li>
+								<li>
+									<a href="/auto-wcag/pages/structure/aggregation.html">Result aggregation</a>
+								</li>
+								<li>
+									<a href="/auto-wcag/pages/structure/accessibility-support.html">Accessibility support</a>
+								</li>
+							</ul>
+						</li>
+
+						<!-- About Us -->
+						<li>
+							<a href="/auto-wcag/pages/about.html">About Us</a>
+						</li>
+					</ul>
+
+					<ul class="nav navbar-nav right">
+						<!-- Github -->
+						<li class="dropdown">
+							<a href="https://github.com/auto-wcag/auto-wcag/" 
+								role="link">
+								<i class="fab fa-github scale-2x"></i>
+							</a>
+						</li>
+					</ul>
+
+					
+				</div><!--/.nav-collapse -->
+			</div>
+		</nav>
+		
+		<!-- Begin page content -->
+		<main class="container">
+			
+				<div class="page-header">
+					<h1>Rule: Autocomplete valid</h1>
+				</div>
+			
+			<p>
+				
+
+
+  
+
+
+
+  <p>Late updated: <time datetime="2018-08-06T08:26:27+00:00" itemprop="datePublished">Aug 6, 2018</time></p>
+
+
+
+  <p>
+    Created by: 
+    <ul>
+      
+        
+        <li>  
+          <a href="https://github.com/wilcofiers">
+            Wilco Fiers
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
+
+
+
+  <p>
+    Success_criterion: 
+    <ul>
+      
+        
+        <li>
+          <a href="https://www.w3.org/TR/WCAG20/#">
+             ()
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
+
+
+
+  <h2 id="description">Description</h2>
+  <p><p>This rule checks that the HTML autocomplete attribute has a correct value</p>
+</p>
+
+
+
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#">
+        Success Criterion  ()
+      </a>
+      <ul>
+        <li><a href="https://www.w3.org/WAI/WCAG20/quickref/#">
+          How to Meet  ()
+        </a></li>
+        <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/.html">
+          Understanding Success Criterion  ()
+        </a></li>
+      </ul>
+    </li>
+  
+  </ul>
+
+
+<h2 id="test-procedure">Test Procedure</h2>
+
+<h3 id="applicability">Applicability</h3>
+
+<p>The rule applies to any HTML <code class="highlighter-rouge">input</code>, <code class="highlighter-rouge">select</code> and <code class="highlighter-rouge">textarea</code> element with a <a href="#non-empty">non-empty</a> <code class="highlighter-rouge">autocomplete</code> attribute, except if one of the following is true:</p>
+
+<ul>
+  <li>The element is not <a href="#visible-on-the-page">visible on the page</a> and not <a href="#exposed-to-assistive-technologies">exposed to assistive technologies</a></li>
+  <li>The element is an <code class="highlighter-rouge">input</code> element with a <code class="highlighter-rouge">type</code> property of <code class="highlighter-rouge">hidden</code>, <code class="highlighter-rouge">button</code>, <code class="highlighter-rouge">submit</code> or <code class="highlighter-rouge">reset</code></li>
+  <li>The element has a <code class="highlighter-rouge">disabled</code> or <code class="highlighter-rouge">aria-disabled="true"</code> attribute</li>
+  <li>The element has <code class="highlighter-rouge">tabindex="-1"</code> and has a <a href="#semantic-role">semantic role</a> that is not a <a href="https://www.w3.org/TR/wai-aria-1.1/#widget_roles">widget</a></li>
+</ul>
+
+<h3 id="expectation-1">Expectation 1</h3>
+
+<p>The <code class="highlighter-rouge">autocomplete</code> attribute is a single term, or a space separated list of terms.</p>
+
+<h3 id="expectation-2">Expectation 2</h3>
+
+<p>The autocomplete term(s) follow the <a href="https://www.w3.org/TR/html52/sec-forms.html#autofill-detail-tokens">HTML 5.2 specification</a>, which requires that it/they match the following in the correct order:</p>
+
+<ol>
+  <li>Has a value that starts with “section-“ <em>(optional)</em></li>
+  <li>Has either “shipping” or “billing” <em>(optional)</em></li>
+  <li>Has either “home”, “work”, “mobile”, “fax” or “pager” <em>(optional, only for “email”, “impp”, “tel” or “tel-*“)</em></li>
+  <li>Has a <a href="#correct-autocomplete-field">correct autocomplete field</a> <em>(required)</em></li>
+</ol>
+
+<p><strong>Note</strong>: Autocomplete terms are case insensitive. When multiple terms are used, they must be used in the correct order.</p>
+
+<h3 id="exepctation-3">Exepctation 3</h3>
+
+<p>The <a href="#correct-autocomplete-field">correct autocomplete field</a> is an <a href="#appropriate-field-for-the-form-control">appropriate field for the form control</a>.</p>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<p>For this rule, it is assumed that the <code class="highlighter-rouge">autocomplete</code> attribute is not used on form fields that do not correspond to a autocomplete field described in the HTML 5.2 specification. If the <code class="highlighter-rouge">autocomplete</code> field is used to describe “custom” taxonomy, rather than that described in the specification, this rule may produce incorrect results.</p>
+
+<h2 id="accessibility-support">Accessibility support</h2>
+
+<p>While <code class="highlighter-rouge">autocomplete</code> in a promising technique for supporting personalisation in HTML, support for this is fairly limited.</p>
+
+<h2 id="background">Background</h2>
+
+<p>The intent of this rule is to ensure that the <code class="highlighter-rouge">autocomplete</code> attribute can be used to suport personalization. Many users may find it easier to fill out forms if those can be styled or layed out in a way that is familiar to them. Assistive technologies can do this when a form control is marked up in such a way that its purpose can be understood. For instance, assistive technologies could add familiar icons and colors to different fields, making it easier for the user to understand what the form does.</p>
+
+<ul>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html">https://www.w3.org/WAI/WCAG21/Understanding/identify-input-purpose.html</a></li>
+  <li><a href="https://www.w3.org/TR/WCAG21/#dfn-programmatically-determinable">https://www.w3.org/TR/WCAG21/#dfn-programmatically-determinable</a></li>
+  <li><a href="https://www.w3.org/TR/html52/sec-forms.html#sec-autofill">https://www.w3.org/TR/html52/sec-forms.html#sec-autofill</a></li>
+</ul>
+
+<h2 id="test-cases">Test Cases</h2>
+
+<h3 id="passed">Passed</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- single autocomplete term --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"username"</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-4e6e2ada-b0e4-4bc7-9c03-78d0bc94e942.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-4e6e2ada-b0e4-4bc7-9c03-78d0bc94e942.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- single autocomplete term for select --&gt;</span>
+<span class="nt">&lt;select</span> <span class="na">autocomplete=</span><span class="s">"bday-month"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;option&gt;</span>January<span class="nt">&lt;/option&gt;</span>
+  <span class="nt">&lt;option&gt;</span>...<span class="nt">&lt;/option&gt;</span>
+<span class="nt">&lt;/select&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-0dbefe08-6226-4d0d-b109-92fb320069b5.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-0dbefe08-6226-4d0d-b109-92fb320069b5.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Autocomplete term, only valid for textarea --&gt;</span>
+<span class="nt">&lt;textarea</span> <span class="na">autocomplete=</span><span class="s">"Street-Address"</span><span class="nt">&gt;&lt;/textarea&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-a8caf8b3-75ab-4441-af10-a2d56c913c62.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-a8caf8b3-75ab-4441-af10-a2d56c913c62.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Two autocomplete terms --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"Work EMail"</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-165717d6-d2d3-4a89-853a-b69f6df15989.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-165717d6-d2d3-4a89-853a-b69f6df15989.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Autocomplete using section-* --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"section-partner email"</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-06878dcf-1b5c-4fa1-b474-470c448fc101.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-06878dcf-1b5c-4fa1-b474-470c448fc101.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Tripple autocomplete terms --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">autocomplete=</span><span class="s">"section-primary billing street-address /&gt;
+ </span></code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-b94d72b0-68c0-40ad-a774-5035234a8f97.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-b94d72b0-68c0-40ad-a774-5035234a8f97.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Full length autocomplete terms --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"section-primary shipping work email"</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-5fd50e1f-ce6b-468e-9671-a61bc6b6c1fa.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-5fd50e1f-ce6b-468e-9671-a61bc6b6c1fa.html"></iframe> </div></div>
+<h3 id="failed">Failed</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Unknown autocomplete term --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"badterm"</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-e63f19fe-299f-4241-9e69-6301979361e9.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-e63f19fe-299f-4241-9e69-6301979361e9.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- "work" not allowed before "photo" --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"work photo"</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-143fbcd8-3c9e-4644-a453-a77a13a69bb1.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-143fbcd8-3c9e-4644-a453-a77a13a69bb1.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- invalid order of terms --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"work shipping email"</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-402366a9-f48e-48a2-b07e-02dd9730f9e7.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-402366a9-f48e-48a2-b07e-02dd9730f9e7.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- comma seperated rather than space separated list --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"work,email"</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-5af870c3-63a0-4451-b9cc-78361b9b098e.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-5af870c3-63a0-4451-b9cc-78361b9b098e.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Autocomplete is inappropriate for the type of field --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"number"</span> <span class="na">autocomplete=</span><span class="s">"email"</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-ebd1438f-5044-4dc1-a6a3-eb3e5bd0fc95.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-ebd1438f-5044-4dc1-a6a3-eb3e5bd0fc95.html"></iframe> </div></div>
+<h3 id="inapplicable">Inapplicable</h3>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Incorrect element --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">autocomplete=</span><span class="s">"username"</span><span class="nt">&gt;&lt;/button&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-6a889782-4fb4-4b53-9de9-a85a6395b370.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-6a889782-4fb4-4b53-9de9-a85a6395b370.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Empty attribute --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">""</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-e53a6350-cc58-4890-9034-e204cbcc4dce.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-e53a6350-cc58-4890-9034-e204cbcc4dce.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Hidden through display:none --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"username"</span> <span class="na">style=</span><span class="s">"display:none"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-db3f7c7a-66bd-4c7b-bea9-2ecaa116decd.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-db3f7c7a-66bd-4c7b-bea9-2ecaa116decd.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Off screen and hidden to assistive technologies --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"username"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">style=</span><span class="s">"position:absolute; top:-9999em"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-ee2d8d7c-b892-44b9-8cbc-05e28a5de5b4.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-ee2d8d7c-b892-44b9-8cbc-05e28a5de5b4.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- input button --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">autocomplete=</span><span class="s">"username"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-ccfa0524-9428-48a4-ac2a-4721b7e8f3bd.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-ccfa0524-9428-48a4-ac2a-4721b7e8f3bd.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- hidden --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"hidden"</span> <span class="na">autocomplete=</span><span class="s">"username"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-88921cbe-928b-402e-b239-739c4bea3f7f.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-88921cbe-928b-402e-b239-739c4bea3f7f.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- native disabled --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"username"</span> <span class="na">disabled</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-2b75b39e-ef10-4bf8-812d-80b85f2b207b.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-2b75b39e-ef10-4bf8-812d-80b85f2b207b.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- ARIA disabled --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">autocomplete=</span><span class="s">"username"</span> <span class="na">aria-disabled=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-3d838c74-9a79-41e4-9a63-048a6ed750c2.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-3d838c74-9a79-41e4-9a63-048a6ed750c2.html"></iframe> </div></div>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- non-widget element --&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">role=</span><span class="s">"none"</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">autocomplete=</span><span class="s">"username"</span><span class="nt">&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-3-5-autocomplete-valid-33c868aa-4259-4f76-9664-3af59af73442.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-3-5-autocomplete-valid-33c868aa-4259-4f76-9664-3af59af73442.html"></iframe> </div></div>
+
+
+<!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->
+<h2>Definitions</h2><div class='definition-list'><div class='definition-item'><a id='non-empty' href='/auto-wcag/pages/algorithms/non-empty.html'><h3>Non-empty text string</h3></a><p>A string of characters (text) is considered <em>“non-empty”</em> if it contains 1 or more characters that are contained within any of the following unicode categories:</p>
+
+<ul>
+  <li><strong>Ll</strong>: Letter, Lowercase</li>
+  <li><strong>Lu</strong>: Letter, Uppercase</li>
+  <li><strong>Lt</strong>: Letter, Titlecase</li>
+  <li><strong>Lo</strong>: Letter, Other</li>
+  <li><strong>Lm</strong>: Letter, Modifier</li>
+  <li><strong>Nd</strong>: Number, Decimal Digit</li>
+</ul>
+
+<p>For more details on unicode categories, check out <a href="http://www.fileformat.info/info/unicode/category/index.htm">www.fileformat.info/info/unicode/category/</a></p>
+
+</div>\n<div class='definition-item'><a id='exposed-to-assistive-technologies' href='/auto-wcag/pages/algorithms/exposed-to-assistive-technologies.html'><h3>Exposed to assistive technologies</h3></a><p>Elements contained in the accessibility tree as described in one of the following documents:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/core-aam/#mapping_general">Core Accessibility API Mappings</a></li>
+  <li><a href="https://www.w3.org/TR/html-aam">HTML Accessibility API Mappings</a></li>
+  <li><a href="https://www.w3.org/TR/svg-aam">SVG Accessibility API Mappings</a></li>
+</ul>
+
+</div>\n<div class='definition-item'><a id='visible-on-the-page' href='/auto-wcag/pages/algorithms/visible-on-the-page.html'><h3>Visible to the Page.</h3></a><p>Elements should be visible on the page, and also meet the requirements for color contrast and visibility when focused. For more details, check out:</p>
+<ul>
+  <li><a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">https://www.w3.org/TR/WCAG20-TECHS/G18.html</a></li>
+  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html</a></li>
+</ul>
+</div>\n<div class='definition-item'><a id='semantic-role' href='/auto-wcag/pages/algorithms/semantic-role.html'><h3>Semantic Role</h3></a><p>A semantic role is a semantic association that indicates an object’s type. This allows tools to present and support interaction with the object in a manner that is consistent with user expectations about other objects of that type.</p>
+
+<p><a href="https://www.w3.org/TR/wai-aria-1.1/#dfn-role">Roles</a> can be <a href="https://www.w3.org/TR/wai-aria/#implicit_semantics">implicit</a> through the element type or explicit through the <a href="https://www.w3.org/TR/html/dom.html#aria-role-attribute">role attribute</a>.</p>
+
+<p>The role attribute takes a list of tokens. The semantic role is the first valid role in this list. If none of the tokens are valid, the implicit role will be used instead.</p>
+
+<p>Non-abstract roles defined in the following specifications are considered valid:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li>
+  <li><a href="https://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module 1.0</a></li>
+  <li><a href="https://www.w3.org/TR/graphics-aria-1.0/">WAI-ARIA Graphics Module</a></li>
+</ul>
+
+<p>Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the <a href="https://www.w3.org/TR/WCAG-EM/#step1c">accessibility support base line</a>. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.</p>
+
+<p><strong>Note</strong>: For HTML elements the implicit roles are documented in <a href="https://www.w3.org/TR/html-aria/">ARIA in HTML</a>.</p>
+
+</div>\n<div class='definition-item'><a id='correct-autocomplete-field' href='/auto-wcag/pages/algorithms/correct-autocomplete-field.html'><h3>Correct autocomplete field</h3></a><p>Any field name listed in the autocomplete fields table from the HTML 5.2 specification:
+<a href="https://www.w3.org/TR/html52/sec-forms.html#autofill-field">https://www.w3.org/TR/html52/sec-forms.html#autofill-field</a></p>
+</div>\n<div class='definition-item'><a id='appropriate-field-for-the-form-control' href='/auto-wcag/pages/algorithms/appropriate-field-for-the-form-control.html'><h3>Appropriate field for the form control</h3></a><p>The field name listed in the autocomplete fields table from the HTML 5.2 specification is used in the <code class="highlighter-rouge">autocomplete</code> attribute of an element: <a href="https://www.w3.org/TR/html52/sec-forms.html#inappropriate-for-the-control">https://www.w3.org/TR/html52/sec-forms.html#inappropriate-for-the-control</a></p>
+
+</div></div>
+<!-- DO NOT DELETE ABOVE - This is used by a plugin to insert content -->
+
+<div class="container">
+	
+		<h2 id="test-aspects">Test Aspects</h2>
+		Test aspects are defined as part of the <a href="https://w3c.github.io/wcag-act/act-rules-format.html#input-aspects-common">ACT Rules format 1.0</a>.
+		<ul>
+		
+			<li><p>DOM Tree</p>
+</li>
+		
+			<li><p>CSS Styling</p>
+</li>
+		
+		</ul>
+	
+
+	<h2 id="related-resources">Related Resources</h2>
+	<ul>
+		<li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC1-3-5-autocomplete-valid">Known issues</a></li>
+	</ul>
+</div>
+			</p>
+		</main>
+		
+		<!-- contribute section -->
+		<div class="promo-block">
+			<div class="container">
+				<div class="promo-block-inner">
+					<div class="row">
+						<div class="figure-holder col-md-4 col-sm-6 col-xs-12">
+								<div class="content-holder-inner text-center">
+									<h3 class="promo-title"> 
+										Contribute
+									</h3>
+									<br>								
+									<a href="https://github.com/auto-wcag/auto-wcag/" 
+										role="link" class="desc">
+										<i class="fab fa-github-square scale-5x"></i>
+									</a>
+									<br><br><br><br>
+									<a class="btn btn-cta" href="https://github.com/auto-wcag/auto-wcag/" >
+										GitHub
+									</a>
+								</div>
+						</div><!--//figure-holder-->
+						<div class="content-holder col-md-8 col-sm-6 col-xs-12">
+								<div class="content-holder-inner">
+										<div class="desc">
+												<p>Contributing is open to anyone. We welcome any new issues or pull requests for changes. Auto-WCAG has conference calls every 4 weeks. If you are interested in becoming an active contributor or reviewer, we ask that you join the Auto-WCAG community group through the W3C Website. This requires setting up a W3C account, may require approval by the organization you work for if they are a W3C member.</p>
+												<a class="btn btn-cta" href="/auto-wcag/pages/contribute.html">Learn more about contributing to Auto-WCAG</a>
+												<a class="btn btn-cta" href="https://www.w3.org/community/wp-login.php?redirect_to=%2Fcommunity%2Fauto-wcag%2Fjoin">Join the Auto-WcAG community group now!</a>
+										</div><!--//desc-->
+								</div><!--//content-holder-inner-->
+						</div><!--//content-holder-->
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="footer">
+			<div class="container">
+				<small>
+					Auto-WCAG Rules | <a class=right href="/auto-wcag/license.html">License</a>
+				</small>
+			</div>
+	</footer>
+
+
+	</div>
+	<!-- Javascript -->    
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+
+</body>
+</html>
