@@ -164,9 +164,9 @@
 
   <p>Late updated: 
 		<time 
-			datetime="2018-08-28T10:24:00+00:00" 
+			datetime="2018-08-30T08:29:23+00:00" 
 			itemprop="dateModified">
-			Aug 28, 2018
+			Aug 30, 2018
 		</time>
 	</p>
 
@@ -275,87 +275,123 @@
 
 <h3 id="passed">Passed</h3>
 
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Content not focusable by default --&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-12ecd4a6-0182-4679-a48b-df665f861727.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-12ecd4a6-0182-4679-a48b-df665f861727.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Content hidden through CSS --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">style=</span><span class="s">"display:none"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-9360575a-3565-4166-84d1-47edf8003077.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-9360575a-3565-4166-84d1-47edf8003077.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Content made unfocusable through tabindex --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Some button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-ee2c2baa-7267-4bad-b5cc-bead90babc83.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-ee2c2baa-7267-4bad-b5cc-bead90babc83.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Content made unfocusable through disabled --&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">disabled</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-a47f0c1c-177a-44c6-8965-ccbb68c54eae.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-a47f0c1c-177a-44c6-8965-ccbb68c54eae.html"></iframe> </div></div>
-<h3 id="failed">Failed</h3>
+<h4 id="pass-example-1">Pass example 1</h4>
+
+<p>Content not focusable by default.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Focusable off screen link --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">style=</span><span class="s">"position:absolute; top:-999em"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;p</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-67e33c9e-d1eb-4215-9856-692ee884897a.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-67e33c9e-d1eb-4215-9856-692ee884897a.html"></iframe> </div></div>
+<h4 id="pass-example-2">Pass example 2</h4>
+
+<p>Content hidden through CSS.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">data-rule-target</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">style=</span><span class="s">"display:none"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-c81051aa-99c9-4ca6-bdfd-03277ce6089a.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-c81051aa-99c9-4ca6-bdfd-03277ce6089a.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-dd8b9db9-14c3-4d7c-b9bb-8ff253a95784.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-dd8b9db9-14c3-4d7c-b9bb-8ff253a95784.html"></iframe> </div></div>
+<h4 id="pass-example-3">Pass example 3</h4>
+
+<p>Content made unfocusable through tabindex.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Focusable form field, incorrectly disabled --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;input</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">data-rule-target</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Some button<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-b2bfc5e9-2b73-4c0b-a3e4-7f40bb84dcbf.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-b2bfc5e9-2b73-4c0b-a3e4-7f40bb84dcbf.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-3ce75558-33eb-460a-b590-92c95268a680.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-3ce75558-33eb-460a-b590-92c95268a680.html"></iframe> </div></div>
+<h4 id="pass-example-4">Pass example 4</h4>
+
+<p>Content made unfocusable through disabled.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- aria-hidden=false does not negate aria-hidden true --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;input</span> <span class="na">disabled</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-37d47d33-cc21-4407-aa79-542300a2f07c.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-37d47d33-cc21-4407-aa79-542300a2f07c.html"></iframe> </div></div>
+<h3 id="failed">Failed</h3>
+
+<h4 id="fail-example-1">Fail example 1</h4>
+
+<p>Focusable off screen link.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">data-rule-target</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">style=</span><span class="s">"position:absolute; top:-999em"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-46ec0f24-71a0-478f-9163-92b6ed7bf1d1.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-46ec0f24-71a0-478f-9163-92b6ed7bf1d1.html"></iframe> </div></div>
+<h4 id="fail-example-2">Fail example 2</h4>
+
+<p>Focusable form field, incorrectly disabled.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">data-rule-target</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;input</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-7e187f99-a013-4a4e-b883-e0b9ccfd4e82.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-7e187f99-a013-4a4e-b883-e0b9ccfd4e82.html"></iframe> </div></div>
+<h4 id="fail-example-3">Fail example 3</h4>
+
+<p><code class="highlighter-rouge">aria-hidden=false</code> does not negate aria-hidden true.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">data-rule-target</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"false"</span> <span class="na">data-rule-target</span><span class="nt">&gt;</span>
         <span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Some button<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-91339405-7bcb-452b-820a-f94e76bd0aa3.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-91339405-7bcb-452b-820a-f94e76bd0aa3.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-d31efade-c766-4a19-b7ac-ecead4e100e5.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-d31efade-c766-4a19-b7ac-ecead4e100e5.html"></iframe> </div></div>
+<h4 id="fail-example-4">Fail example 4</h4>
+
+<p>Focusable content through <code class="highlighter-rouge">tabindex</code>.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Focusable content through tabindex --&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;p</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-86d80a69-d165-4722-a8e8-24c4c2f3e48a.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-86d80a69-d165-4722-a8e8-24c4c2f3e48a.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-e180a622-c701-47f8-a9f5-07a6086441ee.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-e180a622-c701-47f8-a9f5-07a6086441ee.html"></iframe> </div></div>
+<h4 id="fail-example-5">Fail example 5</h4>
+
+<p>Focusable summary element</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Focusable summary element --&gt;</span>
-<span class="nt">&lt;details</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;details</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">data-rule-target</span><span class="nt">&gt;</span>
     <span class="nt">&lt;summary&gt;</span>Some button<span class="nt">&lt;/summary&gt;</span>
     <span class="nt">&lt;p&gt;</span>Some details<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/details&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-d69ad84b-1d67-46f4-8a5f-abc737d65ac8.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-d69ad84b-1d67-46f4-8a5f-abc737d65ac8.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-1e8851ea-3841-4ae9-9c39-bb8bc8d25508.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-1e8851ea-3841-4ae9-9c39-bb8bc8d25508.html"></iframe> </div></div>
 <h3 id="inapplicable">Inapplicable</h3>
 
+<h4 id="inapplicable-example-1">Inapplicable example 1</h4>
+
+<p>Ignore <code class="highlighter-rouge">aria-hidden</code> with null value.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Ignore aria-hidden with null value --&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-hidden</span><span class="nt">&gt;</span>Some button<span class="nt">&lt;/button&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-hidden</span><span class="nt">&gt;</span>Some button<span class="nt">&lt;/button&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-a0f2a15e-10be-46eb-aa91-2b58c5e97a16.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-a0f2a15e-10be-46eb-aa91-2b58c5e97a16.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-07e7b2ef-139e-4208-8175-c3c6ccffedfc.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-07e7b2ef-139e-4208-8175-c3c6ccffedfc.html"></iframe> </div></div>
+<h4 id="inapplicable-example-2">Inapplicable example 2</h4>
+
+<p>Ignore <code class="highlighter-rouge">aria-hidden</code> false.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Ignore aria-hidden false --&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">aria-hidden=</span><span class="s">"false"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;p</span> <span class="na">aria-hidden=</span><span class="s">"false"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-85de86b2-2bf3-4bf1-a739-0f9071456542.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-85de86b2-2bf3-4bf1-a739-0f9071456542.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-4babced0-4db2-47cd-b370-63b268bccaf6.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-4babced0-4db2-47cd-b370-63b268bccaf6.html"></iframe> </div></div>
+<h4 id="inapplicable-example-3">Inapplicable example 3</h4>
+
+<p>Incorrect value of <code class="highlighter-rouge">aria-hidden</code>.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Incorrect value of aria-hidden --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"yes"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"yes"</span> <span class="na">data-rule-target</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;p&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-75fb0aa4-0f5d-4f7a-a181-b3bdaf00cafd.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-75fb0aa4-0f5d-4f7a-a181-b3bdaf00cafd.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus-c92a6906-2c46-4e4f-937d-5aa4de84ca8a.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus-c92a6906-2c46-4e4f-937d-5aa4de84ca8a.html"></iframe> </div></div>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->

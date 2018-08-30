@@ -164,9 +164,9 @@
 
   <p>Late updated: 
 		<time 
-			datetime="2018-08-28T10:24:00+00:00" 
+			datetime="2018-08-30T08:29:23+00:00" 
 			itemprop="dateModified">
-			Aug 28, 2018
+			Aug 30, 2018
 		</time>
 	</p>
 
@@ -243,86 +243,107 @@
 
 <h3 id="passed">Passed</h3>
 
+<h4 id="pass-example-1">Pass example 1</h4>
+
+<p>A video element without audio. The text on the page labels the video as an alternative.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- A video element without audio. The text on the page labels the video as an alternative.--&gt;</span>
-<span class="nt">&lt;p&gt;</span>Not being able to use your computer because your mouse 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;p&gt;</span>Not being able to use your computer because your mouse 
   doesn't work, is frustrating. Many people use only the keyboard to navigate 
   websites. Either through preference or circumstance. This is solved by keyboard compatibility. 
   Keyboard compatibility is described in WCAG.
   See the video below to watch the same information again in video form.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-video-with-captions-silent.mp4"</span> <span class="na">controls</span><span class="nt">&gt;</span>
+<span class="nt">&lt;video</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-video-with-captions-silent.mp4"</span> <span class="na">controls</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-1-media-alternative-video-e236568d-7588-44b1-8526-84a2ac7b535d.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-1-media-alternative-video-e236568d-7588-44b1-8526-84a2ac7b535d.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-1-media-alternative-video-50f70a09-47e9-46a8-a853-71556bd8e215.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-1-media-alternative-video-50f70a09-47e9-46a8-a853-71556bd8e215.html"></iframe> </div></div>
 <h3 id="failed">Failed</h3>
 
-<p>TODO</p>
+<h4 id="fail-example-1">Fail example 1</h4>
+
+<p>A video element that describes some of the text on the same page. The video contains more information than the text does.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- A video element that describes some of the text on the same page. The video contains more information than the text does.--&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> 
 <span class="nt">&lt;p&gt;</span>Not being able to use your computer because your mouse 
   doesn't work, is frustrating. Either through preference or circumstance. This is solved by keyboard compatibility. 
   Keyboard compatibility is described in WCAG.
   See the video below to watch the same information again in video form.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-video-with-captions-silent.mp4"</span> <span class="na">controls</span><span class="nt">&gt;</span>
+<span class="nt">&lt;video</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-video-with-captions-silent.mp4"</span> <span class="na">controls</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-1-media-alternative-video-95d8f598-721c-46df-955a-583e90f3d3f3.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-1-media-alternative-video-95d8f598-721c-46df-955a-583e90f3d3f3.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-1-media-alternative-video-c86835f1-dd46-42f9-9b97-2056eb4c76f3.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-1-media-alternative-video-c86835f1-dd46-42f9-9b97-2056eb4c76f3.html"></iframe> </div></div>
+<h4 id="fail-example-2">Fail example 2</h4>
+
+<p>A video element that describes some of the text on the same page. The text is not visible on the page.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- A video element that describes some of the text on the same page. The text is not visible on the page.--&gt;</span>
-<span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>Not being able to use your computer because your mouse 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>Not being able to use your computer because your mouse 
   doesn't work, is frustrating. Many people use only the keyboard to navigate 
   websites. Either through preference or circumstance. This is solved by keyboard compatibility. 
   Keyboard compatibility is described in WCAG.
   See the video below to watch the same information again in video form.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-video-with-captions-silent.mp4"</span> <span class="na">controls</span><span class="nt">&gt;</span>
+<span class="nt">&lt;video</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-video-with-captions-silent.mp4"</span> <span class="na">controls</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-1-media-alternative-video-e4690ccf-d3b5-4eb6-854b-8083cc033130.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-1-media-alternative-video-e4690ccf-d3b5-4eb6-854b-8083cc033130.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-1-media-alternative-video-14b0960a-63a4-40db-83de-3f40d10b5c62.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-1-media-alternative-video-14b0960a-63a4-40db-83de-3f40d10b5c62.html"></iframe> </div></div>
+<h4 id="fail-example-3">Fail example 3</h4>
+
+<p>A video element that describes some of the text on the same page. The text on the page does not label the video as an alternative.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- A video element that describes some of the text on the same page. The text on the page does not label the video as an alternative.--&gt;</span>
-<span class="nt">&lt;p&gt;</span>Not being able to use your computer because your mouse 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;p&gt;</span>Not being able to use your computer because your mouse 
   doesn't work, is frustrating. Many people use only the keyboard to navigate 
   websites. Either through preference or circumstance. This is solved by keyboard compatibility. 
   Keyboard compatibility is described in WCAG.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-video-with-captions-silent.mp4"</span> <span class="na">controls</span><span class="nt">&gt;</span>
+<span class="nt">&lt;video</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-video-with-captions-silent.mp4"</span> <span class="na">controls</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-1-media-alternative-video-dee09511-cd82-495b-be40-19fce0873e64.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-1-media-alternative-video-dee09511-cd82-495b-be40-19fce0873e64.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-1-media-alternative-video-6e40f7c8-47e4-420b-9897-1ed5e2717ad2.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-1-media-alternative-video-6e40f7c8-47e4-420b-9897-1ed5e2717ad2.html"></iframe> </div></div>
+<h4 id="fail-example-4">Fail example 4</h4>
+
+<p>A video element that describes some of the text on the same page. The text on the page labels the video as an alternative but the label is not visible on the page.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- A video element that describes some of the text on the same page. The text on the page labels the video as an alternative but the label is not visible on the page.--&gt;</span>
-<span class="nt">&lt;p&gt;</span>Not being able to use your computer because your mouse 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;p&gt;</span>Not being able to use your computer because your mouse 
   doesn't work, is frustrating. Many people use only the keyboard to navigate 
   websites. Either through preference or circumstance. This is solved by keyboard compatibility. 
   Keyboard compatibility is described in WCAG.<span class="nt">&lt;/p&gt;</span>
   <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>See the video below to watch the same information again in video form.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-video-with-captions-silent.mp4"</span> <span class="na">controls</span><span class="nt">&gt;</span>
+<span class="nt">&lt;video</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-video-with-captions-silent.mp4"</span> <span class="na">controls</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-1-media-alternative-video-e2e3c501-1a3d-4254-b2e6-e9c97397692d.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-1-media-alternative-video-e2e3c501-1a3d-4254-b2e6-e9c97397692d.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-1-media-alternative-video-877d6a34-b3e9-4534-9882-c5738351f50e.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-1-media-alternative-video-877d6a34-b3e9-4534-9882-c5738351f50e.html"></iframe> </div></div>
 <h3 id="inapplicable">Inapplicable</h3>
 
+<h4 id="inapplicable-example-1">Inapplicable example 1</h4>
+
+<p>A video element with audio.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- A video element with audio.--&gt;</span>
-<span class="nt">&lt;p&gt;</span>Not being able to use your computer because your mouse 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;p&gt;</span>Not being able to use your computer because your mouse 
   doesn't work, is frustrating. Many people use only the keyboard to navigate 
   websites. Either through preference or circumstance. This is solved by keyboard compatibility. 
   Keyboard compatibility is described in WCAG.
   See the video below to watch the same information again in video form.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4"</span> <span class="na">controls</span><span class="nt">&gt;</span>
+<span class="nt">&lt;video</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4"</span> <span class="na">controls</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-1-media-alternative-video-082b0fac-97d9-43d1-84d4-7574161d9b85.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-1-media-alternative-video-082b0fac-97d9-43d1-84d4-7574161d9b85.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-1-media-alternative-video-278976b2-2cb1-4090-9a5f-b2bc7bf82ec7.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-1-media-alternative-video-278976b2-2cb1-4090-9a5f-b2bc7bf82ec7.html"></iframe> </div></div>
+<h4 id="inapplicable-example-2">Inapplicable example 2</h4>
+
+<p>A video element that describes some of the text on the same page. The text on the page labels the video as an alternative but the video is not visible on the page.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- A video element that describes some of the text on the same page. The text on the page labels the video as an alternative but the video is not visible on the page.--&gt;</span>
-<span class="nt">&lt;p&gt;</span>Not being able to use your computer because your mouse 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;p&gt;</span>Not being able to use your computer because your mouse 
   doesn't work, is frustrating. Many people use only the keyboard to navigate 
   websites. Either through preference or circumstance. This is solved by keyboard compatibility. 
   Keyboard compatibility is described in WCAG.
   See the video below to watch the same information again in video form.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-video-with-captions-silent.mp4"</span> <span class="na">controls</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;video</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-video-with-captions-silent.mp4"</span> <span class="na">controls</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-1-media-alternative-video-f436bcec-8649-4ade-a557-06aea60abd48.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-1-media-alternative-video-f436bcec-8649-4ade-a557-06aea60abd48.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-1-media-alternative-video-4bd7b6aa-cd18-4b92-a59e-12fbd38099bd.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-1-media-alternative-video-4bd7b6aa-cd18-4b92-a59e-12fbd38099bd.html"></iframe> </div></div>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->

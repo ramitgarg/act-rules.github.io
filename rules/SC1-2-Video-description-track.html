@@ -164,9 +164,9 @@
 
   <p>Late updated: 
 		<time 
-			datetime="2018-08-28T10:24:00+00:00" 
+			datetime="2018-08-30T08:29:23+00:00" 
 			itemprop="dateModified">
-			Aug 28, 2018
+			Aug 30, 2018
 		</time>
 	</p>
 
@@ -242,54 +242,69 @@
 
 <h2 id="passed">Passed</h2>
 
+<h4 id="pass-example-1">Pass example 1</h4>
+
+<p>A video element with a track element that contains descriptions.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- A video element with a track element that contains descriptions.--&gt;</span>
-<span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
   <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
   <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
   <span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"descriptions"</span> <span class="na">src=</span><span class="s">"rabbit-video-descriptions.vtt"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-Video-description-track-c5b516b8-3bb4-41c2-b8ce-8e943d42a3b8.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-Video-description-track-c5b516b8-3bb4-41c2-b8ce-8e943d42a3b8.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-Video-description-track-29e4e126-8d85-4da0-be9f-964e1cdb8bab.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-Video-description-track-29e4e126-8d85-4da0-be9f-964e1cdb8bab.html"></iframe> </div></div>
 <h2 id="failed">Failed</h2>
 
+<h4 id="fail-example-1">Fail example 1</h4>
+
+<p>A video element with a track element that contains incorrect descriptions.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- A video element with a track element that contains incorrect descriptions.--&gt;</span>
-<span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
   <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
   <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
   <span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"descriptions"</span> <span class="na">src=</span><span class="s">"rabbit-video-incorrect-descriptions.vtt"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-Video-description-track-2d22dfe9-cf78-4dfb-b90a-9f20619e33a0.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-Video-description-track-2d22dfe9-cf78-4dfb-b90a-9f20619e33a0.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-Video-description-track-cbbc60c6-29aa-4bbd-99b5-f8660bfb3ddf.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-Video-description-track-cbbc60c6-29aa-4bbd-99b5-f8660bfb3ddf.html"></iframe> </div></div>
 <h2 id="inapplicable">Inapplicable</h2>
+
+<h4 id="inapplicable-example-1">Inapplicable example 1</h4>
+
+<p>A video element without a track element.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
-<span class="c">&lt;!-- A video element without a track element.--&gt;</span>
   <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
   <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-Video-description-track-20c11ffb-2c10-432f-872e-daeade444d42.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-Video-description-track-20c11ffb-2c10-432f-872e-daeade444d42.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-Video-description-track-daf13a28-ef4b-4faa-8977-674b66e2f38f.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-Video-description-track-daf13a28-ef4b-4faa-8977-674b66e2f38f.html"></iframe> </div></div>
+<h4 id="inapplicable-example-2">Inapplicable example 2</h4>
+
+<p>A video element that is not visible on the page.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- A video element that is not visible on the page.--&gt;</span>
-<span class="nt">&lt;video</span> <span class="na">controls</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
   <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
   <span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"descriptions"</span> <span class="na">src=</span><span class="s">"rabbit-video-descriptions.vtt"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-Video-description-track-748069bd-5759-44dc-9296-e21a145d608e.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-Video-description-track-748069bd-5759-44dc-9296-e21a145d608e.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-Video-description-track-6f7d61f6-1b4b-4c65-a030-62b906e450a2.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-Video-description-track-6f7d61f6-1b4b-4c65-a030-62b906e450a2.html"></iframe> </div></div>
+<h4 id="inapplicable-example-3">Inapplicable example 3</h4>
+
+<p>A video element without audio.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- A video element without audio.--&gt;</span>
-<span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
   <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/silent.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
   <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/silent.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
   <span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"descriptions"</span> <span class="na">src=</span><span class="s">"rabbit-video-descriptions.vtt"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-Video-description-track-c08cb1df-6006-478e-9c62-4cdbb9e6ff64.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-Video-description-track-c08cb1df-6006-478e-9c62-4cdbb9e6ff64.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-Video-description-track-0763c66e-ba88-4ea7-87b5-8fdcc8c5c623.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-Video-description-track-0763c66e-ba88-4ea7-87b5-8fdcc8c5c623.html"></iframe> </div></div>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->

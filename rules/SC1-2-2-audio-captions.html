@@ -164,9 +164,9 @@
 
   <p>Late updated: 
 		<time 
-			datetime="2018-08-28T10:24:00+00:00" 
+			datetime="2018-08-30T08:29:23+00:00" 
 			itemprop="dateModified">
-			Aug 28, 2018
+			Aug 30, 2018
 		</time>
 	</p>
 
@@ -278,57 +278,80 @@
 
 <h3 id="passed">Passed</h3>
 
+<h4 id="pass-example-1">Pass example 1</h4>
+
+<p>Audio with controls and internal transcript</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Audio with controls and internal transcript --&gt;</span>
-<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
 <span class="nt">&lt;p&gt;</span>The above audio contains the following speech: We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.<span class="nt">&lt;/p&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-2-audio-captions-6ba4f8b1-3547-4a2f-971d-0a78aba56014.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-audio-captions-6ba4f8b1-3547-4a2f-971d-0a78aba56014.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-2-audio-captions-59f36f2b-39bb-4f4b-ba46-ce62a129f408.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-audio-captions-59f36f2b-39bb-4f4b-ba46-ce62a129f408.html"></iframe> </div></div>
+<h4 id="pass-example-2">Pass example 2</h4>
+
+<p>Audio with controls and external transcript</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Audio with controls and external transcript --&gt;</span>
-<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/moon-audio/moon-speech-transcript.html"</span><span class="nt">&gt;</span>Transcript<span class="nt">&lt;/p&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-2-audio-captions-ab8628b7-a430-4c62-8db2-6b2064cf36ec.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-audio-captions-ab8628b7-a430-4c62-8db2-6b2064cf36ec.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-2-audio-captions-d805b51d-009c-43aa-bd6b-47ac31f597c2.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-audio-captions-d805b51d-009c-43aa-bd6b-47ac31f597c2.html"></iframe> </div></div>
+<h4 id="pass-example-3">Pass example 3</h4>
+
+<p>Audio with autoplay, external transcript, and with a text description on the page</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Audio with autoplay and external transcript --&gt;</span>
-<span class="c">&lt;!-- Audio with a text description on the page --&gt;</span>
-<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">autoplay</span><span class="nt">&gt;&lt;/audio&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">autoplay</span><span class="nt">&gt;&lt;/audio&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/moon-audio/moon-speech-transcript.html"</span><span class="nt">&gt;</span>Transcript<span class="nt">&lt;/p&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-2-audio-captions-c476ef82-0f2e-4772-9c82-de469f28eaec.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-audio-captions-c476ef82-0f2e-4772-9c82-de469f28eaec.html"></iframe> </div></div>
+ </div></div>
 <h3 id="failed">Failed</h3>
 
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Audio with controls and incorrect internal transcript --&gt;</span>
-<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
-<span class="nt">&lt;p&gt;</span>The above audio contains the following speech: We choose to go to the cheese in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.<span class="nt">&lt;/p&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-2-audio-captions-767aa31a-6df7-472e-85c4-791222de6211.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-audio-captions-767aa31a-6df7-472e-85c4-791222de6211.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Audio with controls and incorrect external transcript --&gt;</span>
-<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/moon-audio/moon-speech-incorrect-transcript.html"</span><span class="nt">&gt;</span>Transcript<span class="nt">&lt;/p&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-2-audio-captions-3442b802-aae5-4b78-b651-8b78316b12ad.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-audio-captions-3442b802-aae5-4b78-b651-8b78316b12ad.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Audio with autoplay and incorrect external transcript --&gt;</span>
-<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">autoplay</span><span class="nt">&gt;&lt;/audio&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/moon-audio/moon-speech-incorrect-transcript.html"</span><span class="nt">&gt;</span>Transcript<span class="nt">&lt;/p&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-2-audio-captions-100746e2-78d3-4d44-8ddc-8f4f9345e312.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-audio-captions-100746e2-78d3-4d44-8ddc-8f4f9345e312.html"></iframe> </div></div>
-<h3 id="inapplicable">Inapplicable</h3>
+<h4 id="fail-example-1">Fail example 1</h4>
+
+<p>Audio with controls and incorrect internal transcript</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Audio without controls --&gt;</span>
-<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span><span class="nt">&gt;&lt;/audio&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
+<span class="nt">&lt;p&gt;</span>The above audio contains the following speech: We choose to go to the cheese in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.<span class="nt">&lt;/p&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-2-audio-captions-7a44bd49-d5b6-4d24-b448-5f9704c85bba.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-audio-captions-7a44bd49-d5b6-4d24-b448-5f9704c85bba.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-2-audio-captions-c67d3423-7dfc-48e9-b67a-5f3b1d7ecc06.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-audio-captions-c67d3423-7dfc-48e9-b67a-5f3b1d7ecc06.html"></iframe> </div></div>
+<h4 id="fail-example-2">Fail example 2</h4>
+
+<p>Audio with controls and incorrect external transcript</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Audio with hidden controls
-&lt;audio src="../test-assets/moon-audio/moon-speech.mp3" controls style="display: none;"&gt;&lt;/audio&gt;
- </span></code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-2-audio-captions-51ffa3b1-813a-4092-b4a7-e3d840b40bee.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-audio-captions-51ffa3b1-813a-4092-b4a7-e3d840b40bee.html"></iframe> </div></div>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/moon-audio/moon-speech-incorrect-transcript.html"</span><span class="nt">&gt;</span>Transcript<span class="nt">&lt;/p&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-2-audio-captions-d6cc11ba-d453-4964-896b-90a8df2bb17b.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-audio-captions-d6cc11ba-d453-4964-896b-90a8df2bb17b.html"></iframe> </div></div>
+<h4 id="fail-example-3">Fail example 3</h4>
+
+<p>Audio with autoplay and incorrect external transcript</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">autoplay</span><span class="nt">&gt;&lt;/audio&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/moon-audio/moon-speech-incorrect-transcript.html"</span><span class="nt">&gt;</span>Transcript<span class="nt">&lt;/p&gt;</span>
+ </code></pre></figure>
+ </div></div>
+<h3 id="inapplicable">Inapplicable</h3>
+
+<h4 id="inapplicable-example-1">Inapplicable example 1</h4>
+
+<p>Audio without controls.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span><span class="nt">&gt;&lt;/audio&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-2-audio-captions-82849ca2-1c10-4f61-8c65-7f69ece4c6f1.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-audio-captions-82849ca2-1c10-4f61-8c65-7f69ece4c6f1.html"></iframe> </div></div>
+<h4 id="inapplicable-example-2">Inapplicable example 2</h4>
+
+<p>Audio with hidden controls.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;&lt;/audio&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-2-2-audio-captions-e0d41b74-d92f-42ea-ad2b-ab23b9153912.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-audio-captions-e0d41b74-d92f-42ea-ad2b-ab23b9153912.html"></iframe> </div></div>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->

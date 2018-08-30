@@ -164,9 +164,9 @@
 
   <p>Late updated: 
 		<time 
-			datetime="2018-08-28T10:24:00+00:00" 
+			datetime="2018-08-30T08:29:23+00:00" 
 			itemprop="dateModified">
-			Aug 28, 2018
+			Aug 30, 2018
 		</time>
 	</p>
 
@@ -309,109 +309,151 @@
 
 <h3 id="passed">Passed</h3>
 
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- redirects immediately --&gt;</span>
-  <span class="nt">&lt;head&gt;</span>           
-    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"0; URL='https://auto-wcag.github.io/auto-wcag/'"</span> <span class="nt">/&gt;</span>    
-  <span class="nt">&lt;/head&gt;</span>  
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-60183e14-85ef-49da-86ca-c702a369bc23.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-60183e14-85ef-49da-86ca-c702a369bc23.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- first valid &lt;meta http-equiv="refresh"&gt; redirects immediately  --&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"0; http://example.com"</span> <span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"5; http://example.com"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-f2e0a6f7-a132-476e-ab27-1b4355354ddb.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-f2e0a6f7-a132-476e-ab27-1b4355354ddb.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- redirects after 20 hours --&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"72000; http://example.com"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-5c39c2b1-502c-44c7-ab87-d21cbd1d3549.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-5c39c2b1-502c-44c7-ab87-d21cbd1d3549.html"></iframe> </div></div>
-<h3 id="failed">Failed</h3>
+<h4 id="pass-example-1">Pass example 1</h4>
+
+<p>Redirects immediately.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- refreshes after 30 seconds --&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"30"</span><span class="nt">&gt;</span>
-<span class="nt">&lt;/head&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html">   <span class="nt">&lt;head&gt;</span>           
+    <span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"0; URL='https://auto-wcag.github.io/auto-wcag/'"</span> <span class="nt">/&gt;</span>    
+  <span class="nt">&lt;/head&gt;</span>  
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-f1f73e17-f185-4ac3-9d53-b36e31360ac7.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-f1f73e17-f185-4ac3-9d53-b36e31360ac7.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-bd51cf43-102c-4642-889b-c662de394d33.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-bd51cf43-102c-4642-889b-c662de394d33.html"></iframe> </div></div>
+<h4 id="pass-example-2">Pass example 2</h4>
+
+<p>First valid <code class="highlighter-rouge">&lt;meta http-equiv="refresh"&gt;</code> redirects immediately.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- redirects after 30 seconds --&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"30; URL='https://auto-wcag.github.io/auto-wcag/'"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"0; http://example.com"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"5; http://example.com"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-4da65d7e-8e26-4b8a-8b25-403958aec99f.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-4da65d7e-8e26-4b8a-8b25-403958aec99f.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-fac982c5-7e3f-42d7-b491-e26aa8607bae.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-fac982c5-7e3f-42d7-b491-e26aa8607bae.html"></iframe> </div></div>
+<h4 id="pass-example-3">Pass example 3</h4>
+
+<p>Redirects after 20 hours.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- first &lt;meta http-equiv="refresh"&gt; element is not valid, second one redirects after 5 seconds --&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"0: http://example.com"</span> <span class="nt">/&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"5; http://example.com"</span> <span class="nt">/&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"72000; http://example.com"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-13d125c8-f4c0-43d0-80ee-f31f38a20575.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-13d125c8-f4c0-43d0-80ee-f31f38a20575.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-e2f1b058-2d5b-4794-8d1a-f9e7b5c33830.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-e2f1b058-2d5b-4794-8d1a-f9e7b5c33830.html"></iframe> </div></div>
+<h3 id="failed">Failed</h3>
+
+<h4 id="fail-example-1">Fail example 1</h4>
+
+<p>Refreshes after 30 seconds.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"30"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-d9c8e404-5a20-42bb-9107-26869862e754.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-d9c8e404-5a20-42bb-9107-26869862e754.html"></iframe> </div></div>
+<h4 id="fail-example-2">Fail example 2</h4>
+
+<p>Redirects after 30 seconds.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"30; URL='https://auto-wcag.github.io/auto-wcag/'"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-c201a7df-e453-44d3-a17f-4c242676ddf2.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-c201a7df-e453-44d3-a17f-4c242676ddf2.html"></iframe> </div></div>
+<h4 id="fail-example-3">Fail example 3</h4>
+
+<p>First <code class="highlighter-rouge">&lt;meta http-equiv="refresh"&gt;</code> element is not valid, second one redirects after 5 seconds.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"0: http://example.com"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"5; http://example.com"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-f648022e-ded5-42f4-8cce-d551a6608c1e.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-f648022e-ded5-42f4-8cce-d551a6608c1e.html"></iframe> </div></div>
 <h3 id="inapplicable">Inapplicable</h3>
+
+<h4 id="inapplicable-example-1">Inapplicable example 1</h4>
+
+<p>No <code class="highlighter-rouge">content</code> attribute.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- no content attribute --&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-3a0251ec-7237-4097-a6b9-52d968396f4f.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-3a0251ec-7237-4097-a6b9-52d968396f4f.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-3d4facd6-1ad9-4d87-beca-244f494730a2.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-3d4facd6-1ad9-4d87-beca-244f494730a2.html"></iframe> </div></div>
+<h4 id="inapplicable-example-2">Inapplicable example 2</h4>
+
+<p>No <code class="highlighter-rouge">http-equiv="refresh"</code> attribute.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- no http-equiv="refresh" attribute --&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">content=</span><span class="s">"30"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">content=</span><span class="s">"30"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-2fe092cc-60a1-4277-b4e5-ac761b5d53e9.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-2fe092cc-60a1-4277-b4e5-ac761b5d53e9.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-2b4b5d5c-1c4d-491c-bcb8-b987f8c7c617.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-2b4b5d5c-1c4d-491c-bcb8-b987f8c7c617.html"></iframe> </div></div>
+<h4 id="inapplicable-example-3">Inapplicable example 3</h4>
+
+<p><code class="highlighter-rouge">content</code> attribute is invalid and therefore inapplicable.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- content attribute is invalid and therefore inapplicable. --&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"0: http://example.com"</span> <span class="nt">/&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"0: http://example.com"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-bfd1c6a7-422e-41f8-96bf-5d921434e6dc.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-bfd1c6a7-422e-41f8-96bf-5d921434e6dc.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-8cdf9f0e-d270-46cb-8078-d87dc714a51a.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-8cdf9f0e-d270-46cb-8078-d87dc714a51a.html"></iframe> </div></div>
+<h4 id="inapplicable-example-4">Inapplicable example 4</h4>
+
+<p><code class="highlighter-rouge">content</code> attribute is invalid and therefore inapplicable.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- content attribute is invalid and therefore inapplicable. --&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">refresh</span> <span class="na">content=</span><span class="s">"-00.12 foo"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">refresh</span> <span class="na">content=</span><span class="s">"-00.12 foo"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-0074cb67-7ee0-4559-8b0a-2b9942c864b9.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-0074cb67-7ee0-4559-8b0a-2b9942c864b9.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-faa593bb-16a3-4c93-9f9f-fa92f6d42a79.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-faa593bb-16a3-4c93-9f9f-fa92f6d42a79.html"></iframe> </div></div>
+<h4 id="inapplicable-example-5">Inapplicable example 5</h4>
+
+<p><code class="highlighter-rouge">content</code> attribute is invalid and therefore inapplicable.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- content attribute is invalid and therefore inapplicable. --&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"; 30"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"; 30"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-eac554de-f2da-4edf-b979-8f9fdfd4b0ef.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-eac554de-f2da-4edf-b979-8f9fdfd4b0ef.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-8e1abd33-1a95-4e1b-95eb-73dd7e22ed70.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-8e1abd33-1a95-4e1b-95eb-73dd7e22ed70.html"></iframe> </div></div>
+<h4 id="inapplicable-example-6">Inapplicable example 6</h4>
+
+<p><code class="highlighter-rouge">content</code> attribute is invalid and therefore inapplicable.</p>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- content attribute is invalid and therefore inapplicable. --&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">""</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+	<span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">""</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-b9725b1b-a663-4aec-9a82-e2a1476a56fe.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-b9725b1b-a663-4aec-9a82-e2a1476a56fe.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-98d9c7ec-713b-48e3-9f97-5e549ca16762.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-98d9c7ec-713b-48e3-9f97-5e549ca16762.html"></iframe> </div></div>
+<h4 id="inapplicable-example-7">Inapplicable example 7</h4>
+
+<p><code class="highlighter-rouge">content</code> attribute is invalid and therefore inapplicable.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- content attribute is invalid and therefore inapplicable. --&gt;</span>
-<span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"+5; http://example.com"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"+5; http://example.com"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-7d33ac62-a46c-4e7e-b431-a8f36c1b7705.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-7d33ac62-a46c-4e7e-b431-a8f36c1b7705.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-312c0d39-6854-48e4-a858-3243c482e370.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-312c0d39-6854-48e4-a858-3243c482e370.html"></iframe> </div></div>
+<h4 id="inapplicable-example-8">Inapplicable example 8</h4>
+
+<p><code class="highlighter-rouge">content</code> attribute is invalid and therefore inapplicable.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- content attribute is invalid and therefore inapplicable. --&gt;</span>
-<span class="nt">&lt;head&gt;</span>           
-  <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"foo; URL='https://auto-wcag.github.io/auto-wcag/'"</span> <span class="nt">/&gt;</span>    
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>           
+  <span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"foo; URL='https://auto-wcag.github.io/auto-wcag/'"</span> <span class="nt">/&gt;</span>    
 <span class="nt">&lt;/head&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-606b34c3-47e0-41a8-8ee8-326231f44e2d.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-606b34c3-47e0-41a8-8ee8-326231f44e2d.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-59fcaca4-3280-4742-a810-53fe10b371e3.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC3-2-5-meta-refresh-59fcaca4-3280-4742-a810-53fe10b371e3.html"></iframe> </div></div>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->

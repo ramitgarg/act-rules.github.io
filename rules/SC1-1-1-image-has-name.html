@@ -164,9 +164,9 @@
 
   <p>Late updated: 
 		<time 
-			datetime="2018-08-28T10:24:00+00:00" 
+			datetime="2018-08-30T08:29:23+00:00" 
 			itemprop="dateModified">
-			Aug 28, 2018
+			Aug 30, 2018
 		</time>
 	</p>
 
@@ -279,61 +279,90 @@
 
 <h3 id="passed">Passed</h3>
 
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- accessible name --&gt;</span>
-<span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"W3C logo"</span> <span class="nt">/&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-a36f9578-2249-4131-a8ad-f32dc76913ad.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-a36f9578-2249-4131-a8ad-f32dc76913ad.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- non-image element with image role and accessible name --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"image"</span> <span class="na">aria-label=</span><span class="s">"W3C logo"</span><span class="nt">&gt;&lt;/div&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-32292af4-a879-4af4-a5af-be4a046cc690.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-32292af4-a879-4af4-a5af-be4a046cc690.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- accessible name but not always supported --&gt;</span>
-<span class="nt">&lt;img</span> <span class="na">title=</span><span class="s">"W3C logo"</span> <span class="nt">/&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-eaa788b5-9ad6-40fd-846d-9892e05f799e.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-eaa788b5-9ad6-40fd-846d-9892e05f799e.html"></iframe> </div></div>
-<h3 id="failed">Failed</h3>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- no accessible name --&gt;</span>
-<span class="nt">&lt;img</span> <span class="nt">/&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-e7eb4e76-a27a-4782-8309-1e9d08fe9ac0.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-e7eb4e76-a27a-4782-8309-1e9d08fe9ac0.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- non-image element with image role but no accessible name --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"image"</span><span class="nt">&gt;&lt;/div&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-8b19888a-056d-46b5-9775-2d1f2ee7bc5b.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-8b19888a-056d-46b5-9775-2d1f2ee7bc5b.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- image element inside a div positioned off screen with no accessible name --&gt;</span>
-<span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"margin-left:-9999px;"</span><span class="nt">&gt;&lt;img</span> <span class="nt">/&gt;&lt;/div&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-042057dd-1969-4eca-92bc-7fc191c8a89d.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-042057dd-1969-4eca-92bc-7fc191c8a89d.html"></iframe> </div></div>
-<h3 id="inapplicable">Inapplicable</h3>
+<h4 id="pass-example-1">Pass example 1</h4>
+
+<p>Image has accessible name</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- decorative image --&gt;</span>
-<span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"W3C logo"</span> <span class="nt">/&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-3e4a8c0c-c28e-4d31-ac91-c9c0e0206398.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-3e4a8c0c-c28e-4d31-ac91-c9c0e0206398.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-4878a9dc-168e-49b9-a06b-288054a37d69.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-4878a9dc-168e-49b9-a06b-288054a37d69.html"></iframe> </div></div>
+<h4 id="pass-example-2">Pass example 2</h4>
+
+<p>Non-image element with image role and accessible name</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- decorative image --&gt;</span>
-<span class="nt">&lt;img</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="nt">/&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"image"</span> <span class="na">aria-label=</span><span class="s">"W3C logo"</span><span class="nt">&gt;&lt;/div&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-8c87e199-4070-4986-9b43-a4b77d656151.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-8c87e199-4070-4986-9b43-a4b77d656151.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-bb95b9f8-0bb1-4c8f-920f-66ba782dffb1.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-bb95b9f8-0bb1-4c8f-920f-66ba782dffb1.html"></iframe> </div></div>
+<h4 id="pass-example-3">Pass example 3</h4>
+
+<p>Accessible name but not always supported.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- img element with no role --&gt;</span>
-<span class="nt">&lt;img</span> <span class="na">role=</span><span class="s">"none"</span> <span class="nt">/&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;img</span> <span class="na">title=</span><span class="s">"W3C logo"</span> <span class="nt">/&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-e80b374e-429f-4a08-8a3d-993e52db542f.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-e80b374e-429f-4a08-8a3d-993e52db542f.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-9b048c28-89cc-48be-a1aa-10e52d37aa81.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-9b048c28-89cc-48be-a1aa-10e52d37aa81.html"></iframe> </div></div>
+<h3 id="failed">Failed</h3>
+
+<h4 id="fail-example-1">Fail example 1</h4>
+
+<p>No accessible name</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- non-image element --&gt;</span>
-<span class="nt">&lt;svg</span> <span class="na">width=</span><span class="s">"100"</span> <span class="na">height=</span><span class="s">"100"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;img</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-414f7859-9587-43d8-b9e3-bc1280ed674d.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-414f7859-9587-43d8-b9e3-bc1280ed674d.html"></iframe> </div></div>
+<h4 id="fail-example-2">Fail example 2</h4>
+
+<p>Non-image element with image role but no accessible name.</p>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"image"</span><span class="nt">&gt;&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-a0f0eb6c-cc49-4b44-bf6b-cf91cda62c37.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-a0f0eb6c-cc49-4b44-bf6b-cf91cda62c37.html"></iframe> </div></div>
+<h4 id="fail-example-3">Fail example 3</h4>
+
+<p>Image element inside a div positioned off screen with no accessible name.</p>
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">style=</span><span class="s">"margin-left:-9999px;"</span><span class="nt">&gt;&lt;img</span> <span class="nt">/&gt;&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-6967b926-4ad7-4087-810d-17dfec98a715.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-6967b926-4ad7-4087-810d-17dfec98a715.html"></iframe> </div></div>
+<h3 id="inapplicable">Inapplicable</h3>
+
+<h4 id="inapplicable-example-1">Inapplicable example 1</h4>
+
+<p>decorative image.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">""</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-b885ae4a-0f15-497e-8f20-f07130460cd0.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-b885ae4a-0f15-497e-8f20-f07130460cd0.html"></iframe> </div></div>
+<h4 id="inapplicable-example-2">Inapplicable example 2</h4>
+
+<p>decorative image.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;img</span> <span class="na">role=</span><span class="s">"presentation"</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-4c87d49c-e587-4951-8d43-ff444c3190f9.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-4c87d49c-e587-4951-8d43-ff444c3190f9.html"></iframe> </div></div>
+<h4 id="inapplicable-example-3">Inapplicable example 3</h4>
+
+<p><code class="highlighter-rouge">img</code> element with no role.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;img</span> <span class="na">role=</span><span class="s">"none"</span> <span class="nt">/&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-d4942db3-dc6e-4a77-a693-fbc4520917c3.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-d4942db3-dc6e-4a77-a693-fbc4520917c3.html"></iframe> </div></div>
+<h4 id="inapplicable-example-4">Inapplicable example 4</h4>
+
+<p>Non-image element.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;svg</span> <span class="na">width=</span><span class="s">"100"</span> <span class="na">height=</span><span class="s">"100"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;circle</span> <span class="na">cx=</span><span class="s">"50"</span> <span class="na">cy=</span><span class="s">"50"</span> <span class="na">r=</span><span class="s">"40"</span> <span class="na">stroke=</span><span class="s">"green"</span> <span class="na">stroke-width=</span><span class="s">"4"</span> <span class="na">fill=</span><span class="s">"yellow"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/svg&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-822ede2d-e87f-465e-88db-4996595a7659.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-822ede2d-e87f-465e-88db-4996595a7659.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC1-1-1-image-has-name-eb574510-168e-4c76-bcc1-75251554be1f.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-1-1-image-has-name-eb574510-168e-4c76-bcc1-75251554be1f.html"></iframe> </div></div>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->

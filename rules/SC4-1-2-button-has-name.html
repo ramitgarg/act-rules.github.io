@@ -164,9 +164,9 @@
 
   <p>Late updated: 
 		<time 
-			datetime="2018-08-28T10:24:00+00:00" 
+			datetime="2018-08-30T08:29:23+00:00" 
 			itemprop="dateModified">
-			Aug 28, 2018
+			Aug 30, 2018
 		</time>
 	</p>
 
@@ -276,40 +276,61 @@
   <li><a href="https://www.w3.org/TR/WCAG20-TECHS/ARIA16.html">https://www.w3.org/TR/WCAG20-TECHS/ARIA16.html</a></li>
 </ul>
 
-<h1 id="test-cases">Test cases</h1>
+<h2 id="test-cases">Test cases</h2>
 
-<h2 id="passed">Passed</h2>
+<h3 id="passed">Passed</h3>
+
+<h4 id="pass-example-1">Pass example 1</h4>
+
+<p>Regular button.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Regular button --&gt;</span>
-<span class="nt">&lt;button&gt;</span>My button<span class="nt">&lt;/button&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;button&gt;</span>My button<span class="nt">&lt;/button&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-46c3105f-e578-4765-b9b9-dcdd785b3ad3.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-46c3105f-e578-4765-b9b9-dcdd785b3ad3.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-8975012f-9062-42cf-b423-0db30dcea89f.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-8975012f-9062-42cf-b423-0db30dcea89f.html"></iframe> </div></div>
+<h4 id="pass-example-2">Pass example 2</h4>
+
+<p>Value attribute as the accessible name.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Value attribute as the accessible name --&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit"</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">value=</span><span class="s">"Submit"</span><span class="nt">&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-a414bc33-5da4-43c7-8ffd-ade0d950e1b6.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-a414bc33-5da4-43c7-8ffd-ade0d950e1b6.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-decd5e82-408c-438c-921d-d021314c4706.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-decd5e82-408c-438c-921d-d021314c4706.html"></iframe> </div></div>
+<h4 id="pass-example-3">Pass example 3</h4>
+
+<p><code class="highlighter-rouge">aria-label</code> for the accessible name.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- aria-label for the accessible name --&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">aria-label=</span><span class="s">"My button"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;button</span> <span class="na">aria-label=</span><span class="s">"My button"</span><span class="nt">&gt;&lt;/button&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-fd40c97a-7085-41a2-95a8-8f7a23a395a7.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-fd40c97a-7085-41a2-95a8-8f7a23a395a7.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-8081fb57-6482-4c58-a36d-6a832468a835.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-8081fb57-6482-4c58-a36d-6a832468a835.html"></iframe> </div></div>
+<h4 id="pass-example-4">Pass example 4</h4>
+
+<p>Span tag with role button and has name defined by aria-label.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- span tag with role button and has name defined by aria-label --&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-label=</span><span class="s">"My button"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-label=</span><span class="s">"My button"</span><span class="nt">&gt;&lt;/button&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-3e87bb2d-eb03-4245-a994-44caf9f23b49.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-3e87bb2d-eb03-4245-a994-44caf9f23b49.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-af2dafd8-2614-475c-be1b-3e329fe31af8.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-af2dafd8-2614-475c-be1b-3e329fe31af8.html"></iframe> </div></div>
+<h4 id="pass-example-5">Pass example 5</h4>
+
+<p>Summary element has a default semantic role of button.</p>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- summary element has a default semantic role of button --&gt;</span>
-<span class="nt">&lt;summary&gt;</span>Press Here<span class="nt">&lt;/summary&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;summary&gt;</span>Press Here<span class="nt">&lt;/summary&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-6a09464a-7fdd-47d3-911f-84709175e263.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-6a09464a-7fdd-47d3-911f-84709175e263.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-2f849513-b703-4ac5-a533-e55d8e3a213e.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-2f849513-b703-4ac5-a533-e55d8e3a213e.html"></iframe> </div></div>
+<h4 id="pass-example-6">Pass example 6</h4>
+
+<p>Disabled elements are also applicable.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- disabled elements are also applicable --&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">disabled</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/button&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;button</span> <span class="na">disabled</span><span class="nt">&gt;</span>Delete<span class="nt">&lt;/button&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-c5ed698e-15c0-4b90-b541-9f96791925a8.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-c5ed698e-15c0-4b90-b541-9f96791925a8.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-210a15a2-4ab2-4034-b407-bd841dfa5da0.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-210a15a2-4ab2-4034-b407-bd841dfa5da0.html"></iframe> </div></div>
+<h4 id="pass-example-7">Pass example 7</h4>
+
+<p>Off screen elements should be tested.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
   <span class="nt">&lt;style&gt;</span>
@@ -320,52 +341,41 @@
     <span class="p">}</span>
   <span class="nt">&lt;/style&gt;</span>
   <span class="nt">&lt;body&gt;</span>
-    <span class="c">&lt;!-- Off screen elements should be tested --&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'notInPage'</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">data-rule-target</span> <span class="na">class=</span><span class="s">'notInPage'</span><span class="nt">&gt;</span>Save<span class="nt">&lt;/button&gt;</span>
   <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-ed82042a-11d9-49d2-b665-0bfb218c0c27.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-ed82042a-11d9-49d2-b665-0bfb218c0c27.html"></iframe> </div></div>
-<h2 id="failed">Failed</h2>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-fd1be3b8-3b92-4f21-8df9-0770e9f21ecb.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-fd1be3b8-3b92-4f21-8df9-0770e9f21ecb.html"></iframe> </div></div>
+<h3 id="failed">Failed</h3>
+
+<h4 id="fail-example-1">Fail example 1</h4>
+
+<p>Value attribute does NOT give an accessible name, only for input elements.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- value attribute does NOT give an accessible name, only for input elements --&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"read more"</span><span class="nt">&gt;&lt;/button&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"read more"</span><span class="nt">&gt;&lt;/button&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-2b486aba-5536-46d8-a3c0-9fdc521be279.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-2b486aba-5536-46d8-a3c0-9fdc521be279.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- aria-hidden buttons should be tested --&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-07839401-436f-4656-b957-b7a6294b979b.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-07839401-436f-4656-b957-b7a6294b979b.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- span tag with role button with no name --&gt;</span>
-<span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;&lt;/span&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-87239ca9-abf9-4aab-ac08-ab6268c807ed.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-87239ca9-abf9-4aab-ac08-ab6268c807ed.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- off screen element with out an accessible name --&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;style&gt;</span>
-    <span class="nc">.notInPage</span> <span class="p">{</span>
-      <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
-      <span class="nl">left</span><span class="p">:</span> <span class="m">-9999px</span><span class="p">;</span>
-      <span class="nl">top</span><span class="p">:</span> <span class="m">-9999px</span><span class="p">;</span>
-    <span class="p">}</span>
-  <span class="nt">&lt;/style&gt;</span>
-  <span class="nt">&lt;body&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'notInPage'</span> <span class="na">value=</span><span class="s">'delete'</span><span class="nt">&gt;&lt;/button&gt;</span>
-  <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-cb864c0d-76e1-481d-8e63-cdb9f8c9070e.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-cb864c0d-76e1-481d-8e63-cdb9f8c9070e.html"></iframe> </div></div>
-<h2 id="inapplicable">Inapplicable</h2>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-358f23a1-88bb-40d0-b8d9-3ed3fff28bac.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-358f23a1-88bb-40d0-b8d9-3ed3fff28bac.html"></iframe> </div></div>
+<h4 id="fail-example-2">Fail example 2</h4>
+
+<p><code class="highlighter-rouge">aria-hidden</code> buttons should be tested.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Image buttons are tested in a different rule --&gt;</span>
-<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">'image'</span> <span class="na">value=</span><span class="s">'download'</span><span class="nt">&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;button</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/button&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-a61680fb-4448-4497-834f-37a192c95d50.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-a61680fb-4448-4497-834f-37a192c95d50.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-90c512cd-af6d-475d-8acd-ff170c602e29.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-90c512cd-af6d-475d-8acd-ff170c602e29.html"></iframe> </div></div>
+<h4 id="fail-example-3">Fail example 3</h4>
+
+<p>Span tag with role button with no name.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;span</span> <span class="na">role=</span><span class="s">"button"</span><span class="nt">&gt;&lt;/span&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-cee15634-7507-4ca5-8546-9a02e8382831.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-cee15634-7507-4ca5-8546-9a02e8382831.html"></iframe> </div></div>
+<h4 id="fail-example-4">Fail example 4</h4>
+
+<p>Off screen element with out an accessible name.</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
   <span class="nt">&lt;style&gt;</span>
@@ -376,17 +386,48 @@
     <span class="p">}</span>
   <span class="nt">&lt;/style&gt;</span>
   <span class="nt">&lt;body&gt;</span>
-    <span class="c">&lt;!-- not visible in page and not exposed to assistive technologies --&gt;</span>
-    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">'notInPage'</span> <span class="na">aria-hidden=</span><span class="s">'true'</span><span class="nt">&gt;</span>Confirm<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">data-rule-target</span> <span class="na">class=</span><span class="s">'notInPage'</span> <span class="na">value=</span><span class="s">'delete'</span><span class="nt">&gt;&lt;/button&gt;</span>
   <span class="nt">&lt;/body&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-f24639bb-be1d-4019-8c95-b6637e9bcdc7.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-f24639bb-be1d-4019-8c95-b6637e9bcdc7.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-dee76c4c-3423-4062-b835-dc263ec41895.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-dee76c4c-3423-4062-b835-dc263ec41895.html"></iframe> </div></div>
+<h3 id="inapplicable">Inapplicable</h3>
+
+<h4 id="inapplicable-example-1">Inapplicable example 1</h4>
+
+<p>Image buttons are tested in a different rule</p>
+
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- inapplicable: role overridden to link for button element --&gt;</span>
-<span class="nt">&lt;button</span> <span class="na">role=</span><span class="s">'link'</span><span class="nt">&gt;</span>take me somewhere<span class="nt">&lt;/button&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">'image'</span> <span class="na">value=</span><span class="s">'download'</span><span class="nt">&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-feadf782-8613-46a7-8fe0-906e665ab83a.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-feadf782-8613-46a7-8fe0-906e665ab83a.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-a12fc222-6a81-419a-b3a1-fb5a25971b9e.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-a12fc222-6a81-419a-b3a1-fb5a25971b9e.html"></iframe> </div></div>
+<h4 id="inapplicable-example-2">Inapplicable example 2</h4>
+
+<p>Not visible in page and not exposed to assistive technologies.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;style&gt;</span>
+    <span class="nc">.notInPage</span> <span class="p">{</span>
+      <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span>
+      <span class="nl">left</span><span class="p">:</span> <span class="m">-9999px</span><span class="p">;</span>
+      <span class="nl">top</span><span class="p">:</span> <span class="m">-9999px</span><span class="p">;</span>
+    <span class="p">}</span>
+  <span class="nt">&lt;/style&gt;</span>
+  <span class="nt">&lt;body&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">data-rule-target</span> <span class="na">class=</span><span class="s">'notInPage'</span> <span class="na">aria-hidden=</span><span class="s">'true'</span><span class="nt">&gt;</span>Confirm<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-92f0eb65-c872-4ff5-9cad-d234aef6fc93.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-92f0eb65-c872-4ff5-9cad-d234aef6fc93.html"></iframe> </div></div>
+<h4 id="inapplicable-example-3">Inapplicable example 3</h4>
+
+<p>Inapplicable: role overridden to link for button element.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;button</span> <span class="na">role=</span><span class="s">'link'</span><span class="nt">&gt;</span>take me somewhere<span class="nt">&lt;/button&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC4-1-2-button-has-name-e8f8d07b-9162-4192-b0d6-245a9e188599.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-button-has-name-e8f8d07b-9162-4192-b0d6-245a9e188599.html"></iframe> </div></div>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->

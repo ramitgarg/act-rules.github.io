@@ -164,9 +164,9 @@
 
   <p>Late updated: 
 		<time 
-			datetime="2018-08-28T10:24:00+00:00" 
+			datetime="2018-08-30T08:29:23+00:00" 
 			itemprop="dateModified">
-			Aug 28, 2018
+			Aug 30, 2018
 		</time>
 	</p>
 
@@ -291,19 +291,19 @@
 
 <h3 id="applicability">Applicability</h3>
 
-<p>The rule applies to any HTML or SVG element on a web page that is <a href="../pages/algorithms/focusable.html">focusable</a> where focus cannot cycle to the browser UI by using <a href="../pages/algorithms/standard-keyboard-navigation.html">standard keyboard navigation</a>.</p>
+<p>The rule applies to any HTML or SVG element on a web page that is <a href="#focusable">focusable</a> where focus cannot cycle to the browser UI by using <a href="#standard-keyboard-navigation">standard keyboard navigation</a>.</p>
 
 <p><strong>Note</strong>: The WCAG 2.0 success criterion 2.1.2 applies to all content where focus can be moved to through keyboard navigation.</p>
 
 <h3 id="expectation-1">Expectation 1</h3>
 
-<p>For each target element help information is <a href="../pages/algorithms/visible-on-the-page.html">visible on the page</a> and <a href="../pages/algorithms/exposed-to-assistive-technologies.html">exposed to assistive technologies</a> or can be accessed from within the keyboard trap.</p>
+<p>For each target element help information is <a href="#visible-on-the-page">visible on the page</a> and <a href="#exposes-to-assistive-technologies">exposed to assistive technologies</a> or can be accessed from within the keyboard trap.</p>
 
 <p><strong>Note</strong>: As per WCAG 2.0 Success Criterion 2.1.1 Keyboard the help information should be accessible through a keyboard interface.</p>
 
 <h3 id="expectation-2">Expectation 2</h3>
 
-<p>The help information explains how to cycle to the browser UI, or on how to get to a point from where it is possible to cycle to the browser UI, using <a href="../pages/algorithms/standard-keyboard-navigation.html">standard keyboard navigation</a>.</p>
+<p>The help information explains how to cycle to the browser UI, or on how to get to a point from where it is possible to cycle to the browser UI, using <a href="#standard-keyboard-navigation">standard keyboard navigation</a>.</p>
 
 <h3 id="expectation-3">Expectation 3</h3>
 
@@ -333,10 +333,12 @@
 
 <h3 id="passed">Passed</h3>
 
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Keyboard trap with help information in a paragraph before, and where the method advised works --&gt;</span>
+<h4 id="pass-example-1">Pass example 1</h4>
 
-<span class="nt">&lt;script&gt;</span>
+<p>Keyboard trap with help information in a paragraph before, and where the method advised works.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;script&gt;</span>
 <span class="kd">var</span> <span class="nx">trapOn</span> <span class="o">=</span> <span class="kc">false</span> <span class="p">;</span>
 <span class="nt">&lt;/script&gt;</span>
 
@@ -346,11 +348,13 @@
 <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn2"</span> <span class="na">class=</span><span class="s">"target"</span> <span class="na">onkeydown=</span><span class="s">"(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)"</span> <span class="na">onblur=</span><span class="s">"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"</span><span class="nt">&gt;</span>Button 2<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link2"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 2<span class="nt">&lt;/a&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-5ef7a490-c1d4-4dc9-a2c2-a58f01c151ba.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-5ef7a490-c1d4-4dc9-a2c2-a58f01c151ba.html"></iframe> </div></div>
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Keyboard trap with help information within the trap, and where the method advised works --&gt;</span> 
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-f1b587af-2000-4eec-a024-1ea46578c95e.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-f1b587af-2000-4eec-a024-1ea46578c95e.html"></iframe> </div></div>
+<h4 id="pass-example-2">Pass example 2</h4>
 
-<span class="nt">&lt;script&gt;</span>
+<p>Keyboard trap with help information within the trap, and where the method advised works.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;script&gt;</span>
 <span class="kd">var</span> <span class="nx">trapOn</span> <span class="o">=</span> <span class="kc">false</span> <span class="p">;</span>
 <span class="nt">&lt;/script&gt;</span>
 
@@ -360,7 +364,7 @@
 <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn2"</span> <span class="na">class=</span><span class="s">"target"</span> <span class="na">onkeydown=</span><span class="s">"(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)"</span> <span class="na">onblur=</span><span class="s">"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"</span><span class="nt">&gt;</span>Button 2<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link2"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 2<span class="nt">&lt;/a&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-a1099c1d-e0ed-45ab-88af-9988d4a08a7c.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-a1099c1d-e0ed-45ab-88af-9988d4a08a7c.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-dea7f0b6-e481-45b2-9ee3-bcf4cbf8d4f0.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-dea7f0b6-e481-45b2-9ee3-bcf4cbf8d4f0.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Keyboard trap with "help" link that once clicked exposes the instructions.  --&gt;</span>
 
@@ -382,13 +386,15 @@
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link2"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 2<span class="nt">&lt;/a&gt;</span>
 
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-6930a941-85f8-494d-b434-cb48c837226d.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-6930a941-85f8-494d-b434-cb48c837226d.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-b196cca1-80a2-45cc-bfb3-a3aecceced24.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-b196cca1-80a2-45cc-bfb3-a3aecceced24.html"></iframe> </div></div>
 <h3 id="failed">Failed</h3>
 
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Keyboard trap with no instructions  --&gt;</span>
+<h4 id="fail-example-1">Fail example 1</h4>
 
-<span class="nt">&lt;script&gt;</span>
+<p>Keyboard trap with no instructions.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;script&gt;</span>
 <span class="kd">var</span> <span class="nx">trapOn</span> <span class="o">=</span> <span class="kc">false</span> <span class="p">;</span>
 <span class="nt">&lt;/script&gt;</span>
 
@@ -397,7 +403,7 @@
 <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn2"</span> <span class="na">class=</span><span class="s">"target"</span> <span class="na">onkeydown=</span><span class="s">"(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)"</span> <span class="na">onblur=</span><span class="s">"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"</span><span class="nt">&gt;</span>Button 2<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link2"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 2<span class="nt">&lt;/a&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-eaaa2a46-0378-4b8c-91ee-5f4ff020a39d.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-eaaa2a46-0378-4b8c-91ee-5f4ff020a39d.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-32de859b-004c-401f-a297-a5eb46104c3f.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-32de859b-004c-401f-a297-a5eb46104c3f.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Keyboard trap with instructions that doesn't give advise on the method for proceeding --&gt;</span>
 
@@ -411,7 +417,7 @@
 <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn2"</span> <span class="na">class=</span><span class="s">"target"</span> <span class="na">onkeydown=</span><span class="s">"(function(e){ if (e.keyCode === 77){trapOn=false;document.getElementById('link2').focus();}})(event)"</span> <span class="na">onblur=</span><span class="s">"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"</span><span class="nt">&gt;</span>Button 2<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link2"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 2<span class="nt">&lt;/a&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-a2ab51c3-fab5-4d2e-a246-99965b8cf2d1.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-a2ab51c3-fab5-4d2e-a246-99965b8cf2d1.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-1e9ad537-0471-44a2-b72e-c05fe8c63cd0.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-1e9ad537-0471-44a2-b72e-c05fe8c63cd0.html"></iframe> </div></div>
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Keyboard trap with help text, where the method advised doesn't work --&gt;</span> 
 
@@ -425,22 +431,49 @@
 <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn2"</span> <span class="na">class=</span><span class="s">"target"</span>  <span class="na">onblur=</span><span class="s">"(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)"</span><span class="nt">&gt;</span>Button 2<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link2"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 2<span class="nt">&lt;/a&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-d1fdcc89-7ee1-4c38-ab18-939c8fb8695c.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-d1fdcc89-7ee1-4c38-ab18-939c8fb8695c.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-1d355ff8-7c43-452c-9865-b6391ad0b151.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-1d355ff8-7c43-452c-9865-b6391ad0b151.html"></iframe> </div></div>
 <h3 id="inapplicable">Inapplicable</h3>
 
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="c">&lt;!-- Not a keyboard trap (interactive element) --&gt;</span>
+<h4 id="inapplicable-example-1">Inapplicable example 1</h4>
 
-<span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link1"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 1<span class="nt">&lt;/a&gt;</span>
+<p>Not a keyboard trap (interactive element).</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption>Code Snippet:</figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link1"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 1<span class="nt">&lt;/a&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn1"</span><span class="nt">&gt;</span>Button 1<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"btn2"</span><span class="nt">&gt;</span>Button 2<span class="nt">&lt;/button&gt;</span>
 <span class="nt">&lt;a</span> <span class="na">id=</span><span class="s">"link2"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Link 2<span class="nt">&lt;/a&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-1dfe05d9-b518-433c-aad2-9084c374f575.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-1dfe05d9-b518-433c-aad2-9084c374f575.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output:</span> <a target="_blank" href="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-a36750cb-714d-4b45-9116-c3e93985655b.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-1-2-no-keyboard-trap-non-standard-navigation-a36750cb-714d-4b45-9116-c3e93985655b.html"></iframe> </div></div>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->
+<h2>Definitions</h2><div class='definition-list'><div class='definition-item'><h3><a id='focusable' href='/auto-wcag/pages/algorithms/focusable.html'>Focusable</a></h3><p>Elements that can become the target of keyboard input as described in https://www.w3.org/TR/html/editing.html#focusable and https://www.w3.org/TR/html/editing.html#can-be-focused.</p>
+</div> <div class='definition-item'><h3><a id='standard-keyboard-navigation' href='/auto-wcag/pages/algorithms/standard-keyboard-navigation.html'>Standard keyboard navigation</a></h3><p>Standard keyboard navigation entails using one or more of the following:</p>
+<ul>
+  <li>Tab key</li>
+  <li>Shift+Tab</li>
+  <li>Arrow keys</li>
+  <li>Esc key</li>
+  <li>Enter key</li>
+  <li>Space key</li>
+</ul>
 
+<p>Expected behaviour of standard keyboard navigation keys:</p>
+<ul>
+  <li>Tab key: Skipping forward between focusable elements</li>
+  <li>Shift+Tab: Skipping backwards between focusable elements</li>
+  <li>Arrow keys: Navigate input elements, e.g. up/down drop down, between radio buttons etc.</li>
+  <li>Esc key: Close or cancel, e.g close a modal</li>
+  <li>Enter key: Select or activate the element in focus (same as clicking with mouse)</li>
+  <li>Space key: Select input elements, e.g. drop downs, radio buttons etc.</li>
+</ul>
+</div> <div class='definition-item'><h3><a id='visible-on-the-page' href='/auto-wcag/pages/algorithms/visible-on-the-page.html'>Visible to the Page.</a></h3><p>Elements should be visible on the page, and also meet the requirements for color contrast and visibility when focused. For more details, check out:</p>
+<ul>
+  <li><a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">https://www.w3.org/TR/WCAG20-TECHS/G18.html</a></li>
+  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html</a></li>
+</ul>
+</div></div>
 <!-- DO NOT DELETE ABOVE - This is used by a plugin to insert content -->
 
 <div class="container">
