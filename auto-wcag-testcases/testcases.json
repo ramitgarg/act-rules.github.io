@@ -2256,7 +2256,7 @@
       "successCriteria": [
         "WCAG2:parsing"
       ],
-      "selector": "*[data-rule-target]",
+      "selector": "body > :first-child",
       "expected": "passed",
       "ruleId": "SC4-1-1-unique-id",
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1-unique-id.html"
@@ -2267,7 +2267,7 @@
       "successCriteria": [
         "WCAG2:parsing"
       ],
-      "selector": "*[data-rule-target]",
+      "selector": "body > :first-child",
       "expected": "passed",
       "ruleId": "SC4-1-1-unique-id",
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1-unique-id.html"
@@ -2278,7 +2278,7 @@
       "successCriteria": [
         "WCAG2:parsing"
       ],
-      "selector": "*[data-rule-target]",
+      "selector": "body > :first-child",
       "expected": "failed",
       "ruleId": "SC4-1-1-unique-id",
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1-unique-id.html"
@@ -2289,7 +2289,7 @@
       "successCriteria": [
         "WCAG2:parsing"
       ],
-      "selector": "*[data-rule-target]",
+      "selector": "body > :first-child",
       "expected": "failed",
       "ruleId": "SC4-1-1-unique-id",
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1-unique-id.html"
@@ -2300,7 +2300,7 @@
       "successCriteria": [
         "WCAG2:parsing"
       ],
-      "selector": "*[data-rule-target]",
+      "selector": "body > :first-child",
       "expected": "failed",
       "ruleId": "SC4-1-1-unique-id",
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1-unique-id.html"
