@@ -789,7 +789,7 @@
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap-non-standard-navigation_passed_example_1.html",
       "relativeUrl": "assets/SC2-1-2-no-keyboard-trap-non-standard-navigation_passed_example_1.html",
       "successCriteria": [
-        "WCAG2:no-keyboard-trap"
+
       ],
       "selector": "body > :first-child",
       "expected": "passed",
@@ -800,7 +800,7 @@
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap-non-standard-navigation_passed_example_2.html",
       "relativeUrl": "assets/SC2-1-2-no-keyboard-trap-non-standard-navigation_passed_example_2.html",
       "successCriteria": [
-        "WCAG2:no-keyboard-trap"
+
       ],
       "selector": "body > :first-child",
       "expected": "passed",
@@ -811,7 +811,7 @@
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap-non-standard-navigation_passed_example_3.html",
       "relativeUrl": "assets/SC2-1-2-no-keyboard-trap-non-standard-navigation_passed_example_3.html",
       "successCriteria": [
-        "WCAG2:no-keyboard-trap"
+
       ],
       "selector": "body > :first-child",
       "expected": "passed",
@@ -822,7 +822,7 @@
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap-non-standard-navigation_failed_example_1.html",
       "relativeUrl": "assets/SC2-1-2-no-keyboard-trap-non-standard-navigation_failed_example_1.html",
       "successCriteria": [
-        "WCAG2:no-keyboard-trap"
+
       ],
       "selector": "body > :first-child",
       "expected": "failed",
@@ -833,7 +833,7 @@
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap-non-standard-navigation_failed_example_2.html",
       "relativeUrl": "assets/SC2-1-2-no-keyboard-trap-non-standard-navigation_failed_example_2.html",
       "successCriteria": [
-        "WCAG2:no-keyboard-trap"
+
       ],
       "selector": "body > :first-child",
       "expected": "failed",
@@ -844,7 +844,7 @@
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap-non-standard-navigation_failed_example_3.html",
       "relativeUrl": "assets/SC2-1-2-no-keyboard-trap-non-standard-navigation_failed_example_3.html",
       "successCriteria": [
-        "WCAG2:no-keyboard-trap"
+
       ],
       "selector": "body > :first-child",
       "expected": "failed",
@@ -855,7 +855,7 @@
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap-non-standard-navigation_inapplicable_example_1.html",
       "relativeUrl": "assets/SC2-1-2-no-keyboard-trap-non-standard-navigation_inapplicable_example_1.html",
       "successCriteria": [
-        "WCAG2:no-keyboard-trap"
+
       ],
       "selector": "body > :first-child",
       "expected": "inapplicable",
