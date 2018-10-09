@@ -8,13 +8,13 @@
 	<!-- Resolve Page Title -->
 	
 	<title>
-		Rule: undefined Auto-WCAG Rules
+		Rule: video has captions Auto-WCAG Rules
 	</title>
 	<!-- Meta -->
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="">
+	<meta name="description" content="Test Procedure">
 	<meta name="author" content="">    
 	<!-- TODO:FAVICON after branding -->
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
@@ -151,7 +151,7 @@
 		<main class="container">
 			
 				<div class="page-header">
-					<h1>Rule: undefined</h1>
+					<h1>Rule: video has captions</h1>
 				</div>
 			
 			<p>
@@ -164,20 +164,87 @@
 
   <p>Last updated: 
 		<time 
-			datetime="2018-10-08T13:56:10+00:00" 
+			datetime="2018-10-09T08:56:53+00:00" 
 			itemprop="dateModified">
-			Oct 8, 2018
+			Oct 9, 2018
 		</time>
 	</p>
 
 
 
+  <p>
+    Created by: 
+    <ul>
+      
+        
+        <li>  
+          <a href="https://github.com/wilcofiers">
+            Wilco Fiers
+          </a>
+        </li>
+        
+      
+        
+        <li>  
+          <a href="https://www.linkedin.com/in/brianbors/">
+            Brian Bors
+          </a>
+        </li>
+        
+      
+    </ul>
+  </p>
 
 
 
 
+  <p>
+    Success Criterion: 
+    <ul>
+			
+        
+        <li>
+          <a href="https://www.w3.org/TR/WCAG20/#media-equiv-captions">
+            1.2.2 (Captions (Prerecorded)) - (Level: A)
+          </a>
+          
+        </li>
+      
+    </ul>
+  </p>
 
 
+
+  <h2 id="description">Description</h2>
+  <p><p>Captions are available for audio information in non-streaming <code class="highlighter-rouge">video</code> elements.</p>
+</p>
+
+
+
+  <h2 id="requirements">Accessibility Requirements</h2>
+  <p>This conformance rule relates to:</p>
+  <ul>
+  
+    
+    <li>
+      <a href="https://www.w3.org/TR/WCAG20/#media-equiv-captions">
+        Success Criterion 1.2.2 (Captions (Prerecorded))
+      </a>
+      <ul>
+        <li>
+					<a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-captions">
+          	How to Meet 1.2.2 (Captions (Prerecorded))
+					</a>
+				</li>
+        <li>
+					<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20//media-equiv-captions.html">
+          	Understanding Success Criterion 1.2.2 (Captions (Prerecorded))
+					</a>
+				</li>
+      </ul>
+    </li>
+  
+  </ul>
 
 
 <h2 id="test-procedure">Test Procedure</h2>
@@ -211,7 +278,9 @@
 
 <h2 id="test-cases">Test Cases</h2>
 
-<h3 id="pass-example-1">Pass example 1</h3>
+<h3 id="passed">Passed</h3>
+
+<h3 id="passed-example-1">Passed example 1</h3>
 
 <p>A video element that has captions for all the audio backed into it.</p>
 
@@ -219,7 +288,7 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-video-with-captions.mp4"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/video&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_1.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_1.html"></iframe> </div></div>
-<h3 id="pass-example-2">Pass example 2</h3>
+<h3 id="passed-example-2">Passed example 2</h3>
 
 <p>A video element with an associated track element that contain captions for all the audio.</p>
 
@@ -229,15 +298,17 @@
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_2.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_2.html"></iframe> </div></div>
-<h3 id="failure-example-1">Failure example 1</h3>
+<h3 id="failed">Failed</h3>
+
+<h4 id="failed-example-1">Failed example 1</h4>
 
 <p>A video element with any form of captions.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-video.mp4"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_3.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_3.html"></iframe> </div></div>
-<h3 id="failure-example-2">Failure example 2</h3>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC1-2-2-video-has-captions_failed_example_1.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-video-has-captions_failed_example_1.html"></iframe> </div></div>
+<h4 id="failed-example-2">Failed example 2</h4>
 
 <p>A video element with an associated track element that contain incorrect captions.</p>
 
@@ -246,8 +317,8 @@
   <span class="nt">&lt;track</span> <span class="na">src=</span><span class="s">"/test-assets/perspective-video/perspective-incorrect-caption.vtt"</span> <span class="na">kind=</span><span class="s">"captions"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_4.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_4.html"></iframe> </div></div>
-<h3 id="failure-example-3">Failure example 3</h3>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC1-2-2-video-has-captions_failed_example_2.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-video-has-captions_failed_example_2.html"></iframe> </div></div>
+<h4 id="failed-example-3">Failed example 3</h4>
 
 <p>A video element with a text on the same page that described the audio in the video.</p>
 
@@ -260,8 +331,8 @@
 <span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4"</span> <span class="na">controls</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_5.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_5.html"></iframe> </div></div>
-<h3 id="failure-example-4">Failure example 4</h3>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC1-2-2-video-has-captions_failed_example_3.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-video-has-captions_failed_example_3.html"></iframe> </div></div>
+<h4 id="failed-example-4">Failed example 4</h4>
 
 <p>A video element with an explicitly associated text on the same page that described the audio in the video.</p>
 
@@ -274,23 +345,25 @@
 <span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-keyboard-compatibility-video.mp4"</span> <span class="na">controls</span> <span class="na">ariadescribedby=</span><span class="s">"text"</span><span class="nt">&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_6.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_6.html"></iframe> </div></div>
-<h3 id="inapplicable-example-1">Inapplicable example 1</h3>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC1-2-2-video-has-captions_failed_example_4.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-video-has-captions_failed_example_4.html"></iframe> </div></div>
+<h3 id="inapplicable">Inapplicable</h3>
+
+<h4 id="inapplicable-example-1">Inapplicable example 1</h4>
 
 <p>A video element without audio.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-video-silent.mp4"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC1-2-2-video-has-captions_passed_example_1.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-video-has-captions_passed_example_1.html"></iframe> </div></div>
-<h3 id="inapplicable-example-2">Inapplicable example 2</h3>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_3.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_3.html"></iframe> </div></div>
+<h4 id="inapplicable-example-2">Inapplicable example 2</h4>
 
 <p>A video element without that is not visible on the page.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">src=</span><span class="s">"../test-assets/perspective-video/perspective-video.mp4"</span> <span class="na">controls</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;&lt;/video&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_7.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_7.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_4.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC1-2-2-video-has-captions_inapplicable_example_4.html"></iframe> </div></div>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->
@@ -303,6 +376,24 @@
 <!-- DO NOT DELETE ABOVE - This is used by a plugin to insert content -->
 
 <div class="container">
+	
+		<h2 id="test-aspects">Test Aspects</h2>
+		Test aspects are defined as part of the <a href="https://w3c.github.io/wcag-act/act-rules-format.html#input-aspects-common">ACT Rules format 1.0</a>.
+		<ul>
+		
+			<li><p>DOM Tree</p>
+</li>
+		
+			<li><p>CSS Styling</p>
+</li>
+		
+			<li><p>Audio output</p>
+</li>
+		
+			<li><p>Visual output</p>
+</li>
+		
+		</ul>
 	
 
 	<h2 id="related-resources">Related Resources</h2>

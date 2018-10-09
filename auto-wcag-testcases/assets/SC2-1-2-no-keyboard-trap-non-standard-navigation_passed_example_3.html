@@ -1,5 +1,3 @@
-<!-- Keyboard trap with "help" link that once clicked exposes the instructions.  -->
-
 <script>
 var trapOn = false ;
 
@@ -16,4 +14,3 @@ document.getElementById("helptext").innerHTML = "<p>Press the M-key to Exit</p>"
 <button id="btn2" class="target" onblur="(function(e){ if(trapOn){document.getElementById('btn1').focus();}})(event)">Button 2</button>
 </div>
 <a id="link2" href="#">Link 2</a>
-
