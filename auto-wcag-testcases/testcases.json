@@ -291,8 +291,8 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-2-audio-captions.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_passed_example_3.html(no-iframe)",
-      "relativeUrl": "assets/SC1-2-2-audio-captions_passed_example_3.html(no-iframe)",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_passed_example_3.html",
+      "relativeUrl": "assets/SC1-2-2-audio-captions_passed_example_3.html",
       "successCriteria": [
         "WCAG2:captions-prerecorded"
       ],
@@ -324,8 +324,8 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-2-audio-captions.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_failed_example_3.html(no-iframe)",
-      "relativeUrl": "assets/SC1-2-2-audio-captions_failed_example_3.html(no-iframe)",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_failed_example_3.html",
+      "relativeUrl": "assets/SC1-2-2-audio-captions_failed_example_3.html",
       "successCriteria": [
         "WCAG2:captions-prerecorded"
       ],
