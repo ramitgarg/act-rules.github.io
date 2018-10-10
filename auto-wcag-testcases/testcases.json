@@ -104,8 +104,8 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-image-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-1-1-image-has-name_inapplicable_example_4.html",
-      "relativeUrl": "assets/SC1-1-1-image-has-name_inapplicable_example_4.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-1-1-image-has-name_inapplicable_example_4.svg",
+      "relativeUrl": "assets/SC1-1-1-image-has-name_inapplicable_example_4.svg",
       "successCriteria": [
         "WCAG2:non-text-content"
       ],
@@ -1888,8 +1888,8 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-1-1-html-has-lang.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-1-1-html-has-lang_inapplicable_example_1.html",
-      "relativeUrl": "assets/SC3-1-1-html-has-lang_inapplicable_example_1.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-1-1-html-has-lang_inapplicable_example_1.svg",
+      "relativeUrl": "assets/SC3-1-1-html-has-lang_inapplicable_example_1.svg",
       "successCriteria": [
         "WCAG2:language-of-page"
       ],
@@ -1987,8 +1987,8 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-1-1-html-lang-valid.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-1-1-html-lang-valid_inapplicable_example_1.html",
-      "relativeUrl": "assets/SC3-1-1-html-lang-valid_inapplicable_example_1.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-1-1-html-lang-valid_inapplicable_example_1.svg",
+      "relativeUrl": "assets/SC3-1-1-html-lang-valid_inapplicable_example_1.svg",
       "successCriteria": [
         "WCAG2:language-of-page"
       ],
@@ -1998,8 +1998,8 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-1-1-html-lang-valid.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-1-1-html-lang-valid_inapplicable_example_2.html",
-      "relativeUrl": "assets/SC3-1-1-html-lang-valid_inapplicable_example_2.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-1-1-html-lang-valid_inapplicable_example_2.svg",
+      "relativeUrl": "assets/SC3-1-1-html-lang-valid_inapplicable_example_2.svg",
       "successCriteria": [
         "WCAG2:language-of-page"
       ],
@@ -2097,8 +2097,8 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-1-1-html-xml-lang-match.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-1-1-html-xml-lang-match_inapplicable_example_1.html",
-      "relativeUrl": "assets/SC3-1-1-html-xml-lang-match_inapplicable_example_1.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-1-1-html-xml-lang-match_inapplicable_example_1.svg",
+      "relativeUrl": "assets/SC3-1-1-html-xml-lang-match_inapplicable_example_1.svg",
       "successCriteria": [
         "WCAG2:language-of-page"
       ],
