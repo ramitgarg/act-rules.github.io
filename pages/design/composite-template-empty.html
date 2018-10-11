@@ -8,7 +8,7 @@
 	<!-- Resolve Page Title -->
 	
 	<title>
-		Auto-WCAG Rule Template Auto-WCAG Rules
+		 Auto-WCAG Rules
 	</title>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -26,7 +26,7 @@
 
 	<link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
 
-	<link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/pages/design/rule-template.html">
+	<link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/pages/design/composite-template-empty.html">
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -151,117 +151,79 @@
 		<!-- Begin page content -->
 		<main class="container">
 			
-				<div class="page-header">
-					<h1>Auto-WCAG Rule Template</h1>
-				</div>
-			
 			<p>
-				<p>The rule template contains a plain language description of the rule, some background information, and a list of all assumptions. The test procedure is defined by the selector, a number of steps and a description of the possible outcomes.</p>
+				<h2 id="aggregation-definition">Aggregation Definition</h2>
 
-<p>Use the <a href="atomic-template-empty.html">empty atomic rule template</a> to create new auto-wcag rule. When creating a new rule, first read <a href="rule-design.html">rule design</a>.</p>
+<h3 id="applicability">Applicability</h3>
 
-<div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
-<span class="na">name</span><span class="pi">:</span> <span class="s">Short descriptive name</span>
-<span class="na">rule_type</span><span class="pi">:</span> <span class="s">atomic</span>
-<span class="na">description</span><span class="pi">:</span> <span class="pi">|</span> <span class="c1"># Use "|" for multi-line text</span>
-  <span class="no">This rule checks ...</span>
+<p>The rule applies to any (??) element …</p>
 
-<span class="na">success_criterion</span><span class="pi">:</span> 
-<span class="pi">-</span> <span class="s">x.x.x</span> <span class="c1"># Criterion handle as a YAML comment + level</span>
+<h3 id="expectation">Expectation</h3>
 
-<span class="na">test_aspects</span><span class="pi">:</span> <span class="c1"># Remove what is not applicable</span>
-<span class="pi">-</span> <span class="s">DOM Tree</span>
-<span class="pi">-</span> <span class="s">CSS Styling</span>
-<span class="pi">-</span> <span class="s">HTTP messages</span>
-<span class="pi">-</span> <span class="s">Accessibility Tree</span>
-<span class="pi">-</span> <span class="s">Language</span>
+<p>For each test target, the outcome of (at least one of / all of / any of etc.) the following rules is (passed / failed / etc.):</p>
+<ul>
+  <li>(list atomic rules that are used in this composite rule)</li>
+  <li></li>
+</ul>
 
-<span class="na">authors</span><span class="pi">:</span>
-<span class="pi">-</span> <span class="s">Your Name</span> <span class="c1"># As used in /data/contributors.yml</span>
-<span class="nn">---</span>
+<h2 id="assumptions">Assumptions</h2>
 
-<span class="gu">## Test procedure</span>
+<p><em>There are currently no assumptions.</em></p>
 
-<span class="gu">### Applicability</span>
+<h2 id="accessibility-support">Accessibility support</h2>
 
-The rule applies to any (??) element ...
+<p><em>There are no major accessibility support issues known for this rule.</em></p>
 
-<span class="gu">### Expectation (1)</span>
+<h2 id="background">Background</h2>
 
-Each target element ...
+<ul>
+  <li>
+    <ul>
+      <li>(e.g. WCAG Techniques or links with background information mentioned in Applicability, Expectations or Assumptions)</li>
+    </ul>
+  </li>
+</ul>
 
-<span class="gu">### Expectation 2</span>
+<h2 id="test-cases">Test Cases</h2>
 
-Each target element <span class="p">[</span><span class="nv">that meets expectation 1, and</span><span class="p">]</span> ...
+<h3 id="passed">Passed</h3>
 
-<span class="gu">## Assumptions</span>
-<span class="p">
--</span> Make a list
+<h4 id="passed-example-1">Passed example 1</h4>
 
-<span class="gu">## Accessibility Support</span>
+<p>Description…</p>
 
-Support for XXX is known to be limited in some assistive technologies. If any of those assistive technologies is part of the accessibility support baseline of a test, any applicable element must <span class="gs">**fail**</span> this rule.
-
-<span class="gu">## Background</span>
-<span class="p">
--</span> Links to Techniques for WCAG 2.0
-<span class="p">-</span> Latest version: Techniques for WCAG 2.0 W3C Working Group Note 8 April 2014
-<span class="p">-</span> Link to other methodologies, test specifications or tools
-<span class="p">-</span> Links to test cases, test suites, unit tests, etc.
-<span class="p">-</span> The WCAG 2.0 Techniques already contain examples and code snippets to illustrate which content passes or fails the test. Whenever possible auto-wcag refers to those. Another source for test cases is the W3C Before and After Demonstration.
-<span class="p">-</span> Other references
-
-<span class="gu">## Test Cases</span>
-
-<span class="gu">### Passed</span>
-
-<span class="gu">#### Pass example 1</span>
-
-Briefly describe what passed in the html code below
-
-<span class="p">```</span><span class="nl">html</span>
-<span class="c">&lt;!-- passing html code snippet --&gt;</span>
-<span class="p">```</span>
-
-<span class="gu">#### Pass example X</span>
-
-... Add one test case for each "reason" an element can pass
-
-<span class="gu">### Failed</span>
-
-<span class="gu">#### Failure example 1</span>
-
-Briefly describe what failed in the html code below
-
-<span class="p">```</span><span class="nl">html</span>
-<span class="c">&lt;!-- failing html code snippet --&gt;</span>
-<span class="p">```</span>
-
-<span class="gu">#### Failure example X</span>
-
-... Add one test case for each "reason" an element can fail
-
-<span class="gu">### Inapplicable</span>
-
-<span class="gu">#### Inapplicable example 1</span>
-
-Briefly describe why the html code snippet is inapplicable
-
-<span class="p">```</span><span class="nl">html</span>
-<span class="c">&lt;!-- inapplicable code snippet --&gt;</span>
-<span class="p">```</span>
-
-<span class="gu">#### Inapplicable example X</span>
-
-... Add one test case for each "reason" an element can be inapplicable
-
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- code --&gt;</span>
 </code></pre></div></div>
 
-<h2 id="composite-rules">Composite rules</h2>
+<h4 id="passed-example-2">Passed example 2</h4>
 
-<p>Composite rules are rules that take results from different rules and through some logic come to a single result. For example: SC 1.2.3 allows video to pass with either a transcript, an audio description, or if it is a media alternative. Each of these would be atomic rules, that are used in a composite rule. The composite rule than describes that at least one of these must pass for the composite rule to pass.</p>
+<p>…</p>
 
-<p>For more about composite rules, see the <a href="https://www.w3.org/TR/act-rules-format/#composed-rules">ACT Rules Format</a>. To create a composite rule, use the <a href="./composite-template-empty.html">empty composite rule template</a>.</p>
+<h3 id="failed">Failed</h3>
+
+<h4 id="failed-example-1">Failed example 1</h4>
+
+<p>Description…</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- code --&gt;</span>
+</code></pre></div></div>
+
+<h4 id="failed-example-2">Failed example 2</h4>
+
+<p>…</p>
+
+<h3 id="inapplicable">Inapplicable</h3>
+
+<h4 id="inapplicable-example-1">Inapplicable example 1</h4>
+
+<p>Description…</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">&lt;!-- code --&gt;</span>
+</code></pre></div></div>
+
+<h4 id="inapplicable-example-2">Inapplicable example 2</h4>
+
+<p>…</p>
 
 			</p>
 		</main>
