@@ -164,9 +164,9 @@
 
   <p>Last updated: 
 		<time 
-			datetime="2018-10-11T12:07:41+00:00" 
+			datetime="2018-10-12T12:15:54+00:00" 
 			itemprop="dateModified">
-			Oct 11, 2018
+			Oct 12, 2018
 		</time>
 	</p>
 
@@ -257,7 +257,7 @@
 
 <h3 id="expectation-1">Expectation 1</h3>
 
-<p>For each target element help information is <a href="#visible-on-the-page">visible on the page</a> and <a href="#exposes-to-assistive-technologies">exposed to assistive technologies</a> or can be accessed from within the keyboard trap.</p>
+<p>For each target element help information is <a href="#visible-on-the-page">visible on the page</a> and <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a> or can be accessed from within the keyboard trap.</p>
 
 <p><strong>Note</strong>: As per WCAG 2.0 Success Criterion 2.1.1 Keyboard the help information should be accessible through a keyboard interface.</p>
 
@@ -433,6 +433,13 @@
   <li>Enter key: Select or activate the element in focus (same as clicking with mouse)</li>
   <li>Space key: Select input elements, e.g. drop downs, radio buttons etc.</li>
 </ul>
+</div> <div class='definition-item'><h3><a id='included-in-the-accessibility-tree' href='/auto-wcag/pages/algorithms/included-in-the-accessibility-tree.html'>Included in the accessibility tree</a></h3><p>Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.</p>
+
+<p>The general rules for when elements are included in the accessibility tree are defined in the <a href="https://www.w3.org/TR/core-aam/">core accessibility API mappings</a>. For native markup languages, such as HTML and SVG, additional rules for when elements are [included in the accessibility tree][] can be found in the <a href="https://www.w3.org/TR/html-aam/">HTML accessibility API mappings</a> and the <a href="https://www.w3.org/TR/svg-aam/">SVG accessibility API mappings</a>.</p>
+
+<blockquote>
+  <p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="highlighter-rouge">aria-hidden</code> attribute with a value of <code class="highlighter-rouge">true</code>. Such an element could still be interacted with using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.</p>
+</blockquote>
 </div> <div class='definition-item'><h3><a id='visible-on-the-page' href='/auto-wcag/pages/algorithms/visible-on-the-page.html'>Visible to the Page.</a></h3><p>Elements should be visible on the page, and also meet the requirements for color contrast and visibility when focused. For more details, check out:</p>
 <ul>
   <li><a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">https://www.w3.org/TR/WCAG20-TECHS/G18.html</a></li>

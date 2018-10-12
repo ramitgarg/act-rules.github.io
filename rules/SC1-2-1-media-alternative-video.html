@@ -164,9 +164,9 @@
 
   <p>Last updated: 
 		<time 
-			datetime="2018-10-11T12:07:41+00:00" 
+			datetime="2018-10-12T12:15:54+00:00" 
 			itemprop="dateModified">
-			Oct 11, 2018
+			Oct 12, 2018
 		</time>
 	</p>
 
@@ -215,7 +215,7 @@
 
 <h3 id="expectation-1">Expectation 1</h3>
 
-<p>All the information contained in each target element is available as text (directly or via text alternatives) that is <a href="#visible-on-the-page">visible on the page</a> and <a href="#exposed-to-assistive-technologies">exposed to assistive technolgies</a>.</p>
+<p>All the information contained in each target element is available as text (directly or via text alternatives) that is <a href="#visible-on-the-page">visible on the page</a> and <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
 
 <h3 id="expectation-2">Expectation 2</h3>
 
@@ -352,14 +352,13 @@
   <li><a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">https://www.w3.org/TR/WCAG20-TECHS/G18.html</a></li>
   <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html</a></li>
 </ul>
-</div> <div class='definition-item'><h3><a id='exposed-to-assistive-technologies' href='/auto-wcag/pages/algorithms/exposed-to-assistive-technologies.html'>Exposed to assistive technologies</a></h3><p>Elements contained in the accessibility tree as described in one of the following documents:</p>
+</div> <div class='definition-item'><h3><a id='included-in-the-accessibility-tree' href='/auto-wcag/pages/algorithms/included-in-the-accessibility-tree.html'>Included in the accessibility tree</a></h3><p>Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.</p>
 
-<ul>
-  <li><a href="https://www.w3.org/TR/core-aam/#mapping_general">Core Accessibility API Mappings</a></li>
-  <li><a href="https://www.w3.org/TR/html-aam">HTML Accessibility API Mappings</a></li>
-  <li><a href="https://www.w3.org/TR/svg-aam">SVG Accessibility API Mappings</a></li>
-</ul>
+<p>The general rules for when elements are included in the accessibility tree are defined in the <a href="https://www.w3.org/TR/core-aam/">core accessibility API mappings</a>. For native markup languages, such as HTML and SVG, additional rules for when elements are [included in the accessibility tree][] can be found in the <a href="https://www.w3.org/TR/html-aam/">HTML accessibility API mappings</a> and the <a href="https://www.w3.org/TR/svg-aam/">SVG accessibility API mappings</a>.</p>
 
+<blockquote>
+  <p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="highlighter-rouge">aria-hidden</code> attribute with a value of <code class="highlighter-rouge">true</code>. Such an element could still be interacted with using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.</p>
+</blockquote>
 </div></div>
 <!-- DO NOT DELETE ABOVE - This is used by a plugin to insert content -->
 

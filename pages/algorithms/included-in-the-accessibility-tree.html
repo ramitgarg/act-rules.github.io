@@ -8,7 +8,7 @@
 	<!-- Resolve Page Title -->
 	
 	<title>
-		Definitions Auto-WCAG Rules
+		Included in the accessibility tree Auto-WCAG Rules
 	</title>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -26,7 +26,7 @@
 
 	<link rel="stylesheet" href="/auto-wcag/assets/css/main.css">
 
-	<link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/pages/algorithms/">
+	<link rel="canonical" href="http://auto-wcag/github.io//auto-wcag/pages/algorithms/included-in-the-accessibility-tree.html">
 
 	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 	<!--[if lt IE 9]>
@@ -152,93 +152,21 @@
 		<main class="container">
 			
 				<div class="page-header">
-					<h1>Definitions</h1>
+					<h1>Included in the accessibility tree</h1>
 				</div>
 			
 			<p>
-				
-<ul>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/accessible-name.html">Accessible Name</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/appropriate-field-for-the-form-control.html">Appropriate field for the form control</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/audio-output.html">Audio output</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/content.html">Content (element type)</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/correct-autocomplete-field.html">Correct autocomplete field</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/decorative.html">Decorative</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/focusable.html">Focusable</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/generic-placeholder-text.html">Generic placeholder text</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/included-in-the-accessibility-tree.html">Included in the accessibility tree</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/">Definitions</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/interactive-element.html">Interactive element</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/is-data-table.html">Identifying Data Tables</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/lang-identification.html">Language identification</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/non-empty.html">Non-empty text string</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/non-streaming-media-element.html">Non-streaming media element</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/rendered-text.html">Rendered text</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/semantic-role.html">Semantic Role</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/short-text-description.html">Short text description</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/standard-keyboard-navigation.html">Standard keyboard navigation</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/surrounding-text.html">Surrounding text</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/text-content.html">Text content</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/valid-language-subtag.html">Valid Language Subtag</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/visible-on-the-page.html">Visible to the Page.</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/visible-text-content.html">Visible Text Content.</a></p>
-  </li>
-  <li>
-    <p><a href="/auto-wcag/pages/algorithms/visual-output.html">Visual Output</a></p>
-  </li>
-</ul>
+				<p>Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.</p>
 
+<p>The general rules for when elements are included in the accessibility tree are defined in the <a href="https://www.w3.org/TR/core-aam/">core accessibility API mappings</a>. For native markup languages, such as HTML and SVG, additional rules for when elements are [included in the accessibility tree][] can be found in the <a href="https://www.w3.org/TR/html-aam/">HTML accessibility API mappings</a> and the <a href="https://www.w3.org/TR/svg-aam/">SVG accessibility API mappings</a>.</p>
+
+<blockquote>
+  <p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="highlighter-rouge">aria-hidden</code> attribute with a value of <code class="highlighter-rouge">true</code>. Such an element could still be interacted with using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.</p>
+</blockquote>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->
-<!--PLUGIN::APPEND-BACKLINK-TO-RULE-->
+<div class='definition-usages'><h3 class='title'>Usages:</h3><a class='definition-usage-link' href='/auto-wcag/rules/SC1-1-1-image-has-name.html'>Image has accessible name (SC1-1-1-image-has-name)</a><a class='definition-usage-link' href='/auto-wcag/rules/SC1-2-1-media-alternative-audio.html'>Audio-only as a media alternative for text (SC1-2-1-media-alternative-audio)</a><a class='definition-usage-link' href='/auto-wcag/rules/SC1-2-1-media-alternative-video.html'>Video-only as a media alternative for text (SC1-2-1-media-alternative-video)</a><a class='definition-usage-link' href='/auto-wcag/rules/SC1-2-2-audio-captions.html'>audio elements captions (SC1-2-2-audio-captions)</a><a class='definition-usage-link' href='/auto-wcag/rules/SC1-3-5-autocomplete-valid.html'>Autocomplete valid (SC1-3-5-autocomplete-valid)</a><a class='definition-usage-link' href='/auto-wcag/rules/SC2-1-2-no-keyboard-trap-non-standard-navigation.html'>No keyboard trap non-standard navigation (SC2-1-2-no-keyboard-trap-non-standard-navigation)</a><a class='definition-usage-link' href='/auto-wcag/rules/SC2-4-4-link-has-name.html'>Links have an accessible name (SC2-4-4-link-has-name)</a><a class='definition-usage-link' href='/auto-wcag/rules/SC3-3-2-form-field-has-name.html'>Form field has accessible name (SC3-3-2-form-field-has-name)</a><a class='definition-usage-link' href='/auto-wcag/rules/SC4-1-2-button-has-name.html'>Buttons have an accessible name (SC4-1-2-button-has-name)</a></div></div>
 <!-- DO NOT DELETE ABOVE - This is used by a plugin to insert content -->
 			</p>
 		</main>

@@ -164,9 +164,9 @@
 
   <p>Last updated: 
 		<time 
-			datetime="2018-10-11T12:07:41+00:00" 
+			datetime="2018-10-12T12:15:54+00:00" 
 			itemprop="dateModified">
-			Oct 11, 2018
+			Oct 12, 2018
 		</time>
 	</p>
 
@@ -278,7 +278,7 @@
 
 <h3 id="applicability">Applicability</h3>
 
-<p>The rule applies to any HTML element with the <a href="#semantic-role">semantic role</a> of <code class="highlighter-rouge">link</code> that is <a href="#visible-on-the-page">visible on the page</a> or <a href="#exposed-to-assistive-technologies">exposed to assistive technologies</a>.</p>
+<p>The rule applies to any HTML element with the <a href="#semantic-role">semantic role</a> of <code class="highlighter-rouge">link</code> that is <a href="#visible-on-the-page">visible on the page</a>, <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a> or <a href="#focusable">focusable</a>.</p>
 
 <h3 id="expectation">Expectation</h3>
 
@@ -495,14 +495,14 @@
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->
-<h2>Definitions</h2><div class='definition-list'><div class='definition-item'><h3><a id='exposed-to-assistive-technologies' href='/auto-wcag/pages/algorithms/exposed-to-assistive-technologies.html'>Exposed to assistive technologies</a></h3><p>Elements contained in the accessibility tree as described in one of the following documents:</p>
+<h2>Definitions</h2><div class='definition-list'><div class='definition-item'><h3><a id='focusable' href='/auto-wcag/pages/algorithms/focusable.html'>Focusable</a></h3><p>Elements that can become the target of keyboard input as described in https://www.w3.org/TR/html/editing.html#focusable and https://www.w3.org/TR/html/editing.html#can-be-focused.</p>
+</div> <div class='definition-item'><h3><a id='included-in-the-accessibility-tree' href='/auto-wcag/pages/algorithms/included-in-the-accessibility-tree.html'>Included in the accessibility tree</a></h3><p>Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.</p>
 
-<ul>
-  <li><a href="https://www.w3.org/TR/core-aam/#mapping_general">Core Accessibility API Mappings</a></li>
-  <li><a href="https://www.w3.org/TR/html-aam">HTML Accessibility API Mappings</a></li>
-  <li><a href="https://www.w3.org/TR/svg-aam">SVG Accessibility API Mappings</a></li>
-</ul>
+<p>The general rules for when elements are included in the accessibility tree are defined in the <a href="https://www.w3.org/TR/core-aam/">core accessibility API mappings</a>. For native markup languages, such as HTML and SVG, additional rules for when elements are [included in the accessibility tree][] can be found in the <a href="https://www.w3.org/TR/html-aam/">HTML accessibility API mappings</a> and the <a href="https://www.w3.org/TR/svg-aam/">SVG accessibility API mappings</a>.</p>
 
+<blockquote>
+  <p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="highlighter-rouge">aria-hidden</code> attribute with a value of <code class="highlighter-rouge">true</code>. Such an element could still be interacted with using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.</p>
+</blockquote>
 </div> <div class='definition-item'><h3><a id='semantic-role' href='/auto-wcag/pages/algorithms/semantic-role.html'>Semantic Role</a></h3><p>A semantic role is a semantic association that indicates an object’s type. This allows tools to present and support interaction with the object in a manner that is consistent with user expectations about other objects of that type.</p>
 
 <p><a href="https://www.w3.org/TR/wai-aria-1.1/#dfn-role">Roles</a> can be <a href="https://www.w3.org/TR/wai-aria/#implicit_semantics">implicit</a> through the element type or explicit through the <a href="https://www.w3.org/TR/html/dom.html#aria-role-attribute">role attribute</a>.</p>
