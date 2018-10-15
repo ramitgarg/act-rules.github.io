@@ -1987,6 +1987,17 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-1-1-html-lang-valid.html"
     },
     {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-1-1-html-lang-valid_failed_example_4.html",
+      "relativeUrl": "assets/SC3-1-1-html-lang-valid_failed_example_4.html",
+      "successCriteria": [
+        "WCAG2:language-of-page"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC3-1-1-html-lang-valid",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-1-1-html-lang-valid.html"
+    },
+    {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-1-1-html-lang-valid_inapplicable_example_1.svg",
       "relativeUrl": "assets/SC3-1-1-html-lang-valid_inapplicable_example_1.svg",
       "successCriteria": [
@@ -2187,6 +2198,17 @@
     {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-1-2-lang-valid_failed_example_2.html",
       "relativeUrl": "assets/SC3-1-2-lang-valid_failed_example_2.html",
+      "successCriteria": [
+        "WCAG2:language-of-parts"
+      ],
+      "selector": "*[data-rule-target]",
+      "expected": "failed",
+      "ruleId": "SC3-1-2-lang-valid",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-1-2-lang-valid.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-1-2-lang-valid_failed_example_3.html",
+      "relativeUrl": "assets/SC3-1-2-lang-valid_failed_example_3.html",
       "successCriteria": [
         "WCAG2:language-of-parts"
       ],
