@@ -84,6 +84,9 @@
     "SC4-1-2-iframe-has-name": [
       "List of rules to be mapped to test engine"
     ],
+    "SC4-1-2-role-attribute-has-valid-value": [
+      "List of rules to be mapped to test engine"
+    ],
     "SC4-1-2-role-has-required-states-and-properties": [
       "List of rules to be mapped to test engine"
     ]

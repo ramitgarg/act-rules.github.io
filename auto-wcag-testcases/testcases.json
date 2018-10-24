@@ -3173,6 +3173,105 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-iframe-has-name.html"
     },
     {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-role-attribute-has-valid-value_passed_example_1.html",
+      "relativeUrl": "assets/SC4-1-2-role-attribute-has-valid-value_passed_example_1.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-2-role-attribute-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-role-attribute-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-role-attribute-has-valid-value_passed_example_2.html",
+      "relativeUrl": "assets/SC4-1-2-role-attribute-has-valid-value_passed_example_2.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-2-role-attribute-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-role-attribute-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-role-attribute-has-valid-value_passed_example_3.html",
+      "relativeUrl": "assets/SC4-1-2-role-attribute-has-valid-value_passed_example_3.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-2-role-attribute-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-role-attribute-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-role-attribute-has-valid-value_failed_example_1.html",
+      "relativeUrl": "assets/SC4-1-2-role-attribute-has-valid-value_failed_example_1.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC4-1-2-role-attribute-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-role-attribute-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-role-attribute-has-valid-value_failed_example_2.html",
+      "relativeUrl": "assets/SC4-1-2-role-attribute-has-valid-value_failed_example_2.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC4-1-2-role-attribute-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-role-attribute-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-role-attribute-has-valid-value_inapplicable_example_1.html",
+      "relativeUrl": "assets/SC4-1-2-role-attribute-has-valid-value_inapplicable_example_1.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC4-1-2-role-attribute-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-role-attribute-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-role-attribute-has-valid-value_inapplicable_example_2.html",
+      "relativeUrl": "assets/SC4-1-2-role-attribute-has-valid-value_inapplicable_example_2.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC4-1-2-role-attribute-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-role-attribute-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-role-attribute-has-valid-value_inapplicable_example_3.html",
+      "relativeUrl": "assets/SC4-1-2-role-attribute-has-valid-value_inapplicable_example_3.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC4-1-2-role-attribute-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-role-attribute-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-role-attribute-has-valid-value_inapplicable_example_4.html",
+      "relativeUrl": "assets/SC4-1-2-role-attribute-has-valid-value_inapplicable_example_4.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC4-1-2-role-attribute-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-role-attribute-has-valid-value.html"
+    },
+    {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-role-has-required-states-and-properties_passed_example_1.html",
       "relativeUrl": "assets/SC4-1-2-role-has-required-states-and-properties_passed_example_1.html",
       "successCriteria": [
