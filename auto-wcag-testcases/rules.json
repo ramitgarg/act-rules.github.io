@@ -42,7 +42,7 @@
     "SC2-1-2-no-keyboard-trap": [
       "List of rules to be mapped to test engine"
     ],
-    "SC2-2-1+SC3-2-5-meta-refresh": [
+    "SC2-2-1+SC2-2-4-meta-refresh": [
       "List of rules to be mapped to test engine"
     ],
     "SC2-4-2-page-has-title": [

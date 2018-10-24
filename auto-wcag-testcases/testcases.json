@@ -1303,172 +1303,186 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC3-2-5-meta-refresh_passed_example_1.html",
-      "relativeUrl": "assets/SC2-2-1+SC3-2-5-meta-refresh_passed_example_1.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_passed_example_1.html",
+      "relativeUrl": "assets/SC2-2-1+SC2-2-4-meta-refresh_passed_example_1.html",
       "successCriteria": [
         "WCAG2:timing-adjustable",
+        "WCAG2:interruptions",
         "WCAG2:change-on-request"
       ],
       "selector": "*[data-rule-target]",
       "expected": "passed",
-      "ruleId": "SC2-2-1+SC3-2-5-meta-refresh",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC3-2-5-meta-refresh.html"
+      "ruleId": "SC2-2-1+SC2-2-4-meta-refresh",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC2-2-4-meta-refresh.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC3-2-5-meta-refresh_passed_example_2.html",
-      "relativeUrl": "assets/SC2-2-1+SC3-2-5-meta-refresh_passed_example_2.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_passed_example_2.html",
+      "relativeUrl": "assets/SC2-2-1+SC2-2-4-meta-refresh_passed_example_2.html",
       "successCriteria": [
         "WCAG2:timing-adjustable",
+        "WCAG2:interruptions",
         "WCAG2:change-on-request"
       ],
       "selector": "*[data-rule-target]",
       "expected": "passed",
-      "ruleId": "SC2-2-1+SC3-2-5-meta-refresh",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC3-2-5-meta-refresh.html"
+      "ruleId": "SC2-2-1+SC2-2-4-meta-refresh",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC2-2-4-meta-refresh.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC3-2-5-meta-refresh_passed_example_3.html",
-      "relativeUrl": "assets/SC2-2-1+SC3-2-5-meta-refresh_passed_example_3.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_passed_example_3.html",
+      "relativeUrl": "assets/SC2-2-1+SC2-2-4-meta-refresh_passed_example_3.html",
       "successCriteria": [
         "WCAG2:timing-adjustable",
+        "WCAG2:interruptions",
         "WCAG2:change-on-request"
       ],
       "selector": "*[data-rule-target]",
       "expected": "passed",
-      "ruleId": "SC2-2-1+SC3-2-5-meta-refresh",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC3-2-5-meta-refresh.html"
+      "ruleId": "SC2-2-1+SC2-2-4-meta-refresh",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC2-2-4-meta-refresh.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC3-2-5-meta-refresh_failed_example_1.html",
-      "relativeUrl": "assets/SC2-2-1+SC3-2-5-meta-refresh_failed_example_1.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_failed_example_1.html",
+      "relativeUrl": "assets/SC2-2-1+SC2-2-4-meta-refresh_failed_example_1.html",
       "successCriteria": [
         "WCAG2:timing-adjustable",
+        "WCAG2:interruptions",
         "WCAG2:change-on-request"
       ],
       "selector": "*[data-rule-target]",
       "expected": "failed",
-      "ruleId": "SC2-2-1+SC3-2-5-meta-refresh",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC3-2-5-meta-refresh.html"
+      "ruleId": "SC2-2-1+SC2-2-4-meta-refresh",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC2-2-4-meta-refresh.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC3-2-5-meta-refresh_failed_example_2.html",
-      "relativeUrl": "assets/SC2-2-1+SC3-2-5-meta-refresh_failed_example_2.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_failed_example_2.html",
+      "relativeUrl": "assets/SC2-2-1+SC2-2-4-meta-refresh_failed_example_2.html",
       "successCriteria": [
         "WCAG2:timing-adjustable",
+        "WCAG2:interruptions",
         "WCAG2:change-on-request"
       ],
       "selector": "*[data-rule-target]",
       "expected": "failed",
-      "ruleId": "SC2-2-1+SC3-2-5-meta-refresh",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC3-2-5-meta-refresh.html"
+      "ruleId": "SC2-2-1+SC2-2-4-meta-refresh",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC2-2-4-meta-refresh.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC3-2-5-meta-refresh_failed_example_3.html",
-      "relativeUrl": "assets/SC2-2-1+SC3-2-5-meta-refresh_failed_example_3.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_failed_example_3.html",
+      "relativeUrl": "assets/SC2-2-1+SC2-2-4-meta-refresh_failed_example_3.html",
       "successCriteria": [
         "WCAG2:timing-adjustable",
+        "WCAG2:interruptions",
         "WCAG2:change-on-request"
       ],
       "selector": "*[data-rule-target]",
       "expected": "failed",
-      "ruleId": "SC2-2-1+SC3-2-5-meta-refresh",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC3-2-5-meta-refresh.html"
+      "ruleId": "SC2-2-1+SC2-2-4-meta-refresh",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC2-2-4-meta-refresh.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC3-2-5-meta-refresh_inapplicable_example_1.html",
-      "relativeUrl": "assets/SC2-2-1+SC3-2-5-meta-refresh_inapplicable_example_1.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_1.html",
+      "relativeUrl": "assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_1.html",
       "successCriteria": [
         "WCAG2:timing-adjustable",
+        "WCAG2:interruptions",
         "WCAG2:change-on-request"
       ],
       "selector": "*[data-rule-target]",
       "expected": "inapplicable",
-      "ruleId": "SC2-2-1+SC3-2-5-meta-refresh",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC3-2-5-meta-refresh.html"
+      "ruleId": "SC2-2-1+SC2-2-4-meta-refresh",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC2-2-4-meta-refresh.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC3-2-5-meta-refresh_inapplicable_example_2.html",
-      "relativeUrl": "assets/SC2-2-1+SC3-2-5-meta-refresh_inapplicable_example_2.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_2.html",
+      "relativeUrl": "assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_2.html",
       "successCriteria": [
         "WCAG2:timing-adjustable",
+        "WCAG2:interruptions",
         "WCAG2:change-on-request"
       ],
       "selector": "*[data-rule-target]",
       "expected": "inapplicable",
-      "ruleId": "SC2-2-1+SC3-2-5-meta-refresh",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC3-2-5-meta-refresh.html"
+      "ruleId": "SC2-2-1+SC2-2-4-meta-refresh",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC2-2-4-meta-refresh.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC3-2-5-meta-refresh_inapplicable_example_3.html",
-      "relativeUrl": "assets/SC2-2-1+SC3-2-5-meta-refresh_inapplicable_example_3.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_3.html",
+      "relativeUrl": "assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_3.html",
       "successCriteria": [
         "WCAG2:timing-adjustable",
+        "WCAG2:interruptions",
         "WCAG2:change-on-request"
       ],
       "selector": "*[data-rule-target]",
       "expected": "inapplicable",
-      "ruleId": "SC2-2-1+SC3-2-5-meta-refresh",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC3-2-5-meta-refresh.html"
+      "ruleId": "SC2-2-1+SC2-2-4-meta-refresh",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC2-2-4-meta-refresh.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC3-2-5-meta-refresh_inapplicable_example_4.html",
-      "relativeUrl": "assets/SC2-2-1+SC3-2-5-meta-refresh_inapplicable_example_4.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_4.html",
+      "relativeUrl": "assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_4.html",
       "successCriteria": [
         "WCAG2:timing-adjustable",
+        "WCAG2:interruptions",
         "WCAG2:change-on-request"
       ],
       "selector": "*[data-rule-target]",
       "expected": "inapplicable",
-      "ruleId": "SC2-2-1+SC3-2-5-meta-refresh",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC3-2-5-meta-refresh.html"
+      "ruleId": "SC2-2-1+SC2-2-4-meta-refresh",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC2-2-4-meta-refresh.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC3-2-5-meta-refresh_inapplicable_example_5.html",
-      "relativeUrl": "assets/SC2-2-1+SC3-2-5-meta-refresh_inapplicable_example_5.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_5.html",
+      "relativeUrl": "assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_5.html",
       "successCriteria": [
         "WCAG2:timing-adjustable",
+        "WCAG2:interruptions",
         "WCAG2:change-on-request"
       ],
       "selector": "*[data-rule-target]",
       "expected": "inapplicable",
-      "ruleId": "SC2-2-1+SC3-2-5-meta-refresh",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC3-2-5-meta-refresh.html"
+      "ruleId": "SC2-2-1+SC2-2-4-meta-refresh",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC2-2-4-meta-refresh.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC3-2-5-meta-refresh_inapplicable_example_6.html",
-      "relativeUrl": "assets/SC2-2-1+SC3-2-5-meta-refresh_inapplicable_example_6.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_6.html",
+      "relativeUrl": "assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_6.html",
       "successCriteria": [
         "WCAG2:timing-adjustable",
+        "WCAG2:interruptions",
         "WCAG2:change-on-request"
       ],
       "selector": "*[data-rule-target]",
       "expected": "inapplicable",
-      "ruleId": "SC2-2-1+SC3-2-5-meta-refresh",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC3-2-5-meta-refresh.html"
+      "ruleId": "SC2-2-1+SC2-2-4-meta-refresh",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC2-2-4-meta-refresh.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC3-2-5-meta-refresh_inapplicable_example_7.html",
-      "relativeUrl": "assets/SC2-2-1+SC3-2-5-meta-refresh_inapplicable_example_7.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_7.html",
+      "relativeUrl": "assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_7.html",
       "successCriteria": [
         "WCAG2:timing-adjustable",
+        "WCAG2:interruptions",
         "WCAG2:change-on-request"
       ],
       "selector": "*[data-rule-target]",
       "expected": "inapplicable",
-      "ruleId": "SC2-2-1+SC3-2-5-meta-refresh",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC3-2-5-meta-refresh.html"
+      "ruleId": "SC2-2-1+SC2-2-4-meta-refresh",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC2-2-4-meta-refresh.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC3-2-5-meta-refresh_inapplicable_example_8.html",
-      "relativeUrl": "assets/SC2-2-1+SC3-2-5-meta-refresh_inapplicable_example_8.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_8.html",
+      "relativeUrl": "assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_8.html",
       "successCriteria": [
         "WCAG2:timing-adjustable",
+        "WCAG2:interruptions",
         "WCAG2:change-on-request"
       ],
       "selector": "*[data-rule-target]",
       "expected": "inapplicable",
-      "ruleId": "SC2-2-1+SC3-2-5-meta-refresh",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC3-2-5-meta-refresh.html"
+      "ruleId": "SC2-2-1+SC2-2-4-meta-refresh",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC2-2-4-meta-refresh.html"
     },
     {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-2-page-has-title_passed_example_1.html",
