@@ -1127,6 +1127,182 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap-standard-navigation.html"
     },
     {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap_passed_example_1.html",
+      "relativeUrl": "assets/SC2-1-2-no-keyboard-trap_passed_example_1.html",
+      "successCriteria": [
+        "WCAG2:no-keyboard-trap"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC2-1-2-no-keyboard-trap",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap_passed_example_2.html",
+      "relativeUrl": "assets/SC2-1-2-no-keyboard-trap_passed_example_2.html",
+      "successCriteria": [
+        "WCAG2:no-keyboard-trap"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC2-1-2-no-keyboard-trap",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap_passed_example_3.html",
+      "relativeUrl": "assets/SC2-1-2-no-keyboard-trap_passed_example_3.html",
+      "successCriteria": [
+        "WCAG2:no-keyboard-trap"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC2-1-2-no-keyboard-trap",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap_passed_example_4.html",
+      "relativeUrl": "assets/SC2-1-2-no-keyboard-trap_passed_example_4.html",
+      "successCriteria": [
+        "WCAG2:no-keyboard-trap"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC2-1-2-no-keyboard-trap",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap_passed_example_5.html",
+      "relativeUrl": "assets/SC2-1-2-no-keyboard-trap_passed_example_5.html",
+      "successCriteria": [
+        "WCAG2:no-keyboard-trap"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC2-1-2-no-keyboard-trap",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap_passed_example_6.html",
+      "relativeUrl": "assets/SC2-1-2-no-keyboard-trap_passed_example_6.html",
+      "successCriteria": [
+        "WCAG2:no-keyboard-trap"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC2-1-2-no-keyboard-trap",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap_failed_example_1.html",
+      "relativeUrl": "assets/SC2-1-2-no-keyboard-trap_failed_example_1.html",
+      "successCriteria": [
+        "WCAG2:no-keyboard-trap"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC2-1-2-no-keyboard-trap",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap_failed_example_2.html",
+      "relativeUrl": "assets/SC2-1-2-no-keyboard-trap_failed_example_2.html",
+      "successCriteria": [
+        "WCAG2:no-keyboard-trap"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC2-1-2-no-keyboard-trap",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap_failed_example_3.html",
+      "relativeUrl": "assets/SC2-1-2-no-keyboard-trap_failed_example_3.html",
+      "successCriteria": [
+        "WCAG2:no-keyboard-trap"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC2-1-2-no-keyboard-trap",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap_failed_example_4.html",
+      "relativeUrl": "assets/SC2-1-2-no-keyboard-trap_failed_example_4.html",
+      "successCriteria": [
+        "WCAG2:no-keyboard-trap"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC2-1-2-no-keyboard-trap",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap_failed_example_5.html",
+      "relativeUrl": "assets/SC2-1-2-no-keyboard-trap_failed_example_5.html",
+      "successCriteria": [
+        "WCAG2:no-keyboard-trap"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC2-1-2-no-keyboard-trap",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap_failed_example_6.html",
+      "relativeUrl": "assets/SC2-1-2-no-keyboard-trap_failed_example_6.html",
+      "successCriteria": [
+        "WCAG2:no-keyboard-trap"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC2-1-2-no-keyboard-trap",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap_inapplicable_example_1.html",
+      "relativeUrl": "assets/SC2-1-2-no-keyboard-trap_inapplicable_example_1.html",
+      "successCriteria": [
+        "WCAG2:no-keyboard-trap"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC2-1-2-no-keyboard-trap",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap_inapplicable_example_2.html",
+      "relativeUrl": "assets/SC2-1-2-no-keyboard-trap_inapplicable_example_2.html",
+      "successCriteria": [
+        "WCAG2:no-keyboard-trap"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC2-1-2-no-keyboard-trap",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap_inapplicable_example_3.html",
+      "relativeUrl": "assets/SC2-1-2-no-keyboard-trap_inapplicable_example_3.html",
+      "successCriteria": [
+        "WCAG2:no-keyboard-trap"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC2-1-2-no-keyboard-trap",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-1-2-no-keyboard-trap_inapplicable_example_4.html",
+      "relativeUrl": "assets/SC2-1-2-no-keyboard-trap_inapplicable_example_4.html",
+      "successCriteria": [
+        "WCAG2:no-keyboard-trap"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC2-1-2-no-keyboard-trap",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-1-2-no-keyboard-trap.html"
+    },
+    {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC3-2-5-meta-refresh_passed_example_1.html",
       "relativeUrl": "assets/SC2-2-1+SC3-2-5-meta-refresh_passed_example_1.html",
       "successCriteria": [
