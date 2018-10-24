@@ -164,7 +164,7 @@
 
   <p>Last updated: 
 		<time 
-			datetime="2018-10-24T11:33:22+00:00" 
+			datetime="2018-10-24T11:36:03+00:00" 
 			itemprop="dateModified">
 			Oct 24, 2018
 		</time>
@@ -251,9 +251,9 @@
 
 <h3 id="applicability">Applicability</h3>
 
-<p>The rule applies to any HTML or SVG element on a web page that is <a href="#focusable">focusable</a>.</p>
+<p>The rule applies to any HTML or SVG element that is <a href="#focusable">focusable</a>.</p>
 
-<p><strong>Note</strong>: The WCAG 2.0 success criterion 2.1.2 applies to all content where focus can be moved to through keyboard navigation.</p>
+<p><strong>Note</strong>: This rule only applies to HTML and SVG. Thus, it is a partial check for WCAG 2.0 success criterion 2.1.2, which applies to all content.</p>
 
 <h3 id="expectation">Expectation</h3>
 
@@ -276,8 +276,8 @@
 
 <ul>
   <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/no-keyboard-trap.html">Understanding Success Criterion 2.1.2: No Keyboard Trap</a></li>
-  <li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G21">G21: Ensuring that users are not trapped in content</a></li>
-  <li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/F10">F10: Failure of Success Criterion 2.1.2 and Conformance Requirement 5 due to combining multiple content formats in a way that traps users inside one format type</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G21">G21: Ensuring that users are not trapped in content</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/failures/F10">F10: Failure of Success Criterion 2.1.2 and Conformance Requirement 5 due to combining multiple content formats in a way that traps users inside one format type</a></li>
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
@@ -359,7 +359,7 @@
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC2-1-2-no-keyboard-trap-standard-navigation_inapplicable_example_2.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-1-2-no-keyboard-trap-standard-navigation_inapplicable_example_2.html"></iframe> </div></div>
 <h4 id="inapplicable-example-3">Inapplicable example 3</h4>
 
-<p>Hidden element using <code class="highlighter-rouge">display:none</code></p>
+<p>Hidden element using <code class="highlighter-rouge">display:none</code>.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">style=</span><span class="s">“display:none;”</span><span class="nt">&gt;</span>Click Me!<span class="nt">&lt;/button&gt;</span>
