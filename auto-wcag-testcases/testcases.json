@@ -1381,6 +1381,19 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC2-2-4-meta-refresh.html"
     },
     {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_failed_example_4.html",
+      "relativeUrl": "assets/SC2-2-1+SC2-2-4-meta-refresh_failed_example_4.html",
+      "successCriteria": [
+        "WCAG2:timing-adjustable",
+        "WCAG2:interruptions",
+        "WCAG2:change-on-request"
+      ],
+      "selector": "*[data-rule-target]",
+      "expected": "failed",
+      "ruleId": "SC2-2-1+SC2-2-4-meta-refresh",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-2-1+SC2-2-4-meta-refresh.html"
+    },
+    {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_1.html",
       "relativeUrl": "assets/SC2-2-1+SC2-2-4-meta-refresh_inapplicable_example_1.html",
       "successCriteria": [

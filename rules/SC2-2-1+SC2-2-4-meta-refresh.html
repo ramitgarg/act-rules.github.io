@@ -172,7 +172,7 @@
 
   <p>Last updated: 
 		<time 
-			datetime="2018-10-29T12:50:46+00:00" 
+			datetime="2018-10-29T14:33:28+00:00" 
 			itemprop="dateModified">
 			Oct 29, 2018
 		</time>
@@ -317,7 +317,7 @@
 
 <h3 id="expectation">Expectation</h3>
 
-<p>The <code class="highlighter-rouge">time</code> of the <code class="highlighter-rouge">content</code> attribute is 0 or bigger than 72000 (20 hours).</p>
+<p>The <code class="highlighter-rouge">time</code> of the <code class="highlighter-rouge">content</code> attribute is 0 or greater than 72000 (20 hours).</p>
 
 <p><strong>Note</strong>: See <a href="https://www.w3.org/TR/html/document-metadata.html#statedef-http-equiv-refresh">Refresh state (<code class="highlighter-rouge">http-equiv="refresh"</code>)</a> for a precise description on how to determine the <code class="highlighter-rouge">time</code>.</p>
 
@@ -367,11 +367,11 @@
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC2-2-1+SC2-2-4-meta-refresh_passed_example_2.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC2-2-4-meta-refresh_passed_example_2.html"></iframe> </div></div>
 <h4 id="passed-example-3">Passed example 3</h4>
 
-<p>Redirects after 20 hours.</p>
+<p>Redirects after more than 20 hours.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
-  <span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"72000; http://example.com"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"72001; http://example.com"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/head&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC2-2-1+SC2-2-4-meta-refresh_passed_example_3.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC2-2-4-meta-refresh_passed_example_3.html"></iframe> </div></div>
@@ -408,6 +408,16 @@
 <span class="nt">&lt;/head&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC2-2-1+SC2-2-4-meta-refresh_failed_example_3.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC2-2-4-meta-refresh_failed_example_3.html"></iframe> </div></div>
+<h4 id="failed-example-4">Failed example 4</h4>
+
+<p>Redirects after exactly 20 hours.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;head&gt;</span>
+  <span class="nt">&lt;meta</span> <span class="na">data-rule-target</span> <span class="na">http-equiv=</span><span class="s">"refresh"</span> <span class="na">content=</span><span class="s">"72000; http://example.com"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;/head&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC2-2-1+SC2-2-4-meta-refresh_failed_example_4.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-2-1+SC2-2-4-meta-refresh_failed_example_4.html"></iframe> </div></div>
 <h3 id="inapplicable">Inapplicable</h3>
 
 <h4 id="inapplicable-example-1">Inapplicable example 1</h4>
