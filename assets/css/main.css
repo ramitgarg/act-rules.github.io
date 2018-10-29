@@ -161,7 +161,7 @@ select {
   .container .draft-note.vertical {
     transform: rotate(-90deg) translateX(-5px) translateY(-35px);
     position: absolute; }
-.container .definition-usages > .definition-usage-link {
+.container .glossary-usages > .glossary-usage-link {
   display: block; }
 .container .embed-wrapper {
   display: flex;
