@@ -188,6 +188,35 @@ select {
       width: 100%;
       border-radius: 4px;
       border: 1px solid #c3c3c3; }
+.container #rules-table input.search {
+  border-radius: 0;
+  padding: 10px 15px;
+  margin: 15px 0;
+  width: 100%; }
+.container #rules-table .sort {
+  text-decoration: none;
+  cursor: pointer;
+  position: relative; }
+  .container #rules-table .sort:hover {
+    text-decoration: underline;
+    cursor: pointer; }
+  .container #rules-table .sort:after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: auto;
+    margin-left: 10px;
+    margin-top: -2px; }
+  .container #rules-table .sort.asc:after {
+    border-top: 4px solid currentColor; }
+  .container #rules-table .sort.desc:after {
+    border-bottom: 4px solid currentColor; }
 
 .cards-section {
   padding: 60px 0; }
