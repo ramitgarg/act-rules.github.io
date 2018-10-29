@@ -2454,169 +2454,184 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-1-2-lang-valid.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2-form-field-has-name_passed_example_1.html",
-      "relativeUrl": "assets/SC3-3-2-form-field-has-name_passed_example_1.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2+SC4-1-2-form-field-has-name_passed_example_1.html",
+      "relativeUrl": "assets/SC3-3-2+SC4-1-2-form-field-has-name_passed_example_1.html",
       "successCriteria": [
-        "WCAG2:labels-or-instructions"
+        "WCAG2:labels-or-instructions",
+        "WCAG2:name-role-value"
       ],
       "selector": "*[data-rule-target]",
       "expected": "passed",
-      "ruleId": "SC3-3-2-form-field-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2-form-field-has-name.html"
+      "ruleId": "SC3-3-2+SC4-1-2-form-field-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2+SC4-1-2-form-field-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2-form-field-has-name_passed_example_2.html",
-      "relativeUrl": "assets/SC3-3-2-form-field-has-name_passed_example_2.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2+SC4-1-2-form-field-has-name_passed_example_2.html",
+      "relativeUrl": "assets/SC3-3-2+SC4-1-2-form-field-has-name_passed_example_2.html",
       "successCriteria": [
-        "WCAG2:labels-or-instructions"
+        "WCAG2:labels-or-instructions",
+        "WCAG2:name-role-value"
       ],
       "selector": "body > :first-child",
       "expected": "passed",
-      "ruleId": "SC3-3-2-form-field-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2-form-field-has-name.html"
+      "ruleId": "SC3-3-2+SC4-1-2-form-field-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2+SC4-1-2-form-field-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2-form-field-has-name_passed_example_3.html",
-      "relativeUrl": "assets/SC3-3-2-form-field-has-name_passed_example_3.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2+SC4-1-2-form-field-has-name_passed_example_3.html",
+      "relativeUrl": "assets/SC3-3-2+SC4-1-2-form-field-has-name_passed_example_3.html",
       "successCriteria": [
-        "WCAG2:labels-or-instructions"
+        "WCAG2:labels-or-instructions",
+        "WCAG2:name-role-value"
       ],
       "selector": "*[data-rule-target]",
       "expected": "passed",
-      "ruleId": "SC3-3-2-form-field-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2-form-field-has-name.html"
+      "ruleId": "SC3-3-2+SC4-1-2-form-field-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2+SC4-1-2-form-field-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2-form-field-has-name_passed_example_4.html",
-      "relativeUrl": "assets/SC3-3-2-form-field-has-name_passed_example_4.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2+SC4-1-2-form-field-has-name_passed_example_4.html",
+      "relativeUrl": "assets/SC3-3-2+SC4-1-2-form-field-has-name_passed_example_4.html",
       "successCriteria": [
-        "WCAG2:labels-or-instructions"
+        "WCAG2:labels-or-instructions",
+        "WCAG2:name-role-value"
       ],
       "selector": "*[data-rule-target]",
       "expected": "passed",
-      "ruleId": "SC3-3-2-form-field-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2-form-field-has-name.html"
+      "ruleId": "SC3-3-2+SC4-1-2-form-field-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2+SC4-1-2-form-field-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2-form-field-has-name_passed_example_5.html",
-      "relativeUrl": "assets/SC3-3-2-form-field-has-name_passed_example_5.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2+SC4-1-2-form-field-has-name_passed_example_5.html",
+      "relativeUrl": "assets/SC3-3-2+SC4-1-2-form-field-has-name_passed_example_5.html",
       "successCriteria": [
-        "WCAG2:labels-or-instructions"
+        "WCAG2:labels-or-instructions",
+        "WCAG2:name-role-value"
       ],
       "selector": "body > :first-child",
       "expected": "passed",
-      "ruleId": "SC3-3-2-form-field-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2-form-field-has-name.html"
+      "ruleId": "SC3-3-2+SC4-1-2-form-field-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2+SC4-1-2-form-field-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2-form-field-has-name_failed_example_1.html",
-      "relativeUrl": "assets/SC3-3-2-form-field-has-name_failed_example_1.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2+SC4-1-2-form-field-has-name_failed_example_1.html",
+      "relativeUrl": "assets/SC3-3-2+SC4-1-2-form-field-has-name_failed_example_1.html",
       "successCriteria": [
-        "WCAG2:labels-or-instructions"
+        "WCAG2:labels-or-instructions",
+        "WCAG2:name-role-value"
       ],
       "selector": "body > :first-child",
       "expected": "failed",
-      "ruleId": "SC3-3-2-form-field-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2-form-field-has-name.html"
+      "ruleId": "SC3-3-2+SC4-1-2-form-field-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2+SC4-1-2-form-field-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2-form-field-has-name_failed_example_2.html",
-      "relativeUrl": "assets/SC3-3-2-form-field-has-name_failed_example_2.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2+SC4-1-2-form-field-has-name_failed_example_2.html",
+      "relativeUrl": "assets/SC3-3-2+SC4-1-2-form-field-has-name_failed_example_2.html",
       "successCriteria": [
-        "WCAG2:labels-or-instructions"
+        "WCAG2:labels-or-instructions",
+        "WCAG2:name-role-value"
       ],
       "selector": "body > :first-child",
       "expected": "failed",
-      "ruleId": "SC3-3-2-form-field-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2-form-field-has-name.html"
+      "ruleId": "SC3-3-2+SC4-1-2-form-field-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2+SC4-1-2-form-field-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2-form-field-has-name_failed_example_3.html",
-      "relativeUrl": "assets/SC3-3-2-form-field-has-name_failed_example_3.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2+SC4-1-2-form-field-has-name_failed_example_3.html",
+      "relativeUrl": "assets/SC3-3-2+SC4-1-2-form-field-has-name_failed_example_3.html",
       "successCriteria": [
-        "WCAG2:labels-or-instructions"
+        "WCAG2:labels-or-instructions",
+        "WCAG2:name-role-value"
       ],
       "selector": "body > :first-child",
       "expected": "failed",
-      "ruleId": "SC3-3-2-form-field-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2-form-field-has-name.html"
+      "ruleId": "SC3-3-2+SC4-1-2-form-field-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2+SC4-1-2-form-field-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2-form-field-has-name_failed_example_4.html",
-      "relativeUrl": "assets/SC3-3-2-form-field-has-name_failed_example_4.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2+SC4-1-2-form-field-has-name_failed_example_4.html",
+      "relativeUrl": "assets/SC3-3-2+SC4-1-2-form-field-has-name_failed_example_4.html",
       "successCriteria": [
-        "WCAG2:labels-or-instructions"
+        "WCAG2:labels-or-instructions",
+        "WCAG2:name-role-value"
       ],
       "selector": "body > :first-child",
       "expected": "failed",
-      "ruleId": "SC3-3-2-form-field-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2-form-field-has-name.html"
+      "ruleId": "SC3-3-2+SC4-1-2-form-field-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2+SC4-1-2-form-field-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2-form-field-has-name_failed_example_5.html",
-      "relativeUrl": "assets/SC3-3-2-form-field-has-name_failed_example_5.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2+SC4-1-2-form-field-has-name_failed_example_5.html",
+      "relativeUrl": "assets/SC3-3-2+SC4-1-2-form-field-has-name_failed_example_5.html",
       "successCriteria": [
-        "WCAG2:labels-or-instructions"
+        "WCAG2:labels-or-instructions",
+        "WCAG2:name-role-value"
       ],
       "selector": "*[data-rule-target]",
       "expected": "failed",
-      "ruleId": "SC3-3-2-form-field-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2-form-field-has-name.html"
+      "ruleId": "SC3-3-2+SC4-1-2-form-field-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2+SC4-1-2-form-field-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2-form-field-has-name_failed_example_6.html",
-      "relativeUrl": "assets/SC3-3-2-form-field-has-name_failed_example_6.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2+SC4-1-2-form-field-has-name_failed_example_6.html",
+      "relativeUrl": "assets/SC3-3-2+SC4-1-2-form-field-has-name_failed_example_6.html",
       "successCriteria": [
-        "WCAG2:labels-or-instructions"
+        "WCAG2:labels-or-instructions",
+        "WCAG2:name-role-value"
       ],
       "selector": "*[data-rule-target]",
       "expected": "failed",
-      "ruleId": "SC3-3-2-form-field-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2-form-field-has-name.html"
+      "ruleId": "SC3-3-2+SC4-1-2-form-field-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2+SC4-1-2-form-field-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2-form-field-has-name_inapplicable_example_1.html",
-      "relativeUrl": "assets/SC3-3-2-form-field-has-name_inapplicable_example_1.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2+SC4-1-2-form-field-has-name_inapplicable_example_1.html",
+      "relativeUrl": "assets/SC3-3-2+SC4-1-2-form-field-has-name_inapplicable_example_1.html",
       "successCriteria": [
-        "WCAG2:labels-or-instructions"
+        "WCAG2:labels-or-instructions",
+        "WCAG2:name-role-value"
       ],
       "selector": "body > :first-child",
       "expected": "inapplicable",
-      "ruleId": "SC3-3-2-form-field-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2-form-field-has-name.html"
+      "ruleId": "SC3-3-2+SC4-1-2-form-field-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2+SC4-1-2-form-field-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2-form-field-has-name_inapplicable_example_2.html",
-      "relativeUrl": "assets/SC3-3-2-form-field-has-name_inapplicable_example_2.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2+SC4-1-2-form-field-has-name_inapplicable_example_2.html",
+      "relativeUrl": "assets/SC3-3-2+SC4-1-2-form-field-has-name_inapplicable_example_2.html",
       "successCriteria": [
-        "WCAG2:labels-or-instructions"
+        "WCAG2:labels-or-instructions",
+        "WCAG2:name-role-value"
       ],
       "selector": "body > :first-child",
       "expected": "inapplicable",
-      "ruleId": "SC3-3-2-form-field-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2-form-field-has-name.html"
+      "ruleId": "SC3-3-2+SC4-1-2-form-field-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2+SC4-1-2-form-field-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2-form-field-has-name_inapplicable_example_3.html",
-      "relativeUrl": "assets/SC3-3-2-form-field-has-name_inapplicable_example_3.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2+SC4-1-2-form-field-has-name_inapplicable_example_3.html",
+      "relativeUrl": "assets/SC3-3-2+SC4-1-2-form-field-has-name_inapplicable_example_3.html",
       "successCriteria": [
-        "WCAG2:labels-or-instructions"
+        "WCAG2:labels-or-instructions",
+        "WCAG2:name-role-value"
       ],
       "selector": "body > :first-child",
       "expected": "inapplicable",
-      "ruleId": "SC3-3-2-form-field-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2-form-field-has-name.html"
+      "ruleId": "SC3-3-2+SC4-1-2-form-field-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2+SC4-1-2-form-field-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2-form-field-has-name_inapplicable_example_4.html",
-      "relativeUrl": "assets/SC3-3-2-form-field-has-name_inapplicable_example_4.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC3-3-2+SC4-1-2-form-field-has-name_inapplicable_example_4.html",
+      "relativeUrl": "assets/SC3-3-2+SC4-1-2-form-field-has-name_inapplicable_example_4.html",
       "successCriteria": [
-        "WCAG2:labels-or-instructions"
+        "WCAG2:labels-or-instructions",
+        "WCAG2:name-role-value"
       ],
       "selector": "body > :first-child",
       "expected": "inapplicable",
-      "ruleId": "SC3-3-2-form-field-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2-form-field-has-name.html"
+      "ruleId": "SC3-3-2+SC4-1-2-form-field-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2+SC4-1-2-form-field-has-name.html"
     },
     {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_1.html",
