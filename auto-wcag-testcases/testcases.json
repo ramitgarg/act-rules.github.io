@@ -2637,7 +2637,6 @@
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_1.html",
       "relativeUrl": "assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_1.html",
       "successCriteria": [
-        "WCAG2:parsing",
         "WCAG2:name-role-value"
       ],
       "selector": "body > :first-child",
@@ -2649,7 +2648,6 @@
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_2.html",
       "relativeUrl": "assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_2.html",
       "successCriteria": [
-        "WCAG2:parsing",
         "WCAG2:name-role-value"
       ],
       "selector": "body > :first-child",
@@ -2661,7 +2659,61 @@
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_3.html",
       "relativeUrl": "assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_3.html",
       "successCriteria": [
-        "WCAG2:parsing",
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-1+SC4-1-2-aria-allowed-attribute",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_4.html",
+      "relativeUrl": "assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_4.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-1+SC4-1-2-aria-allowed-attribute",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_5.html",
+      "relativeUrl": "assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_5.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-1+SC4-1-2-aria-allowed-attribute",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_6.html",
+      "relativeUrl": "assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_6.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-1+SC4-1-2-aria-allowed-attribute",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_7.html",
+      "relativeUrl": "assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_7.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-1+SC4-1-2-aria-allowed-attribute",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_8.html",
+      "relativeUrl": "assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_8.html",
+      "successCriteria": [
         "WCAG2:name-role-value"
       ],
       "selector": "body > :first-child",
@@ -2673,7 +2725,6 @@
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_failed_example_1.html",
       "relativeUrl": "assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_failed_example_1.html",
       "successCriteria": [
-        "WCAG2:parsing",
         "WCAG2:name-role-value"
       ],
       "selector": "body > :first-child",
@@ -2685,7 +2736,6 @@
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_failed_example_2.html",
       "relativeUrl": "assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_failed_example_2.html",
       "successCriteria": [
-        "WCAG2:parsing",
         "WCAG2:name-role-value"
       ],
       "selector": "body > :first-child",
@@ -2697,7 +2747,6 @@
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_inapplicable_example_1.html",
       "relativeUrl": "assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_inapplicable_example_1.html",
       "successCriteria": [
-        "WCAG2:parsing",
         "WCAG2:name-role-value"
       ],
       "selector": "body > :first-child",
