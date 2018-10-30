@@ -75,6 +75,9 @@
     "SC4-1-1-unique-id": [
       "List of rules to be mapped to test engine"
     ],
+    "SC4-1-2-aria-attr-valid": [
+      "List of rules to be mapped to test engine"
+    ],
     "SC4-1-2-aria-hidden-focus": [
       "List of rules to be mapped to test engine"
     ],
