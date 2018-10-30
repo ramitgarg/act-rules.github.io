@@ -3052,6 +3052,292 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-hidden-focus.html"
     },
     {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_1.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_1.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_2.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_2.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_3.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_3.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_4.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_4.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_5.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_5.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_6.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_6.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_7.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_7.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_8.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_8.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_9.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_9.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_10.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_10.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_11.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_11.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_1.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_1.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_2.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_2.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_3.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_3.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_4.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_4.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_5.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_5.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_6.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_6.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_7.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_7.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_8.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_8.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_9.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_9.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_10.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_failed_example_10.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_inapplicable_example_1.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_inapplicable_example_1.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_inapplicable_example_2.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_inapplicable_example_2.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_inapplicable_example_3.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_inapplicable_example_3.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_inapplicable_example_4.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_inapplicable_example_4.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_inapplicable_example_5.html",
+      "relativeUrl": "assets/SC4-1-2-aria-state-or-property-has-valid-value_inapplicable_example_5.html",
+      "successCriteria": [
+        "WCAG2:name-role-value"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-has-valid-value.html"
+    },
+    {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-button-has-name_passed_example_1.html",
       "relativeUrl": "assets/SC4-1-2-button-has-name_passed_example_1.html",
       "successCriteria": [
