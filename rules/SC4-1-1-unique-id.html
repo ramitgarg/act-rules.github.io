@@ -9,7 +9,7 @@
 	<!-- Resolve Page Title -->
 	
 	<title>
-		Rule: unique element id attributes Auto-WCAG Rules
+		Rule: Id attribute is unique Auto-WCAG Rules
 	</title>
 	<!-- Meta -->
 	<meta charset="utf-8">
@@ -150,7 +150,7 @@
 		<main class="container">
 			
 			<div class="page-header">
-				<h1>Rule: unique element id attributes</h1>
+				<h1>Rule: Id attribute is unique</h1>
 			</div>
 			
 			<p>
@@ -163,7 +163,7 @@
 
   <p>Last updated: 
 		<time 
-			datetime="2018-10-30T14:45:04+00:00" 
+			datetime="2018-10-30T15:31:42+00:00" 
 			itemprop="dateModified">
 			Oct 30, 2018
 		</time>
@@ -248,13 +248,13 @@
 
 <h3 id="applicability">Applicability</h3>
 
-<p>Any element that has an <code class="highlighter-rouge">id</code> attribute.</p>
+<p>Any <code class="highlighter-rouge">id</code> attribute specified on an HTML or SVG element.</p>
 
 <p><strong>Note:</strong> Elements that are neither <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a> nor <a href="#visible-on-the-page">visible on the page</a> are still considered for this rule.</p>
 
 <h3 id="expectation">Expectation</h3>
 
-<p>Each test target has an <code class="highlighter-rouge">id</code> attribute value that is unique within the <a href="#document-context">document context</a> of the element.</p>
+<p>The value of the attribute is unique across all other <code class="highlighter-rouge">id</code> attributes specified on HTML or SVG elements that exist within the same <a href="https://www.w3.org/TR/dom41/#document-trees">document tree</a> or <a href="https://www.w3.org/TR/dom41/#shadow-trees">shadow tree</a> as the element on which the applicable <code class="highlighter-rouge">id</code> attribute is specified.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
