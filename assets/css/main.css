@@ -56,6 +56,9 @@ pre {
     color: #f5f5f5 !important;
     border: 1px solid #004879; }
 
+.view-report-btn {
+  padding: 0; }
+
 .btn-cta {
   padding: 7px 15px;
   text-decoration: none; }
@@ -126,6 +129,8 @@ select {
         color: #f5f5f5;
         background-color: #0066ac; }
 
+.container .modal-dialog {
+  width: 85%; }
 .container.floating-header {
   transition: 0.5s all;
   position: fixed;
