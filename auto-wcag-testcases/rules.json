@@ -51,6 +51,9 @@
     "SC2-4-4-link-has-name": [
       "List of rules to be mapped to test engine"
     ],
+    "SC2-4-6-descriptive-labels": [
+      "List of rules to be mapped to test engine"
+    ],
     "SC2-5-3-label-content-name-mismatch": [
       "List of rules to be mapped to test engine"
     ],

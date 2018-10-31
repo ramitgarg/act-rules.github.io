@@ -1860,6 +1860,160 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-4-link-has-name.html"
     },
     {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-6-descriptive-labels_passed_example_1.html",
+      "relativeUrl": "assets/SC2-4-6-descriptive-labels_passed_example_1.html",
+      "successCriteria": [
+        "WCAG2:headings-and-labels"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC2-4-6-descriptive-labels",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-6-descriptive-labels.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-6-descriptive-labels_passed_example_2.html",
+      "relativeUrl": "assets/SC2-4-6-descriptive-labels_passed_example_2.html",
+      "successCriteria": [
+        "WCAG2:headings-and-labels"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC2-4-6-descriptive-labels",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-6-descriptive-labels.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-6-descriptive-labels_passed_example_3.html",
+      "relativeUrl": "assets/SC2-4-6-descriptive-labels_passed_example_3.html",
+      "successCriteria": [
+        "WCAG2:headings-and-labels"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC2-4-6-descriptive-labels",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-6-descriptive-labels.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-6-descriptive-labels_passed_example_4.html",
+      "relativeUrl": "assets/SC2-4-6-descriptive-labels_passed_example_4.html",
+      "successCriteria": [
+        "WCAG2:headings-and-labels"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC2-4-6-descriptive-labels",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-6-descriptive-labels.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-6-descriptive-labels_passed_example_5.html",
+      "relativeUrl": "assets/SC2-4-6-descriptive-labels_passed_example_5.html",
+      "successCriteria": [
+        "WCAG2:headings-and-labels"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC2-4-6-descriptive-labels",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-6-descriptive-labels.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-6-descriptive-labels_passed_example_6.html",
+      "relativeUrl": "assets/SC2-4-6-descriptive-labels_passed_example_6.html",
+      "successCriteria": [
+        "WCAG2:headings-and-labels"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC2-4-6-descriptive-labels",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-6-descriptive-labels.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-6-descriptive-labels_passed_example_7.html",
+      "relativeUrl": "assets/SC2-4-6-descriptive-labels_passed_example_7.html",
+      "successCriteria": [
+        "WCAG2:headings-and-labels"
+      ],
+      "selector": "body > :first-child",
+      "expected": "passed",
+      "ruleId": "SC2-4-6-descriptive-labels",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-6-descriptive-labels.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-6-descriptive-labels_failed_example_1.html",
+      "relativeUrl": "assets/SC2-4-6-descriptive-labels_failed_example_1.html",
+      "successCriteria": [
+        "WCAG2:headings-and-labels"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC2-4-6-descriptive-labels",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-6-descriptive-labels.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-6-descriptive-labels_failed_example_2.html",
+      "relativeUrl": "assets/SC2-4-6-descriptive-labels_failed_example_2.html",
+      "successCriteria": [
+        "WCAG2:headings-and-labels"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC2-4-6-descriptive-labels",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-6-descriptive-labels.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-6-descriptive-labels_failed_example_3.html",
+      "relativeUrl": "assets/SC2-4-6-descriptive-labels_failed_example_3.html",
+      "successCriteria": [
+        "WCAG2:headings-and-labels"
+      ],
+      "selector": "body > :first-child",
+      "expected": "failed",
+      "ruleId": "SC2-4-6-descriptive-labels",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-6-descriptive-labels.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-6-descriptive-labels_inapplicable_example_1.html",
+      "relativeUrl": "assets/SC2-4-6-descriptive-labels_inapplicable_example_1.html",
+      "successCriteria": [
+        "WCAG2:headings-and-labels"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC2-4-6-descriptive-labels",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-6-descriptive-labels.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-6-descriptive-labels_inapplicable_example_2.html",
+      "relativeUrl": "assets/SC2-4-6-descriptive-labels_inapplicable_example_2.html",
+      "successCriteria": [
+        "WCAG2:headings-and-labels"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC2-4-6-descriptive-labels",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-6-descriptive-labels.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-6-descriptive-labels_inapplicable_example_3.html",
+      "relativeUrl": "assets/SC2-4-6-descriptive-labels_inapplicable_example_3.html",
+      "successCriteria": [
+        "WCAG2:headings-and-labels"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC2-4-6-descriptive-labels",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-6-descriptive-labels.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-6-descriptive-labels_inapplicable_example_4.html",
+      "relativeUrl": "assets/SC2-4-6-descriptive-labels_inapplicable_example_4.html",
+      "successCriteria": [
+        "WCAG2:headings-and-labels"
+      ],
+      "selector": "body > :first-child",
+      "expected": "inapplicable",
+      "ruleId": "SC2-4-6-descriptive-labels",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-6-descriptive-labels.html"
+    },
+    {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-5-3-label-content-name-mismatch_passed_example_1.html",
       "relativeUrl": "assets/SC2-5-3-label-content-name-mismatch_passed_example_1.html",
       "successCriteria": [
