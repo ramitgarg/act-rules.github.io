@@ -163,9 +163,9 @@
 
   <p>Last updated: 
 		<time 
-			datetime="2018-11-12T08:51:22+00:00" 
+			datetime="2018-11-19T09:12:48+00:00" 
 			itemprop="dateModified">
-			Nov 12, 2018
+			Nov 19, 2018
 		</time>
 	</p>
 
@@ -277,7 +277,7 @@
 
 <h3 id="applicability">Applicability</h3>
 
-<p>The rule applies to any HTML element with the <a href="#semantic-role">semantic role</a> of <code class="highlighter-rouge">link</code> that is <a href="#visible-on-the-page">visible on the page</a>, <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a> or <a href="#focusable">focusable</a>.</p>
+<p>The rule applies to any HTML element with the <a href="#semantic-role">semantic role</a> of <code class="highlighter-rouge">link</code> that is <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
 
 <h3 id="expectation">Expectation</h3>
 
@@ -390,14 +390,6 @@
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC2-4-4-link-has-name_passed_example_9.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-4-4-link-has-name_passed_example_9.html"></iframe> </div></div>
-<h4 id="passed-example-10">Passed example 10</h4>
-
-<p>Link is not in accessibility tree.</p>
-
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;a</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">href=</span><span class="s">"http://www.w3.org/WAI"</span><span class="nt">&gt;</span> Web Accessibility Initiative (WAI) <span class="nt">&lt;/a&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC2-4-4-link-has-name_passed_example_10.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-4-4-link-has-name_passed_example_10.html"></iframe> </div></div>
 <h3 id="failed">Failed</h3>
 
 <h4 id="failed-example-1">Failed example 1</h4>
@@ -477,7 +469,7 @@
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC2-4-4-link-has-name_inapplicable_example_1.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-4-4-link-has-name_inapplicable_example_1.html"></iframe> </div></div>
 <h4 id="inapplicable-example-2">Inapplicable example 2</h4>
 
-<p>Not visible and not eposed to assistive technologies.</p>
+<p>Not included in the accessibility tree due to <code class="highlighter-rouge">display:none</code>.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.w3.org/WAI"</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;&lt;img</span> <span class="na">src=</span><span class="s">"#"</span> <span class="nt">/&gt;&lt;/a&gt;</span>
@@ -485,17 +477,24 @@
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC2-4-4-link-has-name_inapplicable_example_2.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-4-4-link-has-name_inapplicable_example_2.html"></iframe> </div></div>
 <h4 id="inapplicable-example-3">Inapplicable example 3</h4>
 
-<p>Non-visible link.</p>
+<p>Not included in the accessibility tree due to <code class="highlighter-rouge">visibility: hidden</code>.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"http://www.w3.org/WAI"</span> <span class="na">style=</span><span class="s">"visibility: hidden;"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/a&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC2-4-4-link-has-name_inapplicable_example_3.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-4-4-link-has-name_inapplicable_example_3.html"></iframe> </div></div>
+<h4 id="inapplicable-example-10">Inapplicable example 10</h4>
+
+<p>Not included in the accessibility tree due to <code class="highlighter-rouge">aria-hideden="true"</code>.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;a</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="na">href=</span><span class="s">"http://www.w3.org/WAI"</span><span class="nt">&gt;</span> Web Accessibility Initiative (WAI) <span class="nt">&lt;/a&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC2-4-4-link-has-name_inapplicable_example_4.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC2-4-4-link-has-name_inapplicable_example_4.html"></iframe> </div></div>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->
-<h2>Glossary</h2><div class='glossary-list container'><div class='definition-item'><h3><a id='focusable' href='/auto-wcag/pages/glossary/focusable.html'>Focusable</a></h3><p>Elements that can become the target of keyboard input as described in https://www.w3.org/TR/html/editing.html#focusable and https://www.w3.org/TR/html/editing.html#can-be-focused.</p>
-</div> <div class='definition-item'><h3><a id='included-in-the-accessibility-tree' href='/auto-wcag/pages/glossary/included-in-the-accessibility-tree.html'>Included in the accessibility tree</a></h3><p>Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.</p>
+<h2>Glossary</h2><div class='glossary-list container'><div class='definition-item'><h3><a id='included-in-the-accessibility-tree' href='/auto-wcag/pages/glossary/included-in-the-accessibility-tree.html'>Included in the accessibility tree</a></h3><p>Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.</p>
 
 <p>The general rules for when elements are included in the accessibility tree are defined in the <a href="https://www.w3.org/TR/core-aam/">core accessibility API mappings</a>. For native markup languages, such as HTML and SVG, additional rules for when elements are [included in the accessibility tree][] can be found in the <a href="https://www.w3.org/TR/html-aam/">HTML accessibility API mappings</a> and the <a href="https://www.w3.org/TR/svg-aam/">SVG accessibility API mappings</a>.</p>
 
@@ -520,11 +519,6 @@
 
 <p><strong>Note</strong>: For HTML elements the implicit roles are documented in <a href="https://www.w3.org/TR/html-aria/">ARIA in HTML</a>.</p>
 
-</div> <div class='definition-item'><h3><a id='visible-on-the-page' href='/auto-wcag/pages/glossary/visible-on-the-page.html'>Visible on the Page</a></h3><p>Elements should be visible on the page, and also meet the requirements for color contrast and visibility when focused. For more details, check out:</p>
-<ul>
-  <li><a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">https://www.w3.org/TR/WCAG20-TECHS/G18.html</a></li>
-  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html</a></li>
-</ul>
 </div> <div class='definition-item'><h3><a id='accessible-name' href='/auto-wcag/pages/glossary/accessible-name.html'>Accessible Name</a></h3><p>The programatically determined name of a user interface element that is included in the accessibility tree.</p>
 
 <p>The accessible name is calculated using the <a href="https://www.w3.org/TR/accname">accessible name and description computation</a>.</p>

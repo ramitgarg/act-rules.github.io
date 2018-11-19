@@ -917,12 +917,6 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-4-link-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-4-link-has-name_passed_example_10.html",
-      "expected": "passed",
-      "ruleId": "SC2-4-4-link-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-4-link-has-name.html"
-    },
-    {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-4-link-has-name_failed_example_1.html",
       "expected": "failed",
       "ruleId": "SC2-4-4-link-has-name",
@@ -984,6 +978,12 @@
     },
     {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-4-link-has-name_inapplicable_example_3.html",
+      "expected": "inapplicable",
+      "ruleId": "SC2-4-4-link-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-4-link-has-name.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC2-4-4-link-has-name_inapplicable_example_4.html",
       "expected": "inapplicable",
       "ruleId": "SC2-4-4-link-has-name",
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-4-link-has-name.html"
@@ -1637,6 +1637,66 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
     },
     {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1-unique-attrs_passed_example_1.html",
+      "expected": "passed",
+      "ruleId": "SC4-1-1-unique-attrs",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1-unique-attrs.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1-unique-attrs_passed_example_2.html",
+      "expected": "passed",
+      "ruleId": "SC4-1-1-unique-attrs",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1-unique-attrs.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1-unique-attrs_passed_example_3.html",
+      "expected": "passed",
+      "ruleId": "SC4-1-1-unique-attrs",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1-unique-attrs.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1-unique-attrs_passed_example_4.html",
+      "expected": "passed",
+      "ruleId": "SC4-1-1-unique-attrs",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1-unique-attrs.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1-unique-attrs_passed_example_5.html",
+      "expected": "passed",
+      "ruleId": "SC4-1-1-unique-attrs",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1-unique-attrs.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1-unique-attrs_failed_example_1.html",
+      "expected": "failed",
+      "ruleId": "SC4-1-1-unique-attrs",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1-unique-attrs.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1-unique-attrs_failed_example_2.html",
+      "expected": "failed",
+      "ruleId": "SC4-1-1-unique-attrs",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1-unique-attrs.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1-unique-attrs_failed_example_3.html",
+      "expected": "failed",
+      "ruleId": "SC4-1-1-unique-attrs",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1-unique-attrs.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1-unique-attrs_inapplicable_example_1.xml",
+      "expected": "inapplicable",
+      "ruleId": "SC4-1-1-unique-attrs",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1-unique-attrs.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1-unique-attrs_inapplicable_example_2.js",
+      "expected": "inapplicable",
+      "ruleId": "SC4-1-1-unique-attrs",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1-unique-attrs.html"
+    },
+    {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1-unique-id_passed_example_1.html",
       "expected": "passed",
       "ruleId": "SC4-1-1-unique-id",
@@ -2015,12 +2075,6 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-button-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-button-has-name_failed_example_4.html",
-      "expected": "failed",
-      "ruleId": "SC4-1-2-button-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-button-has-name.html"
-    },
-    {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-button-has-name_inapplicable_example_1.html",
       "expected": "inapplicable",
       "ruleId": "SC4-1-2-button-has-name",
@@ -2034,6 +2088,12 @@
     },
     {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-button-has-name_inapplicable_example_3.html",
+      "expected": "inapplicable",
+      "ruleId": "SC4-1-2-button-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-button-has-name.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-2-button-has-name_inapplicable_example_4.html",
       "expected": "inapplicable",
       "ruleId": "SC4-1-2-button-has-name",
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-button-has-name.html"
