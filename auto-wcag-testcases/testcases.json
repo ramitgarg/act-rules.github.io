@@ -23,6 +23,24 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-image-has-name.html"
     },
     {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-1-1-image-has-name_passed_example_4.html",
+      "expected": "passed",
+      "ruleId": "SC1-1-1-image-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-image-has-name.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-1-1-image-has-name_passed_example_5.html",
+      "expected": "passed",
+      "ruleId": "SC1-1-1-image-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-image-has-name.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-1-1-image-has-name_passed_example_6.html",
+      "expected": "passed",
+      "ruleId": "SC1-1-1-image-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-image-has-name.html"
+    },
+    {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-1-1-image-has-name_failed_example_1.html",
       "expected": "failed",
       "ruleId": "SC1-1-1-image-has-name",
@@ -41,7 +59,7 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-image-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-1-1-image-has-name_inapplicable_example_1.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-1-1-image-has-name_inapplicable_example_1.svg",
       "expected": "inapplicable",
       "ruleId": "SC1-1-1-image-has-name",
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-image-has-name.html"
@@ -54,12 +72,6 @@
     },
     {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-1-1-image-has-name_inapplicable_example_3.html",
-      "expected": "inapplicable",
-      "ruleId": "SC1-1-1-image-has-name",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-image-has-name.html"
-    },
-    {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-1-1-image-has-name_inapplicable_example_4.svg",
       "expected": "inapplicable",
       "ruleId": "SC1-1-1-image-has-name",
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-image-has-name.html"
