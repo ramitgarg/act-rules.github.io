@@ -1583,70 +1583,70 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC3-3-2+SC4-1-2-form-field-has-name.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_1.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_1.html",
       "expected": "passed",
-      "ruleId": "SC4-1-1+SC4-1-2-aria-allowed-attribute",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
+      "ruleId": "SC4-1-1+SC4-1-2-aria-state-or-property-allowed",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-state-or-property-allowed.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_2.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_2.html",
       "expected": "passed",
-      "ruleId": "SC4-1-1+SC4-1-2-aria-allowed-attribute",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
+      "ruleId": "SC4-1-1+SC4-1-2-aria-state-or-property-allowed",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-state-or-property-allowed.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_3.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_3.html",
       "expected": "passed",
-      "ruleId": "SC4-1-1+SC4-1-2-aria-allowed-attribute",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
+      "ruleId": "SC4-1-1+SC4-1-2-aria-state-or-property-allowed",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-state-or-property-allowed.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_4.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_4.html",
       "expected": "passed",
-      "ruleId": "SC4-1-1+SC4-1-2-aria-allowed-attribute",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
+      "ruleId": "SC4-1-1+SC4-1-2-aria-state-or-property-allowed",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-state-or-property-allowed.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_5.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_5.html",
       "expected": "passed",
-      "ruleId": "SC4-1-1+SC4-1-2-aria-allowed-attribute",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
+      "ruleId": "SC4-1-1+SC4-1-2-aria-state-or-property-allowed",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-state-or-property-allowed.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_6.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_6.html",
       "expected": "passed",
-      "ruleId": "SC4-1-1+SC4-1-2-aria-allowed-attribute",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
+      "ruleId": "SC4-1-1+SC4-1-2-aria-state-or-property-allowed",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-state-or-property-allowed.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_7.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_7.html",
       "expected": "passed",
-      "ruleId": "SC4-1-1+SC4-1-2-aria-allowed-attribute",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
+      "ruleId": "SC4-1-1+SC4-1-2-aria-state-or-property-allowed",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-state-or-property-allowed.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_passed_example_8.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_8.html",
       "expected": "passed",
-      "ruleId": "SC4-1-1+SC4-1-2-aria-allowed-attribute",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
+      "ruleId": "SC4-1-1+SC4-1-2-aria-state-or-property-allowed",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-state-or-property-allowed.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_failed_example_1.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_failed_example_1.html",
       "expected": "failed",
-      "ruleId": "SC4-1-1+SC4-1-2-aria-allowed-attribute",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
+      "ruleId": "SC4-1-1+SC4-1-2-aria-state-or-property-allowed",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-state-or-property-allowed.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_failed_example_2.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_failed_example_2.html",
       "expected": "failed",
-      "ruleId": "SC4-1-1+SC4-1-2-aria-allowed-attribute",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
+      "ruleId": "SC4-1-1+SC4-1-2-aria-state-or-property-allowed",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-state-or-property-allowed.html"
     },
     {
-      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-allowed-attribute_inapplicable_example_1.html",
+      "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_inapplicable_example_1.html",
       "expected": "inapplicable",
-      "ruleId": "SC4-1-1+SC4-1-2-aria-allowed-attribute",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-allowed-attribute.html"
+      "ruleId": "SC4-1-1+SC4-1-2-aria-state-or-property-allowed",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-1+SC4-1-2-aria-state-or-property-allowed.html"
     },
     {
       "url": "https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC4-1-1-unique-attrs_passed_example_1.html",

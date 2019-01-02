@@ -8,7 +8,7 @@
   <head>
     <!-- Resolve Page Title -->
     
-    <title>Rule: aria-hidden with focusable content Auto-WCAG Rules</title>
+    <title>Rule: ARIA state or property allowed Auto-WCAG Rules</title>
     <!-- Meta -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,7 +18,7 @@
     />
     <meta
       name="description"
-      content="Test Procedure"
+      content="Test procedure"
     />
     <meta name="author" content="" />
     <!-- TODO:FAVICON after branding -->
@@ -48,7 +48,7 @@
     />
     <link
       rel="canonical"
-      href="http://auto-wcag/github.io//auto-wcag/rules/SC4-1-2-aria-hidden-focus.html"
+      href="http://auto-wcag/github.io//auto-wcag/rules/SC4-1-1+SC4-1-2-aria-state-or-property-allowed.html"
     />
 
     <!-- Javascript -->
@@ -255,7 +255,7 @@
       <!-- Begin page content -->
       <main class="container">
         
-        <div class="page-header"><h1>Rule: aria-hidden with focusable content</h1></div>
+        <div class="page-header"><h1>Rule: ARIA state or property allowed</h1></div>
         
         <p>
 
@@ -280,8 +280,8 @@
       
         
         <li>  
-          <a href="https://github.com/wilcofiers">
-            Wilco Fiers
+          <a href="https://github.com/annethyme">
+            Anne Thyme Nørregaard
           </a>
         </li>
         
@@ -310,7 +310,7 @@
 
 
   <h2 id="description">Description</h2>
-  <p><p>This rule checks <code class="highlighter-rouge">aria-hidden</code> elements do not contain focusable elements</p>
+  <p><p>This rule checks that WAI-ARIA states or properties are allowed for the element they are specified on.</p>
 </p>
 
 
@@ -341,17 +341,17 @@
   </ul>
 
 
-<h2 id="test-procedure">Test Procedure</h2>
+<h2 id="test-procedure">Test procedure</h2>
 
 <h3 id="applicability">Applicability</h3>
 
-<p>The rule applies to any element with an <code class="highlighter-rouge">aria-hidden="true"</code> attribute.</p>
-
-<p><strong>Note</strong>: Using <code class="highlighter-rouge">aria-hidden="false"</code> on a decendent of an element with <code class="highlighter-rouge">aria-hidden="true"</code> <strong>does not</strong> expose that element. <code class="highlighter-rouge">aria-hidden="true"</code> hides itself and all its content from assistive technologies.</p>
+<p>Any <a href="https://www.w3.org/TR/wai-aria-1.1/#state_prop_def">WAI-ARIA state or property</a> that is specified on an HTML or SVG element.</p>
 
 <h3 id="expectation">Expectation</h3>
 
-<p>None of the target elements are <a href="#focusable">focusable</a>, nor do they contain a <a href="#focusable">focusable element</a>.</p>
+<p>The attribute is either an <a href="https://www.w3.org/TR/wai-aria/#inheritedattributes">inherited</a>, <a href="https://www.w3.org/TR/wai-aria/#supportedState">supported</a>, or <a href="https://www.w3.org/TR/wai-aria/#requiredState">required</a> <a href="https://www.w3.org/TR/wai-aria/#dfn-state">state</a> or <a href="https://www.w3.org/TR/wai-aria/#dfn-property">property</a> of the <a href="#semantic-role">semantic role</a> of the element on which the attribute is specified. If the element has no semantic role, the attribute must be a <a href="https://www.w3.org/TR/wai-aria-1.1/#global_states">global state or property</a>.</p>
+
+<p><strong>Note:</strong> Assessing the value of the attribute is out of scope for this rule.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
@@ -359,18 +359,16 @@
 
 <h2 id="accessibility-support">Accessibility support</h2>
 
-<p>There are no major accessibility support issues known for this rule.</p>
+<p><em>There are no major accessibility support issues known for this rule.</em></p>
 
 <h2 id="background">Background</h2>
 
-<p>By adding <code class="highlighter-rouge">aria-hidden="true"</code> to an element, content authors ensure that assistive technologies will ignore the element. This can be used to hide decorative parts of a web page, such as icon fonts - that are not meant to be read by assistive technologies.</p>
-
-<p>A focusable element with <code class="highlighter-rouge">aria-hidden="true"</code> is ignored as part of the reading order, but still part of the focus order, making it’s state of visible or hidden unclear.</p>
-
 <ul>
-  <li>https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html</li>
-  <li>https://www.w3.org/TR/wai-aria-1.1/#aria-hidden</li>
-  <li>https://www.w3.org/TR/html/editing.html#can-be-focused</li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/parsing.html">Understanding Success Criterion 4.1.1: Parsing</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/name-role-value.html">Understanding Success Criterion 4.1.2: Name, Role, Value
+</a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#states_and_properties">WAI-ARIA 1.1, Supported States and Properties</a></li>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/#global_states">WAI-ARIA 1.1, Global States and Properties</a></li>
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
@@ -379,125 +377,117 @@
 
 <h4 id="passed-example-1">Passed example 1</h4>
 
-<p>Content not focusable by default.</p>
+<p><code class="highlighter-rouge">aria-pressed</code> state is supported for role <code class="highlighter-rouge">button</code>.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;p</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-pressed=</span><span class="s">"false"</span><span class="nt">&gt;&lt;/div&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus_passed_example_1.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus_passed_example_1.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_1.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_1.html"></iframe> </div></div>
 <h4 id="passed-example-2">Passed example 2</h4>
 
-<p>Content hidden through CSS.</p>
+<p><code class="highlighter-rouge">aria-pressed</code> state is supported for <code class="highlighter-rouge">role=button</code> that is the implicit role for <code class="highlighter-rouge">button</code> element.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">style=</span><span class="s">"display:none"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;button</span> <span class="na">aria-pressed=</span><span class="s">"false"</span><span class="nt">&gt;&lt;/button&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus_passed_example_2.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus_passed_example_2.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_2.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_2.html"></iframe> </div></div>
 <h4 id="passed-example-3">Passed example 3</h4>
 
-<p>Content made unfocusable through tabindex.</p>
+<p>Global state that is supported by all base markup elements.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Some button<span class="nt">&lt;/button&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;&lt;/div&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus_passed_example_3.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus_passed_example_3.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_3.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_3.html"></iframe> </div></div>
 <h4 id="passed-example-4">Passed example 4</h4>
 
-<p>Content made unfocusable through disabled.</p>
+<p><code class="highlighter-rouge">aria-label</code> state is inherited for role <code class="highlighter-rouge">button</code></p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;input</span> <span class="na">disabled</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-label=</span><span class="s">"OK"</span><span class="nt">&gt;&lt;/div&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus_passed_example_4.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus_passed_example_4.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_4.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_4.html"></iframe> </div></div>
+<h4 id="passed-example-5">Passed example 5</h4>
+
+<p><code class="highlighter-rouge">aria-checked</code> state is required for role <code class="highlighter-rouge">aria-checkbox</code></p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"checkbox"</span> <span class="na">aria-checked=</span><span class="s">"false"</span><span class="nt">&gt;&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_5.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_5.html"></iframe> </div></div>
+<h4 id="passed-example-6">Passed example 6</h4>
+
+<p><code class="highlighter-rouge">aria-controls</code> property is supported for role <code class="highlighter-rouge">combobox</code></p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"combobox"</span> <span class="na">aria-controls=</span><span class="s">"id1"</span><span class="nt">&gt;&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_6.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_6.html"></iframe> </div></div>
+<h4 id="passed-example-7">Passed example 7</h4>
+
+<p>WAI-ARIA states and properties with empty value are also applicable to this rule</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"combobox"</span> <span class="na">aria-controls</span><span class="nt">&gt;&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_7.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_7.html"></iframe> </div></div>
+<h4 id="passed-example-8">Passed example 8</h4>
+
+<p>WAI-ARIA states and properties with empty value, specified as an empty string, are also applicable to this rule</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"combobox"</span> <span class="na">aria-controls=</span><span class="s">""</span><span class="nt">&gt;&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_8.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_passed_example_8.html"></iframe> </div></div>
 <h3 id="failed">Failed</h3>
 
 <h4 id="failed-example-1">Failed example 1</h4>
 
-<p>Focusable off screen link.</p>
+<p><code class="highlighter-rouge">aria-sort</code> property is neither inherited, supported, nor required for role <code class="highlighter-rouge">button</code>.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/"</span> <span class="na">style=</span><span class="s">"position:absolute; top:-999em"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-sort=</span><span class="s">""</span><span class="nt">&gt;&lt;/div&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus_failed_example_1.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus_failed_example_1.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_failed_example_1.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_failed_example_1.html"></iframe> </div></div>
 <h4 id="failed-example-2">Failed example 2</h4>
 
-<p>Focusable form field, incorrectly disabled.</p>
+<p><code class="highlighter-rouge">aria-sort</code> attribute is neither inherited, supported, nor required for <code class="highlighter-rouge">role=button</code> that is the implicit role for <code class="highlighter-rouge">button</code> element.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;input</span> <span class="na">aria-disabled=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;button</span> <span class="na">aria-sort=</span><span class="s">""</span><span class="nt">&gt;&lt;/button&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus_failed_example_2.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus_failed_example_2.html"></iframe> </div></div>
-<h4 id="failed-example-3">Failed example 3</h4>
-
-<p><code class="highlighter-rouge">aria-hidden=false</code> does not negate aria-hidden true.</p>
-
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"false"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Some button<span class="nt">&lt;/button&gt;</span>
-    <span class="nt">&lt;/div&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus_failed_example_3.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus_failed_example_3.html"></iframe> </div></div>
-<h4 id="failed-example-4">Failed example 4</h4>
-
-<p>Focusable content through <code class="highlighter-rouge">tabindex</code>.</p>
-
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;p</span> <span class="na">tabindex=</span><span class="s">"0"</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus_failed_example_4.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus_failed_example_4.html"></iframe> </div></div>
-<h4 id="failed-example-5">Failed example 5</h4>
-
-<p>Focusable summary element</p>
-
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;details</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;summary&gt;</span>Some button<span class="nt">&lt;/summary&gt;</span>
-    <span class="nt">&lt;p&gt;</span>Some details<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/details&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus_failed_example_5.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus_failed_example_5.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_failed_example_2.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_failed_example_2.html"></iframe> </div></div>
 <h3 id="inapplicable">Inapplicable</h3>
 
 <h4 id="inapplicable-example-1">Inapplicable example 1</h4>
 
-<p>Ignore <code class="highlighter-rouge">aria-hidden</code> with null value.</p>
+<p>No <a href="https://www.w3.org/TR/wai-aria-1.1/#state_prop_def">WAI-ARIA state or property</a>.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-1"</span> <span class="na">aria-hidden</span><span class="nt">&gt;</span>Some button<span class="nt">&lt;/button&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"region"</span><span class="nt">&gt;&lt;/div&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus_inapplicable_example_1.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus_inapplicable_example_1.html"></iframe> </div></div>
-<h4 id="inapplicable-example-2">Inapplicable example 2</h4>
-
-<p>Ignore <code class="highlighter-rouge">aria-hidden</code> false.</p>
-
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;p</span> <span class="na">aria-hidden=</span><span class="s">"false"</span><span class="nt">&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus_inapplicable_example_2.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus_inapplicable_example_2.html"></iframe> </div></div>
-<h4 id="inapplicable-example-3">Inapplicable example 3</h4>
-
-<p>Incorrect value of <code class="highlighter-rouge">aria-hidden</code>.</p>
-
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"yes"</span><span class="nt">&gt;</span>
-	<span class="nt">&lt;p&gt;</span>Some text<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;/div&gt;</span>
- </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-2-aria-hidden-focus_inapplicable_example_3.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-2-aria-hidden-focus_inapplicable_example_3.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_inapplicable_example_1.html">Open in a new tab/ window</a> </header> <iframe src="../_testcases-embeds/SC4-1-1+SC4-1-2-aria-state-or-property-allowed_inapplicable_example_1.html"></iframe> </div></div>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->
-<h2>Glossary</h2><div class='glossary-list container'><div class='definition-item'><h3><a id='focusable' href='/auto-wcag/pages/glossary/focusable.html'>Focusable</a></h3><p>Elements that can become the target of keyboard input as described in https://www.w3.org/TR/html/editing.html#focusable and https://www.w3.org/TR/html/editing.html#can-be-focused.</p>
+<h2>Glossary</h2><div class='glossary-list container'><div class='definition-item'><h3><a id='semantic-role' href='/auto-wcag/pages/glossary/semantic-role.html'>Semantic Role</a></h3><p>A semantic role is a semantic association that indicates an object’s type. This allows tools to present and support interaction with the object in a manner that is consistent with user expectations about other objects of that type.</p>
+
+<p><a href="https://www.w3.org/TR/wai-aria-1.1/#dfn-role">Roles</a> can be <a href="https://www.w3.org/TR/wai-aria/#implicit_semantics">implicit</a> through the element type or explicit through the <a href="https://www.w3.org/TR/html/dom.html#aria-role-attribute">role attribute</a>.</p>
+
+<p>The role attribute takes a list of tokens. The semantic role is the first valid role in this list. If none of the tokens are valid, the implicit role will be used instead.</p>
+
+<p>Non-abstract roles defined in the following specifications are considered valid:</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/wai-aria-1.1/">Accessible Rich Internet Applications (WAI-ARIA) 1.1</a></li>
+  <li><a href="https://www.w3.org/TR/dpub-aria-1.0/">Digital Publishing WAI-ARIA Module 1.0</a></li>
+  <li><a href="https://www.w3.org/TR/graphics-aria-1.0/">WAI-ARIA Graphics Module</a></li>
+</ul>
+
+<p>Other roles may be added as they become available. Not all roles will be supported in all assistive technologies. Testers are encouraged to adjust which roles are allowed according to the <a href="https://www.w3.org/TR/WCAG-EM/#step1c">accessibility support base line</a>. For the purposes of executing test cases in all rules, it should be assumed that all roles are supported by assistive technologies so that none of the roles fail due to lack of accessibility support.</p>
+
+<p><strong>Note</strong>: For HTML elements the implicit roles are documented in <a href="https://www.w3.org/TR/html-aria/">ARIA in HTML</a>.</p>
+
 </div></div>
 <!-- DO NOT DELETE ABOVE - This is used by a plugin to insert content -->
 
@@ -510,15 +500,12 @@
 			<li><p>DOM Tree</p>
 </li>
 		
-			<li><p>CSS Styling</p>
-</li>
-		
 		</ul>
 	
 
 	<h2 id="related-resources">Related Resources</h2>
 	<ul>
-		<li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC4-1-2-aria-hidden-focus">Known issues</a></li>
+		<li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC4-1-1+SC4-1-2-aria-state-or-property-allowed">Known issues</a></li>
 	</ul>
 </div></p>
       </main>
