@@ -6,13 +6,28 @@
     "SC1-1-1-image-has-name": [
       "List of rules to be mapped to test engine"
     ],
+    "SC1-2-1-audio-only-alternative": [
+      "List of rules to be mapped to test engine"
+    ],
+    "SC1-2-1-audio-transcript": [
+      "List of rules to be mapped to test engine"
+    ],
     "SC1-2-1-media-alternative-audio": [
       "List of rules to be mapped to test engine"
     ],
     "SC1-2-1-media-alternative-video": [
       "List of rules to be mapped to test engine"
     ],
-    "SC1-2-2-audio-captions": [
+    "SC1-2-1-video-only-alternative": [
+      "List of rules to be mapped to test engine"
+    ],
+    "SC1-2-1-video-only-audio-alternative": [
+      "List of rules to be mapped to test engine"
+    ],
+    "SC1-2-1-video-only-description-track": [
+      "List of rules to be mapped to test engine"
+    ],
+    "SC1-2-1-video-only-element-transcript": [
       "List of rules to be mapped to test engine"
     ],
     "SC1-2-2-video-has-audio-alternative": [

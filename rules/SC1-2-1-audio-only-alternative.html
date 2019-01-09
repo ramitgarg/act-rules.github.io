@@ -8,7 +8,7 @@
   <head>
     <!-- Resolve Page Title -->
     
-    <title>Rule: audio elements captions Auto-WCAG Rules</title>
+    <title>Rule: audio only has a text alternative Auto-WCAG Rules</title>
     <!-- Meta -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -48,7 +48,7 @@
     />
     <link
       rel="canonical"
-      href="http://auto-wcag/github.io//auto-wcag/rules/SC1-2-2-audio-captions.html"
+      href="http://auto-wcag/github.io//auto-wcag/rules/SC1-2-1-audio-only-alternative.html"
     />
 
     <!-- Javascript -->
@@ -260,7 +260,7 @@
       <!-- Begin page content -->
       <main class="container">
         
-        <div class="page-header"><h1>Rule: audio elements captions</h1></div>
+        <div class="page-header"><h1>Rule: audio only has a text alternative</h1></div>
         
         <p>
 
@@ -271,7 +271,7 @@
 
   <p>Last updated: 
 		<time 
-			datetime="2019-01-09T12:09:39+00:00" 
+			datetime="2019-01-09T12:34:42+00:00" 
 			itemprop="dateModified">
 			Jan 9, 2019
 		</time>
@@ -299,6 +299,18 @@
         </li>
         
       
+        
+        <li>
+          John Hicks
+        </li>
+        
+      
+        
+        <li>
+          Rafal Charlampozicz
+        </li>
+        
+      
     </ul>
   </p>
 
@@ -311,8 +323,8 @@
 			
         
         <li>
-          <a href="https://www.w3.org/TR/WCAG20/#media-equiv-captions">
-            1.2.2 (Captions (Prerecorded)) - (Level: A)
+          <a href="https://www.w3.org/TR/WCAG20/#media-equiv-av-only-alt">
+            1.2.1 (Audio-only and Video-only (Prerecorded)) - (Level: A)
           </a>
           
         </li>
@@ -323,7 +335,7 @@
 
 
   <h2 id="description">Description</h2>
-  <p><p>Non-streaming <code class="highlighter-rouge">audio</code> elements must have a text alternative or captions for all included auditory information.</p>
+  <p><p>This rule checks if audio only elements have a text alternative available</p>
 </p>
 
 
@@ -334,18 +346,18 @@
   
     
     <li>
-      <a href="https://www.w3.org/TR/WCAG20/#media-equiv-captions">
-        Success Criterion 1.2.2 (Captions (Prerecorded))
+      <a href="https://www.w3.org/TR/WCAG20/#media-equiv-av-only-alt">
+        Success Criterion 1.2.1 (Audio-only and Video-only (Prerecorded))
       </a>
       <ul>
         <li>
-					<a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-captions">
-          	How to Meet 1.2.2 (Captions (Prerecorded))
+					<a href="http://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-av-only-alt">
+          	How to Meet 1.2.1 (Audio-only and Video-only (Prerecorded))
 					</a>
 				</li>
         <li>
-					<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20//media-equiv-captions.html">
-          	Understanding Success Criterion 1.2.2 (Captions (Prerecorded))
+					<a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20//media-equiv-av-only-alt.html">
+          	Understanding Success Criterion 1.2.1 (Audio-only and Video-only (Prerecorded))
 					</a>
 				</li>
       </ul>
@@ -358,13 +370,22 @@
 
 <h3 id="applicability">Applicability</h3>
 
-<p>The rule applies to any <a href="#non-streaming-media-element">non-streaming</a> <code class="highlighter-rouge">audio</code> element that is playing or with a “play button”.</p>
+<p>The rule applies to any <a href="#non-streaming-media-element">non-streaming</a> <code class="highlighter-rouge">audio</code> element that is:</p>
+<ul>
+  <li>playing; or,</li>
+  <li>has a “play button” that is <a href="#visible">visibile</a> and <a href="#included-in-the-accessibility-tree">included-in-the-accessibility-tree</a>.</li>
+</ul>
 
-<p>A play button is an interactive element that when activated, plays the audio. The play button must be <a href="#visible-on-the-page">visible on the page</a> or <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
+<p><strong>Note:</strong> A play button is an interactive element that when activated, plays the audio.</p>
 
 <h3 id="expectation">Expectation</h3>
 
-<p>The auditory information of each test target is available through a caption, or through a <a href="#text-transcript">text transcript</a> that is available either on the page or through a link.</p>
+<p>For each test target, the outcome of at least one of the following rules is passed:</p>
+
+<ul>
+  <li><a href="https://auto-wcag.github.io/auto-wcag/rules/SC1-2-1-audio-transcript.html">Audio transcript</a></li>
+  <li><a href="https://auto-wcag.github.io/auto-wcag/rules/SC1-2-1-media-alternative-audio.html">Media alternative audio</a></li>
+</ul>
 
 <h2 id="assumptions">Assumptions</h2>
 
@@ -372,75 +393,60 @@
 
 <h2 id="accessibility-support">Accessibility support</h2>
 
-<p>While the HTML specifications allows the use of <code class="highlighter-rouge">track</code> elements inside of <code class="highlighter-rouge">audio</code> elements, there is currently limited to no support for this in major web browsers.</p>
+<p>There are no major accessibility support issues known for this rule.</p>
 
 <h2 id="background">Background</h2>
 
 <ul>
-  <li>https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html</li>
-  <li>https://www.w3.org/TR/WCAG20-TECHS/G158.html</li>
+  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html">Understanding SC 1.2.1:Audio-only and Video-only (Prerecorded)</a></li>
+  <li><a href="https://www.w3.org/TR/WCAG20-TECHS/G158.html">G158:Providing an alternative for time-based media for audio-only content</a></li>
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
 
 <h3 id="passed">Passed</h3>
 
-<h4 id="passed-example-1">Passed example 1</h4>
+<h4 id="pass-example-1">Pass example 1</h4>
 
 <p>Audio with controls and internal transcript</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
 <span class="nt">&lt;p&gt;</span>The above audio contains the following speech: We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.<span class="nt">&lt;/p&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_passed_example_1.html">Open in a new tab/ window</a> </header> <iframe src="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_passed_example_1.html"></iframe> </div></div>
-<h4 id="passed-example-2">Passed example 2</h4>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-1-audio-only-alternative_inapplicable_example_1.html">Open in a new tab/ window</a> </header> <iframe src="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-1-audio-only-alternative_inapplicable_example_1.html"></iframe> </div></div>
+<h4 id="pass-example-2">Pass example 2</h4>
 
-<p>Audio with controls and external transcript</p>
+<p>An audio element that describes some of the text on the same page. The text on the page labels the audio as an alternative.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/moon-audio/moon-speech-transcript.html"</span><span class="nt">&gt;</span>Transcript<span class="nt">&lt;/a&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;p&gt;</span>A part of a speech by John F. Kennedy: We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>You can also listen to the audio file below to hear the above part of the speech.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;audio</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_passed_example_2.html">Open in a new tab/ window</a> </header> <iframe src="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_passed_example_2.html"></iframe> </div></div>
-<h4 id="passed-example-3">Passed example 3</h4>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-1-audio-only-alternative_inapplicable_example_2.html">Open in a new tab/ window</a> </header> <iframe src="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-1-audio-only-alternative_inapplicable_example_2.html"></iframe> </div></div>
 
-<p>Audio with autoplay, external transcript, and with a text description on the page</p>
-
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span> <a style="float:right" target="_blank" href="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_passed_example_3.html">Open in a new tab/ window</a></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">autoplay</span><span class="nt">&gt;&lt;/audio&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/moon-audio/moon-speech-transcript.html"</span><span class="nt">&gt;</span>Transcript<span class="nt">&lt;/a&gt;</span>
- </code></pre></figure>
- </div></div>
 <h3 id="failed">Failed</h3>
 
-<h4 id="failed-example-1">Failed example 1</h4>
+<h4 id="fail-example-1">Fail example 1</h4>
 
 <p>Audio with controls and incorrect internal transcript</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
 <span class="nt">&lt;p&gt;</span>The above audio contains the following speech: We choose to go to the cheese in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.<span class="nt">&lt;/p&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_failed_example_1.html">Open in a new tab/ window</a> </header> <iframe src="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_failed_example_1.html"></iframe> </div></div>
-<h4 id="failed-example-2">Failed example 2</h4>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-1-audio-only-alternative_inapplicable_example_3.html">Open in a new tab/ window</a> </header> <iframe src="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-1-audio-only-alternative_inapplicable_example_3.html"></iframe> </div></div>
+<h4 id="fail-example-2">Fail example 2</h4>
 
-<p>Audio with controls and incorrect external transcript</p>
+<p>An audio element that describes some of the text on the same page. The text is not visible on the page.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/moon-audio/moon-speech-incorrect-transcript.html"</span><span class="nt">&gt;</span>Transcript<span class="nt">&lt;/a&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;p</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>A part of a speech by John F. Kennedy: We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>You can also listen to the audio file below to hear the above part of the speech.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;audio</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span><span class="nt">&gt;&lt;/audio&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_failed_example_2.html">Open in a new tab/ window</a> </header> <iframe src="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_failed_example_2.html"></iframe> </div></div>
-<h4 id="failed-example-3">Failed example 3</h4>
-
-<p>Audio with autoplay and incorrect external transcript</p>
-
-<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span> <a style="float:right" target="_blank" href="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_failed_example_3.html">Open in a new tab/ window</a></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">autoplay</span><span class="nt">&gt;&lt;/audio&gt;</span>
-<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/moon-audio/moon-speech-incorrect-transcript.html"</span><span class="nt">&gt;</span>Transcript<span class="nt">&lt;/a&gt;</span>
- </code></pre></figure>
- </div></div>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-1-audio-only-alternative_inapplicable_example_4.html">Open in a new tab/ window</a> </header> <iframe src="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-1-audio-only-alternative_inapplicable_example_4.html"></iframe> </div></div>
 <h3 id="inapplicable">Inapplicable</h3>
 
 <h4 id="inapplicable-example-1">Inapplicable example 1</h4>
@@ -450,15 +456,17 @@
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span><span class="nt">&gt;&lt;/audio&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_inapplicable_example_1.html">Open in a new tab/ window</a> </header> <iframe src="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_inapplicable_example_1.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-1-audio-only-alternative_inapplicable_example_5.html">Open in a new tab/ window</a> </header> <iframe src="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-1-audio-only-alternative_inapplicable_example_5.html"></iframe> </div></div>
 <h4 id="inapplicable-example-2">Inapplicable example 2</h4>
 
-<p>Audio with hidden controls.</p>
+<p>An audio element that describes some of the text on the same page. The text on the page labels the audio as an alternative but the controls are not visible on the page.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
-<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;&lt;/audio&gt;</span>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;p&gt;</span>A part of a speech by John F. Kennedy: We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;p&gt;</span>You can also listen to the audio file below to hear the above part of the speech.<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;audio</span> <span class="na">data-rule-target</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="na">controls</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span> <span class="nt">&lt;/audio&gt;</span>
  </code></pre></figure>
- </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_inapplicable_example_2.html">Open in a new tab/ window</a> </header> <iframe src="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-2-audio-captions_inapplicable_example_2.html"></iframe> </div></div>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-1-audio-only-alternative_inapplicable_example_6.html">Open in a new tab/ window</a> </header> <iframe src="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-1-audio-only-alternative_inapplicable_example_6.html"></iframe> </div></div>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->
@@ -470,11 +478,6 @@
 <blockquote>
   <p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="highlighter-rouge">aria-hidden</code> attribute with a value of <code class="highlighter-rouge">true</code>. Such an element could still be interacted with using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.</p>
 </blockquote>
-</div> <div class='definition-item'><h3><a id='visible-on-the-page' href='/auto-wcag/pages/glossary/visible-on-the-page.html'>Visible on the Page</a></h3><p>Elements should be visible on the page, and also meet the requirements for color contrast and visibility when focused. For more details, check out:</p>
-<ul>
-  <li><a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">https://www.w3.org/TR/WCAG20-TECHS/G18.html</a></li>
-  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html</a></li>
-</ul>
 </div> <div class='definition-item'><h3><a id='visible' href='/auto-wcag/pages/glossary/visible.html'>Visible</a></h3><p>Content perceivable through sight.</p>
 
 <p>Content is considered visible if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.</p>
@@ -485,25 +488,10 @@
 
 <div>
 	
-		<h2 id="test-aspects">Test Aspects</h2>
-		Test aspects are defined as part of the <a href="https://w3c.github.io/wcag-act/act-rules-format.html#input-aspects-common">ACT Rules format 1.0</a>.
-		<ul>
-		
-			<li><p>DOM Tree</p>
-</li>
-		
-			<li><p>CSS Styling</p>
-</li>
-		
-			<li><p>Audio output</p>
-</li>
-		
-		</ul>
-	
 
 	<h2 id="related-resources">Related Resources</h2>
 	<ul>
-		<li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC1-2-2-audio-captions">Known issues</a></li>
+		<li><a href="https://github.com/auto-wcag/auto-wcag/issues?q=is%3Aopen+is%3Aissue+SC1-2-1-audio-only-alternative">Known issues</a></li>
 	</ul>
 </div></p>
       </main>

@@ -271,7 +271,7 @@
 
   <p>Last updated: 
 		<time 
-			datetime="2019-01-09T12:09:39+00:00" 
+			datetime="2019-01-09T12:34:42+00:00" 
 			itemprop="dateModified">
 			Jan 9, 2019
 		</time>
@@ -318,21 +318,23 @@
 
 <h3 id="applicability">Applicability</h3>
 
-<p>The rule applies to any <a href="#non-streaming-media-element">non-streaming</a> <code class="highlighter-rouge">audio</code> element that is playing or with a “play button”.</p>
+<p>The rule applies to any <a href="#non-streaming-media-element">non-streaming</a> <code class="highlighter-rouge">audio</code> element that is:</p>
+<ul>
+  <li>playing; or,</li>
+  <li>has a “play button” that is <a href="#visible">visibile</a> and <a href="#included-in-the-accessibility-tree">included-in-the-accessibility-tree</a>.</li>
+</ul>
 
-<p>A play button is an interactive element that when activated, plays the audio. The play button must be ]visibile on the page](#visible-on-the-page) or <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a></p>
+<p><strong>Note:</strong> A play button is an interactive element that when activated, plays the audio.</p>
 
 <h3 id="expectation-1">Expectation 1</h3>
 
-<p>The auditory information of each test target is available as text (directly or via text alternatives) that is <a href="#visible-on-the-page">visible on the page</a> and <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
+<p>The auditory information of each test target is available as text (directly or via text alternatives) that is <a href="#visible">visible</a> and <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
 
 <h3 id="expectation-2">Expectation 2</h3>
 
-<p>Each target element has a label indicating the <code class="highlighter-rouge">audio</code> is an alternative to text on the page.</p>
+<p>Each target element is labelled as an audio alternative for text on the page. This label is <a href="#visible">visible</a> and <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
 
-<h3 id="expectation-3">Expectation 3</h3>
-
-<p>The label (from expectation 2) is <a href="#visible-on-the-page">visible on the page</a> and <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a></p>
+<p><strong>Note:</strong> The term label does not refer to the <code class="highlighter-rouge">label</code> element.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
@@ -345,7 +347,7 @@
 <h2 id="background">Background</h2>
 
 <ul>
-  <li></li>
+  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html">Understanding SC 1.2.1:Audio-only and Video-only (Prerecorded)</a></li>
 </ul>
 
 <h2 id="test-cases">Test cases</h2>
@@ -422,7 +424,8 @@
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;p&gt;</span>A part of a speech by John F. Kennedy: We choose to go to the moon in this decade and do the other things, not because they are easy, but because they are hard, because that goal will serve to organize and measure the best of our energies and skills, because that challenge is one that we are willing to accept, one we are unwilling to postpone, and one which we intend to win, and the others, too.<span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;p&gt;</span>You can also listen to the audio file below to hear the above part of the speech.<span class="nt">&lt;/p&gt;</span>
-<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span> <span class="nt">&gt;</span> <span class="nt">&lt;/audio&gt;</span>
+
+<span class="nt">&lt;audio</span> <span class="na">src=</span><span class="s">"../test-assets/moon-audio/moon-speech.mp3"</span><span class="nt">&gt;</span> <span class="nt">&lt;/audio&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-1-media-alternative-audio_inapplicable_example_2.html">Open in a new tab/ window</a> </header> <iframe src="https://auto-wcag.github.io/auto-wcag/auto-wcag-testcases/assets/SC1-2-1-media-alternative-audio_inapplicable_example_2.html"></iframe> </div></div>
 
@@ -436,11 +439,6 @@
 <blockquote>
   <p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="highlighter-rouge">aria-hidden</code> attribute with a value of <code class="highlighter-rouge">true</code>. Such an element could still be interacted with using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.</p>
 </blockquote>
-</div> <div class='definition-item'><h3><a id='visible-on-the-page' href='/auto-wcag/pages/glossary/visible-on-the-page.html'>Visible on the Page</a></h3><p>Elements should be visible on the page, and also meet the requirements for color contrast and visibility when focused. For more details, check out:</p>
-<ul>
-  <li><a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">https://www.w3.org/TR/WCAG20-TECHS/G18.html</a></li>
-  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html</a></li>
-</ul>
 </div> <div class='definition-item'><h3><a id='visible' href='/auto-wcag/pages/glossary/visible.html'>Visible</a></h3><p>Content perceivable through sight.</p>
 
 <p>Content is considered visible if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.</p>

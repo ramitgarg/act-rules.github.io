@@ -271,7 +271,7 @@
 
   <p>Last updated: 
 		<time 
-			datetime="2019-01-09T12:09:39+00:00" 
+			datetime="2019-01-09T12:34:42+00:00" 
 			itemprop="dateModified">
 			Jan 9, 2019
 		</time>
@@ -318,23 +318,21 @@
 
 <h3 id="applicability">Applicability</h3>
 
-<p>The rule applies to any [non-streaming][] <code class="highlighter-rouge">video</code> element that is <a href="#visible-on-the-page">visible on the page</a>, where the video doesn’t contains audio.</p>
+<p>The rule applies to any <a href="#non-streaming">non-streaming</a> <code class="highlighter-rouge">video</code> element that is <a href="#visible">visible</a>, where the video doesn’t contain audio.</p>
 
 <h3 id="expectation-1">Expectation 1</h3>
 
-<p>All the information contained in each target element is available as text (directly or via text alternatives) that is <a href="#visible-on-the-page">visible on the page</a> and <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
+<p>All the information contained in each target element is available as text (directly or via text alternatives) that is <a href="#visible">visible</a> and <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
 
 <h3 id="expectation-2">Expectation 2</h3>
 
-<p>Each target element has a label indicating the <code class="highlighter-rouge">video</code> is an alternative to text on the page.</p>
+<p>Each target element is labelled as a video alternative for text on the page. This label is <a href="#visible">visible</a> and <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a>.</p>
 
-<h3 id="expectation-3">Expectation 3</h3>
-
-<p>The label (from expectation 2) is <a href="#visible-on-the-page">visible on the page</a> and <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a></p>
+<p><strong>Note:</strong> The term label does not refer to the <code class="highlighter-rouge">label</code> element.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
-<p>This rule assumes that a mechanism is available to start the video and that the video element is not simply used to display the poster.</p>
+<p>This rule assumes that a mechanism is available to start the video and that the video element is not simply used to display the <a href="https://www.w3.org/TR/html5/semantics-embedded-content.html#element-attrdef-video-poster">poster</a>.</p>
 
 <h2 id="accessibility-support">Accessibility support</h2>
 
@@ -343,7 +341,7 @@
 <h2 id="background">Background</h2>
 
 <ul>
-  <li></li>
+  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-av-only-alt.html">Understanding SC 1.2.1:Audio-only and Video-only (Prerecorded)</a></li>
 </ul>
 
 <h2 id="test-cases">Test cases</h2>
@@ -454,12 +452,7 @@
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->
-<h2>Glossary</h2><div class='glossary-list container'><div class='definition-item'><h3><a id='visible-on-the-page' href='/auto-wcag/pages/glossary/visible-on-the-page.html'>Visible on the Page</a></h3><p>Elements should be visible on the page, and also meet the requirements for color contrast and visibility when focused. For more details, check out:</p>
-<ul>
-  <li><a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">https://www.w3.org/TR/WCAG20-TECHS/G18.html</a></li>
-  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html</a></li>
-</ul>
-</div> <div class='definition-item'><h3><a id='visible' href='/auto-wcag/pages/glossary/visible.html'>Visible</a></h3><p>Content perceivable through sight.</p>
+<h2>Glossary</h2><div class='glossary-list container'><div class='definition-item'><h3><a id='visible' href='/auto-wcag/pages/glossary/visible.html'>Visible</a></h3><p>Content perceivable through sight.</p>
 
 <p>Content is considered visible if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.</p>
 
