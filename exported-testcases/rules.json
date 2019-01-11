@@ -1,8 +1,8 @@
 {
-  "name": "auto-wcag rules",
+  "name": "WCAG-ACT-RULES-CG rules",
   "website": "https://auto-wcag.github.io/auto-wcag/rules.html",
-  "description": "List of rules in auto wcag which can be mapped against testing engine via test runner",
-  "a11y-rules": {
+  "description": "List of rules in which can be mapped against testing engine via test runner",
+  "rules": {
     "SC1-1-1-image-has-name": [
       "List of rules to be mapped to test engine"
     ],

@@ -8,7 +8,7 @@
   <head>
     <!-- Resolve Page Title -->
     
-    <title>Auto-WCAG Rule Template Auto-WCAG Rules</title>
+    <title>Rule Template Auto WCAG Rules</title>
     <!-- Meta -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,7 +18,7 @@
     />
     <meta
       name="description"
-      content="Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.
+      content="Accessibility conformance testing rules for HTML.
 "
     />
     <meta name="author" content="" />
@@ -45,11 +45,11 @@
     />
     <link
       rel="stylesheet"
-      href="/auto-wcag/assets/css/main.css"
+      href="/assets/css/main.css"
     />
     <link
       rel="canonical"
-      href="http://auto-wcag/github.io//auto-wcag/pages/design/rule-template.html"
+      href="/pages/design/rule-template.html"
     />
 
     <!-- Javascript -->
@@ -85,11 +85,11 @@
     ></script>
     <script
       type="text/javascript"
-      src="/auto-wcag/assets/js/jquery.stickyelement.js"
+      src="/assets/js/jquery.stickyelement.js"
     ></script>
     <script
       type="text/javascript"
-      src="/auto-wcag/assets/js/default.js"
+      src="/assets/js/default.js"
     ></script>
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -117,22 +117,22 @@
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/auto-wcag/">
-              Auto-WCAG
+            <a class="navbar-brand" href="/">
+              Auto WCAG Rules
             </a>
           </div>
           <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav mr-auto">
               <!-- Rules -->
               <li>
-                <a href="/auto-wcag/pages/rules.html"
+                <a href="/pages/rules.html"
                   >Rules</a
                 >
               </li>
 
               <!-- Glossary -->
               <li>
-                <a href="/auto-wcag/pages/glossary/"
+                <a href="/pages/glossary/"
                   >Glossary</a
                 >
               </li>
@@ -140,7 +140,7 @@
               <!-- Implementations -->
               <li>
                 <a
-                  href="/auto-wcag/pages/implementations.html"
+                  href="/pages/implementations.html"
                   >Implementations</a
                 >
               </li>
@@ -160,28 +160,28 @@
                 <ul class="dropdown-menu">
                   <li>
                     <a
-                      href="/auto-wcag/pages/design/rule-design.html"
+                      href="/pages/design/rule-design.html"
                     >
                       Rule design
                     </a>
                   </li>
                   <li>
                     <a
-                      href="/auto-wcag/pages/design/review.html"
+                      href="/pages/design/review.html"
                     >
                       Review process
                     </a>
                   </li>
                   <li>
                     <a
-                      href="/auto-wcag/pages/design/rule-template.html"
+                      href="/pages/design/rule-template.html"
                     >
                       Rule template
                     </a>
                   </li>
                   <li>
                     <a
-                      href="/auto-wcag/pages/design/style-guide.html"
+                      href="/pages/design/style-guide.html"
                     >
                       Style guide
                     </a>
@@ -204,25 +204,25 @@
                 <ul class="dropdown-menu">
                   <li>
                     <a
-                      href="/auto-wcag/pages/structure/terminology.html"
+                      href="/pages/structure/terminology.html"
                       >Terminology</a
                     >
                   </li>
                   <li>
                     <a
-                      href="/auto-wcag/pages/structure/test-modes.html"
+                      href="/pages/structure/test-modes.html"
                       >Test modes</a
                     >
                   </li>
                   <li>
                     <a
-                      href="/auto-wcag/pages/structure/aggregation.html"
+                      href="/pages/structure/aggregation.html"
                       >Result aggregation</a
                     >
                   </li>
                   <li>
                     <a
-                      href="/auto-wcag/pages/structure/accessibility-support.html"
+                      href="/pages/structure/accessibility-support.html"
                       >Accessibility support</a
                     >
                   </li>
@@ -236,7 +236,7 @@
 
               <!-- About Us -->
               <li>
-                <a href="/auto-wcag/pages/about.html"
+                <a href="/pages/about.html"
                   >About Us</a
                 >
               </li>
@@ -246,9 +246,8 @@
               <!-- Github -->
               <li class="dropdown">
                 <a
-                  href="https://github.com/auto-wcag/auto-wcag/"
-                  role="link"
-                >
+                  href="https://github.com/auto-wcag/auto-wcag.git"
+                  role="link">
                   <i class="fab fa-github scale-2x"></i>
                 </a>
               </li>
@@ -261,11 +260,11 @@
       <!-- Begin page content -->
       <main class="container">
         
-        <div class="page-header"><h1>Auto-WCAG Rule Template</h1></div>
+        <div class="page-header"><h1>Rule Template</h1></div>
         
         <p><p>The rule template contains a plain language description of the rule, some background information, and a list of all assumptions. The test procedure is defined by the selector, a number of steps and a description of the possible outcomes.</p>
 
-<p>Use the <a href="atomic-template-empty.html">empty atomic rule template</a> to create new auto-wcag rule. When creating a new rule, first read <a href="rule-design.html">rule design</a>.</p>
+<p>Use the <a href="atomic-template-empty.html">empty atomic rule template</a> to create new rule. When creating a new rule, first read <a href="rule-design.html">rule design</a>.</p>
 
 <div class="language-markdown highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
 <span class="na">name</span><span class="pi">:</span> <span class="s">Short descriptive name</span>
@@ -315,7 +314,7 @@ Support for XXX is known to be limited in some assistive technologies. If any of
 <span class="p">-</span> Latest version: Techniques for WCAG 2.0 W3C Working Group Note 8 April 2014
 <span class="p">-</span> Link to other methodologies, test specifications or tools
 <span class="p">-</span> Links to test cases, test suites, unit tests, etc.
-<span class="p">-</span> The WCAG 2.0 Techniques already contain examples and code snippets to illustrate which content passes or fails the test. Whenever possible auto-wcag refers to those. Another source for test cases is the W3C Before and After Demonstration.
+<span class="p">-</span> The WCAG 2.0 Techniques already contain examples and code snippets to illustrate which content passes or fails the test. Whenever possible Auto WCAG Rules refers to those. Another source for test cases is the W3C Before and After Demonstration.
 <span class="p">-</span> Other references
 
 <span class="gu">## Test Cases</span>
@@ -382,7 +381,7 @@ Briefly describe why the html code snippet is inapplicable
                   <h3 class="promo-title">Contribute</h3>
                   <br />
                   <a
-                    href="https://github.com/auto-wcag/auto-wcag/"
+                    href="https://github.com/auto-wcag/auto-wcag.git"
                     role="link"
                     class="desc"
                   >
@@ -391,7 +390,7 @@ Briefly describe why the html code snippet is inapplicable
                   <br /><br /><br /><br />
                   <a
                     class="btn btn-cta"
-                    href="https://github.com/auto-wcag/auto-wcag/"
+                    href="https://github.com/auto-wcag/auto-wcag.git"
                   >
                     GitHub
                   </a>
@@ -404,23 +403,23 @@ Briefly describe why the html code snippet is inapplicable
                     <p>
                       Contributing is open to anyone. We welcome any
                       new issues or pull requests for changes.
-                      Auto-WCAG has conference calls every 4 weeks. If
+                      Auto WCAG Rules has conference calls every 4 weeks. If
                       you are interested in becoming an active
                       contributor or reviewer, we ask that you join
-                      the Auto-WCAG community group through the W3C
+                      the Auto WCAG Rules community group through the W3C
                       Website. This requires setting up a W3C account,
                       may require approval by the organization you
                       work for if they are a W3C member.
                     </p>
                     <a
                       class="btn btn-cta"
-                      href="/auto-wcag/pages/contribute.html"
-                      >Learn more about contributing to Auto-WCAG</a
+                      href="/pages/contribute.html"
+                      >Learn more about contributing to Auto WCAG Rules</a
                     >
                     <a
                       class="btn btn-cta"
                       href="https://www.w3.org/community/wp-login.php?redirect_to=%2Fcommunity%2Fauto-wcag%2Fjoin"
-                      >Join the Auto-WcAG community group now!</a
+                      >Join the Auto WCAG Rules community group now!</a
                     >
                   </div>
                   <!--//desc-->
@@ -436,8 +435,8 @@ Briefly describe why the html code snippet is inapplicable
       <footer class="footer">
         <div class="container">
           <small>
-            Auto-WCAG Rules |
-            <a class="right" href="/auto-wcag/license.html"
+            Auto WCAG Rules |
+            <a class="right" href="/license.html"
               >License</a
             >
           </small>
