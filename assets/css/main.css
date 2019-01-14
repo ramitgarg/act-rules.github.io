@@ -133,6 +133,11 @@ select {
         color: #f5f5f5;
         background-color: #0066ac; }
 
+.container .page-header {
+  font-weight: bold;
+  text-transform: capitalize; }
+.container .padding-15 {
+  padding: 15px; }
 .container .modal-dialog {
   width: 85%; }
 .container.floating-header {
