@@ -98,6 +98,10 @@ select {
   /* for mobile safari */
   -webkit-appearance: none; }
 
+.dropdown-toggle:focus {
+  outline: 5px auto rgba(255, 255, 255, 0.65);
+  outline-offset: -2px; }
+
 .navbar {
   border-radius: 0;
   background-color: #005792;
