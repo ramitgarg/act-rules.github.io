@@ -36,10 +36,19 @@
     "SC1-2-2-video-has-captions": [
       "List of rules to be mapped to test engine"
     ],
+    "SC1-2-3-video-alternative": [
+      "List of rules to be mapped to test engine"
+    ],
+    "SC1-2-5-video-audio-alternative": [
+      "List of rules to be mapped to test engine"
+    ],
     "SC1-2-Video-description-track": [
       "List of rules to be mapped to test engine"
     ],
     "SC1-2-video-audio-description": [
+      "List of rules to be mapped to test engine"
+    ],
+    "SC1-2-video-media-alternative": [
       "List of rules to be mapped to test engine"
     ],
     "SC1-2-video-transcript": [

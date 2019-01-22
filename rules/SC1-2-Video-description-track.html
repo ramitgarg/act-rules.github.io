@@ -177,8 +177,8 @@
   
   <p>
     <i>Last updated:</i>
-    <time datetime="2018-10-09T08:45:27+00:00" itemprop="dateModified">
-      Oct 9, 2018
+    <time datetime="2019-01-22T09:22:32+00:00" itemprop="dateModified">
+      Jan 22, 2019
     </time>
   </p>
   
@@ -230,7 +230,7 @@
 
 <h3 id="applicability">Applicability</h3>
 
-<p>The rule applies to any <a href="#non-streaming">non-streaming</a> <code class="highlighter-rouge">video</code> element <a href="#visible-on-the-page">visible on the page</a> where the video contains audio and a <code class="highlighter-rouge">track</code> element with a <code class="highlighter-rouge">kind="descriptions"</code> attribute.</p>
+<p>The rule applies to every <a href="#non-streaming">non-streaming</a> <code class="highlighter-rouge">video</code> element that is <a href="#visible">visible</a> where the video contains audio and a <code class="highlighter-rouge">track</code> element with a <code class="highlighter-rouge">kind="descriptions"</code> attribute.</p>
 
 <h3 id="expectation">Expectation</h3>
 
@@ -240,26 +240,26 @@
 
 <h2 id="assumptions">Assumptions</h2>
 
-<p>This rule assumes that a mechanism is available to start the video and that the video element is not simply used to display the poster.</p>
+<p>This rule assumes that a mechanism is available to start the video and that the video element is not simply used to display the <a href="https://www.w3.org/TR/html5/semantics-embedded-content.html#element-attrdef-video-poster">poster</a>.</p>
 
 <h2 id="accessibility-support">Accessibility support</h2>
 
-<p>Currently the description track is not supported by most assistive technology. Accessibility support for the description track attribute is relativly low to non-existent. Video players may be able to work around the lack of support for the discription track by using aria-live but few do this today.</p>
+<p>Currently the description track is not supported by most assistive technology. Accessibility support for the description track attribute is relativly low to non-existent. Video players may be able to work around the lack of support for the description track by using aria-live but few do this today.</p>
 
-<p>This means that the rule can only provide a pass for these succescriteria if accessistive technology support the description track or if the video player that is used has implemented such a work around.</p>
+<p>This means that the rule can only provide a pass for these succes criteria if assistive technology support the description track or if the video player that is used has implemented such a work around.</p>
 
 <h2 id="background">Background</h2>
 
 <ul>
-  <li>http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html</li>
-  <li>http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html</li>
-  <li>https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G78</li>
-  <li>https://www.w3.org/WAI/GL/2016/WD-WCAG20-TECHS-20160105/H96</li>
+  <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html">Understanding Success Criterion 1.2.3: Audio Description or Media Alternative (Prerecorded)</a></li>
+  <li><a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc-only.html">Understanding Success Criterion 1.2.5: Audio Description (Prerecorded)</a></li>
+  <li><a href="https://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20161007/G78">G78:Providing a second, user-selectable, audio track that includes audio descriptions</a></li>
+  <li><a href="https://www.w3.org/WAI/GL/2016/WD-WCAG20-TECHS-20160105/H96">H96:Using the track element to provide audio descriptions</a></li>
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
 
-<h2 id="passed">Passed</h2>
+<h3 id="passed">Passed</h3>
 
 <h4 id="passed-example-1">Passed example 1</h4>
 
@@ -267,13 +267,13 @@
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
-  <span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"descriptions"</span> <span class="na">src=</span><span class="s">"rabbit-video-descriptions.vtt"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"descriptions"</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/descriptions.vtt"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC1-2-Video-description-track_passed_example_1.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC1-2-Video-description-track_passed_example_1.html"></iframe> </div></div>
-<h2 id="failed">Failed</h2>
+<h3 id="failed">Failed</h3>
 
 <h4 id="failed-example-1">Failed example 1</h4>
 
@@ -281,13 +281,13 @@
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
-  <span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"descriptions"</span> <span class="na">src=</span><span class="s">"rabbit-video-incorrect-descriptions.vtt"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"descriptions"</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/incorrect-descriptions.vtt"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC1-2-Video-description-track_failed_example_1.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC1-2-Video-description-track_failed_example_1.html"></iframe> </div></div>
-<h2 id="inapplicable">Inapplicable</h2>
+<h3 id="inapplicable">Inapplicable</h3>
 
 <h4 id="inapplicable-example-1">Inapplicable example 1</h4>
 
@@ -295,8 +295,8 @@
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC1-2-Video-description-track_inapplicable_example_1.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC1-2-Video-description-track_inapplicable_example_1.html"></iframe> </div></div>
@@ -306,9 +306,9 @@
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span> <span class="na">style=</span><span class="s">"display: none;"</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
-  <span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"descriptions"</span> <span class="na">src=</span><span class="s">"rabbit-video-descriptions.vtt"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/video.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"descriptions"</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/descriptions.vtt"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC1-2-Video-description-track_inapplicable_example_2.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC1-2-Video-description-track_inapplicable_example_2.html"></iframe> </div></div>
@@ -318,21 +318,16 @@
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;video</span> <span class="na">controls</span><span class="nt">&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/silent.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span><span class="nt">&gt;&lt;/source&gt;</span>
-  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/silent.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span><span class="nt">&gt;&lt;/source&gt;</span>
-  <span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"descriptions"</span> <span class="na">src=</span><span class="s">"rabbit-video-descriptions.vtt"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/silent.mp4"</span> <span class="na">type=</span><span class="s">"video/mp4"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;source</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/silent.webm"</span> <span class="na">type=</span><span class="s">"video/webm"</span> <span class="nt">/&gt;</span>
+  <span class="nt">&lt;track</span> <span class="na">kind=</span><span class="s">"descriptions"</span> <span class="na">src=</span><span class="s">"../test-assets/rabbit-video/descriptions.vtt"</span> <span class="nt">/&gt;</span>
 <span class="nt">&lt;/video&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC1-2-Video-description-track_inapplicable_example_3.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC1-2-Video-description-track_inapplicable_example_3.html"></iframe> </div></div>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->
-<h2>Glossary</h2><div class='glossary-list container'><div class='definition-item'><h3><a id='visible-on-the-page' href='/pages/glossary/visible-on-the-page.html'>Visible on the Page</a></h3><p>Elements should be visible on the page, and also meet the requirements for color contrast and visibility when focused. For more details, check out:</p>
-<ul>
-  <li><a href="https://www.w3.org/TR/WCAG20-TECHS/G18.html">https://www.w3.org/TR/WCAG20-TECHS/G18.html</a></li>
-  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html">https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html</a></li>
-</ul>
-</div> <div class='definition-item'><h3><a id='visible' href='/pages/glossary/visible.html'>Visible</a></h3><p>Content perceivable through sight.</p>
+<h2>Glossary</h2><div class='glossary-list container'><div class='definition-item'><h3><a id='visible' href='/pages/glossary/visible.html'>Visible</a></h3><p>Content perceivable through sight.</p>
 
 <p>Content is considered visible if making it fully transparent would result in a difference in the pixels rendered for any part of the document that is currently within the viewport or can be brought into the viewport via scrolling.</p>
 

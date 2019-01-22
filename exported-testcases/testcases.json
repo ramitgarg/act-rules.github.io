@@ -515,6 +515,114 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-2-video-has-captions.html"
     },
     {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-3-video-alternative_inapplicable_example_1.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-3-video-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-3-video-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-3-video-alternative_inapplicable_example_2.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-3-video-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-3-video-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-3-video-alternative_inapplicable_example_3.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-3-video-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-3-video-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-3-video-alternative_inapplicable_example_4.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-3-video-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-3-video-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-3-video-alternative_inapplicable_example_5.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-3-video-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-3-video-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-3-video-alternative_inapplicable_example_6.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-3-video-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-3-video-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-3-video-alternative_inapplicable_example_7.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-3-video-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-3-video-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-3-video-alternative_inapplicable_example_8.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-3-video-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-3-video-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-3-video-alternative_inapplicable_example_9.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-3-video-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-3-video-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-3-video-alternative_inapplicable_example_10.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-3-video-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-3-video-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-5-video-audio-alternative_inapplicable_example_1.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-5-video-audio-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-5-video-audio-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-5-video-audio-alternative_inapplicable_example_2.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-5-video-audio-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-5-video-audio-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-5-video-audio-alternative_inapplicable_example_3.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-5-video-audio-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-5-video-audio-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-5-video-audio-alternative_inapplicable_example_4.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-5-video-audio-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-5-video-audio-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-5-video-audio-alternative_inapplicable_example_5.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-5-video-audio-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-5-video-audio-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-5-video-audio-alternative_inapplicable_example_6.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-5-video-audio-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-5-video-audio-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-5-video-audio-alternative_inapplicable_example_7.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-5-video-audio-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-5-video-audio-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-5-video-audio-alternative_inapplicable_example_8.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-5-video-audio-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-5-video-audio-alternative.html"
+    },
+    {
       "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-Video-description-track_passed_example_1.html",
       "expected": "passed",
       "ruleId": "SC1-2-Video-description-track",
@@ -585,6 +693,48 @@
       "expected": "inapplicable",
       "ruleId": "SC1-2-video-audio-description",
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-video-audio-description.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-video-media-alternative_inapplicable_example_1.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-video-media-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-video-media-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-video-media-alternative_inapplicable_example_2.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-video-media-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-video-media-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-video-media-alternative_inapplicable_example_3.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-video-media-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-video-media-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-video-media-alternative_inapplicable_example_4.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-video-media-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-video-media-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-video-media-alternative_inapplicable_example_5.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-video-media-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-video-media-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-video-media-alternative_inapplicable_example_6.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-video-media-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-video-media-alternative.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-video-media-alternative_inapplicable_example_7.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-2-video-media-alternative",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-video-media-alternative.html"
     },
     {
       "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-2-video-transcript_passed_example_1.html",
