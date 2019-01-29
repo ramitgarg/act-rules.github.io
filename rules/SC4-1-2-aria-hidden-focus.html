@@ -177,8 +177,8 @@
   
   <p>
     <i>Last updated:</i>
-    <time datetime="2018-11-12T08:50:21+00:00" itemprop="dateModified">
-      Nov 12, 2018
+    <time datetime="2019-01-29T13:52:33+00:00" itemprop="dateModified">
+      Jan 29, 2019
     </time>
   </p>
   
@@ -331,6 +331,18 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;input</span> <span class="na">disabled</span> <span class="na">aria-hidden=</span><span class="s">"true"</span> <span class="nt">/&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC4-1-2-aria-hidden-focus_passed_example_4.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC4-1-2-aria-hidden-focus_passed_example_4.html"></iframe> </div></div>
+<h4 id="passed-example-5">Passed example 5</h4>
+
+<p><code class="highlighter-rouge">aria-hidden</code> can’t be reset once set to true on an ancestor.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Some button<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC4-1-2-aria-hidden-focus_passed_example_5.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC4-1-2-aria-hidden-focus_passed_example_5.html"></iframe> </div></div>
 <h3 id="failed">Failed</h3>
 
 <h4 id="failed-example-1">Failed example 1</h4>
@@ -355,12 +367,12 @@
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC4-1-2-aria-hidden-focus_failed_example_2.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC4-1-2-aria-hidden-focus_failed_example_2.html"></iframe> </div></div>
 <h4 id="failed-example-3">Failed example 3</h4>
 
-<p><code class="highlighter-rouge">aria-hidden=false</code> does not negate aria-hidden true.</p>
+<p><code class="highlighter-rouge">aria-hidden</code> can’t be reset once set to true on an ancestor.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
     <span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"false"</span><span class="nt">&gt;</span>
-        <span class="nt">&lt;button</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Some button<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button&gt;</span>Some button<span class="nt">&lt;/button&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
  </code></pre></figure>
