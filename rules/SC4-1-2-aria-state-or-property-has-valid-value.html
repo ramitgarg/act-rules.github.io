@@ -177,8 +177,8 @@
   
   <p>
     <i>Last updated:</i>
-    <time datetime="2018-10-30T14:44:03+00:00" itemprop="dateModified">
-      Oct 30, 2018
+    <time datetime="2019-03-02T20:03:11+00:00" itemprop="dateModified">
+      Mar 2, 2019
     </time>
   </p>
   
@@ -288,9 +288,11 @@ For value type <code class="highlighter-rouge">URI</code>, this rule does not re
 
 <h2 id="assumptions">Assumptions</h2>
 
-<p>This rule assumes that elements that are not <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a> or are <a href="#focusable">focusable</a> can still impact users. Therefore the applicability of this rule is not limited to <a href="https://www.w3.org/TR/wai-aria-1.1/#state_prop_def">WAI-ARIA 1.1 states and properties</a> on elements that are included in the accessibility tree or are focusable.</p>
-
-<p><strong>Note:</strong>  For example, anything referenced through <code class="highlighter-rouge">aria-labelledby</code> does not have to be <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a> in order for it to become part of the <a href="#accessible-name">accessible name</a>.</p>
+<ul>
+  <li>This rule assumes that elements that are not <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a> or are <a href="#focusable">focusable</a> can still impact users. Therefore the applicability of this rule is not limited to <a href="https://www.w3.org/TR/wai-aria-1.1/#state_prop_def">WAI-ARIA 1.1 states and properties</a> on elements that are included in the accessibility tree or are focusable.
+<strong>Note:</strong>  For example, anything referenced through <code class="highlighter-rouge">aria-labelledby</code> does not have to be <a href="#included-in-the-accessibility-tree">included in the accessibility tree</a> in order for it to become part of the <a href="#accessible-name">accessible name</a>.</li>
+  <li>The ARIA <code class="highlighter-rouge">state</code> or <code class="highlighter-rouge">property</code> is being used to comply to WCAG.</li>
+</ul>
 
 <h2 id="accessibility-support">Accessibility Support</h2>
 
