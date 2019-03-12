@@ -8,7 +8,7 @@
 <head>
   <!-- Resolve Page Title -->
   
-  <title>Surrounding text Auto WCAG Rules</title>
+  <title>Language identification Auto WCAG Rules</title>
   <!-- Meta -->
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,7 +25,7 @@
     crossorigin="anonymous" />
   <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/vs.min.css" />
   <link rel="stylesheet" href="https://auto-wcag.github.io/auto-wcag/assets/css/main.css" />
-  <link rel="canonical" href="https://auto-wcag.github.io/auto-wcaghttps://auto-wcag.github.io/auto-wcag/pages/glossary/surrounding-text.html" />
+  <link rel="canonical" href="https://auto-wcag.github.io/auto-wcaghttps://auto-wcag.github.io/auto-wcag/pages/glossary/outdated/lang-identification.html" />
 
   <!-- Javascript -->
   <script type="text/javascript" src="//code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
@@ -165,20 +165,37 @@
     <main class="container">
       
       <div class="page-header">
-        <h1>Surrounding text</h1>
+        <h1>Language identification</h1>
       </div>
       
       <p>
-<h4><b><i>Key: surrounding-text</i></b></h4>
+<h4><b><i>Key: language-identification</i></b></h4>
 
 <hr>
 
 
-<p>In order for people with disabilities to be able to use this text - the text must be “programmatically determinable.” This means that the text must be able to be read and used by the assistive technologies (and the accessibility features in browsers) that people with disabilities use.</p>
+<p>A language identification algorithm is used the determine the language of a given text.  Some languages can be determined reliably from their character use alone. In these cases it is sufficient to analyse the characters and encoding of the web content. For languages sharing the same script (such as languages using the latin alphabet), the distinction is more difficult.</p>
 
-<p>It must also be possible for people using assistive technologies to find these text alternatives when they encounter non-text content that they cannot use. To accomplish this, we say that the text must be “programmatically associated” with the non-text content. This means that the user must be able to use their assistive technology to find the alternative text (that they can use) when they land on the non-text content (that they can’t use).</p>
+<h1 id="use-statistical-methods">Use statistical methods.</h1>
 
-<p>Source: <a href="http://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-text-alternatives-head">WCAG2.0 Understanding “Text Alternatives”</a></p>
+<p>A widely used approach are supervised machine learning algorithms  based on character n-grams. These algorithms are trained on example texts in a known language. The generated model can be used to label unknown text.</p>
+
+<p>This class of algorithms has the following properties:</p>
+
+<ul>
+  <li>The algorithm needs training data in all languages that are to be classified.</li>
+  <li>It has poor performance on single words. The recommended input size is 200-300 characters.</li>
+  <li>Only one language is assigned to each chunk of text. Languages changes can not be detected with the basic approach.</li>
+  <li>Problems to distinguish languages that are closely related (such as Danish and Norwegian).</li>
+</ul>
+
+<h2 id="recommendation">Recommendation</h2>
+
+<p>The Auto WCAG Rules group does not recommend the use of any particular algorithm. Instead each tool that uses automatic language identification should disclose which algorithm, implementation, or third party libraries are used.</p>
+
+<h2 id="background">Background</h2>
+
+<p><a href="http://en.wikipedia.org/wiki/Language_identification">List of implementations (both libraries and web services)</a> from Wikipedia.</p>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->
