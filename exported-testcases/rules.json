@@ -96,9 +96,6 @@
     "SC3-1-2-lang-valid": [
       "List of rules to be mapped to test engine"
     ],
-    "SC4-1-1+SC4-1-2-aria-state-or-property-allowed": [
-      "List of rules to be mapped to test engine"
-    ],
     "SC4-1-1-unique-attrs": [
       "List of rules to be mapped to test engine"
     ],
@@ -109,6 +106,9 @@
       "List of rules to be mapped to test engine"
     ],
     "SC4-1-2-aria-hidden-focus": [
+      "List of rules to be mapped to test engine"
+    ],
+    "SC4-1-2-aria-state-or-property-allowed": [
       "List of rules to be mapped to test engine"
     ],
     "SC4-1-2-aria-state-or-property-has-valid-value": [
