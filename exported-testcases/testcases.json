@@ -5,6 +5,54 @@
   "description": "Test Cases of WCAG-ACT-RULES-CG rules",
   "testcases": [
     {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-1-1-accessible-name-is-image-filename_passed_example_1.html",
+      "expected": "passed",
+      "ruleId": "SC1-1-1-accessible-name-is-image-filename",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-accessible-name-is-image-filename.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-1-1-accessible-name-is-image-filename_passed_example_2.html",
+      "expected": "passed",
+      "ruleId": "SC1-1-1-accessible-name-is-image-filename",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-accessible-name-is-image-filename.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-1-1-accessible-name-is-image-filename_failed_example_1.html",
+      "expected": "failed",
+      "ruleId": "SC1-1-1-accessible-name-is-image-filename",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-accessible-name-is-image-filename.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-1-1-accessible-name-is-image-filename_failed_example_2.html",
+      "expected": "failed",
+      "ruleId": "SC1-1-1-accessible-name-is-image-filename",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-accessible-name-is-image-filename.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-1-1-accessible-name-is-image-filename_inapplicable_example_1.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-1-1-accessible-name-is-image-filename",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-accessible-name-is-image-filename.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-1-1-accessible-name-is-image-filename_inapplicable_example_2.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-1-1-accessible-name-is-image-filename",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-accessible-name-is-image-filename.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-1-1-accessible-name-is-image-filename_inapplicable_example_3.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-1-1-accessible-name-is-image-filename",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-accessible-name-is-image-filename.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-1-1-accessible-name-is-image-filename_inapplicable_example_4.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-1-1-accessible-name-is-image-filename",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-accessible-name-is-image-filename.html"
+    },
+    {
       "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-1-1-image-has-name_passed_example_1.html",
       "expected": "passed",
       "ruleId": "SC1-1-1-image-has-name",
@@ -72,6 +120,12 @@
     },
     {
       "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-1-1-image-has-name_inapplicable_example_3.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-1-1-image-has-name",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-image-has-name.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-1-1-image-has-name_inapplicable_example_4.html",
       "expected": "inapplicable",
       "ruleId": "SC1-1-1-image-has-name",
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-1-1-image-has-name.html"
