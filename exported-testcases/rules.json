@@ -45,10 +45,10 @@
     "SC1-2-5-video-audio-alternative": [
       "List of rules to be mapped to test engine"
     ],
-    "SC1-2-Video-description-track": [
+    "SC1-2-video-audio-description": [
       "List of rules to be mapped to test engine"
     ],
-    "SC1-2-video-audio-description": [
+    "SC1-2-video-description-track": [
       "List of rules to be mapped to test engine"
     ],
     "SC1-2-video-media-alternative": [
