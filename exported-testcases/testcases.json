@@ -827,6 +827,84 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-2-video-transcript.html"
     },
     {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-3-1-aria-hidden-focus_passed_example_1.html",
+      "expected": "passed",
+      "ruleId": "SC1-3-1-aria-hidden-focus",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-3-1-aria-hidden-focus.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-3-1-aria-hidden-focus_passed_example_2.html",
+      "expected": "passed",
+      "ruleId": "SC1-3-1-aria-hidden-focus",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-3-1-aria-hidden-focus.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-3-1-aria-hidden-focus_passed_example_3.html",
+      "expected": "passed",
+      "ruleId": "SC1-3-1-aria-hidden-focus",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-3-1-aria-hidden-focus.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-3-1-aria-hidden-focus_passed_example_4.html",
+      "expected": "passed",
+      "ruleId": "SC1-3-1-aria-hidden-focus",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-3-1-aria-hidden-focus.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-3-1-aria-hidden-focus_passed_example_5.html",
+      "expected": "passed",
+      "ruleId": "SC1-3-1-aria-hidden-focus",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-3-1-aria-hidden-focus.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-3-1-aria-hidden-focus_failed_example_1.html",
+      "expected": "failed",
+      "ruleId": "SC1-3-1-aria-hidden-focus",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-3-1-aria-hidden-focus.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-3-1-aria-hidden-focus_failed_example_2.html",
+      "expected": "failed",
+      "ruleId": "SC1-3-1-aria-hidden-focus",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-3-1-aria-hidden-focus.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-3-1-aria-hidden-focus_failed_example_3.html",
+      "expected": "failed",
+      "ruleId": "SC1-3-1-aria-hidden-focus",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-3-1-aria-hidden-focus.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-3-1-aria-hidden-focus_failed_example_4.html",
+      "expected": "failed",
+      "ruleId": "SC1-3-1-aria-hidden-focus",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-3-1-aria-hidden-focus.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-3-1-aria-hidden-focus_failed_example_5.html",
+      "expected": "failed",
+      "ruleId": "SC1-3-1-aria-hidden-focus",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-3-1-aria-hidden-focus.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-3-1-aria-hidden-focus_inapplicable_example_1.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-3-1-aria-hidden-focus",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-3-1-aria-hidden-focus.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-3-1-aria-hidden-focus_inapplicable_example_2.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-3-1-aria-hidden-focus",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-3-1-aria-hidden-focus.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-3-1-aria-hidden-focus_inapplicable_example_3.html",
+      "expected": "inapplicable",
+      "ruleId": "SC1-3-1-aria-hidden-focus",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC1-3-1-aria-hidden-focus.html"
+    },
+    {
       "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC1-3-5-autocomplete-valid_passed_example_1.html",
       "expected": "passed",
       "ruleId": "SC1-3-5-autocomplete-valid",
@@ -2067,84 +2145,6 @@
       "expected": "inapplicable",
       "ruleId": "SC4-1-2-aria-attr-valid",
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-attr-valid.html"
-    },
-    {
-      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-aria-hidden-focus_passed_example_1.html",
-      "expected": "passed",
-      "ruleId": "SC4-1-2-aria-hidden-focus",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-hidden-focus.html"
-    },
-    {
-      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-aria-hidden-focus_passed_example_2.html",
-      "expected": "passed",
-      "ruleId": "SC4-1-2-aria-hidden-focus",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-hidden-focus.html"
-    },
-    {
-      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-aria-hidden-focus_passed_example_3.html",
-      "expected": "passed",
-      "ruleId": "SC4-1-2-aria-hidden-focus",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-hidden-focus.html"
-    },
-    {
-      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-aria-hidden-focus_passed_example_4.html",
-      "expected": "passed",
-      "ruleId": "SC4-1-2-aria-hidden-focus",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-hidden-focus.html"
-    },
-    {
-      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-aria-hidden-focus_passed_example_5.html",
-      "expected": "passed",
-      "ruleId": "SC4-1-2-aria-hidden-focus",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-hidden-focus.html"
-    },
-    {
-      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-aria-hidden-focus_failed_example_1.html",
-      "expected": "failed",
-      "ruleId": "SC4-1-2-aria-hidden-focus",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-hidden-focus.html"
-    },
-    {
-      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-aria-hidden-focus_failed_example_2.html",
-      "expected": "failed",
-      "ruleId": "SC4-1-2-aria-hidden-focus",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-hidden-focus.html"
-    },
-    {
-      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-aria-hidden-focus_failed_example_3.html",
-      "expected": "failed",
-      "ruleId": "SC4-1-2-aria-hidden-focus",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-hidden-focus.html"
-    },
-    {
-      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-aria-hidden-focus_failed_example_4.html",
-      "expected": "failed",
-      "ruleId": "SC4-1-2-aria-hidden-focus",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-hidden-focus.html"
-    },
-    {
-      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-aria-hidden-focus_failed_example_5.html",
-      "expected": "failed",
-      "ruleId": "SC4-1-2-aria-hidden-focus",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-hidden-focus.html"
-    },
-    {
-      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-aria-hidden-focus_inapplicable_example_1.html",
-      "expected": "inapplicable",
-      "ruleId": "SC4-1-2-aria-hidden-focus",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-hidden-focus.html"
-    },
-    {
-      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-aria-hidden-focus_inapplicable_example_2.html",
-      "expected": "inapplicable",
-      "ruleId": "SC4-1-2-aria-hidden-focus",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-hidden-focus.html"
-    },
-    {
-      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-aria-hidden-focus_inapplicable_example_3.html",
-      "expected": "inapplicable",
-      "ruleId": "SC4-1-2-aria-hidden-focus",
-      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-hidden-focus.html"
     },
     {
       "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-aria-state-or-property-allowed_passed_example_1.html",
