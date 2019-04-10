@@ -177,8 +177,8 @@
   
   <p>
     <i>Last updated:</i>
-    <time datetime="2019-03-12T09:18:40+00:00" itemprop="dateModified">
-      Mar 12, 2019
+    <time datetime="2019-04-10T12:01:16+00:00" itemprop="dateModified">
+      Apr 10, 2019
     </time>
   </p>
   
@@ -263,7 +263,7 @@
 
 <h3 id="applicability">Applicability</h3>
 
-<p>Any <a href="https://www.w3.org/TR/wai-aria-1.1/#state_prop_def">WAI-ARIA state or property</a> that is specified on an HTML or SVG element.</p>
+<p>Any <a href="https://www.w3.org/TR/wai-aria-1.1/#state_prop_def">WAI-ARIA state or property</a> that is specified on an HTML or SVG element that is <a href="#included-in-the-accessibility-tree">included-in-the-accessibility-tree</a>.</p>
 
 <h3 id="expectation">Expectation</h3>
 
@@ -387,10 +387,25 @@
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"region"</span><span class="nt">&gt;&lt;/div&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC4-1-2-aria-state-or-property-allowed_inapplicable_example_1.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC4-1-2-aria-state-or-property-allowed_inapplicable_example_1.html"></iframe> </div></div>
+<h4 id="inapplicable-example-2">Inapplicable example 2</h4>
+
+<p><code class="highlighter-rouge">aria-sort</code> property is neither inherited, supported, nor required for role <code class="highlighter-rouge">button</code>, but the element is not included in the accessibility tree.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">aria-sort=</span><span class="s">""</span> <span class="na">style=</span><span class="s">"display:none;"</span><span class="nt">&gt;&lt;/div&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC4-1-2-aria-state-or-property-allowed_inapplicable_example_2.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC4-1-2-aria-state-or-property-allowed_inapplicable_example_2.html"></iframe> </div></div>
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->
-<h2>Glossary</h2><div class='glossary-list container'><div class='definition-item'><h3><a id='semantic-role' href='/pages/glossary/semantic-role.html'>Semantic Role</a></h3><p>A semantic role is a semantic association that indicates an object’s type. This allows tools to present and support interaction with the object in a manner that is consistent with user expectations about other objects of that type.</p>
+<h2>Glossary</h2><div class='glossary-list container'><div class='definition-item'><h3><a id='included-in-the-accessibility-tree' href='/pages/glossary/included-in-the-accessibility-tree.html'>Included in the accessibility tree</a></h3><p>Elements included in the accessibility tree of platform specific accessibility APIs. Elements in the accessibility tree are exposed to assistive technologies, allowing users to interact with the elements in a way that meet the requirements of the individual user.</p>
+
+<p>The general rules for when elements are included in the accessibility tree are defined in the <a href="https://www.w3.org/TR/core-aam/">core accessibility API mappings</a>. For native markup languages, such as HTML and SVG, additional rules for when elements are [included in the accessibility tree][] can be found in the <a href="https://www.w3.org/TR/html-aam/">HTML accessibility API mappings</a> and the <a href="https://www.w3.org/TR/svg-aam/">SVG accessibility API mappings</a>.</p>
+
+<blockquote>
+  <p><strong>Note:</strong> Users of assistive technologies might still be able to interact with elements that are not included in the accessibility tree. An example of this is a <a href="#focusable">focusable</a> element with an <code class="highlighter-rouge">aria-hidden</code> attribute with a value of <code class="highlighter-rouge">true</code>. Such an element could still be interacted with using sequential keyboard navigation regardless of the assistive technologies used, even though the element would not be included in the accessibility tree.</p>
+</blockquote>
+</div> <div class='definition-item'><h3><a id='semantic-role' href='/pages/glossary/semantic-role.html'>Semantic Role</a></h3><p>A semantic role is a semantic association that indicates an object’s type. This allows tools to present and support interaction with the object in a manner that is consistent with user expectations about other objects of that type.</p>
 
 <p><a href="https://www.w3.org/TR/wai-aria-1.1/#dfn-role">Roles</a> can be <a href="https://www.w3.org/TR/wai-aria/#implicit_semantics">implicit</a> through the element type or explicit through the <a href="https://www.w3.org/TR/html/dom.html#aria-role-attribute">role attribute</a>.</p>
 

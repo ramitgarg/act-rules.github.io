@@ -2213,6 +2213,12 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-allowed.html"
     },
     {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-aria-state-or-property-allowed_inapplicable_example_2.html",
+      "expected": "inapplicable",
+      "ruleId": "SC4-1-2-aria-state-or-property-allowed",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-aria-state-or-property-allowed.html"
+    },
+    {
       "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-aria-state-or-property-has-valid-value_passed_example_1.html",
       "expected": "passed",
       "ruleId": "SC4-1-2-aria-state-or-property-has-valid-value",
@@ -2724,6 +2730,12 @@
     },
     {
       "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-role-has-required-states-and-properties_inapplicable_example_3.html",
+      "expected": "inapplicable",
+      "ruleId": "SC4-1-2-role-has-required-states-and-properties",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-role-has-required-states-and-properties.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC4-1-2-role-has-required-states-and-properties_inapplicable_example_4.html",
       "expected": "inapplicable",
       "ruleId": "SC4-1-2-role-has-required-states-and-properties",
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC4-1-2-role-has-required-states-and-properties.html"
