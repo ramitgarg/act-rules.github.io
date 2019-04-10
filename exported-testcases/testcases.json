@@ -1349,6 +1349,12 @@
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-2-page-has-title.html"
     },
     {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC2-4-2-page-has-title_passed_example_6.html",
+      "expected": "passed",
+      "ruleId": "SC2-4-2-page-has-title",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-2-page-has-title.html"
+    },
+    {
       "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC2-4-2-page-has-title_failed_example_1.html",
       "expected": "failed",
       "ruleId": "SC2-4-2-page-has-title",
@@ -1368,6 +1374,12 @@
     },
     {
       "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC2-4-2-page-has-title_failed_example_4.html",
+      "expected": "failed",
+      "ruleId": "SC2-4-2-page-has-title",
+      "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-2-page-has-title.html"
+    },
+    {
+      "url": "https://auto-wcag.github.io/auto-wcag/exported-testcases/../exported-testcases/assets/SC2-4-2-page-has-title_failed_example_5.html",
       "expected": "failed",
       "ruleId": "SC2-4-2-page-has-title",
       "rulePage": "https://auto-wcag.github.io/auto-wcag/rules/SC2-4-2-page-has-title.html"

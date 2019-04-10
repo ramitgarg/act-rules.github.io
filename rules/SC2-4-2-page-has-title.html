@@ -177,8 +177,8 @@
   
   <p>
     <i>Last updated:</i>
-    <time datetime="2019-01-11T12:16:35+00:00" itemprop="dateModified">
-      Jan 11, 2019
+    <time datetime="2019-04-10T12:04:24+00:00" itemprop="dateModified">
+      Apr 10, 2019
     </time>
   </p>
   
@@ -295,19 +295,19 @@
 
 <h3 id="applicability">Applicability</h3>
 
-<p>The rule applies to any page where the root element is an <code class="highlighter-rouge">html</code> element, and which is not embedded in another page.</p>
+<p>The rule applies to any page where the <a href="https://www.w3.org/TR/dom/#document-element">document element</a> is an <code class="highlighter-rouge">html</code> element, and where the page is not embedded in another page.</p>
 
-<p><strong>Note</strong>: Pages may be embedded inside other pages through elements such as iframes and object elements.</p>
+<p><strong>Note</strong>: Pages may be embedded inside other pages through elements such as <code class="highlighter-rouge">iframe</code> and <code class="highlighter-rouge">object</code> elements.</p>
 
 <h3 id="expectation-1">Expectation 1</h3>
 
-<p>The page contains at least one <code class="highlighter-rouge">title</code> element.</p>
+<p>The <a href="https://www.w3.org/TR/dom/#document-element">document element</a> has at least one <a href="https://www.w3.org/TR/dom41/#concept-tree-descendant">descendant</a> that is an HTML <code class="highlighter-rouge">title</code> element.</p>
 
-<p><strong>Note</strong>: The <code class="highlighter-rouge">title</code> element exists in other namespaces such as SVG. These are not <code class="highlighter-rouge">title</code> elements for HTML document and should be ignored.</p>
+<p><strong>Note</strong>: The <code class="highlighter-rouge">title</code> element exists in other namespaces such as SVG. These are not HTML <code class="highlighter-rouge">title</code> elements and should be ignored for this rule.</p>
 
 <h3 id="expectation-2">Expectation 2</h3>
 
-<p>The first <code class="highlighter-rouge">title</code> element contains <a href="#non-empty">non-empty text</a>.</p>
+<p>The first HTML <code class="highlighter-rouge">title</code> element that is a <a href="https://www.w3.org/TR/dom41/#concept-tree-descendant">descendant</a> of the <a href="https://www.w3.org/TR/dom/#document-element">document element</a> has <a href="https://www.w3.org/TR/dom/#concept-tree-child">children</a> that are <a href="https://www.w3.org/TR/dom/#text">text nodes</a> that are not only <a href="#whitespace">whitespace</a>.</p>
 
 <h2 id="assumptions">Assumptions</h2>
 
@@ -320,11 +320,8 @@
 <h2 id="background">Background</h2>
 
 <ul>
-  <li><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html">https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html</a></li>
-  <li><a href="https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=242#qr-navigation-mechanisms-title">https://www.w3.org/WAI/WCAG20/quickref/?showtechniques=242#qr-navigation-mechanisms-title</a></li>
-  <li><a href="https://www.w3.org/TR/WCAG20-TECHS/G88.html">https://www.w3.org/TR/WCAG20-TECHS/G88.html</a></li>
-  <li><a href="https://www.w3.org/TR/WCAG20-TECHS/H25.html">https://www.w3.org/TR/WCAG20-TECHS/H25.html</a></li>
-  <li>The WCAG 2.0 Techniques already contain examples and code snippets to illustrate which content passes or fails the test. Whenever possible Auto WCAG Rules refers to those. Another source for test cases is the W3C Before and After Demonstration.</li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Understanding/page-titled.html">Understanding Success Criterion 2.4.2: Page Titled</a></li>
+  <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/html/H25">WCAG 2.1 Technique H25: Providing a title using the title element</a></li>
 </ul>
 
 <h2 id="test-cases">Test Cases</h2>
@@ -333,7 +330,7 @@
 
 <h4 id="passed-example-1">Passed example 1</h4>
 
-<p>This page has a <code class="highlighter-rouge">title</code>.</p>
+<p>This page has a <code class="highlighter-rouge">title</code> with content.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
@@ -343,7 +340,7 @@
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC2-4-2-page-has-title_passed_example_1.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC2-4-2-page-has-title_passed_example_1.html"></iframe> </div></div>
 <h4 id="passed-example-2">Passed example 2</h4>
 
-<p>This page give a <code class="highlighter-rouge">title</code> to an iframe.</p>
+<p>This page gives a <code class="highlighter-rouge">title</code> to an iframe.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
@@ -354,7 +351,7 @@
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC2-4-2-page-has-title_passed_example_2.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC2-4-2-page-has-title_passed_example_2.html"></iframe> </div></div>
 <h4 id="passed-example-3">Passed example 3</h4>
 
-<p>This page has a <code class="highlighter-rouge">title</code>.</p>
+<p>This page has two <code class="highlighter-rouge">title</code> elements.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
@@ -369,7 +366,7 @@
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC2-4-2-page-has-title_passed_example_3.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC2-4-2-page-has-title_passed_example_3.html"></iframe> </div></div>
 <h4 id="passed-example-4">Passed example 4</h4>
 
-<p>Valid <code class="highlighter-rouge">title</code> provided.</p>
+<p>The <code class="highlighter-rouge">title</code> is in the <code class="highlighter-rouge">body</code>.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
@@ -381,7 +378,7 @@
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC2-4-2-page-has-title_passed_example_4.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC2-4-2-page-has-title_passed_example_4.html"></iframe> </div></div>
 <h4 id="passed-example-5">Passed example 5</h4>
 
-<p>Valid <code class="highlighter-rouge">title</code> provided.</p>
+<p>The first <code class="highlighter-rouge">title</code> element has content.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
@@ -394,21 +391,31 @@
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC2-4-2-page-has-title_passed_example_5.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC2-4-2-page-has-title_passed_example_5.html"></iframe> </div></div>
+<h4 id="passed-example-6">Passed example 6</h4>
+
+<p>The <code class="highlighter-rouge">title</code> only contains characters that are not letters or numbers.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;title&gt;</span>#$@<span class="err">&amp;</span>%*!<span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC2-4-2-page-has-title_passed_example_6.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC2-4-2-page-has-title_passed_example_6.html"></iframe> </div></div>
 <h3 id="failed">Failed</h3>
 
 <h4 id="failed-example-1">Failed example 1</h4>
 
-<p>This page has no <code class="highlighter-rouge">title</code>.</p>
+<p>The page has no <code class="highlighter-rouge">title</code>.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;h1&gt;</span>this page has no title<span class="nt">&lt;/h1&gt;</span>
+  <span class="nt">&lt;h1&gt;</span>This page has no title<span class="nt">&lt;/h1&gt;</span>
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC2-4-2-page-has-title_failed_example_1.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC2-4-2-page-has-title_failed_example_1.html"></iframe> </div></div>
 <h4 id="failed-example-2">Failed example 2</h4>
 
-<p>Empty <code class="highlighter-rouge">title</code>.</p>
+<p>The <code class="highlighter-rouge">title</code> element is empty.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
@@ -418,7 +425,7 @@
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC2-4-2-page-has-title_failed_example_2.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC2-4-2-page-has-title_failed_example_2.html"></iframe> </div></div>
 <h4 id="failed-example-3">Failed example 3</h4>
 
-<p>No <code class="highlighter-rouge">title</code> provided.</p>
+<p>The page has no <code class="highlighter-rouge">title</code>.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
@@ -428,7 +435,7 @@
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC2-4-2-page-has-title_failed_example_3.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC2-4-2-page-has-title_failed_example_3.html"></iframe> </div></div>
 <h4 id="failed-example-4">Failed example 4</h4>
 
-<p>Empty first <code class="highlighter-rouge">title</code>.</p>
+<p>The first <code class="highlighter-rouge">title</code> element is empty.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
@@ -441,11 +448,21 @@
 <span class="nt">&lt;/html&gt;</span>
  </code></pre></figure>
  </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC2-4-2-page-has-title_failed_example_4.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC2-4-2-page-has-title_failed_example_4.html"></iframe> </div></div>
+<h4 id="failed-example-5">Failed example 5</h4>
+
+<p>The <code class="highlighter-rouge">title</code> only contains a separator character.</p>
+
+<div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
+<figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;html&gt;</span>
+  <span class="nt">&lt;title&gt;</span> <span class="nt">&lt;/title&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+ </code></pre></figure>
+ </div><div class="frame-container"> <header><span>Example Output: </span> <a style="float:right" target="_blank" href="../exported-testcases/assets/SC2-4-2-page-has-title_failed_example_5.html">Open in a new tab/ window</a> </header> <iframe src="../exported-testcases/assets/SC2-4-2-page-has-title_failed_example_5.html"></iframe> </div></div>
 <h3 id="inapplicable">Inapplicable</h3>
 
 <h4 id="inapplicable-example-1">Inapplicable example 1</h4>
 
-<p>Not applicable to <code class="highlighter-rouge">svg</code> element.</p>
+<p>This rule is not applicable to <code class="highlighter-rouge">svg</code> elements.</p>
 
 <div class="embed-wrapper"><div class="code-wrapper"> <figcaption style="clear:both"><span>Code Snippet: </span></figcaption> 
 <figure class="highlight"><pre><code class="language-html" data-lang="html"> <span class="nt">&lt;svg</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span><span class="nt">&gt;</span>
@@ -456,20 +473,7 @@
 
 
 <!-- DO NOT DELETE BELOW - This is used by a plugin to insert content -->
-<h2>Glossary</h2><div class='glossary-list container'><div class='definition-item'><h3><a id='non-empty' href='/pages/glossary/non-empty.html'>Non-empty text string</a></h3><p>A string of characters (text) is considered <em>“non-empty”</em> if it contains 1 or more characters that are contained within any of the following unicode categories:</p>
 
-<ul>
-  <li><strong>Ll</strong>: Letter, Lowercase</li>
-  <li><strong>Lu</strong>: Letter, Uppercase</li>
-  <li><strong>Lt</strong>: Letter, Titlecase</li>
-  <li><strong>Lo</strong>: Letter, Other</li>
-  <li><strong>Lm</strong>: Letter, Modifier</li>
-  <li><strong>Nd</strong>: Number, Decimal Digit</li>
-</ul>
-
-<p>For more details on unicode categories, check out <a href="http://www.fileformat.info/info/unicode/category/index.htm">www.fileformat.info/info/unicode/category/</a></p>
-
-</div></div>
 <!-- DO NOT DELETE ABOVE - This is used by a plugin to insert content -->
 
 <div>
