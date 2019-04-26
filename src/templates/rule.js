@@ -108,15 +108,26 @@ export default ({ data }) => {
 		)
 	}
 
+	const downloadRuleTestcaseJson = (e) => {
+		e.preventDefault()
+		debugger;
+	}
+
 	return (
 		<Layout>
 			<SEO title={updatedTitle} keywords={site.siteMetadata.keywords} />
 			<section className="page-rule">
 				{/* rule content */}
 				<section>
-					{/* title */}
+					{/* header */}
 					<header>
+						{/* title */}
 						<h1>{frontmatter.name}</h1>
+						{/* download json */}
+						<button type='button'
+							onClick={downloadRuleTestcaseJson}>	
+							Get WCAG EM Report Tool Testcases
+						</button>
 					</header>
 					{/* Description */}
 					<br />

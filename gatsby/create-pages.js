@@ -1,5 +1,5 @@
 const createPageAddMdContext = require('./create-page-add-md-context')
-const createPageGenerateTestcases = require('./create-page-generate-testcases')
+const createTestcasesOfRules = require('./create-testcases-of-rules')
 const createGlossaryUsagesInRules = require('./create-glossary-uages-in-rules')
 
 const createPages = async options => {
@@ -12,12 +12,12 @@ const createPages = async options => {
 		createPageAddMdContext(options),
 
 		/**
-		 * Create test case files & meta data
+		 * Create test case files of all rules
 		 * -> create test cases files into `./public/testcases/`
 		 * -> copy `./test-assets/*` into `./public`
 		 * -> create `testcases.json` into `./public`
 		 */
-		createPageGenerateTestcases(options),
+		createTestcasesOfRules(options),
 
 		/**
 		 * Create glossary usages

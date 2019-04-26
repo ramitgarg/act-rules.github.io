@@ -96,6 +96,7 @@ section.layout-container {
 
   >main {
     @include flex-column();
+    flex: 1;
     >section {
       @include flex-column();
       @include flex-scroll-container();
